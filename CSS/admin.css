@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../IMG/Carrusel/astro2.0.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    font-size: 14px;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+/* -------- HEADER -------- */
+header {
+    width: 1140px;
+    max-width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+    padding-top: 10px;
+}
+
+header .logo img {
+    height: 150px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-shadow: 1px 1px 3px #000, -1px -1px 3px #000, 1px -1px 3px #000, -1px 1px 3px #000;
+}
+
+header a {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header a:hover {
+    color: #f72a05;
+    transform: scale(1.1);
+}
+
+/* -------- LOGIN Y PANEL -------- */
+.admin-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+#login, #panel {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#login input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#login input:focus {
+    background: rgba(255,255,255,0.2);
+}
+
+#btnLogin {
+    width: 95%;
+    padding: 12px;
+    background: linear-gradient(90deg, #f72a05, #ff7a00);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#btnLogin:hover {
+    background: linear-gradient(90deg, #ff4500, #ff9500);
+    transform: scale(1.05);
+}
+
+/* -------- PANEL SUSCRIPTORES -------- */
+#panel {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    text-align: center;
+    width: fit-content;
+    max-width: 90%;
+    margin: 0 auto;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.table th, .table td {
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+.table th {
+    background: rgba(247, 42, 5, 0.8);
+    color: #fff;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background: rgba(255,255,255,0.05);
+}
+
+.table tr:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+#tabla button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #f72a05;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#tabla button:hover {
+    background: #ff7a00;
+}
+
+/* -------- FOOTER -------- */
+.footer {
+    background-color: rgba(0,0,0,0.85);
+    color: #ccc;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: auto;
+}
+
+.footer-contenido p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.redes-sociales {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociales a {
+    color: #f72a05;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.redes-sociales a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.copyright {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* -------- EFECTOS -------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------- RESPONSIVO -------- */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+    }
+    header .logo img {
+        height: 70px;
+        margin-top: 0;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    header a {
+        font-size: 16px;
+    }
+    #login, #panel {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header a {
+        font-size: 14px;
+    }
+    #btnLogin {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

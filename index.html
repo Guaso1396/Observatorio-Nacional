@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observatorio Nacional</title>
+    <link rel="icon" type="image/png" href="IMG/Iconos/Observatorio.png">
+    <link rel="stylesheet" href="CSS/Index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="IMG/Iconos/descarga.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="HTML/Asteroides.html">Asteroides</a>
+            <a href="HTML/BibliotecaIV.html">Biblioteca</a>
+            <a href="HTML/FotosMarte.html">Marte</a>
+            <a href="HTML/ImagenesTierra.html">Tierra</a>
+            <a href="HTML/Rompecabezas.html">Game</a>
+            <a href="HTML/Suscriptores.html">Suscriptores</a>
+            <a href="HTML/Admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <div class="carrusel prev">
+        <div class="lista">
+            <div class="items">
+                <img src="IMG/Carrusel/8934993-14168426.jpg">
+                <div class="contenido">
+                    <div class="autor">2.</div>
+                    <div class="titulo">Ventana al Cosmos</div>
+                    <div class="tema">Tu Portal al Universo</div>
+                    <div class="des">
+                        Conéctate con los datos más fascinantes del universo en tiempo real:
+                        <br>
+                        ☄️ Descubre los asteroides cercanos a la Tierra, con información de su tamaño y magnitud.
+                        <br>
+                        🌍 Observa la Tierra desde el espacio, seleccionando la fecha que desees.
+                        <br>
+                        🚀 Explora las impresionantes fotos de Marte tomadas por el robot rover Curiosity.
+                        <br>
+                        📚 Investiga en la biblioteca multimedia de la NASA, donde encontrarás imágenes y videos para aprender más del cosmos.
+                        <br>
+                        🔎 Esta sección es tu ventana directa a la ciencia y a la exploración espacial.
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <video autoplay muted loop playsinline>
+                    <source src="VID/Carrusel/giro.mp4" type="video/mp4">
+                </video>
+                <div class="contenido">
+                    <div class="autor">3.</div>
+                    <div class="titulo">Conexión Cósmica</div>
+                    <div class="tema">Forma parte de nuestra comunidad astronómica</div>
+                    <div class="des">
+                        Forma parte de nuestra comunidad y recibe información exclusiva:
+                        <br>
+                        📩 Inscríbete con tus datos y recibirás en tu correo novedades sobre eventos astronómicos y actividades del observatorio.
+                        <br>
+                        🔒 Si eres menor de edad, el sistema bloqueará el registro para proteger tu seguridad y eliminará los datos ingresados.
+                        <br>
+                        👨‍💻 Los administradores revisan las inscripciones y envían un mensaje de bienvenida a cada nuevo suscriptor.
+                        <br>
+                        🌟 Así, estarás siempre conectado con las maravillas del universo.
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://www.infobae.com/resizer/v2/2IIVSBFPLZDS3LJET22NTCPHXA.jpg?auth=fa89c76e82b907d101de2f01a6502a3b49fefe15af06f9a245e25de2e395d7e5&smart=true&width=992&height=558&quality=85">
+                <div class="contenido">
+                    <div class="autor">4.</div>
+                    <div class="titulo">Galaxia en Juego</div>
+                    <div class="tema">Descubre la belleza del cosmos mientras te diviertes</div>
+                    <div class="des">
+                        Aprender también puede ser divertido 🚀:
+                        <br>
+                        🖱️ Arrastra y suelta las piezas para armar un rompecabezas de la Vía Láctea.
+                        <br>
+                        🎮 Pon a prueba tu concentración y disfruta viendo cómo se forma la imagen de nuestra galaxia.
+                        <br>
+                        🌌 Una vez completes el rompecabezas, recibirás un mensaje de felicitaciónes por tu logro.
+                        <br>
+                        ✨ Este juego combina entretenimiento y ciencia, mostrándote la belleza del universo de una manera lúdica.
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <img id="imagenAstronomica" src="" alt="Imagen del día" style="opacity:0; transition: opacity 0.5s ease;">
+                <div class="contenido">
+                    <div class="autor">1.</div>
+                    <div class="titulo">Imagen astronómica del día</div>
+                    <div class="tema">La maravilla astronómica de hoy</div>
+                    <div class="des">
+                        Cada día, la NASA comparte una fotografía única del universo, acompañada de su explicación científica.
+                        <br>
+                        🔭 Podrás descubrir galaxias lejanas, nebulosas, planetas y fenómenos cósmicos que nos recuerdan lo pequeños que somos en el espacio.
+                        <br>
+                        🌠 Esta sección es el punto de partida para todo lo que ofrece el aplicativo.
+                        <br>
+                        💡 Nuestro propósito es inspirarte y motivarte a explorar los misterios del cosmos desde tu pantalla.
+                    </div>
+                    <div class="botones">
+                        <button onclick="window.location.href='https://apod.nasa.gov/apod/astropix.html'">Info. imagen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imgpeq">
+            <div class="items">
+                <img id="imagenAstronomicaPeq" src="" alt="Miniatura de la imagen del día">
+                <div class="contenido">
+                    <div class="titulo">
+                        Imagen astronómica del día
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="IMG/Carrusel/8934993-14168426.jpg">
+                <div class="contenido">
+                    <div class="titulo">
+                        Ventana al Cosmos
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <video autoplay muted loop playsinline>
+                    <source src="VID/Carrusel/giro.mp4" type="video/mp4">
+                </video>
+                <div class="contenido">
+                    <div class="titulo">
+                        Conexión Cósmica
+                    </div>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://www.infobae.com/resizer/v2/2IIVSBFPLZDS3LJET22NTCPHXA.jpg?auth=fa89c76e82b907d101de2f01a6502a3b49fefe15af06f9a245e25de2e395d7e5&smart=true&width=992&height=558&quality=85">
+                <div class="contenido">
+                    <div class="titulo">
+                        Galaxia en Juego
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flechasca">
+            <button id="atras"><</button>
+            <button id="siguiente">></button>
+        </div>
+    </div>
+    <script src="JS/Index.js"></script>
+    <script src="SERVICIO/nasa_api.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-contenido">
+        <p class="copyright">© 2025 Observatorio Nacional</p>
+    </div>
+</footer>
+</html>

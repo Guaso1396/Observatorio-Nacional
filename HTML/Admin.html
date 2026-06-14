@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin</title>
+  <link rel="icon" href="../IMG/Iconos/Admin.png" type="image/png" />
+  <link rel="stylesheet" href="../CSS/admin.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../IMG/Iconos/descarga.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="Asteroides.html">Asteroides</a>
+      <a href="BibliotecaIV.html">Biblioteca</a>
+      <a href="FotosMarte.html">Marte</a>
+      <a href="ImagenesTierra.html">Tierra</a>
+      <a href="Rompecabezas.html">Game</a>
+      <a href="Suscriptores.html">Suscriptores</a>
+      <a href="Admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="admin-container">
+    <div id="login">
+      <input id="u" placeholder="usuario">
+      <input id="p" type="password" placeholder="contraseña">
+      <button id="btnLogin">Entrar</button>
+    </div>
+    <div id="panel" style="display:none">
+      <h2>Suscriptores</h2>
+      <table class="table" id="tabla"></table>
+    </div>
+  </main>
+
+    <footer class="footer">
+        <div class="footer-contenido">
+            <p class="copyright">© 2025 Observatorio Nacional</p>
+        </div>
+    </footer>
+
+  <script src="../JS/admin.js"></script>
+  <script>emailjs.init("30e18Vie5owMyW9hr");</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../IMG/Iconos/asteroides.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #eee;
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main { flex: 1; }
+a { text-decoration: none; color: #eee; }
+
+/* HEADER */
+header {
+    width: 1140px;
+    max-width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding-top: 10px;
+}
+header .logo img { height: 150px; width: auto; }
+nav { display: flex; gap: 25px; }
+header a {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+header a:hover { color: #f72a05; transform: scale(1.1); }
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(247,42,5,0.7);
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.busqueda-asteroides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* FORMULARIO */
+input[type="date"] {
+    background: rgba(0,0,0,0.7);
+    border: 1px solid #f72a05;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+input[type="date"]:focus { border: 1px solid #fff; }
+
+button {
+    background: linear-gradient(135deg, #f72a05, #ff6200);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(247,42,5,0.7);
+}
+
+#rangoFechas {
+    text-align: center;
+    color: #aaa;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/* TABLA WRAPPER */
+.tabla-wrapper {
+    width: 95%;
+    max-width: 1300px;
+    margin: 30px auto 50px auto;
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 25px rgba(247,42,5,0.3);
+}
+
+/* TABLA */
+#tablaAsteroides {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0,0,0,0.75);
+    border-radius: 12px;
+    overflow: hidden;
+    animation: fadeIn 1.2s ease-in-out;
+}
+#tablaAsteroides th {
+    background: #f72a05;
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+#tablaAsteroides td {
+    padding: 11px 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #ddd;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    white-space: nowrap;
+}
+#tablaAsteroides tbody tr:nth-child(even) {
+    background: rgba(255,255,255,0.04);
+}
+#tablaAsteroides tbody tr:hover {
+    background: rgba(247,42,5,0.2);
+    transition: background 0.3s ease;
+}
+
+/* FOOTER */
+.footer {
+    background-color: rgba(0,0,0,0.85);
+    color: #ccc;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: auto;
+}
+.footer-contenido p { margin: 10px 0; font-size: 14px; }
+.redes-sociales {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.redes-sociales a {
+    color: #f72a05;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+.redes-sociales a:hover { color: #fff; transform: scale(1.2); }
+.copyright { font-size: 12px; color: #888; margin-top: 20px; }
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+    header { flex-direction: column; height: auto; padding: 15px 0; }
+    header .logo img { height: 90px; }
+    nav { flex-direction: column; align-items: center; gap: 15px; margin-top: 10px; }
+    h2 { font-size: 22px; }
+    #tablaAsteroides th, #tablaAsteroides td { font-size: 12px; padding: 9px 7px; }
+}
+@media screen and (max-width: 480px) {
+    header a { font-size: 14px; }
+    button { width: 100%; margin-top: 10px; }
+}

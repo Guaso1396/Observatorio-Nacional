@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroides</title>
+    <link rel="icon" type="image/png" href="../IMG/Iconos/Asteroides.png">
+    <link rel="stylesheet" href="../CSS/asteroides.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../IMG/Iconos/descarga.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="Asteroides.html">Asteroides</a>
+            <a href="BibliotecaIV.html">Biblioteca</a>
+            <a href="FotosMarte.html">Marte</a>
+            <a href="ImagenesTierra.html">Tierra</a>
+            <a href="Rompecabezas.html">Game</a>
+            <a href="Suscriptores.html">Suscriptores</a>
+            <a href="Admin.html">Admin</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Búsqueda de Asteroides Cercanos a la Tierra</h2>
+        <div class="busqueda-asteroides">
+            <input type="date" id="fechaInicio">
+            <button onclick="buscarAsteroides()">Buscar</button>
+        </div>
+        <p id="rangoFechas"></p>
+
+        <div class="tabla-wrapper">
+            <table id="tablaAsteroides">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Magnitud</th>
+                        <th>Diámetro (m)</th>
+                        <th>¿Peligroso?</th>
+                        <th>Fecha Acercamiento</th>
+                        <th>Distancia (km)</th>
+                        <th>Velocidad (km/h)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>    
+    <script type="module" src="../JS/asteroides.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-contenido">
+        <p class="copyright">© 2025 Observatorio Nacional</p>
+    </div>
+</footer>
+</html>

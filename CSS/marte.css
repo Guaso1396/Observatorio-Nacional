@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../IMG/Iconos/marte.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #eee;
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+/* -------- HEADER -------- */
+header {
+    width: 1140px;
+    max-width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding-top: 10px;
+}
+header .logo img {
+    height: 150px;
+    width: auto;
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+header a {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+header a:hover {
+    color: #f72a05;
+    transform: scale(1.1);
+}
+
+/* -------- CONTENIDO MARTE -------- */
+h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    margin-top: 30px;
+    color: #f72a05;
+    text-shadow: 1px 1px 4px #000;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+    color: #eee;
+}
+
+input[type="number"] {
+    width: 100px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+button {
+    display: block;
+    margin: 10px auto 30px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f72a05;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff4a23;
+    transform: scale(1.05);
+}
+
+#marteContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto 50px auto;
+    max-width: 1400px;
+}
+
+.marte-card {
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 10px;
+    width: calc((100% / 5) - 20px);
+    text-align: center;
+    background-color: rgba(17, 17, 17, 0.85);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.marte-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.7);
+}
+
+.marte-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.marte-card p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0 0 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------- FOOTER -------- */
+.footer {
+    background-color: rgba(0,0,0,0.85);
+    color: #ccc;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.footer-contenido p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.redes-sociales {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.redes-sociales a {
+    color: #f72a05;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+.redes-sociales a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+.copyright {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* -------- RESPONSIVO -------- */
+@media screen and (max-width: 1200px) {
+    .marte-card {
+        width: calc((100% / 4) - 20px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .marte-card {
+        width: calc((100% / 3) - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+    }
+    header .logo img {
+        height: 90px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    header a {
+        font-size: 16px;
+    }
+    input[type="number"] {
+        width: 80px;
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .marte-card {
+        width: calc((100% / 2) - 15px);
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header a {
+        font-size: 14px;
+    }
+    input[type="number"] {
+        width: 70px;
+    }
+    button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    .marte-card {
+        width: 90%;
+        padding: 10px;
+    }
+}

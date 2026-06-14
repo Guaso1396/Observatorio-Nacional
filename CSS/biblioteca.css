@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../IMG/Iconos/biblioteca.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #eee;
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+/* -------- HEADER -------- */
+header {
+    width: 1140px;
+    max-width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding-top: 10px;
+}
+header .logo img {
+    height: 150px;
+    width: auto;
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+header a {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+header a:hover {
+    color: #f72a05;
+    transform: scale(1.1);
+}
+
+/* -------- MAIN -------- */
+.contenedor {
+    flex: 1;
+    width: 1140px;
+    max-width: 95%;
+    margin: 40px auto;
+    text-align: center;
+}
+.contenedor h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.buscador select, .buscador button {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+.buscador select {
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+}
+.buscador button {
+    background: #f72a05;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.buscador button:hover {
+    background: #d41f00;
+    transform: scale(1.05);
+}
+
+/* -------- RESULTADOS -------- */
+.resultados {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+    animation: fadeIn 0.8s ease;
+}
+.card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card .info {
+    padding: 15px;
+    text-align: left;
+}
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #f72a05;
+}
+.card p {
+    font-size: 13px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+.card small {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* -------- FOOTER -------- */
+.footer {
+    background-color: rgba(0,0,0,0.85);
+    color: #ccc;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: auto;
+}
+.footer-contenido p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.redes-sociales {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.redes-sociales a {
+    color: #f72a05;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+.redes-sociales a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+.copyright {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* -------- EFECTOS -------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------- RESPONSIVO -------- */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px 0;
+    }
+    header .logo img {
+        height: 90px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+    header a {
+        font-size: 16px;
+    }
+    .buscador {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buscador select, .buscador button {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header a {
+        font-size: 14px;
+    }
+    .contenedor h1 {
+        font-size: 22px;
+    }
+}
