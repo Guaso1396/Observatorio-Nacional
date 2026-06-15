@@ -10,6 +10,9 @@ body {
     color: #eee;
     margin: 0;
     font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -50,6 +53,7 @@ header a:hover {
 
 /* -------- ROMPECABEZAS -------- */
 .contenedor {
+    flex: 1;
     max-width: 600px;
     margin: 70px auto;
     padding: 30px;
@@ -133,7 +137,7 @@ header a:hover {
     color: #ccc;
     padding: 30px 20px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: auto;
 }
 .footer-contenido p {
     margin: 10px 0;
