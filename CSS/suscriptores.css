@@ -10,6 +10,9 @@ body {
     color: #eee;
     margin: 0;
     font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* -------- HEADER -------- */
@@ -49,6 +52,7 @@ header a:hover {
 
 /* -------- FORMULARIO SUSCRIPCIÓN -------- */
 .suscribir {
+    flex: 1;
     max-width: 600px;
     margin: 70px auto;
     padding: 30px;
@@ -88,6 +92,7 @@ form input {
     font-size: 14px;
     outline: none;
     transition: 0.3s ease;
+    box-sizing: border-box;
 }
 form input:focus {
     background: rgba(255,255,255,0.2);
@@ -119,7 +124,7 @@ form button:hover {
     padding: 30px 20px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    margin-top: 50px;
+    margin-top: auto;
 }
 .footer-contenido p {
     margin: 10px 0;
