@@ -63,8 +63,8 @@ export class Servicios {
                 throw new Error(`Error ${respuesta.status}`);
             }
         } catch (error) {
-            console.error("Error en verMarte:", error);
-            throw error;
+            console.warn("API Marte no disponible, usando datos mock:", error.message);
+            return FOTOS_MOCK;
         }
     }
     

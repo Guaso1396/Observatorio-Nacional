@@ -26,7 +26,8 @@ document.getElementById('btnMarte').addEventListener('click', async () => {
             const card = document.createElement('div');
             card.classList.add('marte-card');
             card.innerHTML = `
-                <img src="${foto.url}" alt="Foto de Marte">
+                <img src="${foto.url}" alt="Foto de Marte" 
+                    onerror="this.src='https://via.placeholder.com/300x200/8B0000/FF4500?text=Sol+${sol}'">
                 <p><strong>Fecha terrestre:</strong> ${foto.fecha}</p>
                 <p><strong>Cámara:</strong> ${foto.camara}</p>
             `;
