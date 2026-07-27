@@ -42,7 +42,7 @@ export class Servicios {
         }
     }
 
-    // Fotos de Marte
+    // Fotos de Marte (API oficial de NASA)
     async verMarte(sol = 1000) {
         try {
             const url = `${this.MARTE}?sol=${sol}&api_key=${this.API_KEY}`;
@@ -63,8 +63,8 @@ export class Servicios {
                 throw new Error(`Error ${respuesta.status}`);
             }
         } catch (error) {
-            console.warn("API Marte no disponible, usando datos mock:", error.message);
-            return FOTOS_MOCK;
+            console.error("API de Marte (NASA) falló:", error.message);
+            throw new Error("No se pudo conectar con la API de fotos de Marte de NASA.");
         }
     }
     

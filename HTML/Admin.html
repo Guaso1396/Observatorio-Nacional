@@ -23,18 +23,32 @@
       <a href="Rompecabezas.html">Game</a>
       <a href="Suscriptores.html">Suscriptores</a>
       <a href="Admin.html">Admin</a>
+
+      <div id="navAdminAvatar" style="display:none">
+        <button id="btnNavAvatar"><i class="fa-solid fa-user"></i></button>
+        <div id="navAdminMenu">
+          <p id="navAdminEmail">Administrador</p>
+          <button id="btnLogout">Cerrar sesión</button>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main class="admin-container">
     <div id="login">
+      <div class="avatar-login">
+        <i class="fa-solid fa-user"></i>
+      </div>
       <input id="u" placeholder="usuario">
       <input id="p" type="password" placeholder="contraseña">
+      <p id="loginError" class="login-error"></p>
       <button id="btnLogin">Entrar</button>
     </div>
-    <div id="panel" style="display:none">
-      <h2>Suscriptores</h2>
-      <table class="table" id="tabla"></table>
+    <div id="panelWrapper" style="display:none">
+      <div id="panel">
+        <h2>Suscriptores</h2>
+        <table class="table" id="tabla"></table>
+      </div>
     </div>
   </main>
 

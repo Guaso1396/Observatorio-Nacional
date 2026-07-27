@@ -102,8 +102,22 @@ header a:hover {
     background: linear-gradient(90deg, #ff4500, #ff9500);
     transform: scale(1.05);
 }
+.ayuda-juego {
+    font-size: 12px;
+    color: #bbb;
+    margin: 10px 0 0 0;
+}
 
 /* Tablero */
+.preview-imagen {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px auto;
+    display: block;
+    max-width: 100%;
+}
 .rompecabezas {
     display: grid;
     grid-template-columns: repeat(3, 120px);
@@ -111,6 +125,9 @@ header a:hover {
     gap: 4px;
     justify-content: center;
     margin: 0 auto;
+}
+.rompecabezas:empty {
+    display: none;
 }
 .pieza {
     width: 120px;
@@ -128,6 +145,10 @@ header a:hover {
 }
 .pieza:active {
     cursor: grabbing;
+    transform: scale(0.95);
+}
+.pieza.seleccionada {
+    box-shadow: 0 0 0 3px #f72a05, 0 0 14px rgba(247,42,5,0.8);
     transform: scale(0.95);
 }
 
@@ -170,6 +191,98 @@ header a:hover {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* -------- OVERLAY GANADOR -------- */
+.overlay-ganador {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(3px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.overlay-ganador.activo {
+    display: flex;
+    animation: fadeIn 0.4s ease-in-out;
+}
+.tarjeta-ganador {
+    background: rgba(20, 20, 20, 0.95);
+    border: 1px solid rgba(247,42,5,0.5);
+    border-radius: 16px;
+    padding: 40px 50px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    max-width: 90%;
+}
+.tarjeta-ganador h2 {
+    color: #f72a05;
+    margin: 0 0 10px 0;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+.tarjeta-ganador p {
+    margin: 6px 0;
+    color: #eee;
+}
+.tarjeta-ganador-puntos {
+    color: #ff7a00;
+    font-weight: bold;
+    font-size: 18px;
+}
+.tarjeta-ganador-hint {
+    font-size: 12px;
+    color: #999;
+    margin-top: 14px;
+}
+
+/* -------- RANKING -------- */
+.ranking-container {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    padding: 25px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+}
+.ranking-container h3 {
+    margin-top: 0;
+    color: #f72a05;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.ranking-lista {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+}
+.ranking-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 14px;
+}
+.ranking-lista li:last-child {
+    border-bottom: none;
+}
+.ranking-puesto {
+    color: #ff7a00;
+    font-weight: bold;
+    width: 30px;
+}
+.ranking-nombre {
+    flex: 1;
+}
+.ranking-puntos {
+    color: #aaa;
+    font-size: 13px;
+}
+
 /* -------- RESPONSIVO -------- */
 @media screen and (max-width: 768px) {
     header {
@@ -204,6 +317,10 @@ header a:hover {
         height: 90px;
         background-size: 270px 270px;
     }
+    .preview-imagen {
+        width: 270px;
+        height: 270px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -221,5 +338,9 @@ header a:hover {
         width: 70px;
         height: 70px;
         background-size: 210px 210px;
+    }
+    .preview-imagen {
+        width: 210px;
+        height: 210px;
     }
 }

@@ -60,6 +60,107 @@ header a:hover {
     transform: scale(1.1);
 }
 
+/* -------- AVATAR ADMIN EN NAV -------- */
+#navAdminAvatar {
+    position: relative;
+}
+
+#btnNavAvatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    border: 1.5px solid rgba(255,255,255,0.35);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+#btnNavAvatar:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+#btnNavAvatar.admin-color-1 {
+    background: rgba(34, 197, 94, 0.85); /* verde */
+    border-color: rgba(34, 197, 94, 1);
+}
+
+#btnNavAvatar.admin-color-1:hover {
+    background: rgba(34, 197, 94, 1);
+}
+
+#btnNavAvatar.admin-color-2 {
+    background: rgba(236, 72, 153, 0.85); /* rosado */
+    border-color: rgba(236, 72, 153, 1);
+}
+
+#btnNavAvatar.admin-color-2:hover {
+    background: rgba(236, 72, 153, 1);
+}
+
+#btnNavAvatar.admin-color-3 {
+    background: rgba(59, 130, 246, 0.85); /* azul */
+    border-color: rgba(59, 130, 246, 1);
+}
+
+#btnNavAvatar.admin-color-3:hover {
+    background: rgba(59, 130, 246, 1);
+}
+
+#btnNavAvatar.admin-color-4 {
+    background: rgba(234, 179, 8, 0.85); /* amarillo */
+    border-color: rgba(234, 179, 8, 1);
+}
+
+#btnNavAvatar.admin-color-4:hover {
+    background: rgba(234, 179, 8, 1);
+}
+
+#navAdminMenu {
+    display: none;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    background: rgba(0,0,0,0.9);
+    border-radius: 8px;
+    padding: 12px;
+    min-width: 200px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    text-align: left;
+    z-index: 200;
+}
+
+#navAdminMenu.show {
+    display: block;
+}
+
+#navAdminEmail {
+    color: #ccc;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    word-break: break-all;
+}
+
+#btnLogout {
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    background: #888;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#btnLogout:hover {
+    background: #aaa;
+}
+
 /* -------- LOGIN Y PANEL -------- */
 .admin-container {
     flex: 1;
@@ -68,6 +169,31 @@ header a:hover {
     align-items: center;
     flex-direction: column;
     padding: 50px 20px;
+}
+
+/* -------- AVATAR LOGIN -------- */
+.avatar-login {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255,255,255,0.25);
+}
+
+.avatar-login i {
+    font-size: 42px;
+    color: rgba(255,255,255,0.6);
+}
+
+/* -------- WRAPPER PANEL -------- */
+#panelWrapper {
+    width: 100%;
+    max-width: 1100px;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 #login, #panel {
@@ -96,6 +222,13 @@ header a:hover {
 
 #login input:focus {
     background: rgba(255,255,255,0.2);
+}
+
+.login-error {
+    color: #ff6b6b;
+    font-size: 13px;
+    margin: 8px 0 0 0;
+    min-height: 16px;
 }
 
 #btnLogin {
@@ -148,6 +281,8 @@ header a:hover {
     color: #fff;
     font-weight: bold;
 }
+
+/* (el color por admin ahora solo se aplica al avatar del nav, no a la tabla) */
 
 .table tr:nth-child(even) {
     background: rgba(255,255,255,0.05);

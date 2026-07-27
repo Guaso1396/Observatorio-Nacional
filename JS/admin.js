@@ -1,5 +1,13 @@
 // Firebase SDK
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+  setPersistence,
+  browserSessionPersistence
+} from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
 import { getFirestore, collection, getDocs, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -13,27 +21,104 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 const db = getFirestore(app);
 
-document.getElementById("btnLogin").onclick = function () {
-  const usuario  = document.getElementById("u").value;
+// La sesión se cierra automáticamente al cerrar el navegador/pestaña
+setPersistence(auth, browserSessionPersistence);
+
+// --- Login ---
+const DOMINIO_ADMIN = "observatorionacional.ans.co";
+
+document.getElementById("btnLogin").onclick = async function () {
+  const usuario = document.getElementById("u").value.trim();
   const password = document.getElementById("p").value;
+  const loginError = document.getElementById("loginError");
 
-  const admins = [
-    { user: "guaso", pass: "6913" },
-    { user: "aleja", pass: "5313" }
-  ];
+  // El admin solo escribe "guaso" o "aleja"; aquí se completa el email real
+  const email = usuario.includes("@") ? usuario : `${usuario}@${DOMINIO_ADMIN}`;
 
-  const valido = admins.some(a => a.user === usuario && a.pass === password);
+  loginError.textContent = "";
 
-  if (valido) {
-    document.getElementById("login").style.display = "none";
-    document.getElementById("panel").style.display = "block";
-    mostrar();
-  } else {
-    alert("Credenciales incorrectas");
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+    // onAuthStateChanged se encarga de mostrar el panel
+  } catch (err) {
+    console.error(err);
+    loginError.textContent = "Usuario o contraseña incorrectos";
   }
 };
+
+// --- Logout (opcional, agrega un botón con id="btnLogout" en el HTML) ---
+const btnLogout = document.getElementById("btnLogout");
+if (btnLogout) {
+  btnLogout.onclick = () => {
+    signOut(auth);
+    document.getElementById("u").value = "";
+    document.getElementById("p").value = "";
+    document.getElementById("loginError").textContent = "";
+  };
+}
+
+// --- Control de sesión: solo entra si Firebase Auth confirma al usuario ---
+// El color se asigna por hash del UID (no por nombre/usuario), así el código
+// no contiene ni expone identidades de admins.
+const PALETA_COLORES = ["admin-color-1", "admin-color-2", "admin-color-3", "admin-color-4"];
+
+function colorPorUid(uid) {
+  let hash = 0;
+  for (let i = 0; i < uid.length; i++) {
+    hash = (hash * 31 + uid.charCodeAt(i)) >>> 0;
+  }
+  return PALETA_COLORES[hash % PALETA_COLORES.length];
+}
+
+onAuthStateChanged(auth, (user) => {
+  const navAvatar = document.getElementById("navAdminAvatar");
+
+  if (user) {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("panelWrapper").style.display = "block";
+
+    const claseColor = colorPorUid(user.uid);
+
+    // Muestra el avatar en el nav, sin revelar el email/usuario del admin
+    if (navAvatar) {
+      navAvatar.style.display = "block";
+
+      const btnAvatar = document.getElementById("btnNavAvatar");
+      btnAvatar.className = ""; // limpia clases previas
+      btnAvatar.classList.add(claseColor);
+    }
+
+    mostrar();
+  } else {
+    document.getElementById("login").style.display = "block";
+    document.getElementById("panelWrapper").style.display = "none";
+    if (navAvatar) {
+      navAvatar.style.display = "none";
+      document.getElementById("navAdminMenu").classList.remove("show");
+    }
+  }
+});
+
+// --- Dropdown del avatar en el nav ---
+const btnNavAvatar = document.getElementById("btnNavAvatar");
+const navAdminMenu = document.getElementById("navAdminMenu");
+
+if (btnNavAvatar) {
+  btnNavAvatar.onclick = (e) => {
+    e.stopPropagation();
+    navAdminMenu.classList.toggle("show");
+  };
+
+  // Cierra el dropdown al hacer click afuera
+  document.addEventListener("click", (e) => {
+    if (!navAdminMenu.contains(e.target) && e.target !== btnNavAvatar) {
+      navAdminMenu.classList.remove("show");
+    }
+  });
+}
 
 async function mostrar() {
   const tabla = document.getElementById("tabla");

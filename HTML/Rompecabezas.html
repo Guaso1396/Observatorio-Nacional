@@ -48,10 +48,25 @@
       <button id="nuevoJuego">Iniciar</button>
     </div>
 
-    <img id="previewImagen" src="../IMG/Rompecabezas/1.webp" style="width:360px; height:360px; object-fit:cover; border-radius:10px; margin:15px auto; display:block;">
+    <img id="previewImagen" src="../IMG/Rompecabezas/1.webp" class="preview-imagen">
 
     <div id="rompecabezas" class="rompecabezas"></div>
   </main>
+
+  <div id="overlayGanador" class="overlay-ganador">
+    <div class="tarjeta-ganador">
+      <h2>¡Felicitaciones! 🎉🧩</h2>
+      <p>Completaste el rompecabezas.</p>
+      <p id="overlayPuntos" class="tarjeta-ganador-puntos"></p>
+      <p class="tarjeta-ganador-hint">Toca en cualquier parte para continuar</p>
+    </div>
+  </div>
+
+  <section class="ranking-container">
+    <h3>🏆 Mejores puntajes</h3>
+    <ol id="listaRanking" class="ranking-lista"></ol>
+  </section>
+
   <script type="module" src="../JS/rompecabezas.js"></script>
 </body>
 <footer class="footer">

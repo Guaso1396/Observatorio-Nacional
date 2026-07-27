@@ -17,7 +17,11 @@ document.getElementById('btnMarte').addEventListener('click', async () => {
         const fotos = await servicio.verMarte(sol);
 
         if (!fotos || fotos.length === 0) {
-            marteContainer.innerHTML = "<p style='text-align:center;'>No hay fotos para este Sol.</p>";
+            marteContainer.innerHTML = `
+                <p style="text-align:center;">
+                    No hay fotos registradas para el Sol ${sol}. Prueba con otro número.
+                </p>
+            `;
             return;
         }
 
@@ -26,7 +30,7 @@ document.getElementById('btnMarte').addEventListener('click', async () => {
             const card = document.createElement('div');
             card.classList.add('marte-card');
             card.innerHTML = `
-                <img src="${foto.url}" alt="Foto de Marte" 
+                <img src="${foto.url}" alt="Foto de Marte"
                     onerror="this.src='https://via.placeholder.com/300x200/8B0000/FF4500?text=Sol+${sol}'">
                 <p><strong>Fecha terrestre:</strong> ${foto.fecha}</p>
                 <p><strong>Cámara:</strong> ${foto.camara}</p>
@@ -38,7 +42,7 @@ document.getElementById('btnMarte').addEventListener('click', async () => {
         console.error(error);
         marteContainer.innerHTML = `
             <p style="color:#f72a05; text-align:center; font-size:16px;">
-                🛸 La API de Marte (NASA) está temporalmente fuera de servicio.<br>
+                🛸 La API de fotos de Marte de NASA está fuera de servicio en este momento.<br>
                 Intenta nuevamente más tarde.
             </p>
         `;
