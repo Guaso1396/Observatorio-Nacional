@@ -1,0 +1,1621 @@
+{
+ "proyecto": "Observatorio Nacional - respaldo local de APIs de la NASA",
+ "descripcion": "Fotos de rovers de Marte agrupadas por sol (día marciano).",
+ "fuente": "https://images-api.nasa.gov/search?q=curiosity rover",
+ "generado": "2026-11-09T18:45:25Z",
+ "nota": "Datos reales descargados de servicios públicos de la NASA. Las imágenes están reducidas.",
+ "total": 161,
+ "soles": {},
+ "sin_sol": [
+  {
+   "nasa_id": "PIA15991",
+   "tipo": "imagen",
+   "titulo": "Curiosity Color Close-Up upon Landing",
+   "descripcion": "This color thumbnail image was obtained by NASA Curiosity rover and is representative of the images acquired once the Curiosity rover was resting on the surface of Mars after touchdown.",
+   "fecha": "2012-08-07",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA15991/PIA15991~thumb.jpg",
+   "imagen_local": "marte/img/PIA15991.jpg"
+  },
+  {
+   "nasa_id": "PIA15998",
+   "tipo": "imagen",
+   "titulo": "Evidence of a Job Well Done",
+   "descripcion": "This close-up view shows the rover Curiosity parachute and back shell strewn across the surface of Mars. The image was captured by NASA Mars Reconnaissance Orbiter about 24 hours after the parachute helped guide the rover to the surface.",
+   "fecha": "2012-08-07",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA15998/PIA15998~thumb.jpg",
+   "imagen_local": "marte/img/PIA15998.jpg"
+  },
+  {
+   "nasa_id": "PIA16000",
+   "tipo": "imagen",
+   "titulo": "Curiosity Spotted!",
+   "descripcion": "This close-up view shows NASA Curiosity rover on the surface of Mars. The image was captured by the NASA Mars Reconnaissance Orbiter about 24 hours after the rover made its grand appearance on Mars.",
+   "fecha": "2012-08-07",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16000/PIA16000~thumb.jpg",
+   "imagen_local": "marte/img/PIA16000.jpg"
+  },
+  {
+   "nasa_id": "PIA15999",
+   "tipo": "imagen",
+   "titulo": "Signs of the Sky Crane Impact",
+   "descripcion": "This close-up view captured by NASA Mars Reconnaissance Orbiter shows darkened radial jets caused by the impact of Curiosity sky crane, which helped deliver the rover to the surface of Mars.",
+   "fecha": "2012-08-07",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA15999/PIA15999~thumb.jpg",
+   "imagen_local": "marte/img/PIA15999.jpg"
+  },
+  {
+   "nasa_id": "PIA15997",
+   "tipo": "imagen",
+   "titulo": "Final Resting Spot for Curiosity Heat Shield",
+   "descripcion": "This close-up view shows Curiosity heat shield, which helped the rover survive the harrowing journey through the Martian atmosphere, on the surface of Mars. NASA Mars Reconnaissance Orbiter about 24 hours after landing.",
+   "fecha": "2012-08-07",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA15997/PIA15997~thumb.jpg",
+   "imagen_local": "marte/img/PIA15997.jpg"
+  },
+  {
+   "nasa_id": "PIA15979",
+   "tipo": "imagen",
+   "titulo": "Curiosity Spotted on Parachute by Orbiter",
+   "descripcion": "NASA Curiosity rover and its parachute were spotted by NASA Mars Reconnaissance Orbiter as Curiosity descended to the surface. The HiRISE camera captured this image of Curiosity while the orbiter was listening to transmissions from the rover.",
+   "fecha": "2012-08-06",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA15979/PIA15979~thumb.jpg",
+   "imagen_local": "marte/img/PIA15979.jpg"
+  },
+  {
+   "nasa_id": "PIA15983",
+   "tipo": "imagen",
+   "titulo": "Curiosity Flying Over Mars",
+   "descripcion": "NASA Curiosity rover and its parachute were spotted by NASA Mars Reconnaissance Orbiter as Curiosity descended to the surface on Aug. 5 PDT Aug. 6 EDT. Curiosity and its parachute are in the small white box at center.",
+   "fecha": "2012-08-06",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA15983/PIA15983~thumb.jpg",
+   "imagen_local": "marte/img/PIA15983.jpg"
+  },
+  {
+   "nasa_id": "PIA15980",
+   "tipo": "imagen",
+   "titulo": "Curiosity Spotted on Parachute by Orbiter",
+   "descripcion": "NASA Curiosity rover and its parachute were spotted by NASA Mars Reconnaissance Orbiter as Curiosity descended to the surface on Aug. 5 PDT Aug. 6 EDT. Curiosity and its parachute are in the center of the white box.",
+   "fecha": "2012-08-06",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA15980/PIA15980~thumb.jpg",
+   "imagen_local": "marte/img/PIA15980.jpg"
+  },
+  {
+   "nasa_id": "PIA14838",
+   "tipo": "imagen",
+   "titulo": "Curiosity and Descent Stage, Artist Concept",
+   "descripcion": "This is an artist concept of the rover and descent stage for NASA Mars Science Laboratory spacecraft during the final minute before the rover, Curiosity, touches down on the surface of Mars.",
+   "fecha": "2011-10-03",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA14838/PIA14838~thumb.jpg",
+   "imagen_local": "marte/img/PIA14838.jpg"
+  },
+  {
+   "nasa_id": "PIA14840",
+   "tipo": "imagen",
+   "titulo": "Curiosity Touching Down, Artist Concept",
+   "descripcion": "This artist concept depicts the moment that NASA Curiosity rover touches down onto the Martian surface. The Mars Science Laboratory will use the sky crane touchdown system.",
+   "fecha": "2011-10-03",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA14840/PIA14840~thumb.jpg",
+   "imagen_local": "marte/img/PIA14840.jpg"
+  },
+  {
+   "nasa_id": "PIA14835",
+   "tipo": "imagen",
+   "titulo": "Deceleration of Mars Science Laboratory in Martian Atmosphere, Artist Concept",
+   "descripcion": "This artist concept depicts the interaction of NASA Mars Science Laboratory spacecraft with the upper atmosphere of Mars during the entry, descent and landing of the Curiosity rover onto the Martian surface.",
+   "fecha": "2011-10-03",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA14835/PIA14835~thumb.jpg",
+   "imagen_local": "marte/img/PIA14835.jpg"
+  },
+  {
+   "nasa_id": "PIA16018",
+   "tipo": "imagen",
+   "titulo": "Gravel-Covered Martian Surface",
+   "descripcion": "This full-resolution color image from NASA Curiosity Rover shows the gravel-covered surface of Mars. It was taken by the Mars Descent Imager MARDI several minutes after Curiosity touched down on Mars.",
+   "fecha": "2012-08-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16018/PIA16018~thumb.jpg",
+   "imagen_local": "marte/img/PIA16018.jpg"
+  },
+  {
+   "nasa_id": "PIA16016",
+   "tipo": "imagen",
+   "titulo": "Ballasts Hitting the Surface, Close-Up",
+   "descripcion": "This still image from an animation shows the effects of weights from the entry vehicle of NASA Curiosity rover hitting the surface of Mars.",
+   "fecha": "2012-08-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16016/PIA16016~thumb.jpg",
+   "imagen_local": "marte/img/PIA16016.jpg"
+  },
+  {
+   "nasa_id": "PIA16019",
+   "tipo": "imagen",
+   "titulo": "A Better Look of the Martian Surface",
+   "descripcion": "NASA Mars Reconnaissance Orbiter obtained this color image with the Mars Descent Imager aboard NASA Curiosity rover during its descent to the surface. Curiosity landed on Aug. 5 PDT Aug. 6 EDT.",
+   "fecha": "2012-08-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16019/PIA16019~thumb.jpg",
+   "imagen_local": "marte/img/PIA16019.jpg"
+  },
+  {
+   "nasa_id": "PIA16021",
+   "tipo": "imagen",
+   "titulo": "Curiosity Heat Shield in Detail",
+   "descripcion": "This color full-resolution image showing the heat shield of NASA Curiosity rover was obtained during descent to the surface of Mars. This image shows the inside surface of the heat shield, with its protective multi-layered insulation.",
+   "fecha": "2012-08-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16021/PIA16021~thumb.jpg",
+   "imagen_local": "marte/img/PIA16021.jpg"
+  },
+  {
+   "nasa_id": "PIA16912",
+   "tipo": "imagen",
+   "titulo": "Seasonal Pressure Curve Peaks at Gale Crater",
+   "descripcion": "This graph shows about one-fourth of a Martian year pattern atmospheric pressure at the surface of Mars, as measured by the Rover Environmental Monitoring Station on NASA Curiosity rover.",
+   "fecha": "2013-04-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16912/PIA16912~thumb.jpg",
+   "imagen_local": "marte/img/PIA16912.jpg"
+  },
+  {
+   "nasa_id": "PIA16819",
+   "tipo": "imagen",
+   "titulo": "Curiosity ChemCam Removes Dust",
+   "descripcion": "This pair of images taken a few minutes apart show how laser firing by NASA Mars rover Curiosity removes dust from the surface of a rock. The images were taken by the remote micro-imager camera in the laser-firing Chemistry and Camera ChemCam.",
+   "fecha": "2013-04-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16819/PIA16819~thumb.jpg",
+   "imagen_local": "marte/img/PIA16819.jpg"
+  },
+  {
+   "nasa_id": "PIA17351",
+   "tipo": "imagen",
+   "titulo": "Illustration Comparing Apparent Sizes of Moons",
+   "descripcion": "This image from NASA Mars rover Curiosity provides a comparison for how big the moons of Mars appear to be, as seen from the surface of Mars, in relation to the size that Earth moon appears to be when seen from the surface of Earth.",
+   "fecha": "2013-08-15",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA17351/PIA17351~thumb.jpg",
+   "imagen_local": "marte/img/PIA17351.jpg"
+  },
+  {
+   "nasa_id": "PIA16057",
+   "tipo": "imagen",
+   "titulo": "Curiosity in Exaggerated Color",
+   "descripcion": "This color-enhanced view of NASA Curiosity rover on the surface of Mars was taken by NASA Mars Reconnaissance Orbiter as the satellite flew overhead. The descent stage blast pattern around the rover is clearly seen as relatively blue colors.",
+   "fecha": "2012-08-14",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16057/PIA16057~thumb.jpg",
+   "imagen_local": "marte/img/PIA16057.jpg"
+  },
+  {
+   "nasa_id": "PIA13390",
+   "tipo": "imagen",
+   "titulo": "Tilt-Table Testing for Curiosity Robotic Arm",
+   "descripcion": "Testing of the robotic arm on NASA Mars rover Curiosity on Sept. 3, 2010, included movements of the arm while the rover was on a table tilted to 20 degrees to simulate a sloped surface on Mars.",
+   "fecha": "2010-09-16",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA13390/PIA13390~thumb.jpg",
+   "imagen_local": "marte/img/PIA13390.jpg"
+  },
+  {
+   "nasa_id": "PIA16477",
+   "tipo": "imagen",
+   "titulo": "Pressure Cycles on Mars",
+   "descripcion": "This graph shows the atmospheric pressure at the surface of Mars, as measured by the Rover Environmental Monitoring Station on NASA Curiosity rover. Pressure is a measure of the amount of air in the whole column of atmosphere sitting above the rover.",
+   "fecha": "2012-11-15",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16477/PIA16477~thumb.jpg",
+   "imagen_local": "marte/img/PIA16477.jpg"
+  },
+  {
+   "nasa_id": "PIA17601",
+   "tipo": "imagen",
+   "titulo": "Radiation Exposure Comparisons with Mars Trip Calculation",
+   "descripcion": "Measurements with the MSL RAD on NASA Curiosity Mars rover during the flight to Mars and now on the surface of Mars enable an estimate of the radiation astronauts would be exposed to on an expedition to Mars.",
+   "fecha": "2013-12-09",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA17601/PIA17601~thumb.jpg",
+   "imagen_local": "marte/img/PIA17601.jpg"
+  },
+  {
+   "nasa_id": "PIA17604",
+   "tipo": "imagen",
+   "titulo": "Scarp Retreat Model and Exposure History of Yellowknife Bay",
+   "descripcion": "NASA Curiosity Mars rover has made measurements indicating that the Cumberland rock target the rover drilled in May 2013 has been exposed at the surface for about 80 million years.",
+   "fecha": "2013-12-09",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA17604/PIA17604~thumb.jpg",
+   "imagen_local": "marte/img/PIA17604.jpg"
+  },
+  {
+   "nasa_id": "PIA17600",
+   "tipo": "imagen",
+   "titulo": "Radiation Measurements on Mars",
+   "descripcion": "Micrograys are unit of measurement for absorbed radiation dose. The vertical axis is in micrograys per day. The RAD instrument on NASA Curiosity Mars rover monitors the natural radiation environment at the surface of Mars.",
+   "fecha": "2013-12-09",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA17600/PIA17600~thumb.jpg",
+   "imagen_local": "marte/img/PIA17600.jpg"
+  },
+  {
+   "nasa_id": "PIA16161",
+   "tipo": "imagen",
+   "titulo": "Hello, MAHLI",
+   "descripcion": "This image shows the Mars Hand Lens Imager MAHLI on NASA Curiosity rover, with the Martian landscape in the background. The image was taken by Curiosity Mast Camera on the 32nd Martian day, or sol, of operations on the surface.",
+   "fecha": "2012-09-12",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16161/PIA16161~thumb.jpg",
+   "imagen_local": "marte/img/PIA16161.jpg"
+  },
+  {
+   "nasa_id": "PIA14760",
+   "tipo": "imagen",
+   "titulo": "Curiosity at Work on Mars Artist Concept",
+   "descripcion": "This artist concept depicts the rover Curiosity, of NASA Mars Science Laboratory mission, as it uses its Chemistry and Camera ChemCam instrument to investigate the composition of a rock surface.",
+   "fecha": "2011-11-15",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA14760/PIA14760~thumb.jpg",
+   "imagen_local": "marte/img/PIA14760.jpg"
+  },
+  {
+   "nasa_id": "PIA17937",
+   "tipo": "imagen",
+   "titulo": "First Asteroid Image from the Surface of Mars",
+   "descripcion": "NASA Curiosity Mars rover has caught the first image of asteroids taken from the surface of Mars. The image includes two asteroids, Ceres and Vesta. This version includes Mars moon Deimos.",
+   "fecha": "2014-04-24",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA17937/PIA17937~thumb.jpg",
+   "imagen_local": "marte/img/PIA17937.jpg"
+  },
+  {
+   "nasa_id": "PIA14297",
+   "tipo": "imagen",
+   "titulo": "Rock Layers in Lower Mound in Gale Crater",
+   "descripcion": "Mars scientists have several important hypotheses about how these minerals may reflect changes in the amount of water on the surface of Mars. The Mars Science Laboratory rover, Curiosity, will use its full suite of instruments to study these minerals.",
+   "fecha": "2011-07-22",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA14297/PIA14297~thumb.jpg",
+   "imagen_local": "marte/img/PIA14297.jpg"
+  },
+  {
+   "nasa_id": "PIA17363",
+   "tipo": "imagen",
+   "titulo": "Curiosity Uses X-ray Instrument Data for Proximity Placement",
+   "descripcion": "NASA Mars rover Curiosity used a new technique, with added autonomy for the rover, in placement of the tool-bearing turret on its robotic arm. The technique is used to assess how close the instrument is to a soil or rock surface.",
+   "fecha": "2013-09-23",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA17363/PIA17363~thumb.jpg",
+   "imagen_local": "marte/img/PIA17363.jpg"
+  },
+  {
+   "nasa_id": "PIA16716",
+   "tipo": "imagen",
+   "titulo": "Curiosity Drill in Place for Load Testing Before Drilling",
+   "descripcion": "The percussion drill in the turret of tools at the end of the robotic arm of NASA Mars rover Curiosity has been positioned in contact with the rock surface in this image from the rover front Hazard-Avoidance Camera Hazcam.",
+   "fecha": "2013-01-28",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16716/PIA16716~thumb.jpg",
+   "imagen_local": "marte/img/PIA16716.jpg"
+  },
+  {
+   "nasa_id": "PIA16067",
+   "tipo": "imagen",
+   "titulo": "Goulburn Scour Mark",
+   "descripcion": "This cropped image from NASA Curiosity rover shows one set of marks on the surface of Mars where blasts from the descent-stage rocket engines blew away some of the surface material.",
+   "fecha": "2012-08-17",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16067/PIA16067~thumb.jpg",
+   "imagen_local": "marte/img/PIA16067.jpg"
+  },
+  {
+   "nasa_id": "PIA16574",
+   "tipo": "imagen",
+   "titulo": "Atmospheric Loss on Mars",
+   "descripcion": "This plot shows the first-ever look at the deuterium to hydrogen ratio measured from the surface of Mars, as detected by the Sample Analysis at Mars instrument, or SAM, on NASA Curiosity rover.",
+   "fecha": "2012-12-03",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16574/PIA16574~thumb.jpg",
+   "imagen_local": "marte/img/PIA16574.jpg"
+  },
+  {
+   "nasa_id": "PIA16934",
+   "tipo": "imagen",
+   "titulo": "Out-of-this-World Records",
+   "descripcion": "This chart illustrates comparisons among the distances driven by various wheeled vehicles on the surface of Earth moon and Mars. Of the vehicles shown, the NASA Mars rovers Opportunity and Curiosity are still active.",
+   "fecha": "2013-05-16",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16934/PIA16934~thumb.jpg",
+   "imagen_local": "marte/img/PIA16934.jpg"
+  },
+  {
+   "nasa_id": "PIA18388",
+   "tipo": "imagen",
+   "titulo": "Curiosity ChemCam Examines Mars Rock Target Nova",
+   "descripcion": "A Martian target rock called Nova, shown here, displayed an increasing concentration of aluminum as a series of laser shots from NASA Curiosity Mars rover penetrated through dust on the rock surface.",
+   "fecha": "2014-07-16",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA18388/PIA18388~thumb.jpg",
+   "imagen_local": "marte/img/PIA18388.jpg"
+  },
+  {
+   "nasa_id": "PIA16793",
+   "tipo": "imagen",
+   "titulo": "Indication of Hydration in Veins and Nodules of Knorr in Yellowknife Bay",
+   "descripcion": "At different locations on the surface of the same rock, scientists can use the Mast Camera Mastcam on NASA Mars rover Curiosity to measure the amount of reflected light at a series of different wavelengths.",
+   "fecha": "2013-03-18",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16793/PIA16793~thumb.jpg",
+   "imagen_local": "marte/img/PIA16793.jpg"
+  },
+  {
+   "nasa_id": "PIA16143",
+   "tipo": "imagen",
+   "titulo": "Dissecting the Scene of Sky Crane Crash",
+   "descripcion": "After a rocket-powered descent stage, also known as the sky crane, delivered NASA Curiosity rover to Mars on Aug. 5 PDT Aug. 6 EDT, 2012, it flew away and fell to the surface.",
+   "fecha": "2012-09-06",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16143/PIA16143~thumb.jpg",
+   "imagen_local": "marte/img/PIA16143.jpg"
+  },
+  {
+   "nasa_id": "PIA16142",
+   "tipo": "imagen",
+   "titulo": "Relics of Rover Landing",
+   "descripcion": "This color view of the parachute and back shell that helped deliver NASA Curiosity rover to the surface of the Red Planet was taken by the High-HiRISE camera on NASA Mars Reconnaissance Orbiter.",
+   "fecha": "2012-09-06",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA16142/PIA16142~thumb.jpg",
+   "imagen_local": "marte/img/PIA16142.jpg"
+  },
+  {
+   "nasa_id": "PIA19090",
+   "tipo": "imagen",
+   "titulo": "Comparing Cumberland With Other Samples Analyzed by Curiosity",
+   "descripcion": "This graphic offers comparisons between the amount of an organic chemical named chlorobenzene detected in the Cumberland rock sample and amounts of it in samples from three other Martian surface targets analyzed by NASA Curiosity Mars rover.",
+   "fecha": "2014-12-16",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA19090/PIA19090~thumb.jpg",
+   "imagen_local": "marte/img/PIA19090.jpg"
+  },
+  {
+   "nasa_id": "PIA13282",
+   "tipo": "imagen",
+   "titulo": "Final Minutes of Curiosity Arrival at Mars",
+   "descripcion": "This graphic portrays the sequence of key events in August 2012 from the time the NASA Mars Science Laboratory spacecraft, with its rover Curiosity, enters the Martian atmosphere to a moment after it touches down on the surface.",
+   "fecha": "2010-07-19",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA13282/PIA13282~thumb.jpg",
+   "imagen_local": "marte/img/PIA13282.jpg"
+  },
+  {
+   "nasa_id": "PIA26695",
+   "tipo": "imagen",
+   "titulo": "Curiosity Lights Up ‘Nevado Sajama’ at Night",
+   "descripcion": "NASA’s Curiosity Mars rover used LED lights on the end of its robotic arm to create this rare nighttime view of the Red Planet’s surface on Dec. 6, 2025, the 4,740th Martian day, or sol, of the rover’s mission.   The LED lights are part of the Mars Hand Lens Imager, or MAHLI, a camera on the end of Curiosity’s robotic arm. The image was captured by the Mast Camera, or Mastcam, on the rover’s mast, or “head.” On occasion, scientists have used MAHLI’s LED lights to illuminate areas deep in shadow during the day, such as the insides of drill holes and the inlet tubes leading to instruments in the",
+   "fecha": "2026-01-27",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26695/PIA26695~thumb.jpg",
+   "imagen_local": "marte/img/PIA26695.jpg"
+  },
+  {
+   "nasa_id": "PIA22067",
+   "tipo": "imagen",
+   "titulo": "Curiosity Checks Under the Dust on a Martian Rock",
+   "descripcion": "On a part of \"Vera Rubin Ridge\" where rover-team researchers sought to determine whether dust coatings are hiding rocks' hematite content, the Mast Camera (Mastcam) on NASA's Curiosity Mars rover took this image of a rock surface that had been brushed with the rover's Dust Removal Tool.  The image is shown in the usual full color of featured Mastcam images: with a color adjustment similar to white balancing for approximating how the rocks and sand would appear under daytime lighting conditions on Earth. Sunlight on Mars is tinged by the dusty atmosphere and this adjustment helps geologists rec",
+   "fecha": "2017-11-01",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA22067/PIA22067~thumb.jpg",
+   "imagen_local": "marte/img/PIA22067.jpg"
+  },
+  {
+   "nasa_id": "201308060001HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "A small-scaled model of NASA's Curiosity rover is seen at a public event observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environment well-suited to support microbial life.  Photo Credit: (NASA/Carla Ciof",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060001HQ/201308060001HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060001HQ.jpg"
+  },
+  {
+   "nasa_id": "201308060004HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "Jim Green, director, Planetary Division, NASA's Science Mission Directorate, speaks at a public event at NASA Headquarters observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environment well-suited to suppo",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060004HQ/201308060004HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060004HQ.jpg"
+  },
+  {
+   "nasa_id": "201308060012HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "NASA Administrator Charles Bolden speaks at a public event at NASA Headquarters observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environment well-suited to support microbial life.  Photo Credit: (NASA/Car",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060012HQ/201308060012HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060012HQ.jpg"
+  },
+  {
+   "nasa_id": "201308060003HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "Jim Green, director, Planetary Division, NASA's Science Mission Directorate, speaks at a public event at NASA Headquarters observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environment well-suited to suppo",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060003HQ/201308060003HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060003HQ.jpg"
+  },
+  {
+   "nasa_id": "201308060011HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "NASA Administrator Charles Bolden speaks at a public event at NASA Headquarters observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environment well-suited to support microbial life.  Photo Credit: (NASA/Car",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060011HQ/201308060011HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060011HQ.jpg"
+  },
+  {
+   "nasa_id": "201308060007HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "Sam Scimemi, director, NASA's International Space Station Program, speaks at a public event at NASA Headquarters observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environment well-suited to support microbi",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060007HQ/201308060007HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060007HQ.jpg"
+  },
+  {
+   "nasa_id": "201308060005HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "Jim Green, director, Planetary Division, NASA's Science Mission Directorate, answers a question at a public event at NASA Headquarters observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environment well-sui",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060005HQ/201308060005HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060005HQ.jpg"
+  },
+  {
+   "nasa_id": "201308060006HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "Prasun Desai, acting director, Strategic Integration, NASA's Space Technology Mission Directorate, speaks at a public event at NASA Headquarters observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environmen",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060006HQ/201308060006HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060006HQ.jpg"
+  },
+  {
+   "nasa_id": "201308060013HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "NASA Administrator Charles Bolden speaks at a public event at NASA Headquarters observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environment well-suited to support microbial life.  Photo Credit: (NASA/Car",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060013HQ/201308060013HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060013HQ.jpg"
+  },
+  {
+   "nasa_id": "201308060008HQ",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover's First Anniversary ",
+   "descripcion": "Jason Townsend, NASA's Deputy Social Media Manager, asks a question on behalf of a NASA Twitter follower at a public event at NASA Headquarters observing the first anniversary of the Curiosity rover's landing on Mars, Tuesday, August 6th, 2013 in Washington.  The Mars Science Laboratory mission successfully placed the one-ton Curiosity rover on the surface of Mars on Aug. 6, 2012, about 1 mile from the center of its 12-mile-long target area.  Within the first eight months of a planned 23-months primary mission, Curiosity met its major science objective of finding evidence of a past environment",
+   "fecha": "2013-08-06",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/201308060008HQ/201308060008HQ~thumb.jpg",
+   "imagen_local": "marte/img/201308060008HQ.jpg"
+  },
+  {
+   "nasa_id": "PIA21856",
+   "tipo": "imagen",
+   "titulo": "Solar Storm's Radiation at Martian Orbit and Surface",
+   "descripcion": "Energetic particles from a large solar storm in September 2017 were seen both in Mars orbit and on the surface of Mars by NASA missions to the Red Planet.  The horizontal axis for both parts of this graphic is the time from Sept. 10 to Sept. 15, 2017. The upper portion of this graphic shows the increase in protons in two ranges of energy levels (15- to-100 million electron volts and 80-to-220 million electron volts), as recorded by the Solar Energetic Particle instrument on NASA's on NASA's Mars Atmosphere and Volatile Evolution orbiter, or MAVEN. The lower portion shows the radiation dose on ",
+   "fecha": "2017-09-29",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21856/PIA21856~thumb.jpg",
+   "imagen_local": "marte/img/PIA21856.jpg"
+  },
+  {
+   "nasa_id": "PIA26245",
+   "tipo": "imagen",
+   "titulo": "HiRISE Spots Curiosity Driving Toward Upper Gediz Vallis",
+   "descripcion": "NASA's Curiosity Mars rover appears as a dark speck in this image captured from directly overhead by the agency's Mars Reconnaissance Orbiter, or MRO. The orbiter is equipped with a camera capable of viewing objects the size of a dinner table on the Red Planet's surface.  The camera, called the High-Resolution Imaging Science Experiment (HiRISE), has viewed spacecraft on the surface many times before. Here, it captured Curiosity driving up a steep slope on Dec. 29, 2023, the 4,051st Martian day, or sol, of the rover's mission.  Curiosity is seen in an area striped with alternating dark and lig",
+   "fecha": "2024-02-29",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26245/PIA26245~thumb.jpg",
+   "imagen_local": "marte/img/PIA26245.jpg"
+  },
+  {
+   "nasa_id": "PIA20170",
+   "tipo": "imagen",
+   "titulo": "Martian Sand Disturbed by Rover Wheel",
+   "descripcion": "This view shows grains of sand where NASA's Curiosity Mars rover was driven into a shallow sand sheet near a large dune. The disturbance by the wheel exposed interior material of the sand body, including finer sand grains than on the undisturbed surface. Sunlight is coming from the left.  The scene covers an area 1.3 inches by 1.0 inch (3.3 by 2.5 centimeters). This is a focus-merge product from Curiosity's Mars Hand Lens Imager (MAHLI), combining multiple images taken at different focus settings to yield sharper focus at varying distances from the lens. The component images were taken on Dec.",
+   "fecha": "2015-12-10",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20170/PIA20170~thumb.jpg",
+   "imagen_local": "marte/img/PIA20170.jpg"
+  },
+  {
+   "nasa_id": "PIA20171",
+   "tipo": "imagen",
+   "titulo": "Surface Close-up of a Martian Sand Dune",
+   "descripcion": "This view of the undisturbed surface of a Martian sand dune called \"High Dune\" visited by NASA's Curiosity rover shows coarse grains remaining on the surface after wind removal of smaller particles.  The image covers an area 1.4 inches by 1.1 inches (3.6 by 2.7 centimeters). It was taken by the Mars Hand Lens Imager (MAHLI) camera on the rover's arm on Dec. 5, 2015, during the 1,184th Martian day, or sol, of Curiosity's work on Mars.  The imaged location is near the base of the dune. High Dune, in the Bagnold Dunes field skirting the northwestern flank of Mount Sharp, is the first sand dune st",
+   "fecha": "2015-12-10",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20171/PIA20171~thumb.jpg",
+   "imagen_local": "marte/img/PIA20171.jpg"
+  },
+  {
+   "nasa_id": "PIA20211",
+   "tipo": "imagen",
+   "titulo": "Curiosity Trek",
+   "descripcion": "The Mars Science Laboratory, Curiosity, continues its exciting traverse of Mars. In an image acquired in September, it was exploring the boundary between two rock units: the light-toned Murray Formation and the overlying and darker-toned Stimson unit. We can clearly see the rover in a complex terrain marked by tonally varied rocks, which on the surface, can correspond to the contact between rock units and dark sand.  http://photojournal.jpl.nasa.gov/catalog/PIA20211",
+   "fecha": "2015-12-10",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20211/PIA20211~thumb.jpg",
+   "imagen_local": "marte/img/PIA20211.jpg"
+  },
+  {
+   "nasa_id": "PIA20168",
+   "tipo": "imagen",
+   "titulo": "High Dune is First Martian Dune Studied up Close",
+   "descripcion": "The rippled surface of the first Martian sand dune ever studied up close fills this view of \"High Dune\" from the Mast Camera (Mastcam) on NASA's Curiosity rover. This site is part of the \"Bagnold Dunes\" field along the northwestern flank of Mount Sharp. The dunes are active, migrating up to about one yard or meter per year.  The component images of this mosaic view were taken on Nov. 27, 2015, during the 1,176th Martian day, or sol, of Curiosity's work on Mars.  The scene is presented with a color adjustment that approximates white balancing, to resemble how the sand would appear under daytime",
+   "fecha": "2015-12-10",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20168/PIA20168~thumb.jpg",
+   "imagen_local": "marte/img/PIA20168.jpg"
+  },
+  {
+   "nasa_id": "PIA20169",
+   "tipo": "imagen",
+   "titulo": "Rover Track in Sand Sheet Near Martian Sand Dune",
+   "descripcion": "The rippled surface of the first Martian sand dune ever studied up close fills this view of \"High Dune\" from the Mast Camera (Mastcam) on NASA's Curiosity rover. This site is part of the \"Bagnold Dunes\" field along the northwestern flank of Mount Sharp. The dunes are active, migrating up to about one yard or meter per year.  The component images of this mosaic view were taken on Nov. 27, 2015, during the 1,176th Martian day, or sol, of Curiosity's work on Mars.  The scene is presented with a color adjustment that approximates white balancing, to resemble how the sand would appear under daytime",
+   "fecha": "2015-12-10",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20169/PIA20169~thumb.jpg",
+   "imagen_local": "marte/img/PIA20169.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7088",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7088",
+   "descripcion": "CAPE CANAVERAL, Fla. – Preparing for integration to NASA's Mars Science Laboratory (MSL) rover known as Curiosity, technicians help guide a rocket-powered descent stage over the rover at NASA's Kennedy Space Center Payload Hazardous Servicing Facility. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique ro",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7088/KSC-2011-7088~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7088.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7077",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7077",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, will be integrated with a rocket-powered descent stage (shown here to the left of the rover). The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7077/KSC-2011-7077~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7077.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7087",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7087",
+   "descripcion": "CAPE CANAVERAL, Fla. – Preparing for integration to NASA's Mars Science Laboratory (MSL) rover known as Curiosity, technicians help guide a rocket-powered descent stage over the rover at NASA's Kennedy Space Center Payload Hazardous Servicing Facility. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique ro",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7087/KSC-2011-7087~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7087.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7093",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7093",
+   "descripcion": "CAPE CANAVERAL, Fla. – Under the watchful eyes of technicians at the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, a rocket-powered descent stage, after being lowered by an overhead crane, is integrated with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, in",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7093/KSC-2011-7093~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7093.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7085",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7085",
+   "descripcion": "CAPE CANAVERAL, Fla. – Under the watchful eyes of technicians at the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, an overhead crane begins lifting a rocket-powered descent stage for integration with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including ",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7085/KSC-2011-7085~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7085.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7078",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7078",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, technicians dressed in clean room attire, known as \"bunny\" suits, prepare a rocket-powered descent stage for integration with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, includin",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7078/KSC-2011-7078~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7078.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7081",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7081",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, technicians carefully monitor the attachment of an overhead crane to a rocket-powered descent stage which will be integrated with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, incl",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7081/KSC-2011-7081~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7081.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7089",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7089",
+   "descripcion": "CAPE CANAVERAL, Fla. – Under the watchful eyes of technicians at the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, an overhead crane lowers a rocket-powered descent stage over NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, for integration. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemica",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7089/KSC-2011-7089~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7089.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7098",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7098",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, integration between a rocket-powered descent stage and NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, is complete. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will us",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7098/KSC-2011-7098~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7098.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7083",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7083",
+   "descripcion": "CAPE CANAVERAL, Fla. – Technicians, at the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, use an overhead crane to move a rocket-powered descent stage for integration with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7083/KSC-2011-7083~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7083.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7102",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7102",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, integration between a rocket-powered descent stage and NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, is complete. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will us",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7102/KSC-2011-7102~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7102.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7092",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7092",
+   "descripcion": "CAPE CANAVERAL, Fla. – Under the watchful eyes of technicians at the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, a rocket-powered descent stage, after being lowered by an overhead crane, is integrated with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, in",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7092/KSC-2011-7092~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7092.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7099",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7099",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, integration between a rocket-powered descent stage and NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, is complete. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will us",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7099/KSC-2011-7099~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7099.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7091",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7091",
+   "descripcion": "CAPE CANAVERAL, Fla. – Technicians at the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, guide an overhead crane as it lowers a rocket-powered descent stage over NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, for integration. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients f",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7091/KSC-2011-7091~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7091.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7082",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7082",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, technicians carefully monitor the attachment of an overhead crane to a rocket-powered descent stage which will be integrated with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity (in the foreground). The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to ",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7082/KSC-2011-7082~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7082.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7096",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7096",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, integration between a rocket-powered descent stage and NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, is complete. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will us",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7096/KSC-2011-7096~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7096.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7101",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7101",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, integration between a rocket-powered descent stage and NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, is complete. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will us",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7101/KSC-2011-7101~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7101.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7086",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7086",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, an overhead crane lifts a rocket-powered descent stage for integration with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7086/KSC-2011-7086~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7086.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7100",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7100",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, integration between a rocket-powered descent stage and NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, is complete. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will us",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7100/KSC-2011-7100~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7100.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7076",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7076",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, will be integrated with a rocket-powered descent stage.  The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will use a laser t",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7076/KSC-2011-7076~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7076.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7094",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7094",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, a rocket-powered descent stage, after being lowered by an overhead crane, is integrated with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life. ",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7094/KSC-2011-7094~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7094.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7097",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7097",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, integration between a rocket-powered descent stage and NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, is complete. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will us",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7097/KSC-2011-7097~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7097.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7095",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7095",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, integration between a rocket-powered descent stage and NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, is complete. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will us",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7095/KSC-2011-7095~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7095.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7075",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7075",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, will be integrated with a rocket-powered descent stage.  The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will use a laser t",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7075/KSC-2011-7075~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7075.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7084",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7084",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, technicians use an overhead crane to move a rocket-powered descent stage for integration with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7084/KSC-2011-7084~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7084.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7074",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7074",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, technicians prepare NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, for integration with a rocket-powered descent stage.  The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover w",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7074/KSC-2011-7074~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7074.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7079",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7079",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, an overhead crane is being lowered over a rocket-powered descent stage for integration with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  ",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7079/KSC-2011-7079~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7079.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7090",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7090",
+   "descripcion": "CAPE CANAVERAL, Fla. – Technicians at the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, guide an overhead crane as it lowers a rocket-powered descent stage over NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, for integration. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients f",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7090/KSC-2011-7090~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7090.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7103",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7103",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, integration between a rocket-powered descent stage and NASA's Mars Science Laboratory (MSL) rover, known as Curiosity, is complete. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will us",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7103/KSC-2011-7103~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7103.jpg"
+  },
+  {
+   "nasa_id": "2011-7171",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7171",
+   "descripcion": "CAPE CANAVERAL, Fla. – In the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, technicians prepare the Mars Science Laboratory (MSL) rover, Curiosity, for encapsulation inside a backshell. The spacecraft's backshell, a protective cover, carries the parachute and several components used during later stages of entry, descent and landing of the MSL's rover. The rover has been integrated with a rocket-powered descent stage which will lower Curiosity to the surface of Mars. A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space.  MSL's ",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/2011-7171/2011-7171~thumb.jpg",
+   "imagen_local": "marte/img/2011-7171.jpg"
+  },
+  {
+   "nasa_id": "2011-7169",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7169",
+   "descripcion": "CAPE CANAVERAL, Fla. – In the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, technicians prepare the Mars Science Laboratory (MSL) rover, Curiosity, for encapsulation inside a backshell. The spacecraft's backshell, a protective cover, carries the parachute and several components used during later stages of entry, descent and landing of the MSL's rover. The rover has been integrated with a rocket-powered descent stage which will lower Curiosity to the surface of Mars. A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space.  MSL's ",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/2011-7169/2011-7169~thumb.jpg",
+   "imagen_local": "marte/img/2011-7169.jpg"
+  },
+  {
+   "nasa_id": "2011-7172",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7172",
+   "descripcion": "CAPE CANAVERAL, Fla. – In the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, the Mars Science Laboratory (MSL) rover, Curiosity, awaits encapsulation inside a backshell. The spacecraft's backshell, a protective cover, carries the parachute and several components used during later stages of entry, descent and landing of the MSL's rover. The rover has been integrated with a rocket-powered descent stage which will lower Curiosity to the surface of Mars. A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space.  MSL's components includ",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/2011-7172/2011-7172~thumb.jpg",
+   "imagen_local": "marte/img/2011-7172.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7080",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7080",
+   "descripcion": "CAPE CANAVERAL, Fla. – At the Payload Hazardous Servicing Facility at NASA’s Kennedy Space Center in Florida, technicians dressed in clean room attire, known as \"bunny\" suits, attach an overhead crane to a rocket-powered descent stage preparing for integration with NASA's Mars Science Laboratory (MSL) rover, known as Curiosity. The descent stage will lower Curiosity to the surface of Mars.     A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorab",
+   "fecha": "2011-09-23",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7080/KSC-2011-7080~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7080.jpg"
+  },
+  {
+   "nasa_id": "PIA24525",
+   "tipo": "imagen",
+   "titulo": "Twin Rover Twins",
+   "descripcion": "The engineering models of both the Curiosity Mars rover (foreground) and the Perseverance Mars rover share space in the recently expanded garage at the Mars Yard. Curiosity's Earthy double is called MAGGIE, short for Mars Automated Giant Gizmo for Integrated Engineering; Perseverance's double goes by OPTIMISM (Operational Perseverance Twin for Integration of Mechanisms and Instruments Sent to Mars).  The Mars Yard simulates Martian terrain and has served as a testing ground for many fully-engineered rover twins – from the very first, tiny Sojourner that landed on Mars in 1997 to the Spirit and",
+   "fecha": "2021-11-17",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA24525/PIA24525~thumb.jpg",
+   "imagen_local": "marte/img/PIA24525.jpg"
+  },
+  {
+   "nasa_id": "PIA21134",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover Finds and Examines a Meteorite on Mars",
+   "descripcion": "The dark, smooth-surfaced object at the center of this Oct. 30, 2016, image from the Mast Camera (Mastcam) on NASA's Curiosity Mars rover was examined with laser pulses and confirmed to be an iron-nickel meteorite.  The grid of shiny points visible on the object resulted from that laser zapping by Curiosity's Chemistry and Camera (ChemCam) instrument.  The meteorite is about the size of a golf ball. It is informally named \"Egg Rock,\" for a site in Maine. Locations around Bar Harbor, Maine, are the naming theme for an area on Mars' Mount Sharp that Curiosity reached in October.  Iron-nickel met",
+   "fecha": "2016-11-02",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21134/PIA21134~thumb.jpg",
+   "imagen_local": "marte/img/PIA21134.jpg"
+  },
+  {
+   "nasa_id": "PIA21133",
+   "tipo": "imagen",
+   "titulo": "Iron-Nickel Meteorite Zapped by Mars Rover Laser",
+   "descripcion": "The dark, golf-ball-size object in this composite, colorized view from the Chemistry and Camera (ChemCam) instrument on NASA's Curiosity Mars rover shows a grid of shiny dots where ChemCam had fired laser pulses used for determining the chemical elements in the target's composition.  The analysis confirmed that this object, informally named \"Egg Rock,\" is an iron-nickel meteorite. Iron-nickel meteorites are a common class of space rocks found on Earth, and previous examples have been found on Mars, but Egg Rock is the first on Mars to be examined with a laser-firing spectrometer.  The laser pu",
+   "fecha": "2016-11-02",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21133/PIA21133~thumb.jpg",
+   "imagen_local": "marte/img/PIA21133.jpg"
+  },
+  {
+   "nasa_id": "NHQ201804280014",
+   "tipo": "imagen",
+   "titulo": "Vice President Pence Tours Jet Propulsion Laboratory",
+   "descripcion": "U.S. Vice President Mike Pence, right, is presented a plaque by JPL Director Michael Watkins during a tour of NASA's Jet Propulsion Laboratory, Saturday, April 28, 2018 in Pasadena, California. The plaque presents a view of the Mars Science Laboratory rover Curiosity on the surface of Mars. Photo Credit: (NASA/Bill Ingalls)",
+   "fecha": "2018-04-28",
+   "centro": "HQ",
+   "url": "https://images-assets.nasa.gov/image/NHQ201804280014/NHQ201804280014~thumb.jpg",
+   "imagen_local": "marte/img/NHQ201804280014.jpg"
+  },
+  {
+   "nasa_id": "PIA26516",
+   "tipo": "imagen",
+   "titulo": "MARDI Peeks Under Curiosity",
+   "descripcion": "This pair of images shows the Martian surface captured by NASA's Curiosity rover using its Mars Descent Imager (MARDI) camera on Nov. 7, 2024, the 4,357th Martian day, or sol, of the mission. The raw image on the left has not been processed; on the right is the same image after being processed on Earth to reveal additional details in the camera's images, which were taken after sunset, when the lighting is more uniform than the harsh shadows that occur earlier in the day.  MARDI was designed to capture images from below the rover as Curiosity descended to the surface on Aug. 5, 2012. (Those ima",
+   "fecha": "2024-12-19",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26516/PIA26516~thumb.jpg",
+   "imagen_local": "marte/img/PIA26516.jpg"
+  },
+  {
+   "nasa_id": "PIA20738",
+   "tipo": "imagen",
+   "titulo": "Curiosity on the Naukluft Plateau",
+   "descripcion": "This image from NASA Mars Reconnaissance Orbiter spacecraft shows the Curiosity rover currently located on the Naukluft Plateau just north of the Bagnold Dune field. Its position was captured by HiRISE on 25 March 2016 (MSL Sol 1291. Views from the surface at this location are available here and here.) The rover is within sandstone outcrops informally named the \"Stimson Formation.\" There are no obvious rover tracks in the HiRISE views indicating that this bedrock contains little dust that otherwise could be disturbed by the rover wheels as has been seen earlier in Curiosity's traverse.  http:/",
+   "fecha": "2016-06-22",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20738/PIA20738~thumb.jpg",
+   "imagen_local": "marte/img/PIA20738.jpg"
+  },
+  {
+   "nasa_id": "PIA25175",
+   "tipo": "imagen",
+   "titulo": "Curiosity Finds Gator-Back Rocks on Greenheugh",
+   "descripcion": "NASA's Curiosity Mars rover used its Mast Camera, or Mastcam, to survey these wind-sharpened rocks, called ventifacts, on March 15, 2022, the 3,415th Martian day, or sol, of the mission. The team has informally described these patches of ventifacts as \"gator-back\" rocks because of their scaly appearance.  Ventifacts chewed up Curiosity's wheels earlier in the mission. Since then, rover engineers have found ways to slow wheel wear, including a traction control algorithm. They also plan rover routes that avoid driving over such rocks, including these latest ventifacts, which are made of sandston",
+   "fecha": "2022-04-07",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25175/PIA25175~thumb.jpg",
+   "imagen_local": "marte/img/PIA25175.jpg"
+  },
+  {
+   "nasa_id": "PIA25176",
+   "tipo": "imagen",
+   "titulo": "Curiosity's 360-Degree Panorama of Gator-Back Rocks on Greenheugh",
+   "descripcion": "NASA's Curiosity Mars rover used its Mast Camera, or Mastcam, to take this 360-degree panorama on March 23, 2022, the 3,423th Martian day, or sol, of the mission. The team has informally described the wind-sharpened rocks seen here as \"gator-back\" rocks because of their scaly appearance.  Wind-sharpened rocks like these are called ventifacts, and are responsible for chewing up Curiosity's wheels earlier in the mission. Since then, rover engineers have found ways to slow wheel wear, including a traction control algorithm. They also plan rover routes that avoid driving over such rocks, including",
+   "fecha": "2022-04-07",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25176/PIA25176~thumb.jpg",
+   "imagen_local": "marte/img/PIA25176.jpg"
+  },
+  {
+   "nasa_id": "PIA26553",
+   "tipo": "imagen",
+   "titulo": "HiRISE Views Curiosity During a Drive",
+   "descripcion": "NASA's Curiosity Mars rover appears as a dark speck in this view captured on Feb. 28, 2025, by the High-Resolution Imaging Science Experiment (HiRISE) camera aboard NASA's Mars Reconnaissance Orbiter. At the time this image was taken, Curiosity was driving. It's likely the first time HiRISE has captured the rover while it was in motion. Trailing Curiosity are the rover's tracks, which can linger on the Martian surface for months before being erased by the wind.  The tracks are evidence of multiple days of driving as Curiosity made its way to a region full of potential boxwork formations, belie",
+   "fecha": "2025-04-24",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26553/PIA26553~thumb.jpg",
+   "imagen_local": "marte/img/PIA26553.jpg"
+  },
+  {
+   "nasa_id": "PIA26302",
+   "tipo": "imagen",
+   "titulo": "Curiosity Sees Streaks and Specks During 2024 Solar Storm",
+   "descripcion": "NASA's Curiosity Mars rover captured evidence of a solar storm's charged particles arriving at the Martian surface in this three-frame video taken by one of the rover's navigation cameras on May 20, 2024, the 4,190th Martian day, or sol, of the mission.  The mission regularly captures videos to try and catch dust devils, or dust-bearing whirlwinds. While none were spotted in this particular sequence of images, engineers did see streaks and specks – visual artifacts created when charged particles from the Sun hit the camera's image detector. The particles do not damage the detector.  The images",
+   "fecha": "2024-06-10",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26302/PIA26302~thumb.jpg",
+   "imagen_local": "marte/img/PIA26302.jpg"
+  },
+  {
+   "nasa_id": "PIA26303",
+   "tipo": "imagen",
+   "titulo": "Curiosity Sees Specks Caused By 2024 Solar Storm While Recording a Wind Gust on Mars",
+   "descripcion": "The specks in the sequence of images in this video were caused by charged particles from a solar storm hitting one of the navigation cameras aboard NASA's Curiosity Mars rover. The mission uses the rover's navigation cameras to try capturing images of dust devils (dust-bearing whirlwinds) and wind gusts, like the gust seen here.  By chance, the gust occurred at the same time that charged particles began to strike the Martian surface on May 20, 2024, the 4,190th Martian day, or sol, of the mission. The particles do not damage the camera.  Curiosity's Radiation Assessment Detector (RAD) measured",
+   "fecha": "2024-06-10",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26303/PIA26303~thumb.jpg",
+   "imagen_local": "marte/img/PIA26303.jpg"
+  },
+  {
+   "nasa_id": "PIA26362",
+   "tipo": "imagen",
+   "titulo": "Curiosity Views Earth Setting, Phobos Rising",
+   "descripcion": "NASA's Curiosity Mars rover used its Mast Camera, or Mastcam, to capture this view of Earth setting while Phobos, one of Mars' two moons, is rising. It's the first time an image of the two celestial bodies have been captured together from the surface of Mars.  The image is a composite of five short exposures and 12 long exposures all taken on Sept. 5, 2024, the 4,295th Martian day, or sol, of Curiosity's mission. An inset in the image shows Phobos on the left and Earth on the right. From the rover's perspective, the inset area would be about half the width of a thumb held at arm's length.  The",
+   "fecha": "2024-09-13",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26362/PIA26362~thumb.jpg",
+   "imagen_local": "marte/img/PIA26362.jpg"
+  },
+  {
+   "nasa_id": "PIA26047",
+   "tipo": "imagen",
+   "titulo": "Curiosity's Navcams View the Area Around 'Sequoia'",
+   "descripcion": "NASA's Curiosity Mars rover captured this 360-degree panorama using its black-and-white navigation cameras, or Navcams, at a location where it collected a sample from a rock nicknamed \"Sequoia.\" This panorama was captured on Oct. 21 and 26, 2023, the 3,984th and 3,989th Martian days, or sols, of the mission.  The sample from Sequoia marks the 39th hole that Curiosity drilled into the Martian surface. While the Perseverance rover collects intact rock cores, Curiosity's rock samples are powderized, then sprinkled into instruments within the rover's chassis. These instruments can provide highly d",
+   "fecha": "2023-11-06",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26047/PIA26047~thumb.jpg",
+   "imagen_local": "marte/img/PIA26047.jpg"
+  },
+  {
+   "nasa_id": "PIA24915",
+   "tipo": "imagen",
+   "titulo": "Mars Odyssey Orbiter By the Numbers",
+   "descripcion": "NASA's 2001 Mars Odyssey orbiter arrived at Mars on Oct. 24, 2001.  Over the past two decades, the mission has mapped the composition of the Martian surface, providing a window to the past so scientists could piece together how the planet evolved. It has also served as a vital asset in relaying communications between landers and rovers at the Red Planet and the mission teams back on Earth.  Here are some of the highlights of the last 20 years:      Mars Odyssey has completed 80,000 orbits.     Mars Odyssey has taken more than 1.2 million images.     Mars Odyssey has returned 16 terabits of tot",
+   "fecha": "2021-10-20",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA24915/PIA24915~thumb.jpg",
+   "imagen_local": "marte/img/PIA24915.jpg"
+  },
+  {
+   "nasa_id": "PIA19679",
+   "tipo": "imagen",
+   "titulo": "Panorama from Curiosity Sol 1000 Location",
+   "descripcion": "This 360-degree panorama from the Navigation Camera (Navcam) on NASA's Curiosity Mars rover shows the surroundings of a site on lower Mount Sharp where the rover spent its 1,000th Martian day, or sol, on Mars.  Sol 1,000 of Curiosity's Mars-surface mission corresponded to May 30, 2015. The component images for this scene were taken on Sol 997 (May 27, 2015). The site is a valley just below \"Marias Pass\" on lower Mount Sharp. A map of the area is at http://mars.nasa.gov/msl/images/Curiosity_Location_Sol997-full.jpg.   Tracks from the rover's drive to this site are visible at right. The rover te",
+   "fecha": "2015-07-01",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA19679/PIA19679~thumb.jpg",
+   "imagen_local": "marte/img/PIA19679.jpg"
+  },
+  {
+   "nasa_id": "PIA19678",
+   "tipo": "imagen",
+   "titulo": "Panorama from Curiosity Sol 1000 Location Stereo",
+   "descripcion": "This stereo view from the Navigation Camera (Navcam) on NASA's Curiosity Mars rover shows a 360-degree panorama around the location where the rover spent its 1,000th Martian day, or sol, on Mars. The image appears three-dimensional when viewed through red-blue glasses with the red lens on the left.  Sol 1,000 of Curiosity's Mars-surface mission corresponded to May 30, 2015. The component images for this scene were taken on Sol 997 (May 27, 2015). The site is a valley just below \"Marias Pass\" on lower Mount Sharp. A map of the area is at http://mars.nasa.gov/msl/images/Curiosity_Location_Sol997",
+   "fecha": "2015-07-01",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA19678/PIA19678~thumb.jpg",
+   "imagen_local": "marte/img/PIA19678.jpg"
+  },
+  {
+   "nasa_id": "PIA25042",
+   "tipo": "imagen",
+   "titulo": "SHERLOC's View of Organics Within Garde Abrasion Patch",
+   "descripcion": "Different kinds of carbon-based molecules called organic compounds were viewed within a rock target called \"Garde\" by SHERLOC, one of the instruments on the end of the robotic arm aboard NASA's Perseverance Mars rover. The rover used its drill to abrade, or grind away, a patch of rock so that SHERLOC (Scanning Habitable Environments with Raman & Luminescence for Organics & Chemicals) could analyze its interior. This data was taken on Sept. 18, 2021, the 207th Martian day, or sol, of the mission.  Nonbiological, geological processes can form organics. The organics found in PIXL's data and their",
+   "fecha": "2021-12-16",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25042/PIA25042~thumb.jpg",
+   "imagen_local": "marte/img/PIA25042.jpg"
+  },
+  {
+   "nasa_id": "PIA21710",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover on Mount Sharp, Seen from Mars Orbit",
+   "descripcion": "The feature that appears bright blue at the center of this scene is NASA's Curiosity Mars rover on the northwestern flank of Mount Sharp, viewed by NASA's Mars Reconnaissance Orbiter. Curiosity is approximately 10 feet long and 9 feet wide (3.0 meters by 2.8 meters).  The view is a cutout from observation ESP_050897_1750 taken by the High Resolution Imaging Science Experiment (HiRISE) camera on the orbiter on June 5, 2017. HiRISE has been imaging Curiosity about every three months, to monitor the surrounding features for changes such as dune migration or erosion.   When the image was taken, Cu",
+   "fecha": "2017-06-20",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21710/PIA21710~thumb.jpg",
+   "imagen_local": "marte/img/PIA21710.jpg"
+  },
+  {
+   "nasa_id": "PIA25914",
+   "tipo": "imagen",
+   "titulo": "Curiosity's Quadrant Themes",
+   "descripcion": "This map shows all the quadrant themes for NASA's Curiosity Mars rover, which is currently in the Roraima quadrant seen at the bottom. The red oval indicates the landing ellipse where the rover was targeted to touch down in 2012. The yellow-tinted quadrants are areas the rover has driven through since then. Themes are chosen in advance of the rover's arrival in a new quadrant; the rover's path couldn't be planned until after the team knew where it landed. Martian latitude and longitude is provided around the outside of the map.  With the Curiosity mission, scientists began using quadrant theme",
+   "fecha": "2023-06-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25914/PIA25914~thumb.jpg",
+   "imagen_local": "marte/img/PIA25914.jpg"
+  },
+  {
+   "nasa_id": "PIA24173",
+   "tipo": "imagen",
+   "titulo": "Curiosity's Selfie at the 'Mary Anning' location on Mars",
+   "descripcion": "NASA's Curiosity Mars rover took this selfie at a location nicknamed \"Mary Anning\" after a 19th century English paleontologist. Curiosity snagged three samples of drilled rock at this site on its way out of the Glen Torridon region, which scientists believe was a site where ancient conditions would have been favorable to supporting life, if it ever was present.  Curiosity took the selfie using a camera called the Mars Hand Lens Imager located on the end of its robotic arm (videos explaining how Curiosity's selfies are taken can be found here). A close-up detail from within the selfie shows the",
+   "fecha": "2020-11-12",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA24173/PIA24173~thumb.jpg",
+   "imagen_local": "marte/img/PIA24173.jpg"
+  },
+  {
+   "nasa_id": "PIA26361",
+   "tipo": "imagen",
+   "titulo": "Odyssey's Accomplishments at Its 100,000th Orbit",
+   "descripcion": "Since arriving at Mars on Oct. 24, 2001, NASA's 2001 Mars Odyssey orbiter has mapped the composition of the Martian surface, providing a window onto the past so scientists can use that data to piece together how the planet evolved. It has also served as a vital asset in relaying communications between landers and rovers on the Red Planet and mission teams back on Earth.  Here are some of the highlights of the mission:      Completed 100,000 orbits     Captured more than 1.4 million images     Returned 17.2 terabits of science data to Earth, including 1.3 terabits of data relayed from Mars surf",
+   "fecha": "2024-06-27",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26361/PIA26361~thumb.jpg",
+   "imagen_local": "marte/img/PIA26361.jpg"
+  },
+  {
+   "nasa_id": "PIA22212",
+   "tipo": "imagen",
+   "titulo": "Stereo View of Martian Rock Target 'Funzie'",
+   "descripcion": "The surface of the Martian rock target in this stereo image includes small hollows with a \"swallowtail\" shape characteristic of some gypsum crystals, most evident in the lower left quadrant. These hollows may have resulted from the original crystallizing mineral subsequently dissolving away. The view appears three-dimensional when seen through blue-red glasses with the red lens on the left.  The scene spans about 2.5 inches (6.5 centimeters). This rock target, called \"Funzie,\" is near the southern, uphill edge of \"Vera Rubin Ridge\" on lower Mount Sharp. The stereo view combines two images take",
+   "fecha": "2018-02-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA22212/PIA22212~thumb.jpg",
+   "imagen_local": "marte/img/PIA22212.jpg"
+  },
+  {
+   "nasa_id": "PIA23242",
+   "tipo": "imagen",
+   "titulo": "Curiosity Sees More Clouds Over Gale Crater",
+   "descripcion": "NASA's Curiosity Mars rover imaged these drifting clouds on May 7, 2019, the 2,400th Martian day, or sol, of the mission, using its black-and-white Navigation Cameras (Navcams).  These are likely water-ice clouds about 19 miles (31 kilometers) above the surface. They are also \"noctilucent\" clouds, meaning they are so high that they are still illuminated by the Sun, even when it's night at Mars' surface. Scientists can watch when light leaves the clouds and use this information to infer their altitude.  Movie available at https://photojournal.jpl.nasa.gov/catalog/PIA23242",
+   "fecha": "2019-05-29",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA23242/PIA23242~thumb.jpg",
+   "imagen_local": "marte/img/PIA23242.jpg"
+  },
+  {
+   "nasa_id": "PIA23241",
+   "tipo": "imagen",
+   "titulo": "Curiosity Sees Drifting Clouds Over Gale Crater",
+   "descripcion": "NASA's Curiosity Mars rover imaged these drifting clouds on May 12, 2019, the 2,405th Martian day, or sol, of the mission, using its black-and-white Navigation Cameras (Navcams).  These are likely water-ice clouds about 19 miles (31 kilometers) above the surface. They are also \"noctilucent\" clouds, meaning they are so high that they are still illuminated by the Sun, even when it's night at Mars' surface. Scientists can watch when light leaves the clouds and use this information to infer their altitude.  Movie available at https://photojournal.jpl.nasa.gov/catalog/PIA23241",
+   "fecha": "2019-05-29",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA23241/PIA23241~thumb.jpg",
+   "imagen_local": "marte/img/PIA23241.jpg"
+  },
+  {
+   "nasa_id": "PIA23243",
+   "tipo": "imagen",
+   "titulo": "Curiosity's Three-Frame Mosaic of Clouds",
+   "descripcion": "NASA's Curiosity Mars rover imaged these drifting clouds on May 17, 2019, the 2,410th Martian day, or sol, of the mission, using its black-and-white Navigation Cameras (Navcams).  These are likely water-ice clouds about 19 miles (31 kilometers) above the surface. They are also \"noctilucent\" clouds, meaning they are so high that they are still illuminated by the Sun, even when it's night at Mars' surface. Scientists can watch when light leaves the clouds and use this information to infer their altitude.  Movie available at https://photojournal.jpl.nasa.gov/catalog/PIA23243",
+   "fecha": "2019-05-29",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA23243/PIA23243~thumb.jpg",
+   "imagen_local": "marte/img/PIA23243.jpg"
+  },
+  {
+   "nasa_id": "PIA21263",
+   "tipo": "imagen",
+   "titulo": "Possible Signs of Ancient Drying in Martian Rock",
+   "descripcion": "A grid of small polygons on the Martian rock surface near the right edge of this view may have originated as cracks in drying mud more than 3 billion years ago. Multiple images from the Mast Camera (Mastcam) on NASA's Curiosity Mars rover were combined for this mosaic of a block called \"Squid Cove\" and its immediate surroundings.  The location is within an exposure of Murray formation mudstone on lower Mount Sharp inside Gale Crater. Mastcam's right-eye camera, which has a telephoto lens, took the component images of this view on Dec. 20, 2016, during the 1,555th Martian day, or sol, of Curios",
+   "fecha": "2017-01-17",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21263/PIA21263~thumb.jpg",
+   "imagen_local": "marte/img/PIA21263.jpg"
+  },
+  {
+   "nasa_id": "PIA21261",
+   "tipo": "imagen",
+   "titulo": "Possible Mud Cracks Preserved in Martian Rock",
+   "descripcion": "The network of cracks in this Martian rock slab called \"Old Soaker\" may have formed from the drying of a mud layer more than 3 billion years ago. The view spans about 4 feet (1.2 meters) left-to-right and combines three images taken by the Mars Hand Lens Imager (MAHLI) camera on the arm of NASA's Curiosity Mars rover.  Mud cracks would be evidence of a time when dry intervals interrupted wetter periods that supported lakes in the area. Curiosity has found evidence of ancient lakes in older, lower-lying rock layers and also in younger mudstone that is above Old Soaker.  MAHLI was positioned abo",
+   "fecha": "2017-01-17",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21261/PIA21261~thumb.jpg",
+   "imagen_local": "marte/img/PIA21261.jpg"
+  },
+  {
+   "nasa_id": "PIA21044",
+   "tipo": "imagen",
+   "titulo": "Farewell to Murray Buttes Image 4",
+   "descripcion": "This view from the Mast Camera (Mastcam) in NASA's Curiosity Mars rover shows an outcrop with finely layered rocks within the \"Murray Buttes\" region on lower Mount Sharp.  The buttes and mesas rising above the surface in this area are eroded remnants of ancient sandstone that originated when winds deposited sand after lower Mount Sharp had formed. Curiosity closely examined that layer -- called the \"Stimson formation\" -- during the first half of 2016, while crossing a feature called \"Naukluft Plateau\" between two exposures of the Murray formation. The layering within the sandstone is called \"c",
+   "fecha": "2016-09-09",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21044/PIA21044~thumb.jpg",
+   "imagen_local": "marte/img/PIA21044.jpg"
+  },
+  {
+   "nasa_id": "PIA21043",
+   "tipo": "imagen",
+   "titulo": "Farewell to Murray Buttes Image 3",
+   "descripcion": "This view from the Mast Camera (Mastcam) in NASA's Curiosity Mars rover shows finely layered rocks within the \"Murray Buttes\" region on lower Mount Sharp.  The buttes and mesas rising above the surface in this area are eroded remnants of ancient sandstone that originated when winds deposited sand after lower Mount Sharp had formed. Curiosity closely examined that layer -- called the \"Stimson formation\" -- during the first half of 2016, while crossing a feature called \"Naukluft Plateau\" between two exposures of the Murray formation. The layering within the sandstone is called \"cross-bedding\" an",
+   "fecha": "2016-09-09",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21043/PIA21043~thumb.jpg",
+   "imagen_local": "marte/img/PIA21043.jpg"
+  },
+  {
+   "nasa_id": "PIA21042",
+   "tipo": "imagen",
+   "titulo": "Farewell to Murray Buttes Image 2",
+   "descripcion": "This view from the Mast Camera (Mastcam) in NASA's Curiosity Mars rover shows sloping buttes and layered outcrops within the \"Murray Buttes\" region on lower Mount Sharp.  The buttes and mesas rising above the surface are eroded remnants of ancient sandstone that originated when winds deposited sand after lower Mount Sharp had formed. Curiosity closely examined that layer -- called the \"Stimson formation\" -- during the first half of 2016, while crossing a feature called \"Naukluft Plateau\" between two exposures of the Murray formation. The layering within the sandstone is called \"cross-bedding\" ",
+   "fecha": "2016-09-09",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21042/PIA21042~thumb.jpg",
+   "imagen_local": "marte/img/PIA21042.jpg"
+  },
+  {
+   "nasa_id": "PIA21045",
+   "tipo": "imagen",
+   "titulo": "Farewell to Murray Buttes Image 5",
+   "descripcion": "This view from the Mast Camera (Mastcam) in NASA's Curiosity Mars rover shows a hillside outcrop with layered rocks within the \"Murray Buttes\" region on lower Mount Sharp.  The buttes and mesas rising above the surface in this area are eroded remnants of ancient sandstone that originated when winds deposited sand after lower Mount Sharp had formed. Curiosity closely examined that layer -- called the \"Stimson formation\" -- during the first half of 2016, while crossing a feature called \"Naukluft Plateau\" between two exposures of the Murray formation. The layering within the sandstone is called \"",
+   "fecha": "2016-09-09",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21045/PIA21045~thumb.jpg",
+   "imagen_local": "marte/img/PIA21045.jpg"
+  },
+  {
+   "nasa_id": "PIA23135",
+   "tipo": "imagen",
+   "titulo": "Curiosity Observes Sunset Eclipse: Sol 2358",
+   "descripcion": "This series of images shows the shadow of Phobos as it sweeps over NASA's Curiosity Mars rover and darkens the sunlight on Monday, March 25, 2019 (the 2,358th sol, or Martian day, of the mission).  This image was taken by one of Curiosity's Navigation Cameras (Navcams). The sequence has been contrast-enhanced and sped up by a factor of four.  The image was taken after the Sun had descended behind the horizon, just as Phobos was rising and throwing its elongated shadow across the Martian surface. Dust particles in the atmosphere acted as a screen against which the shadow was projected.  Movie a",
+   "fecha": "2019-04-04",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA23135/PIA23135~thumb.jpg",
+   "imagen_local": "marte/img/PIA23135.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-6705",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-6705",
+   "descripcion": "CAPE CANAVERAL, Fla. -- In the high bay of the Payload Hazardous Servicing Facility (PHSF) at NASA's Kennedy Space Center in Florida, the descent stage for NASA's Mars Science Laboratory (MSL) mission awaits installation on the Curiosity rover, in the background at right. MSL's multi-mission radioisotope thermoelectric generator has been installed onto the aft of the rover for a fit check.  The descent stage will cradle the rover and its MMRTG during their approach to the surface of Mars.     The MMRTG will generate the power needed for the mission from the natural decay of plutonium-238, a no",
+   "fecha": "2011-07-12",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-6705/KSC-2011-6705~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-6705.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-6706",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-6706",
+   "descripcion": "CAPE CANAVERAL, Fla. -- In the high bay of the Payload Hazardous Servicing Facility (PHSF) at NASA's Kennedy Space Center in Florida, the descent stage for NASA's Mars Science Laboratory (MSL) mission awaits installation on the Curiosity rover, in the background at right. MSL's multi-mission radioisotope thermoelectric generator has been installed onto the aft of the rover for a fit check.  The descent stage will cradle the rover and its MMRTG during their approach to the surface of Mars.     The MMRTG will generate the power needed for the mission from the natural decay of plutonium-238, a no",
+   "fecha": "2011-07-12",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-6706/KSC-2011-6706~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-6706.jpg"
+  },
+  {
+   "nasa_id": "PIA26554",
+   "tipo": "imagen",
+   "titulo": "Curiosity Surveys the 'Ubajara' Sampling Site on Mars",
+   "descripcion": "NASA's Curiosity Mars rover captured this 360-degree panorama at a site nicknamed \"Ubajara\" on April 30, 2023, the 3,815th Martian day, or sol, of the mission. Taken by the rover's Mastcam, this panorama was stitched together from 141 images after they were sent to Earth. Dark rover tracks recede into the distance in the center of the scene.  Curiosity used the drill on the end of its robotic arm to take a sample from Ubajara, then dropped the pulverized rock into instruments within the rover's body. One of those instruments, called CheMin (Chemistry & Mineralogy), used X-ray diffraction to di",
+   "fecha": "2025-04-17",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26554/PIA26554~thumb.jpg",
+   "imagen_local": "marte/img/PIA26554.jpg"
+  },
+  {
+   "nasa_id": "PIA19928",
+   "tipo": "imagen",
+   "titulo": "Curiosity Rover Will Study Dunes on Route up Mountain",
+   "descripcion": "This view from the Mast Camera (Mastcam) on NASA's Curiosity Mars rover shows a dark sand dune in the middle distance. The rover's examination of dunes on the way toward higher layers of Mount Sharp will be the first in-place study of an active sand dune anywhere other than Earth.  The scene combines several images taken on Sept. 25, 2015, during the 1,115th Martian day, or sol, of Curiosity's work on Mars. The images are from Mastcam's right-eye camera, which has a telephoto lens. The view is toward south-southwest.  The dunes on Curiosity's route are part of a band of dunes called \"Bagnold D",
+   "fecha": "2015-11-16",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA19928/PIA19928~thumb.jpg",
+   "imagen_local": "marte/img/PIA19928.jpg"
+  },
+  {
+   "nasa_id": "PIA20602",
+   "tipo": "imagen",
+   "titulo": "Curiosity Self-Portrait at Okoruso Drill Hole",
+   "descripcion": "This self-portrait of NASA's Curiosity Mars rover shows the vehicle at a drilled sample site called \"Okoruso,\" on the \"Naukluft Plateau\" of lower Mount Sharp. The scene combines multiple images taken with the rover's Mars Hand Lens Imager (MAHLI) on May 11, 2016, during the 1,338th Martian day, or sol, of the rover's work on Mars.  In front of the rover is the hole, surrounded by grayish drill cuttings, created by using Curiosity's drill to collect sample rock powder at Okoruo, plus a patch of powder dumped onto the ground after delivery of a portion to the rover's internal Chemistry and Miner",
+   "fecha": "2016-06-13",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20602/PIA20602~thumb.jpg",
+   "imagen_local": "marte/img/PIA20602.jpg"
+  },
+  {
+   "nasa_id": "PIA24724",
+   "tipo": "imagen",
+   "titulo": "3D Glasses Used for Rover Driving",
+   "descripcion": "Vandi Verma, an engineer who now works with NASA's Perseverance Mars rover, is seen here working as a driver for the Curiosity rover. The special 3D glasses she's wearing are still used by rover drivers to easily detect changes in terrain that the rover may need to avoid.  A key objective for Perseverance's mission on Mars is astrobiology, including the search for signs of ancient microbial life. The rover will characterize the planet's geology and past climate, pave the way for human exploration of the Red Planet, and be the first mission to collect and cache Martian rock and regolith (broken",
+   "fecha": "2021-07-01",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA24724/PIA24724~thumb.jpg",
+   "imagen_local": "marte/img/PIA24724.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-6834",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-6834",
+   "descripcion": "CAPE CANAVERAL, Fla. -- The first stage of the Atlas V rocket for NASA's Mars Science Laboratory (MSL) mission is suspended over the concrete surface outside the Vertical Integration Facility at Space Launch Complex 41 on Cape Canaveral Air Force Station.    A United Launch Alliance Atlas V-541 configuration will be used to loft MSL into space. Curiosity’s 10 science instruments are designed to search for evidence on whether Mars has had environments favorable to microbial life, including chemical ingredients for life.  The unique rover will use a laser to look inside rocks and release its gas",
+   "fecha": "2011-09-08",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-6834/KSC-2011-6834~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-6834.jpg"
+  },
+  {
+   "nasa_id": "PIA26519",
+   "tipo": "imagen",
+   "titulo": "Curiosity Views Twilight Clouds",
+   "descripcion": "NASA's Curiosity Mars rover used its left Mast Camera, or Mastcam, to capture these drifting noctilucent, or twilight, clouds on Jan. 17, 2025, the 4,426th Martian day, or sol, of the mission. The left Mastcam has a stuck color filter wheel, which is why part of the imagery appears cut off in three corners.  The original recording taken by Curiosity was 16 minutes; this video has been speeded up by about 480 times (and it loops four times).  The clouds at the top of the frame, including the falling white plumes, are made of carbon dioxide ice. The plumes are an estimated 37 to 50 miles (60 to ",
+   "fecha": "2025-02-11",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26519/PIA26519~thumb.jpg",
+   "imagen_local": "marte/img/PIA26519.jpg"
+  },
+  {
+   "nasa_id": "PIA19674",
+   "tipo": "imagen",
+   "titulo": "Gale Crater Surface Materials",
+   "descripcion": "Gale Crater, home to NASA's Curiosity Mars rover, shows a new face in this mosaic image made using data from the Thermal Emission Imaging System (THEMIS) on NASA's Mars Odyssey orbiter.  The colors come from an image processing technique that identifies mineral differences in surface materials and displays them in false colors. For example, windblown dust appears pale pink and olivine-rich basalt looks purple. The bright pink on Gale's floor appears due to a mix of basaltic sand and windblown dust. The blue at the summit of Gale's central mound, Mount Sharp, probably comes from local materials",
+   "fecha": "2015-06-19",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA19674/PIA19674~thumb.jpg",
+   "imagen_local": "marte/img/PIA19674.jpg"
+  },
+  {
+   "nasa_id": "PIA20755",
+   "tipo": "imagen",
+   "titulo": "Two Sizes of Ripples on Surface of Martian Sand Dune",
+   "descripcion": "Two sizes of wind-sculpted ripples are evident in this view of the top surface of a Martian sand dune. Sand dunes and the smaller type of ripples also exist on Earth. The larger ripples -- roughly 10 feet (3 meters) apart -- are a type not seen on Earth nor previously recognized as a distinct type on Mars.  The Mast Camera (Mastcam) on NASA's Curiosity Mars rover took the multiple component images of this scene on Dec. 13, 2015, during the 1,192nd Martian day, or sol, of the rover's work on Mars. That month, Curiosity was conducting the first close-up investigation ever made of active sand dun",
+   "fecha": "2016-06-30",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20755/PIA20755~thumb.jpg",
+   "imagen_local": "marte/img/PIA20755.jpg"
+  },
+  {
+   "nasa_id": "PIA26209",
+   "tipo": "imagen",
+   "titulo": "Curiosity's Hazcams Capture a Day on Mars",
+   "descripcion": "NASA's Curiosity Mars rover recorded two 25-frame videos showing the passage of 12 hours on Nov. 8, 2023, the 4,002nd Martian day, or sol, of the mission. The commands to capture the images that make up these videos were among the last that engineers beamed up to the rover before the start of Mars solar conjunction – a period of several weeks when the Sun is between Earth and Mars. Because the Sun's plasma can interfere with radio communications, NASA's Mars missions stand down from sending commands to their spacecraft during conjunction, bringing the missions to a temporary standstill. (The s",
+   "fecha": "2024-01-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA26209/PIA26209~thumb.jpg",
+   "imagen_local": "marte/img/PIA26209.jpg"
+  },
+  {
+   "nasa_id": "PIA21139",
+   "tipo": "imagen",
+   "titulo": "Strengthening the Mars Telecommunications Network",
+   "descripcion": "On Nov. 22, 2016, a NASA radio aboard the European Space Agency's (ESA's) Trace Gas Orbiter, which arrived at Mars the previous month, succeeded in its first test of receiving data transmitted from NASA Mars rovers, both Opportunity and Curiosity.  This graphic depicts the geometry of Opportunity transmitting data to the orbiter, using the ultra-high frequency (UHF) band of radio wavelengths. The orbiter received that data using one of its twin Electra UHF-band radios. Data that the orbiter's Electra received from the two rovers was subsequently transmitted from the orbiter to Earth, using the",
+   "fecha": "2016-11-29",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21139/PIA21139~thumb.jpg",
+   "imagen_local": "marte/img/PIA21139.jpg"
+  },
+  {
+   "nasa_id": "PIA25821",
+   "tipo": "imagen",
+   "titulo": "Perseverance Views Drifting Clouds",
+   "descripcion": "NASA's Perseverance Mars rover used one of its navigation cameras to take a series of images of drifting clouds just before sunrise on March 18, 2023, the 738th Martian day, or sol, of the mission.  Scientists on both the Perseverance mission and NASA's Curiosity rover mission are studying the formation process of Martian clouds.  A key objective for Perseverance's mission on Mars is astrobiology, including the search for signs of ancient microbial life. The rover will characterize the planet's geology and past climate, pave the way for human exploration of the Red Planet, and be the first mis",
+   "fecha": "2023-03-22",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25821/PIA25821~thumb.jpg",
+   "imagen_local": "marte/img/PIA25821.jpg"
+  },
+  {
+   "nasa_id": "GSFC_20171208_Archive_e001805",
+   "tipo": "imagen",
+   "titulo": "Sample Analysis at Mars (SAM) Media Day",
+   "descripcion": "On Saturday, November 26, NASA is scheduled to launch the Mars Science Laboratory (MSL) mission featuring Curiosity, the largest and most advanced rover ever sent to the Red Planet.   The Curiosity rover bristles with multiple cameras and instruments, including Goddard's Sample Analysis at Mars (SAM) instrument suite. By looking for evidence of water, carbon, and other important building blocks of life in the Martian soil and atmosphere, SAM will help discover whether Mars ever had the potential to support life. Curiosity will be delivered to Gale crater, a 96-mile-wide crater that contains a ",
+   "fecha": "2017-12-08",
+   "centro": "GSFC",
+   "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001805/GSFC_20171208_Archive_e001805~thumb.jpg",
+   "imagen_local": "marte/img/GSFC_20171208_Archive_e001805.jpg"
+  },
+  {
+   "nasa_id": "GSFC_20171208_Archive_e000072",
+   "tipo": "imagen",
+   "titulo": "Swedish Delegation Visits NASA Goddard",
+   "descripcion": "Swedish Delegation Visits GSFC – May 3, 2017 - Members of the Royal Swedish Academy of Engineering Sciences listen to Dr. Melissa Trainer, Sample Analysis at, Mars (SAM) team member and Charles Malespin, SAM Deputy Principal Investigator and Operations Test Lead discuss research being done in the SAM lab being carried by the Curiosity Rover on the surface of Mars.  Credit: NASA/Goddard/Bill Hrybyk  Read more: <a href=\"https://go.nasa.gov/2p1rP0h\" rel=\"nofollow\">go.nasa.gov/2p1rP0h</a>  <b><a href=\"http://www.nasa.gov/audience/formedia/features/MP_Photo_Guidelines.html\" rel=\"nofollow\">NASA imag",
+   "fecha": "2017-12-08",
+   "centro": "GSFC",
+   "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000072/GSFC_20171208_Archive_e000072~thumb.jpg",
+   "imagen_local": "marte/img/GSFC_20171208_Archive_e000072.jpg"
+  },
+  {
+   "nasa_id": "PIA25681",
+   "tipo": "imagen",
+   "titulo": "Perseverance's Three Forks Sample Depot Selfie",
+   "descripcion": "NASA's Perseverance Mars rover took a selfie with several of the 10 sample tubes it deposited at a sample depot it is creating within an area of Jezero Crater nicknamed \"Three Forks.\" The image was taken by the WATSON (Wide Angle Topographic Sensor for Operations and eNgineering) camera on the end of the rover's robotic arm on Jan. 22, 2023, the 684th Martian day, or sol, of the mission.  The ninth tube dropped during the construction of the depot, containing the sample the science team refers to as \"Atsah,\" can be seen in front of the rover. Other sample tubes are visible in the background. I",
+   "fecha": "2023-01-24",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25681/PIA25681~thumb.jpg",
+   "imagen_local": "marte/img/PIA25681.jpg"
+  },
+  {
+   "nasa_id": "PIA25179",
+   "tipo": "imagen",
+   "titulo": "Perseverance's Mastcam-Z Captures a Phobos Solar Eclipse",
+   "descripcion": "NASA's Perseverance Mars rover used its Mastcam-Z camera system to shoot video of Phobos, one of Mars' two moons, eclipsing the Sun. It's the most zoomed-in, highest-frame-rate observation of a Phobos solar eclipse ever taken from the Martian surface.  Several Mars rovers have observed Phobos crossing in front of the Sun over the past 18 years. Spirit and Opportunity made the first observations in 2004; Curiosity in 2019 was the first to record video of the event. Each time these eclipses are observed, they allow scientists to measure subtle shifts in Phobos' orbit over time. The moon's tidal ",
+   "fecha": "2022-04-20",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25179/PIA25179~thumb.jpg",
+   "imagen_local": "marte/img/PIA25179.jpg"
+  },
+  {
+   "nasa_id": "PIA19680",
+   "tipo": "imagen",
+   "titulo": "Solar Activity Seen at Sunspot Site Tracked by Mars Rover",
+   "descripcion": "An eruption from the surface of the sun is conspicuous in the lower left portion of this July 6, 2015, image from NASA's Earth-orbiting Solar Dynamics Observatory (SDO). It originates from a location on the surface where NASA's Curiosity Mars rover had been tracking a sunspot in late June and early July.  This image was taken by the Atmosphere Imaging Assembly on SDO using the instrument's 131-Angstrom wavelength channel, which is sensitive to hot solar flares.  The sun completes a rotation about once a month -- faster near its equator than near its poles. This summer, Mars has a view of the o",
+   "fecha": "2015-07-10",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA19680/PIA19680~thumb.jpg",
+   "imagen_local": "marte/img/PIA19680.jpg"
+  },
+  {
+   "nasa_id": "PIA25735",
+   "tipo": "imagen",
+   "titulo": "Annotated Version of Perseverance Selfie With Sample Tubes",
+   "descripcion": "NASA's Perseverance Mars rover took a selfie with nine of the 10 sample tubes it deposited at a sample depot created within an area of Jezero Crater nicknamed \"Three Forks.\" This annotated version of the selfie points out the estimated locations of those nine tubes. The ninth tube dropped during the construction of the depot, containing the sample the science team refers to as \"Atsah,\" can be seen in front of the rover. Other sample tubes are visible in the background, including \"Skyland,\" which is labeled.  The image was taken by the WATSON (Wide Angle Topographic Sensor for Operations and eN",
+   "fecha": "2023-02-14",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25735/PIA25735~thumb.jpg",
+   "imagen_local": "marte/img/PIA25735.jpg"
+  },
+  {
+   "nasa_id": "PIA11241",
+   "tipo": "imagen",
+   "titulo": "Panorama with Active Linear Dune in Gale Crater, Mars",
+   "descripcion": "This 360-degree mosaic from the Mast Camera (Mastcam) on NASA's Curiosity Mars rover looks out over a portion of the Bagnold Dunes, which stretch for several miles. From early February to early April 2017, the rover examined four sites near linear dunes for comparison with what it found in late 2015 and early 2016 during its investigation of crescent-shaped dunes.  The dark, rippled surface of a linear dune is visible at the center of the view and receding into the distance to the left. The bedrock of the Murray formation, made from sediments deposited in lakes billions of years ago, is in the",
+   "fecha": "2017-05-04",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA11241/PIA11241~thumb.jpg",
+   "imagen_local": "marte/img/PIA11241.jpg"
+  },
+  {
+   "nasa_id": "PIA19661",
+   "tipo": "imagen",
+   "titulo": "Auto-Focused on Details in Yellowjacket on Mars",
+   "descripcion": "This image from the Chemistry and Camera (ChemCam) instrument on NASA's Curiosity Mars rover shows detailed texture of a rock target called \"Yellowjacket\" on Mars' Mount Sharp. This was the first rock target for ChemCam after checkout of restored capability for autonomous focusing.  The image covers a patch of rock surface about 2.5 inches (6 centimeters) across. It was taken on May 15, 2015, during the mission's 986th Martian day, or sol. ChemCam's Remote Micro-Imager camera, on top of Curiosity's mast, captured the image from a distance of about 8 feet (2.4 meters). ChemCam also hit the targ",
+   "fecha": "2015-05-22",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA19661/PIA19661~thumb.jpg",
+   "imagen_local": "marte/img/PIA19661.jpg"
+  },
+  {
+   "nasa_id": "PIA21483",
+   "tipo": "imagen",
+   "titulo": "Swirling Dust in Gale Crater, Mars, Sol 1613",
+   "descripcion": "This frame from a sequence of images shows a dust-carrying whirlwind, called a dust devil, on lower Mount Sharp inside Gale Crater, as viewed by NASA's Curiosity Mars Rover during the summer afternoon of the rover's 1,613rd Martian day, or sol (Feb. 18, 2017).  Set within a broader southward view from the rover's Navigation Camera, the rectangular area outlined in black was imaged multiple times over a span of several minutes to check for dust devils. Images from the period with most activity are shown in the inset area.  The images are in pairs that were taken about 12 seconds apart, with an ",
+   "fecha": "2017-02-27",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21483/PIA21483~thumb.jpg",
+   "imagen_local": "marte/img/PIA21483.jpg"
+  },
+  {
+   "nasa_id": "PIA21482",
+   "tipo": "imagen",
+   "titulo": "Curiosity Observes Whirlwinds Carrying Martian Dust",
+   "descripcion": "Dust devils dance in the distance in this frame from a sequence of images taken by the Navigation Camera on NASA's Curiosity Mars rover on Feb. 12, 2017, during the summer afternoon of the rover's 1,607th Martian day, or sol.  Within a broader context view, the rectangular area outlined in black was imaged multiple times over a span of several minutes to check for dust devils. Images from the period with most activity are shown in the inset area. The images are in pairs that were taken about 12 seconds apart, with an interval of about 90 seconds between pairs. Timing is accelerated and not ful",
+   "fecha": "2017-02-27",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21482/PIA21482~thumb.jpg",
+   "imagen_local": "marte/img/PIA21482.jpg"
+  },
+  {
+   "nasa_id": "PIA21270",
+   "tipo": "imagen",
+   "titulo": "Martian Dust Devil Action in Gale Crater, Sol 1597",
+   "descripcion": "This frame from a sequence of images shows a dust-carrying whirlwind, called a dust devil, scooting across the ground inside Gale Crater, as observed on the local summer afternoon of NASA's Curiosity Mars Rover's 1,597th Martian day, or sol (Feb. 1, 2017).  Set within a broader southward view from the rover's Navigation Camera, the rectangular area outlined in black was imaged multiple times over a span of several minutes to check for dust devils. Images from the period with most activity are shown in the inset area. The images are in pairs that were taken about 12 seconds apart, with an inter",
+   "fecha": "2017-02-27",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21270/PIA21270~thumb.jpg",
+   "imagen_local": "marte/img/PIA21270.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7653",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7653",
+   "descripcion": "CAPE CANAVERAL, Fla. -- In the Payload Hazardous Servicing Facility at NASA's Kennedy Space Center in Florida, technicians help guide an Atlas V rocket's payload fairing down to the surface of a transporter for the move to Space Launch Complex 41. The Mars Science Laboratory (MSL) spacecraft is enclosed in the fairing, which will protect the payload from heat and aerodynamic pressure generated during launch.     MSL's components include a compact car-sized rover, Curiosity, which has 10 science instruments designed to search for evidence on whether Mars has had environments favorable to microb",
+   "fecha": "2011-11-02",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7653/KSC-2011-7653~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7653.jpg"
+  },
+  {
+   "nasa_id": "PIA20762",
+   "tipo": "imagen",
+   "titulo": "Autonomous Selection of a Rover Laser Target on Mars",
+   "descripcion": "NASA's Curiosity Mars rover autonomously selects some of the targets for the laser and telescopic camera of the rover's Chemistry and Camera (ChemCam) instrument. For example, on-board software analyzed the image on the left, chose the target highlighted with the yellow dot, and pointed ChemCam to acquire laser analysis and the image on the right.  Most ChemCam targets are still selected by scientists discussing rocks or soil seen in images the rover has sent to Earth, but the autonomous targeting provides an added capability. It can offer a head start on acquiring composition information at a",
+   "fecha": "2016-07-21",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20762/PIA20762~thumb.jpg",
+   "imagen_local": "marte/img/PIA20762.jpg"
+  },
+  {
+   "nasa_id": "PIA20765",
+   "tipo": "imagen",
+   "titulo": "Rover Panorama of Entrance to Murray Buttes on Mars",
+   "descripcion": "This 360-degree panorama was acquired by the Mast Camera (Mastcam) on NASA's Curiosity Mars rover as the rover neared features called \"Murray Buttes\" on lower Mount Sharp.  The view combines more than 130 images taken on Aug. 5, 2016, during the afternoon of the mission's 1,421st sol, or Martian day, by Mastcam's left-eye camera. This date also was the fourth anniversary of Curiosity's landing.  The dark, flat-topped mesa seen to the left of Curiosity's robotic arm is about 300 feet (about 90 meters) from the rover's position. It stands about 50 feet (about 15 meters) high. The horizontal ledg",
+   "fecha": "2016-08-19",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20765/PIA20765~thumb.jpg",
+   "imagen_local": "marte/img/PIA20765.jpg"
+  },
+  {
+   "nasa_id": "PIA20267",
+   "tipo": "imagen",
+   "titulo": "Details on Silica-Rich Elk Target near Marias Pass",
+   "descripcion": "This image from the Chemistry and Camera (ChemCam) instrument on NASA's Curiosity Mars rover shows detailed texture of a rock target called \"Elk\" on Mars' Mount Sharp, revealing laminations that are present in much of the Murray Formation geological unit of lower Mount Sharp.  Researchers also used ChemCam's laser and spectrometers to assess Elk's composition and found it to be rich in silica.  The image covers a patch of rock surface about 2.8 inches (7 centimeters) across. It was taken on May 22, 2015, during the mission's 992nd Martian day, or sol. ChemCam's Remote Micro-Imager camera, on t",
+   "fecha": "2015-12-17",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20267/PIA20267~thumb.jpg",
+   "imagen_local": "marte/img/PIA20267.jpg"
+  },
+  {
+   "nasa_id": "PIA24349",
+   "tipo": "imagen",
+   "titulo": "Zeroing in on the Target",
+   "descripcion": "As landing technology improves and these landing ellipses shrink, missions can aim for more precise landings, opening up new areas of Mars to explore. Perseverance takes it two steps further than previous missions. First, it uses a new algorithm to time its parachute deployment based on distance to its target rather than vehicle velocity. This shrinks the landing ellipse to 4.8 miles by 4.1 miles (7.7 kilometers by 6.6 kilometers). Second, the rover uses maps stored in its memory to avoid landing hazards within that smaller ellipse during its propulsive descent phase. This allows Perseverance ",
+   "fecha": "2021-01-08",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA24349/PIA24349~thumb.jpg",
+   "imagen_local": "marte/img/PIA24349.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7903",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7903",
+   "descripcion": "CAPE CANAVERAL, Fla. -- On Cape Canaveral Air Force Station in Florida, lightning masts protect the 197-foot-tall United Launch Alliance Atlas V rocket as it leaves behind the safety of the Vertical Integration Facility (VIF) at Space Launch Complex-41 to take its position on the pad's surface. Atop the rocket is NASA's Mars Science Laboratory (MSL), enclosed in its payload fairing.  The rocket began its move from the VIF at 8 a.m. EST.    Liftoff is planned during a launch window which extends from 10:02 a.m. to 11:45 a.m. EST on Nov. 26. MSL's components include a car-sized rover, Curiosity,",
+   "fecha": "2011-11-25",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7903/KSC-2011-7903~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7903.jpg"
+  },
+  {
+   "nasa_id": "KSC-2011-7902",
+   "tipo": "imagen",
+   "titulo": "KSC-2011-7902",
+   "descripcion": "CAPE CANAVERAL, Fla. -- On Cape Canaveral Air Force Station in Florida, one of three lightning masts, at left, protects the 197-foot-tall United Launch Alliance Atlas V rocket as it rolls from the safety of the Vertical Integration Facility (VIF) at Space Launch Complex-41 to the pad's surface. Atop the rocket is NASA's Mars Science Laboratory (MSL), enclosed in its payload fairing.  The rocket began its move from the VIF at 8 a.m. EST.    Liftoff is planned during a launch window which extends from 10:02 a.m. to 11:45 a.m. EST on Nov. 26. MSL's components include a car-sized rover, Curiosity,",
+   "fecha": "2011-11-25",
+   "centro": "KSC",
+   "url": "https://images-assets.nasa.gov/image/KSC-2011-7902/KSC-2011-7902~thumb.jpg",
+   "imagen_local": "marte/img/KSC-2011-7902.jpg"
+  },
+  {
+   "nasa_id": "PIA20840",
+   "tipo": "imagen",
+   "titulo": "Rover Panorama Taken Amid Murray Buttes on Mars",
+   "descripcion": "Original Caption Released with Image:      This 360-degree panorama was acquired by the Mast Camera (Mastcam) on NASA's Curiosity Mars rover while the rover was in an area called \"Murray Buttes\" on lower Mount Sharp, one of the most scenic landscapes yet visited by any Mars rover.      The view stitches together many individual images taken by Mastcam's left-eye camera on Sept. 4, 2016, during the 1,451st Martian day, or sol, of the mission. North is at both ends and south is in the center. The rover's location when it recorded this scene was the site it reached in its Sol 1448 drive. (See map",
+   "fecha": "2016-10-03",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20840/PIA20840~thumb.jpg",
+   "imagen_local": "marte/img/PIA20840.jpg"
+  },
+  {
+   "nasa_id": "PIA20842",
+   "tipo": "imagen",
+   "titulo": "Cluster of Martian Mesas on Lower Mount Sharp, Sols 1438 and 1439",
+   "descripcion": "The mesa in the center of this scene from the \"Murray Buttes\" area on Mars' lower Mount Sharp is longer than a football field. It extends more than 361 feet (110 meters) from the left-most outcrop low on the slope to the right side where rock debris is behind a light-toned, dust-covered dune.  The panorama combines sets of images taken by the left-eye camera of the Mast Camera (Mastcam) on NASA's Curiosity Mars rover, for the left half of the scene, and by Mastcam's right-eye camera for the right half of the scene. The component images from the left-eye camera were taken on Aug. 22, 2016, duri",
+   "fecha": "2016-10-03",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA20842/PIA20842~thumb.jpg",
+   "imagen_local": "marte/img/PIA20842.jpg"
+  },
+  {
+   "nasa_id": "PIA25412",
+   "tipo": "imagen",
+   "titulo": "Mars Dust Storm in Relation to InSight, Curiosity and Perseverance",
+   "descripcion": "The beige clouds seen in this flat global map of Mars are a continent-size dust storm captured on Sept. 29, 2022 by the Mars Color Imager (MARCI) camera aboard NASA's Mars Reconnaissance Orbiter (MRO). As MRO passes over the planet, MARCI takes linear images – essentially strips – of the planet's circumference each day. The images are then stitched together to create a daily global map of the planet, showing atmospheric features across the planet as seen at the same time of day (mid-afternoon). Comparison of daily maps show atmospheric changes over time. Besides providing unique scientific dat",
+   "fecha": "2022-10-07",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25412/PIA25412~thumb.jpg",
+   "imagen_local": "marte/img/PIA25412.jpg"
+  },
+  {
+   "nasa_id": "PIA21255",
+   "tipo": "imagen",
+   "titulo": "Now and Long Ago at Gale Crater, Mars Illustration",
+   "descripcion": "This pair of drawings depicts the same location on Mars at two points in time: now and billions of years ago. The location is in Gale Crater, near the Red Planet's equator. Since August 2012, NASA's Curiosity Mars rover mission has been investigating rock layers in the crater floor and in the crater's central peak (Mount Sharp) for information recorded in the rocks about ancient environmental conditions and how they changed over time.  Slide 1 shows a present-day snapshot of the northern half of Gale Crater. North is to the left. The underlying basement is the crust of Mars that forms the crat",
+   "fecha": "2016-12-13",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21255/PIA21255~thumb.jpg",
+   "imagen_local": "marte/img/PIA21255.jpg"
+  },
+  {
+   "nasa_id": "PIA22232",
+   "tipo": "imagen",
+   "titulo": "Measuring the Pulse of Mars",
+   "descripcion": "Elysium Planitia, a flat-smooth plain just north of the equator makes for the perfect location from which to study the deep Martian interior.  Interior Exploration using Seismic Investigations, Geodesy and Heat Transport, or InSight, is designed to study the deep interior of Mars. The mission seeks the fingerprints of the processes that formed the rocky planets of the solar system.  Its landing site, Elysium Planitia, was picked from 22 candidates, and is centered at about 4.5 degrees north latitude and 135.9 degrees east longitude; about 373 miles (600 kilometers) from Curiosity's landing sit",
+   "fecha": "2018-01-25",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA22232/PIA22232~thumb.jpg",
+   "imagen_local": "marte/img/PIA22232.jpg"
+  },
+  {
+   "nasa_id": "PIA25657",
+   "tipo": "imagen",
+   "titulo": "NASA's Perseverance Records a Martian Dust Devil",
+   "descripcion": "This video and audio show the results of NASA's Perseverance Mars rover using its SuperCam microphone to record the sounds of a Martian dust devil – the first time any such recording has been made. The dust devil passed directly over Perseverance on Sept. 27, 2021, the 215th Martian day, or sol, of the mission.  At the same time that SuperCam's microphone recorded the dust devil, Perseverance's weather sensors (measuring wind, pressure, temperature, and dust) and the rover's left navigation camera were on. This allowed scientists to combine sound, image, and atmospheric data. The unique combin",
+   "fecha": "2022-12-13",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA25657/PIA25657~thumb.jpg",
+   "imagen_local": "marte/img/PIA25657.jpg"
+  },
+  {
+   "nasa_id": "PIA21500",
+   "tipo": "imagen",
+   "titulo": "Diagram of Lake Stratification on Mars",
+   "descripcion": "This diagram presents some of the processes and clues related to a long-ago lake on Mars that became stratified, with the shallow water richer in oxidants than deeper water was.  The sedimentary rocks deposited within a lake in Mars' Gale Crater more than three billion years ago differ from each other in a pattern that matches what is seen in lakes on Earth. As sediment-bearing water flows into a lake, bedding thickness and particle size progressively decrease as sediment is deposited in deeper and deeper water as seen in examples of thick beds (PIA19074) from shallowest water, thin beds (PIA1",
+   "fecha": "2017-06-01",
+   "centro": "JPL",
+   "url": "https://images-assets.nasa.gov/image/PIA21500/PIA21500~thumb.jpg",
+   "imagen_local": "marte/img/PIA21500.jpg"
+  }
+ ]
+}
