@@ -4,7 +4,7 @@ window.RESPALDO["biblioteca"] = {
  "proyecto": "Observatorio Nacional - respaldo local de APIs de la NASA",
  "descripcion": "Resultados de la biblioteca de imágenes y videos de la NASA por tema.",
  "fuente": "https://images-api.nasa.gov/search",
- "generado": "2026-11-09T18:53:04Z",
+ "generado": "2026-11-09T19:00:11Z",
  "nota": "Datos reales descargados de servicios públicos de la NASA. Las imágenes están reducidas.",
  "total": 800,
  "temas": {
@@ -1912,6 +1912,16 @@ window.RESPALDO["biblioteca"] = {
     "url_video": "https://images-assets.nasa.gov/video/NHQ_2019_1007_AskNASA EP105 Lindsay Aitchison/NHQ_2019_1007_AskNASA EP105 Lindsay Aitchison~orig.mp4"
    },
    {
+    "nasa_id": "Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024",
+    "tipo": "video",
+    "titulo": "Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024",
+    "descripcion": "Advancing Moon mobility for Artemis astronauts, getting ready for the total solar eclipse, and a milestone engine test for our Artemis Moon rocket … a few of the stories to tell you about – This Week at NASA!",
+    "fecha": "2024-04-05",
+    "centro": "HQ",
+    "url": "https://images-assets.nasa.gov/video/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024~thumb.jpg",
+    "url_video": "https://images-assets.nasa.gov/video/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024~orig.mp4"
+   },
+   {
     "nasa_id": "ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p",
     "tipo": "video",
     "titulo": "New Supercomputer Simulation Sheds Light on Moon’s Origin",
@@ -1921,16 +1931,6 @@ window.RESPALDO["biblioteca"] = {
     "url": "https://images-assets.nasa.gov/video/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p~thumb.jpg",
     "url_video": "https://images-assets.nasa.gov/video/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p~orig.mp4",
     "imagen_local": "biblioteca/img/moon/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p.jpg"
-   },
-   {
-    "nasa_id": "Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024",
-    "tipo": "video",
-    "titulo": "Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024",
-    "descripcion": "Advancing Moon mobility for Artemis astronauts, getting ready for the total solar eclipse, and a milestone engine test for our Artemis Moon rocket … a few of the stories to tell you about – This Week at NASA!",
-    "fecha": "2024-04-05",
-    "centro": "HQ",
-    "url": "https://images-assets.nasa.gov/video/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024~thumb.jpg",
-    "url_video": "https://images-assets.nasa.gov/video/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024~orig.mp4"
    },
    {
     "nasa_id": "Moon_Base_Trailer-4K",
@@ -7035,16 +7035,6 @@ window.RESPALDO["biblioteca"] = {
     "imagen_local": "biblioteca/img/astronaut/nasa-astronaut-nicole-mann-in-spacex-training_52233657193_o.jpg"
    },
    {
-    "nasa_id": "s61-03510",
-    "tipo": "imagen",
-    "titulo": "SUIT - ASTRONAUT S. CARPENTER - PA",
-    "descripcion": "S61-03510 (1961) --- Project Mercury astronaut M. Scott Carpenter smiles, in his pressure suit, prior to participating in a simulated mission run at Cape Canaveral, Florida.  Astronaut Carpenter has been selected as the prime pilot on the United States second attempt to put a man into orbit around Earth. Photo credit: NASA",
-    "fecha": "1960-08-01",
-    "centro": "JSC",
-    "url": "https://images-assets.nasa.gov/image/s61-03510/s61-03510~thumb.jpg",
-    "imagen_local": "biblioteca/img/astronaut/s61-03510.jpg"
-   },
-   {
     "nasa_id": "AfricanAmericanAstronauts-24x36poster-print",
     "tipo": "imagen",
     "titulo": "AfricanAmericanAstronauts-24x36poster-print",
@@ -7053,6 +7043,16 @@ window.RESPALDO["biblioteca"] = {
     "centro": "HQ",
     "url": "https://images-assets.nasa.gov/image/AfricanAmericanAstronauts-24x36poster-print/AfricanAmericanAstronauts-24x36poster-print~thumb.jpg",
     "imagen_local": "biblioteca/img/astronaut/AfricanAmericanAstronauts-24x36poster-print.jpg"
+   },
+   {
+    "nasa_id": "s61-03510",
+    "tipo": "imagen",
+    "titulo": "SUIT - ASTRONAUT S. CARPENTER - PA",
+    "descripcion": "S61-03510 (1961) --- Project Mercury astronaut M. Scott Carpenter smiles, in his pressure suit, prior to participating in a simulated mission run at Cape Canaveral, Florida.  Astronaut Carpenter has been selected as the prime pilot on the United States second attempt to put a man into orbit around Earth. Photo credit: NASA",
+    "fecha": "1960-08-01",
+    "centro": "JSC",
+    "url": "https://images-assets.nasa.gov/image/s61-03510/s61-03510~thumb.jpg",
+    "imagen_local": "biblioteca/img/astronaut/s61-03510.jpg"
    },
    {
     "nasa_id": "Artemis II Astronauts Check Out Some Flight Hardware on This Week @NASA – November 24, 2023",
