@@ -1,4 +1,4 @@
-import { Servicios } from '../SERVICIO/api.js';
+(function () {
 
 const servicio = new Servicios();
 const tablaBody = document.querySelector('#tablaAsteroides tbody');
@@ -50,3 +50,4 @@ window.buscarAsteroides = async () => {
         `;
     }
 };
+})();

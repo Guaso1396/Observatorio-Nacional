@@ -1,4 +1,4 @@
-import { Servicios } from '../SERVICIO/api.js';
+(function () {
 
 const servicio = new Servicios();
 const epicContainer = document.getElementById('epicContainer');
@@ -44,3 +44,4 @@ window.cargarEpic = async () => {
         `;
     }
 };
+})();

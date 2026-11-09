@@ -1,4 +1,4 @@
-import { Servicios } from '../SERVICIO/api.js';
+(function () {
 
 const servicio = new Servicios();
 const marteContainer = document.getElementById('marteContainer');
@@ -48,3 +48,4 @@ document.getElementById('btnMarte').addEventListener('click', async () => {
         `;
     }
 });
+})();

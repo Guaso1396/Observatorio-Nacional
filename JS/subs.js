@@ -1,6 +1,8 @@
+// Script clásico: Firebase se carga con import() para que funcione también al abrir con doble clic
+(async function () {
 // Firebase SDK
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
+const { initializeApp } = await import("https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js");
+const { getFirestore, collection, addDoc } = await import("https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js");
 
 const firebaseConfig = {
   apiKey: "AIzaSyC9IskWnzGXdYuxyyiguJEWNYuKyuOZTNo",
@@ -49,3 +51,4 @@ document.getElementById("form").onsubmit = async function(e) {
     alert("❌ Error al guardar. Intenta de nuevo.");
   }
 };
+})();

@@ -1,4 +1,4 @@
-import { Servicios } from "../SERVICIO/api.js";
+(function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const servicio = new Servicios();
@@ -64,3 +64,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+})();

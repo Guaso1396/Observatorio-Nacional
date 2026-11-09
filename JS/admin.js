@@ -1,14 +1,16 @@
+// Script clásico: Firebase se carga con import() para que funcione también al abrir con doble clic
+(async function () {
 // Firebase SDK
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
-import {
+const { initializeApp } = await import("https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js");
+const {
   getAuth,
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
   setPersistence,
   browserSessionPersistence
-} from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
-import { getFirestore, collection, getDocs, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
+} = await import("https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js");
+const { getFirestore, collection, getDocs, deleteDoc, doc } = await import("https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js");
 
 const firebaseConfig = {
   apiKey: "AIzaSyC9IskWnzGXdYuxyyiguJEWNYuKyuOZTNo",
@@ -194,3 +196,4 @@ function enviarCorreo(usuario) {
     alert("❌ No se pudo enviar el correo.");
   });
 }
+})();

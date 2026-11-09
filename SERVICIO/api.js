@@ -1,4 +1,5 @@
-export class Servicios {
+// Script clásico (no módulo) para que funcione también al abrir la página con doble clic
+class Servicios {
 
     constructor() {
         this.datos;
@@ -163,3 +164,4 @@ export class Servicios {
         }
     }
 }
+window.Servicios = Servicios;
