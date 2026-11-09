@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-09T19:01:07Z",
+ "fecha": "2026-11-09T19:07:52Z",
  "pruebas": {
   "Tierra - epic.gsfc.nasa.gov (la que usa la página)": {
    "url": "https://epic.gsfc.nasa.gov/api/natural/date/2025-06-15",
@@ -7,7 +7,7 @@
    "cors": "*",
    "tipo": "application/json",
    "muestra": "[{\"identifier\":\"20250615010436\",\"caption\":\"This image was taken by NASA's EPIC camera onboard the NOAA DSCOVR spacecraft",
-   "milisegundos": 537,
+   "milisegundos": 664,
    "funciona_en_navegador": true
   },
   "Tierra - api.nasa.gov/EPIC": {
@@ -16,7 +16,7 @@
    "cors": "*",
    "tipo": "application/json",
    "muestra": "[{\"identifier\":\"20261107004554\",\"caption\":\"This image was taken by NASA's EPIC camera onboard the NOAA DSCOVR spacecraft",
-   "milisegundos": 712,
+   "milisegundos": 767,
    "funciona_en_navegador": true
   },
   "Marte - api.nasa.gov mars-photos (la que usa la página)": {
@@ -33,7 +33,7 @@
    "cors": "*",
    "tipo": "application/json; charset=utf-8",
    "muestra": "{\"photos\":[]}",
-   "milisegundos": 381,
+   "milisegundos": 356,
    "funciona_en_navegador": true
   },
   "Marte - mars.nasa.gov raw_images": {
@@ -42,7 +42,7 @@
    "cors": "*",
    "tipo": "application/json;charset=UTF-8",
    "muestra": "{\"sol\":1000,\"images\":[{\"sol\":1000,\"attitude\":\"UNK\",\"image_files\":{\"medium\":\"http://mars.nasa.gov/msl-raw-images/msss/010",
-   "milisegundos": 264,
+   "milisegundos": 12767,
    "funciona_en_navegador": true
   },
   "Asteroides - api.nasa.gov NeoWs": {
@@ -51,7 +51,7 @@
    "cors": "*",
    "tipo": "application/json",
    "muestra": "{\"element_count\":4,\"links\":{\"next\":\"http://api.nasa.gov/neo/rest/v1/feed?start_date=2025-06-16&end_date=2025-06-16&detai",
-   "milisegundos": 222,
+   "milisegundos": 219,
    "funciona_en_navegador": true
   },
   "Biblioteca - images-api.nasa.gov": {
@@ -60,17 +60,16 @@
    "cors": "*",
    "tipo": "application/json",
    "muestra": "{\"collection\":{\"version\":\"1.1\",\"href\":\"http://images-api.nasa.gov/search?q=moon\",\"items\":[{\"href\":\"https://images-assets",
-   "milisegundos": 1033,
+   "milisegundos": 1000,
    "funciona_en_navegador": true
   },
   "Inicio - api.nasa.gov APOD": {
    "url": "https://api.nasa.gov/planetary/apod?api_key=API_KEY",
-   "estado": 200,
+   "estado": 500,
    "cors": "https://guaso1396.github.io",
-   "tipo": "application/json",
-   "muestra": "{\"date\":\"2026-11-09\",\"explanation\":\"Does the blue nebula look like the head of a witch? The nebula is known popularly as",
-   "milisegundos": 2732,
-   "funciona_en_navegador": true
+   "error": "HTTP Error 500: Internal Server Error",
+   "milisegundos": 3149,
+   "funciona_en_navegador": false
   }
  }
 }

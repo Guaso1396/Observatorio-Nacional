@@ -4,7 +4,7 @@ window.RESPALDO["biblioteca"] = {
  "proyecto": "Observatorio Nacional - respaldo local de APIs de la NASA",
  "descripcion": "Resultados de la biblioteca de imágenes y videos de la NASA por tema.",
  "fuente": "https://images-api.nasa.gov/search",
- "generado": "2026-11-09T19:06:43Z",
+ "generado": "2026-11-09T19:11:27Z",
  "nota": "Datos reales descargados de servicios públicos de la NASA. Las imágenes están reducidas.",
  "total": 800,
  "temas": {
@@ -1205,6 +1205,17 @@ window.RESPALDO["biblioteca"] = {
     "url_video": "https://images-assets.nasa.gov/video/Why Does the Moon Look Larger at the Horizo/Why Does the Moon Look Larger at the Horizo~orig.mp4"
    },
    {
+    "nasa_id": "GSFC_20161003_MusicVideo_m12366",
+    "tipo": "video",
+    "titulo": "The Moon and More",
+    "descripcion": "\"The Moon and More\" is a music video featuring musicians Javier Colon (Season 1 winner of NBC's \"The Voice\"), and Matt Cusson in collaboration with NASA's Goddard Space Flight Center and the Lunar Reconnaissance Orbiter (LRO) mission.  Song: \"The Moon and More\" - Written, Produced, and Performed by Javier Colon and Matt Cusson. Bass by Uriah Duffy. Audio Mix & Mastering by Jack Deboe. Javier Colon appears courtesy of Concord Records",
+    "fecha": "2016-10-03",
+    "centro": "GSFC",
+    "url": "https://images-assets.nasa.gov/video/GSFC_20161003_MusicVideo_m12366/GSFC_20161003_MusicVideo_m12366~thumb.jpg",
+    "url_video": "https://images-assets.nasa.gov/video/GSFC_20161003_MusicVideo_m12366/GSFC_20161003_MusicVideo_m12366~orig.mp4",
+    "imagen_local": "biblioteca/img/moon/GSFC_20161003_MusicVideo_m12366.jpg"
+   },
+   {
     "nasa_id": "Moon to Mars Multidisciplinary Science",
     "tipo": "imagen",
     "titulo": "Moon to Mars Multidisciplinary Science",
@@ -1239,17 +1250,6 @@ window.RESPALDO["biblioteca"] = {
     "fecha": "2025-03-12",
     "centro": "HQ",
     "url": "https://images-assets.nasa.gov/image/Moon to Mars Infrastructure/Moon to Mars Infrastructure~thumb.jpg"
-   },
-   {
-    "nasa_id": "GSFC_20161003_MusicVideo_m12366",
-    "tipo": "video",
-    "titulo": "The Moon and More",
-    "descripcion": "\"The Moon and More\" is a music video featuring musicians Javier Colon (Season 1 winner of NBC's \"The Voice\"), and Matt Cusson in collaboration with NASA's Goddard Space Flight Center and the Lunar Reconnaissance Orbiter (LRO) mission.  Song: \"The Moon and More\" - Written, Produced, and Performed by Javier Colon and Matt Cusson. Bass by Uriah Duffy. Audio Mix & Mastering by Jack Deboe. Javier Colon appears courtesy of Concord Records",
-    "fecha": "2016-10-03",
-    "centro": "GSFC",
-    "url": "https://images-assets.nasa.gov/video/GSFC_20161003_MusicVideo_m12366/GSFC_20161003_MusicVideo_m12366~thumb.jpg",
-    "url_video": "https://images-assets.nasa.gov/video/GSFC_20161003_MusicVideo_m12366/GSFC_20161003_MusicVideo_m12366~orig.mp4",
-    "imagen_local": "biblioteca/img/moon/GSFC_20161003_MusicVideo_m12366.jpg"
    },
    {
     "nasa_id": "Orion_Artemis-I_b-roll_9_2021_LB",
@@ -1714,16 +1714,6 @@ window.RESPALDO["biblioteca"] = {
     "imagen_local": "biblioteca/img/moon/High-Res-Moon-Base-June-30-Update-Image.jpg"
    },
    {
-    "nasa_id": "The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024",
-    "tipo": "video",
-    "titulo": "The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024",
-    "descripcion": "The first Artemis robotic launch to the Moon, an Artemis lunar robotic rover is halfway built, and an up-close look at a volcanic moon … a few of the stories to tell you about – This Week at NASA!",
-    "fecha": "2024-01-05",
-    "centro": "HQ",
-    "url": "https://images-assets.nasa.gov/video/The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024/The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024~thumb.jpg",
-    "url_video": "https://images-assets.nasa.gov/video/The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024/The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024~orig.mp4"
-   },
-   {
     "nasa_id": "GSFC_20190207_LRO_m13144_Impacts",
     "tipo": "video",
     "titulo": "Moon Sheds Light on Earth's Impact History",
@@ -1733,6 +1723,16 @@ window.RESPALDO["biblioteca"] = {
     "url": "https://images-assets.nasa.gov/video/GSFC_20190207_LRO_m13144_Impacts/GSFC_20190207_LRO_m13144_Impacts~thumb.jpg",
     "url_video": "https://images-assets.nasa.gov/video/GSFC_20190207_LRO_m13144_Impacts/GSFC_20190207_LRO_m13144_Impacts~orig.mp4",
     "imagen_local": "biblioteca/img/moon/GSFC_20190207_LRO_m13144_Impacts.jpg"
+   },
+   {
+    "nasa_id": "The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024",
+    "tipo": "video",
+    "titulo": "The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024",
+    "descripcion": "The first Artemis robotic launch to the Moon, an Artemis lunar robotic rover is halfway built, and an up-close look at a volcanic moon … a few of the stories to tell you about – This Week at NASA!",
+    "fecha": "2024-01-05",
+    "centro": "HQ",
+    "url": "https://images-assets.nasa.gov/video/The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024/The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024~thumb.jpg",
+    "url_video": "https://images-assets.nasa.gov/video/The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024/The First Artemis Robotic Launch to the Moon on This Week @NASA – January 5, 2024~orig.mp4"
    },
    {
     "nasa_id": "ObserveTheMoon_16x9",
@@ -1808,6 +1808,16 @@ window.RESPALDO["biblioteca"] = {
     "imagen_local": "biblioteca/img/moon/Apollo_11_Plaque_Comparison_720p.jpg"
    },
    {
+    "nasa_id": "PIA16623",
+    "tipo": "imagen",
+    "titulo": "GRAIL Bouguer Gravity Moon Map",
+    "descripcion": "GRAIL Bouguer Gravity Moon Map",
+    "fecha": "2012-12-05",
+    "centro": "JPL",
+    "url": "https://images-assets.nasa.gov/image/PIA16623/PIA16623~thumb.jpg",
+    "imagen_local": "biblioteca/img/moon/PIA16623.jpg"
+   },
+   {
     "nasa_id": "KSC-20261107-VP-FMX01-001-MOON-BASE-NEW-CONFERENCE-UPDATE-PROGRAM-1080-M27974",
     "tipo": "video",
     "titulo": "NASA Moon Base: November 2026 Update ",
@@ -1817,16 +1827,6 @@ window.RESPALDO["biblioteca"] = {
     "url": "https://images-assets.nasa.gov/video/KSC-20261107-VP-FMX01-001-MOON-BASE-NEW-CONFERENCE-UPDATE-PROGRAM-1080-M27974/KSC-20261107-VP-FMX01-001-MOON-BASE-NEW-CONFERENCE-UPDATE-PROGRAM-1080-M27974~thumb.jpg",
     "url_video": "https://images-assets.nasa.gov/video/KSC-20261107-VP-FMX01-001-MOON-BASE-NEW-CONFERENCE-UPDATE-PROGRAM-1080-M27974/KSC-20261107-VP-FMX01-001-MOON-BASE-NEW-CONFERENCE-UPDATE-PROGRAM-1080-M27974~orig.mp4",
     "imagen_local": "biblioteca/img/moon/KSC-20261107-VP-FMX01-001-MOON-BASE-NEW-CONFERENCE-UPDATE-PROGRAM-1080-M27974.jpg"
-   },
-   {
-    "nasa_id": "PIA16623",
-    "tipo": "imagen",
-    "titulo": "GRAIL Bouguer Gravity Moon Map",
-    "descripcion": "GRAIL Bouguer Gravity Moon Map",
-    "fecha": "2012-12-05",
-    "centro": "JPL",
-    "url": "https://images-assets.nasa.gov/image/PIA16623/PIA16623~thumb.jpg",
-    "imagen_local": "biblioteca/img/moon/PIA16623.jpg"
    },
    {
     "nasa_id": "PIA00132",
@@ -1912,16 +1912,6 @@ window.RESPALDO["biblioteca"] = {
     "url_video": "https://images-assets.nasa.gov/video/NHQ_2019_1007_AskNASA EP105 Lindsay Aitchison/NHQ_2019_1007_AskNASA EP105 Lindsay Aitchison~orig.mp4"
    },
    {
-    "nasa_id": "Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024",
-    "tipo": "video",
-    "titulo": "Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024",
-    "descripcion": "Advancing Moon mobility for Artemis astronauts, getting ready for the total solar eclipse, and a milestone engine test for our Artemis Moon rocket … a few of the stories to tell you about – This Week at NASA!",
-    "fecha": "2024-04-05",
-    "centro": "HQ",
-    "url": "https://images-assets.nasa.gov/video/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024~thumb.jpg",
-    "url_video": "https://images-assets.nasa.gov/video/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024~orig.mp4"
-   },
-   {
     "nasa_id": "ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p",
     "tipo": "video",
     "titulo": "New Supercomputer Simulation Sheds Light on Moon’s Origin",
@@ -1931,6 +1921,16 @@ window.RESPALDO["biblioteca"] = {
     "url": "https://images-assets.nasa.gov/video/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p~thumb.jpg",
     "url_video": "https://images-assets.nasa.gov/video/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p~orig.mp4",
     "imagen_local": "biblioteca/img/moon/ARC-20221004-AAV3443-MoonOrigin-Social-NASAWeb-1080p.jpg"
+   },
+   {
+    "nasa_id": "Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024",
+    "tipo": "video",
+    "titulo": "Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024",
+    "descripcion": "Advancing Moon mobility for Artemis astronauts, getting ready for the total solar eclipse, and a milestone engine test for our Artemis Moon rocket … a few of the stories to tell you about – This Week at NASA!",
+    "fecha": "2024-04-05",
+    "centro": "HQ",
+    "url": "https://images-assets.nasa.gov/video/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024~thumb.jpg",
+    "url_video": "https://images-assets.nasa.gov/video/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024/Advancing Moon Mobility for Artemis Astronauts on This Week @NASA – April 5, 2024~orig.mp4"
    },
    {
     "nasa_id": "Moon_Base_Trailer-4K",
@@ -8072,16 +8072,6 @@ window.RESPALDO["biblioteca"] = {
     "imagen_local": "biblioteca/img/telescope/Moving_Roman_-_Propulsion4k.jpg"
    },
    {
-    "nasa_id": "8330773",
-    "tipo": "imagen",
-    "titulo": "History of Hubble Space Telescope (HST)",
-    "descripcion": "This is a photograph of a 1/15 scale model of the Hubble Space Telescope (HST). The HST is the product of a partnership between NASA, European Space Agency Contractors, and the international community of astronomers. It is named after Edwin P. Hubble, an American Astronomer who discovered the expanding nature of the universe and was the first to realize the true nature of galaxies. The purpose of the HST, the most complex and sensitive optical telescope ever made, is to study the cosmos from a low-Earth orbit. By placing the telescope in space, astronomers are able to collect data that is free",
-    "fecha": "1983-01-01",
-    "centro": "MSFC",
-    "url": "https://images-assets.nasa.gov/image/8330773/8330773~thumb.jpg",
-    "imagen_local": "biblioteca/img/telescope/8330773.jpg"
-   },
-   {
     "nasa_id": "PIA25790",
     "tipo": "imagen",
     "titulo": "Three of NASA's Infrared Telescopes",
@@ -8090,6 +8080,16 @@ window.RESPALDO["biblioteca"] = {
     "centro": "JPL",
     "url": "https://images-assets.nasa.gov/image/PIA25790/PIA25790~thumb.jpg",
     "imagen_local": "biblioteca/img/telescope/PIA25790.jpg"
+   },
+   {
+    "nasa_id": "8330773",
+    "tipo": "imagen",
+    "titulo": "History of Hubble Space Telescope (HST)",
+    "descripcion": "This is a photograph of a 1/15 scale model of the Hubble Space Telescope (HST). The HST is the product of a partnership between NASA, European Space Agency Contractors, and the international community of astronomers. It is named after Edwin P. Hubble, an American Astronomer who discovered the expanding nature of the universe and was the first to realize the true nature of galaxies. The purpose of the HST, the most complex and sensitive optical telescope ever made, is to study the cosmos from a low-Earth orbit. By placing the telescope in space, astronomers are able to collect data that is free",
+    "fecha": "1983-01-01",
+    "centro": "MSFC",
+    "url": "https://images-assets.nasa.gov/image/8330773/8330773~thumb.jpg",
+    "imagen_local": "biblioteca/img/telescope/8330773.jpg"
    },
    {
     "nasa_id": "ED13-0220-108",

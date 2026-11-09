@@ -4,7 +4,7 @@ window.RESPALDO["marte"] = {
  "proyecto": "Observatorio Nacional - respaldo local de APIs de la NASA",
  "descripcion": "Fotos de rovers de Marte agrupadas por sol (día marciano).",
  "fuente": "mars.nasa.gov raw_images",
- "generado": "2026-11-09T19:04:25Z",
+ "generado": "2026-11-09T19:09:08Z",
  "nota": "Datos reales descargados de servicios públicos de la NASA. Las imágenes están reducidas.",
  "total": 600,
  "soles": {
@@ -13,7 +13,7 @@ window.RESPALDO["marte"] = {
     "id": "1000ML0044631200305217C00_DXXX",
     "sol": 1000,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01000/mcam/1000ML0044631200305217C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1000_0.jpg"
@@ -22,7 +22,7 @@ window.RESPALDO["marte"] = {
     "id": "1000ML0044631300305227C00_DXXX",
     "sol": 1000,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01000/mcam/1000ML0044631300305227C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1000_1.jpg"
@@ -31,7 +31,7 @@ window.RESPALDO["marte"] = {
     "id": "1000ML0044631290305226C00_DXXX",
     "sol": 1000,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01000/mcam/1000ML0044631290305226C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1000_2.jpg"
@@ -40,10 +40,46 @@ window.RESPALDO["marte"] = {
     "id": "1000ML0044631280305225C00_DXXX",
     "sol": 1000,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01000/mcam/1000ML0044631280305225C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1000_3.jpg"
+   },
+   {
+    "id": "1000MR0044631090503669C00_DXXX",
+    "sol": 1000,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01000/mcam/1000MR0044631090503669C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1000_4.jpg"
+   },
+   {
+    "id": "1000MR0044631300503690C00_DXXX",
+    "sol": 1000,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01000/mcam/1000MR0044631300503690C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1000_5.jpg"
+   },
+   {
+    "id": "1000MR0044631290503689C00_DXXX",
+    "sol": 1000,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01000/mcam/1000MR0044631290503689C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1000_6.jpg"
+   },
+   {
+    "id": "1000MR0044631280503688C00_DXXX",
+    "sol": 1000,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01000/mcam/1000MR0044631280503688C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1000_7.jpg"
    }
   ],
   "1030": [
@@ -51,7 +87,7 @@ window.RESPALDO["marte"] = {
     "id": "1030ML0044990050305524D01_DXXX",
     "sol": 1030,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01030/mcam/1030ML0044990050305524D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1030_0.jpg"
@@ -60,7 +96,7 @@ window.RESPALDO["marte"] = {
     "id": "1030ML0044990060305525E01_DXXX",
     "sol": 1030,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01030/mcam/1030ML0044990060305525E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1030_1.jpg"
@@ -69,7 +105,7 @@ window.RESPALDO["marte"] = {
     "id": "1030ML0044990020305521D01_DXXX",
     "sol": 1030,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01030/mcam/1030ML0044990020305521D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1030_2.jpg"
@@ -78,10 +114,46 @@ window.RESPALDO["marte"] = {
     "id": "1030ML0044990030305522D01_DXXX",
     "sol": 1030,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01030/mcam/1030ML0044990030305522D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1030_3.jpg"
+   },
+   {
+    "id": "1030MR0044990140503884E01_DXXX",
+    "sol": 1030,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01030/mcam/1030MR0044990140503884E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1030_4.jpg"
+   },
+   {
+    "id": "1030MR0044990130503883D01_DXXX",
+    "sol": 1030,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01030/mcam/1030MR0044990130503883D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1030_5.jpg"
+   },
+   {
+    "id": "1030MR0044990110503881D01_DXXX",
+    "sol": 1030,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01030/mcam/1030MR0044990110503881D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1030_6.jpg"
+   },
+   {
+    "id": "1030MR0044990120503882D01_DXXX",
+    "sol": 1030,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01030/mcam/1030MR0044990120503882D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1030_7.jpg"
    }
   ],
   "1035": [
@@ -89,7 +161,7 @@ window.RESPALDO["marte"] = {
     "id": "1035MD0003950000103711E01_DXXX",
     "sol": 1035,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01035/mrdi/1035MD0003950000103711E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1035_0.jpg"
@@ -98,7 +170,7 @@ window.RESPALDO["marte"] = {
     "id": "1035MH0003250050400211E01_DXXX",
     "sol": 1035,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01035/mhli/1035MH0003250050400211E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1035_1.jpg"
@@ -107,7 +179,7 @@ window.RESPALDO["marte"] = {
     "id": "1035ML0045320050305746C00_DXXX",
     "sol": 1035,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01035/mcam/1035ML0045320050305746C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1035_2.jpg"
@@ -116,10 +188,46 @@ window.RESPALDO["marte"] = {
     "id": "1035ML0045320040305745C00_DXXX",
     "sol": 1035,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01035/mcam/1035ML0045320040305745C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1035_3.jpg"
+   },
+   {
+    "id": "1035ML0045320030305744C00_DXXX",
+    "sol": 1035,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01035/mcam/1035ML0045320030305744C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1035_4.jpg"
+   },
+   {
+    "id": "1035ML0045320020305743C00_DXXX",
+    "sol": 1035,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01035/mcam/1035ML0045320020305743C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1035_5.jpg"
+   },
+   {
+    "id": "1035MR0045350000204301E01_DXXX",
+    "sol": 1035,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01035/mcam/1035MR0045350000204301E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1035_6.jpg"
+   },
+   {
+    "id": "1035MR0045340020204300C00_DXXX",
+    "sol": 1035,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01035/mcam/1035MR0045340020204300C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1035_7.jpg"
    }
   ],
   "1040": [
@@ -127,7 +235,7 @@ window.RESPALDO["marte"] = {
     "id": "1040ML0045540020305821D01_DXXX",
     "sol": 1040,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01040/mcam/1040ML0045540020305821D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1040_0.jpg"
@@ -136,7 +244,7 @@ window.RESPALDO["marte"] = {
     "id": "1040ML0045520020305819D01_DXXX",
     "sol": 1040,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01040/mcam/1040ML0045520020305819D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1040_1.jpg"
@@ -145,7 +253,7 @@ window.RESPALDO["marte"] = {
     "id": "1040ML0045530020305820D01_DXXX",
     "sol": 1040,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01040/mcam/1040ML0045530020305820D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1040_2.jpg"
@@ -154,10 +262,46 @@ window.RESPALDO["marte"] = {
     "id": "1040ML0045510020305818D01_DXXX",
     "sol": 1040,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01040/mcam/1040ML0045510020305818D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1040_3.jpg"
+   },
+   {
+    "id": "1040MR0045540020204399C00_DXXX",
+    "sol": 1040,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01040/mcam/1040MR0045540020204399C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1040_4.jpg"
+   },
+   {
+    "id": "1040MR0045530020204398C00_DXXX",
+    "sol": 1040,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01040/mcam/1040MR0045530020204398C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1040_5.jpg"
+   },
+   {
+    "id": "1040MR0045510020204396C00_DXXX",
+    "sol": 1040,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01040/mcam/1040MR0045510020204396C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1040_6.jpg"
+   },
+   {
+    "id": "1040MR0045520020204397C00_DXXX",
+    "sol": 1040,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01040/mcam/1040MR0045520020204397C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1040_7.jpg"
    }
   ],
   "1045": [
@@ -165,7 +309,7 @@ window.RESPALDO["marte"] = {
     "id": "1045ML0045780020305975D01_DXXX",
     "sol": 1045,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01045/mcam/1045ML0045780020305975D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1045_0.jpg"
@@ -174,7 +318,7 @@ window.RESPALDO["marte"] = {
     "id": "1045MR0045780020104520C00_DXXX",
     "sol": 1045,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01045/mcam/1045MR0045780020104520C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1045_1.jpg"
@@ -183,7 +327,7 @@ window.RESPALDO["marte"] = {
     "id": "CR0_490268966EDR_F0482200CCAM05044M_",
     "sol": 1045,
     "earth_date": "",
-    "camera": null,
+    "camera": "CHEMCAM_RMI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01045/opgs/edr/ccam/CR0_490268966EDR_F0482200CCAM05044M_-br2.jpg",
     "imagen_local": "marte/img/sol1045_2.jpg"
@@ -192,10 +336,46 @@ window.RESPALDO["marte"] = {
     "id": "CR0_490268653EDR_F0482200CCAM04044M_",
     "sol": 1045,
     "earth_date": "",
-    "camera": null,
+    "camera": "CHEMCAM_RMI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01045/opgs/edr/ccam/CR0_490268653EDR_F0482200CCAM04044M_-br2.jpg",
     "imagen_local": "marte/img/sol1045_3.jpg"
+   },
+   {
+    "id": "CR0_490269335EDR_F0482200CCAM06044M_",
+    "sol": 1045,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01045/opgs/edr/ccam/CR0_490269335EDR_F0482200CCAM06044M_-br2.jpg",
+    "imagen_local": "marte/img/sol1045_4.jpg"
+   },
+   {
+    "id": "FLB_490267834EDR_F0482200FHAZ00323M_",
+    "sol": 1045,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01045/opgs/edr/fcam/FLB_490267834EDR_F0482200FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1045_5.jpg"
+   },
+   {
+    "id": "FRB_490267834EDR_F0482200FHAZ00323M_",
+    "sol": 1045,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01045/opgs/edr/fcam/FRB_490267834EDR_F0482200FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1045_6.jpg"
+   },
+   {
+    "id": "RLB_490267868EDR_F0482200RHAZ00323M_",
+    "sol": 1045,
+    "earth_date": "",
+    "camera": "RHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01045/opgs/edr/rcam/RLB_490267868EDR_F0482200RHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1045_7.jpg"
    }
   ],
   "1050": [
@@ -203,7 +383,7 @@ window.RESPALDO["marte"] = {
     "id": "1050ML0046210040306070D01_DXXX",
     "sol": 1050,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01050/mcam/1050ML0046210040306070D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1050_0.jpg"
@@ -212,7 +392,7 @@ window.RESPALDO["marte"] = {
     "id": "1050ML0046210030306069D01_DXXX",
     "sol": 1050,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01050/mcam/1050ML0046210030306069D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1050_1.jpg"
@@ -221,7 +401,7 @@ window.RESPALDO["marte"] = {
     "id": "1050ML0046210020306068D01_DXXX",
     "sol": 1050,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01050/mcam/1050ML0046210020306068D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1050_2.jpg"
@@ -230,10 +410,46 @@ window.RESPALDO["marte"] = {
     "id": "1050MR0046210020104579C00_DXXX",
     "sol": 1050,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01050/mcam/1050MR0046210020104579C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1050_3.jpg"
+   },
+   {
+    "id": "FLB_490699079EDR_F0482422FHAZ00323M_",
+    "sol": 1050,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01050/opgs/edr/fcam/FLB_490699079EDR_F0482422FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1050_4.jpg"
+   },
+   {
+    "id": "FRB_490699079EDR_F0482422FHAZ00323M_",
+    "sol": 1050,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01050/opgs/edr/fcam/FRB_490699079EDR_F0482422FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1050_5.jpg"
+   },
+   {
+    "id": "RLB_490699113EDR_F0482422RHAZ00323M_",
+    "sol": 1050,
+    "earth_date": "",
+    "camera": "RHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01050/opgs/edr/rcam/RLB_490699113EDR_F0482422RHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1050_6.jpg"
+   },
+   {
+    "id": "RRB_490699113EDR_F0482422RHAZ00323M_",
+    "sol": 1050,
+    "earth_date": "",
+    "camera": "RHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01050/opgs/edr/rcam/RRB_490699113EDR_F0482422RHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1050_7.jpg"
    }
   ],
   "1055": [
@@ -241,7 +457,7 @@ window.RESPALDO["marte"] = {
     "id": "1055MR0046390000104648E01_DXXX",
     "sol": 1055,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01055/mcam/1055MR0046390000104648E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1055_0.jpg"
@@ -250,7 +466,7 @@ window.RESPALDO["marte"] = {
     "id": "1055MR0046370000104646E01_DXXX",
     "sol": 1055,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01055/mcam/1055MR0046370000104646E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1055_1.jpg"
@@ -259,7 +475,7 @@ window.RESPALDO["marte"] = {
     "id": "1055MR0046380000104647E01_DXXX",
     "sol": 1055,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01055/mcam/1055MR0046380000104647E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1055_2.jpg"
@@ -268,10 +484,46 @@ window.RESPALDO["marte"] = {
     "id": "CR0_491149563EDR_F0482518CCAM04055M_",
     "sol": 1055,
     "earth_date": "",
-    "camera": null,
+    "camera": "CHEMCAM_RMI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01055/opgs/edr/ccam/CR0_491149563EDR_F0482518CCAM04055M_-br2.jpg",
     "imagen_local": "marte/img/sol1055_3.jpg"
+   },
+   {
+    "id": "CR0_491148306EDR_F0482518CCAM04055M_",
+    "sol": 1055,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01055/opgs/edr/ccam/CR0_491148306EDR_F0482518CCAM04055M_-br2.jpg",
+    "imagen_local": "marte/img/sol1055_4.jpg"
+   },
+   {
+    "id": "CR0_491148182EDR_F0482518CCAM03055M_",
+    "sol": 1055,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01055/opgs/edr/ccam/CR0_491148182EDR_F0482518CCAM03055M_-br2.jpg",
+    "imagen_local": "marte/img/sol1055_5.jpg"
+   },
+   {
+    "id": "CR0_491146947EDR_F0482518CCAM03055M_",
+    "sol": 1055,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01055/opgs/edr/ccam/CR0_491146947EDR_F0482518CCAM03055M_-br2.jpg",
+    "imagen_local": "marte/img/sol1055_6.jpg"
+   },
+   {
+    "id": "FLB_491144307EDR_F0482518FHAZ00323M_",
+    "sol": 1055,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01055/opgs/edr/fcam/FLB_491144307EDR_F0482518FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1055_7.jpg"
    }
   ],
   "1060": [
@@ -279,10 +531,73 @@ window.RESPALDO["marte"] = {
     "id": "1060MH0003990030400406C00_DXXX",
     "sol": 1060,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01060/mhli/1060MH0003990030400406C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1060_0.jpg"
+   },
+   {
+    "id": "1060ML0046630000306178E01_DXXX",
+    "sol": 1060,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01060/mcam/1060ML0046630000306178E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1060_4.jpg"
+   },
+   {
+    "id": "1060ML0046620010306179E01_DXXX",
+    "sol": 1060,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01060/mcam/1060ML0046620010306179E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1060_5.jpg"
+   },
+   {
+    "id": "1060MR0046620010104720C00_DXXX",
+    "sol": 1060,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01060/mcam/1060MR0046620010104720C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1060_6.jpg"
+   },
+   {
+    "id": "1060MR0046620010104720E01_DXXX",
+    "sol": 1060,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01060/mcam/1060MR0046620010104720E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1060_7.jpg"
+   },
+   {
+    "id": "1060MR0046640000104718E01_DXXX",
+    "sol": 1060,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01060/mcam/1060MR0046640000104718E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1060_8.jpg"
+   },
+   {
+    "id": "FLB_491607282EDR_F0482542FHAZ00206M_",
+    "sol": 1060,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01060/opgs/edr/fcam/FLB_491607282EDR_F0482542FHAZ00206M_-br2.jpg",
+    "imagen_local": "marte/img/sol1060_9.jpg"
+   },
+   {
+    "id": "FLB_491594796EDR_F0482542FHAZ00202M_",
+    "sol": 1060,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01060/opgs/edr/fcam/FLB_491594796EDR_F0482542FHAZ00202M_-br2.jpg",
+    "imagen_local": "marte/img/sol1060_10.jpg"
    }
   ],
   "1065": [
@@ -290,7 +605,7 @@ window.RESPALDO["marte"] = {
     "id": "1065MH0005110010400722E01_DXXX",
     "sol": 1065,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01065/mhli/1065MH0005110010400722E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1065_0.jpg"
@@ -299,7 +614,7 @@ window.RESPALDO["marte"] = {
     "id": "1065MH0005110010400721E01_DXXX",
     "sol": 1065,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01065/mhli/1065MH0005110010400721E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1065_1.jpg"
@@ -308,7 +623,7 @@ window.RESPALDO["marte"] = {
     "id": "1065MH0005110010400720E01_DXXX",
     "sol": 1065,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01065/mhli/1065MH0005110010400720E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1065_2.jpg"
@@ -317,10 +632,46 @@ window.RESPALDO["marte"] = {
     "id": "1065MH0005110010400719E01_DXXX",
     "sol": 1065,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01065/mhli/1065MH0005110010400719E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1065_3.jpg"
+   },
+   {
+    "id": "1065ML0046870470206334C00_DXXX",
+    "sol": 1065,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01065/mcam/1065ML0046870470206334C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1065_4.jpg"
+   },
+   {
+    "id": "1065ML0046870460206333C00_DXXX",
+    "sol": 1065,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01065/mcam/1065ML0046870460206333C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1065_5.jpg"
+   },
+   {
+    "id": "1065ML0046870450206332C00_DXXX",
+    "sol": 1065,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01065/mcam/1065ML0046870450206332C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1065_6.jpg"
+   },
+   {
+    "id": "1065ML0046870540206341C00_DXXX",
+    "sol": 1065,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01065/mcam/1065ML0046870540206341C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1065_7.jpg"
    }
   ],
   "1075": [
@@ -328,7 +679,7 @@ window.RESPALDO["marte"] = {
     "id": "1075ML0047300000206536E01_DXXX",
     "sol": 1075,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01075/mcam/1075ML0047300000206536E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1075_0.jpg"
@@ -337,7 +688,7 @@ window.RESPALDO["marte"] = {
     "id": "1075ML0047310010206539E01_DXXX",
     "sol": 1075,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01075/mcam/1075ML0047310010206539E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1075_1.jpg"
@@ -346,7 +697,7 @@ window.RESPALDO["marte"] = {
     "id": "1075ML0047320000206540C00_DXXX",
     "sol": 1075,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01075/mcam/1075ML0047320000206540C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1075_2.jpg"
@@ -355,10 +706,46 @@ window.RESPALDO["marte"] = {
     "id": "1075ML0047310000206538E01_DXXX",
     "sol": 1075,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01075/mcam/1075ML0047310000206538E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1075_3.jpg"
+   },
+   {
+    "id": "FLB_492932471EDR_F0490814FHAZ00323M_",
+    "sol": 1075,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01075/opgs/edr/fcam/FLB_492932471EDR_F0490814FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1075_4.jpg"
+   },
+   {
+    "id": "FRB_492932471EDR_F0490814FHAZ00323M_",
+    "sol": 1075,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01075/opgs/edr/fcam/FRB_492932471EDR_F0490814FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1075_5.jpg"
+   },
+   {
+    "id": "NLB_492933530EDR_F0490814NCAM00328M_",
+    "sol": 1075,
+    "earth_date": "",
+    "camera": "NAV_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01075/opgs/edr/ncam/NLB_492933530EDR_F0490814NCAM00328M_-br2.jpg",
+    "imagen_local": "marte/img/sol1075_6.jpg"
+   },
+   {
+    "id": "NLB_492936594EDR_F0490814NCAM00328M_",
+    "sol": 1075,
+    "earth_date": "",
+    "camera": "NAV_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01075/opgs/edr/ncam/NLB_492936594EDR_F0490814NCAM00328M_-br2.jpg",
+    "imagen_local": "marte/img/sol1075_7.jpg"
    }
   ],
   "1080": [
@@ -366,7 +753,7 @@ window.RESPALDO["marte"] = {
     "id": "1080MH0003250050400749E01_DXXX",
     "sol": 1080,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01080/mhli/1080MH0003250050400749E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1080_0.jpg"
@@ -375,7 +762,7 @@ window.RESPALDO["marte"] = {
     "id": "1080ML0047520050206629C00_DXXX",
     "sol": 1080,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01080/mcam/1080ML0047520050206629C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1080_1.jpg"
@@ -384,7 +771,7 @@ window.RESPALDO["marte"] = {
     "id": "1080ML0047520040206628C00_DXXX",
     "sol": 1080,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01080/mcam/1080ML0047520040206628C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1080_2.jpg"
@@ -393,10 +780,46 @@ window.RESPALDO["marte"] = {
     "id": "1080ML0047520030206627C00_DXXX",
     "sol": 1080,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01080/mcam/1080ML0047520030206627C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1080_3.jpg"
+   },
+   {
+    "id": "1080ML0047520020206626C00_DXXX",
+    "sol": 1080,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01080/mcam/1080ML0047520020206626C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1080_4.jpg"
+   },
+   {
+    "id": "1080MR0047510190600219C00_DXXX",
+    "sol": 1080,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01080/mcam/1080MR0047510190600219C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1080_5.jpg"
+   },
+   {
+    "id": "1080MR0047510180600218C00_DXXX",
+    "sol": 1080,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01080/mcam/1080MR0047510180600218C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1080_6.jpg"
+   },
+   {
+    "id": "1080MR0047510170600217C00_DXXX",
+    "sol": 1080,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01080/mcam/1080MR0047510170600217C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1080_7.jpg"
    }
   ],
   "1085": [
@@ -404,7 +827,7 @@ window.RESPALDO["marte"] = {
     "id": "1085MH0003250050400799E01_DXXX",
     "sol": 1085,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01085/mhli/1085MH0003250050400799E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1085_0.jpg"
@@ -413,7 +836,7 @@ window.RESPALDO["marte"] = {
     "id": "1085ML0047710010206985E01_DXXX",
     "sol": 1085,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01085/mcam/1085ML0047710010206985E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1085_1.jpg"
@@ -422,7 +845,7 @@ window.RESPALDO["marte"] = {
     "id": "1085ML0047690120206979E01_DXXX",
     "sol": 1085,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01085/mcam/1085ML0047690120206979E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1085_2.jpg"
@@ -431,10 +854,46 @@ window.RESPALDO["marte"] = {
     "id": "1085ML0047690110206978E01_DXXX",
     "sol": 1085,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01085/mcam/1085ML0047690110206978E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1085_3.jpg"
+   },
+   {
+    "id": "1085ML0047690100206977E01_DXXX",
+    "sol": 1085,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01085/mcam/1085ML0047690100206977E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1085_4.jpg"
+   },
+   {
+    "id": "1085MR0047710000600387E01_DXXX",
+    "sol": 1085,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01085/mcam/1085MR0047710000600387E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1085_5.jpg"
+   },
+   {
+    "id": "1085MR0047690120600386E01_DXXX",
+    "sol": 1085,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01085/mcam/1085MR0047690120600386E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1085_6.jpg"
+   },
+   {
+    "id": "1085MR0047690110600385E01_DXXX",
+    "sol": 1085,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01085/mcam/1085MR0047690110600385E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1085_7.jpg"
    }
   ],
   "1090": [
@@ -442,7 +901,7 @@ window.RESPALDO["marte"] = {
     "id": "1090ML0047860380500226E01_DXXX",
     "sol": 1090,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01090/mcam/1090ML0047860380500226E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1090_0.jpg"
@@ -451,7 +910,7 @@ window.RESPALDO["marte"] = {
     "id": "1090ML0047860360500224E01_DXXX",
     "sol": 1090,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01090/mcam/1090ML0047860360500224E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1090_1.jpg"
@@ -460,7 +919,7 @@ window.RESPALDO["marte"] = {
     "id": "1090ML0047860370500225E01_DXXX",
     "sol": 1090,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01090/mcam/1090ML0047860370500225E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1090_2.jpg"
@@ -469,10 +928,46 @@ window.RESPALDO["marte"] = {
     "id": "1090ML0047860340500222E01_DXXX",
     "sol": 1090,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01090/mcam/1090ML0047860340500222E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1090_3.jpg"
+   },
+   {
+    "id": "1090MR0047860150600563E02_DXXX",
+    "sol": 1090,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01090/mcam/1090MR0047860150600563E02_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1090_4.jpg"
+   },
+   {
+    "id": "1090MR0047860380600586E01_DXXX",
+    "sol": 1090,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01090/mcam/1090MR0047860380600586E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1090_5.jpg"
+   },
+   {
+    "id": "1090MR0047860370600585E01_DXXX",
+    "sol": 1090,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01090/mcam/1090MR0047860370600585E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1090_6.jpg"
+   },
+   {
+    "id": "1090MR0047860360600584E01_DXXX",
+    "sol": 1090,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01090/mcam/1090MR0047860360600584E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1090_7.jpg"
    }
   ],
   "1095": [
@@ -480,7 +975,7 @@ window.RESPALDO["marte"] = {
     "id": "1095ML0048540050500365E01_DXXX",
     "sol": 1095,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01095/mcam/1095ML0048540050500365E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1095_0.jpg"
@@ -489,7 +984,7 @@ window.RESPALDO["marte"] = {
     "id": "1095ML0048540060500366E01_DXXX",
     "sol": 1095,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01095/mcam/1095ML0048540060500366E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1095_1.jpg"
@@ -498,7 +993,7 @@ window.RESPALDO["marte"] = {
     "id": "1095ML0048540040500364E01_DXXX",
     "sol": 1095,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01095/mcam/1095ML0048540040500364E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1095_2.jpg"
@@ -507,10 +1002,46 @@ window.RESPALDO["marte"] = {
     "id": "1095ML0048540030500363E01_DXXX",
     "sol": 1095,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01095/mcam/1095ML0048540030500363E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1095_3.jpg"
+   },
+   {
+    "id": "1095MR0048550050600791C00_DXXX",
+    "sol": 1095,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01095/mcam/1095MR0048550050600791C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1095_4.jpg"
+   },
+   {
+    "id": "1095MR0048550040600790C00_DXXX",
+    "sol": 1095,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01095/mcam/1095MR0048550040600790C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1095_5.jpg"
+   },
+   {
+    "id": "1095MR0048550020600788C00_DXXX",
+    "sol": 1095,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01095/mcam/1095MR0048550020600788C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1095_6.jpg"
+   },
+   {
+    "id": "1095MR0048550030600789C00_DXXX",
+    "sol": 1095,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01095/mcam/1095MR0048550030600789C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1095_7.jpg"
    }
   ],
   "1100": [
@@ -518,7 +1049,7 @@ window.RESPALDO["marte"] = {
     "id": "1100MD0004190000103732E01_DXXX",
     "sol": 1100,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01100/mrdi/1100MD0004190000103732E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1100_0.jpg"
@@ -527,7 +1058,7 @@ window.RESPALDO["marte"] = {
     "id": "1100MH0003250050401068E01_DXXX",
     "sol": 1100,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01100/mhli/1100MH0003250050401068E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1100_1.jpg"
@@ -536,7 +1067,7 @@ window.RESPALDO["marte"] = {
     "id": "1100ML0048780090500635C00_DXXX",
     "sol": 1100,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01100/mcam/1100ML0048780090500635C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1100_2.jpg"
@@ -545,10 +1076,46 @@ window.RESPALDO["marte"] = {
     "id": "1100ML0048780080500634C00_DXXX",
     "sol": 1100,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01100/mcam/1100ML0048780080500634C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1100_3.jpg"
+   },
+   {
+    "id": "1100ML0048780070500633C00_DXXX",
+    "sol": 1100,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01100/mcam/1100ML0048780070500633C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1100_4.jpg"
+   },
+   {
+    "id": "1100ML0048780060500632C00_DXXX",
+    "sol": 1100,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01100/mcam/1100ML0048780060500632C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1100_5.jpg"
+   },
+   {
+    "id": "1100MR0048800020600970C00_DXXX",
+    "sol": 1100,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01100/mcam/1100MR0048800020600970C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1100_6.jpg"
+   },
+   {
+    "id": "1100MR0048800030600971C00_DXXX",
+    "sol": 1100,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01100/mcam/1100MR0048800030600971C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1100_7.jpg"
    }
   ],
   "1105": [
@@ -556,7 +1123,7 @@ window.RESPALDO["marte"] = {
     "id": "1105MH0004260010401244C00_DXXX",
     "sol": 1105,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01105/mhli/1105MH0004260010401244C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1105_0.jpg"
@@ -565,7 +1132,7 @@ window.RESPALDO["marte"] = {
     "id": "1105MH0004260010401234C00_DXXX",
     "sol": 1105,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01105/mhli/1105MH0004260010401234C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1105_1.jpg"
@@ -574,7 +1141,7 @@ window.RESPALDO["marte"] = {
     "id": "1105MH0004260010401224C00_DXXX",
     "sol": 1105,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01105/mhli/1105MH0004260010401224C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1105_2.jpg"
@@ -583,10 +1150,46 @@ window.RESPALDO["marte"] = {
     "id": "1105MH0004260010401214C00_DXXX",
     "sol": 1105,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01105/mhli/1105MH0004260010401214C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1105_3.jpg"
+   },
+   {
+    "id": "1105ML0049030100500766C00_DXXX",
+    "sol": 1105,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01105/mcam/1105ML0049030100500766C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1105_4.jpg"
+   },
+   {
+    "id": "1105ML0049030090500765C00_DXXX",
+    "sol": 1105,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01105/mcam/1105ML0049030090500765C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1105_5.jpg"
+   },
+   {
+    "id": "1105ML0049030080500764C00_DXXX",
+    "sol": 1105,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01105/mcam/1105ML0049030080500764C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1105_6.jpg"
+   },
+   {
+    "id": "1105ML0049030070500763C00_DXXX",
+    "sol": 1105,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01105/mcam/1105ML0049030070500763C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1105_7.jpg"
    }
   ],
   "1110": [
@@ -594,7 +1197,7 @@ window.RESPALDO["marte"] = {
     "id": "1110MH0003250050401355E01_DXXX",
     "sol": 1110,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01110/mhli/1110MH0003250050401355E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1110_0.jpg"
@@ -603,7 +1206,7 @@ window.RESPALDO["marte"] = {
     "id": "1110ML0049450010500971E01_DXXX",
     "sol": 1110,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01110/mcam/1110ML0049450010500971E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1110_1.jpg"
@@ -612,7 +1215,7 @@ window.RESPALDO["marte"] = {
     "id": "1110ML0049440040500970E01_DXXX",
     "sol": 1110,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01110/mcam/1110ML0049440040500970E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1110_2.jpg"
@@ -621,10 +1224,46 @@ window.RESPALDO["marte"] = {
     "id": "1110ML0049440030500969E01_DXXX",
     "sol": 1110,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01110/mcam/1110ML0049440030500969E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1110_3.jpg"
+   },
+   {
+    "id": "1110ML0049440020500968E01_DXXX",
+    "sol": 1110,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01110/mcam/1110ML0049440020500968E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1110_4.jpg"
+   },
+   {
+    "id": "1110MR0049450000601285E01_DXXX",
+    "sol": 1110,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01110/mcam/1110MR0049450000601285E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1110_5.jpg"
+   },
+   {
+    "id": "1110MR0049430120601282D01_DXXX",
+    "sol": 1110,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01110/mcam/1110MR0049430120601282D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1110_6.jpg"
+   },
+   {
+    "id": "1110MR0049430140601284E01_DXXX",
+    "sol": 1110,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01110/mcam/1110MR0049430140601284E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1110_7.jpg"
    }
   ],
   "1115": [
@@ -632,7 +1271,7 @@ window.RESPALDO["marte"] = {
     "id": "1115MR0049710200601360C00_DXXX",
     "sol": 1115,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01115/mcam/1115MR0049710200601360C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1115_0.jpg"
@@ -641,7 +1280,7 @@ window.RESPALDO["marte"] = {
     "id": "1115MR0049710190601359C00_DXXX",
     "sol": 1115,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01115/mcam/1115MR0049710190601359C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1115_1.jpg"
@@ -650,7 +1289,7 @@ window.RESPALDO["marte"] = {
     "id": "1115MR0049710180601358C00_DXXX",
     "sol": 1115,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01115/mcam/1115MR0049710180601358C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1115_2.jpg"
@@ -659,10 +1298,46 @@ window.RESPALDO["marte"] = {
     "id": "1115MR0049710170601357C00_DXXX",
     "sol": 1115,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01115/mcam/1115MR0049710170601357C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1115_3.jpg"
+   },
+   {
+    "id": "CR0_496480150EDR_F0500592CCAM05114M_",
+    "sol": 1115,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01115/opgs/edr/ccam/CR0_496480150EDR_F0500592CCAM05114M_-br2.jpg",
+    "imagen_local": "marte/img/sol1115_4.jpg"
+   },
+   {
+    "id": "CR0_496479549EDR_F0500592CCAM05114M_",
+    "sol": 1115,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01115/opgs/edr/ccam/CR0_496479549EDR_F0500592CCAM05114M_-br2.jpg",
+    "imagen_local": "marte/img/sol1115_5.jpg"
+   },
+   {
+    "id": "CR0_496479430EDR_F0500592CCAM04114M_",
+    "sol": 1115,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01115/opgs/edr/ccam/CR0_496479430EDR_F0500592CCAM04114M_-br2.jpg",
+    "imagen_local": "marte/img/sol1115_6.jpg"
+   },
+   {
+    "id": "CR0_496478007EDR_F0500592CCAM03114M_",
+    "sol": 1115,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01115/opgs/edr/ccam/CR0_496478007EDR_F0500592CCAM03114M_-br2.jpg",
+    "imagen_local": "marte/img/sol1115_7.jpg"
    }
   ],
   "1120": [
@@ -670,7 +1345,7 @@ window.RESPALDO["marte"] = {
     "id": "1120ML0049940030501155D01_DXXX",
     "sol": 1120,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01120/mcam/1120ML0049940030501155D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1120_0.jpg"
@@ -679,7 +1354,7 @@ window.RESPALDO["marte"] = {
     "id": "1120ML0049940040501156D01_DXXX",
     "sol": 1120,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01120/mcam/1120ML0049940040501156D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1120_1.jpg"
@@ -688,7 +1363,7 @@ window.RESPALDO["marte"] = {
     "id": "1120ML0049940020501154D01_DXXX",
     "sol": 1120,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01120/mcam/1120ML0049940020501154D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1120_2.jpg"
@@ -697,10 +1372,46 @@ window.RESPALDO["marte"] = {
     "id": "1120ML0049930090501153E01_DXXX",
     "sol": 1120,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01120/mcam/1120ML0049930090501153E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1120_3.jpg"
+   },
+   {
+    "id": "1120MR0049920000601427E01_DXXX",
+    "sol": 1120,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01120/mcam/1120MR0049920000601427E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1120_4.jpg"
+   },
+   {
+    "id": "1120MR0049910000601426E01_DXXX",
+    "sol": 1120,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01120/mcam/1120MR0049910000601426E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1120_5.jpg"
+   },
+   {
+    "id": "1120MR0049930080601436E01_DXXX",
+    "sol": 1120,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01120/mcam/1120MR0049930080601436E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1120_6.jpg"
+   },
+   {
+    "id": "1120MR0049930090601437E01_DXXX",
+    "sol": 1120,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01120/mcam/1120MR0049930090601437E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1120_7.jpg"
    }
   ],
   "1125": [
@@ -708,7 +1419,7 @@ window.RESPALDO["marte"] = {
     "id": "FLB_497357814EDR_F0500592FHAZ00323M_",
     "sol": 1125,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_LEFT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01125/opgs/edr/fcam/FLB_497357814EDR_F0500592FHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1125_0.jpg"
@@ -717,7 +1428,7 @@ window.RESPALDO["marte"] = {
     "id": "FRB_497357814EDR_F0500592FHAZ00323M_",
     "sol": 1125,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_RIGHT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01125/opgs/edr/fcam/FRB_497357814EDR_F0500592FHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1125_1.jpg"
@@ -726,7 +1437,7 @@ window.RESPALDO["marte"] = {
     "id": "RLB_497357841EDR_F0500592RHAZ00323M_",
     "sol": 1125,
     "earth_date": "",
-    "camera": null,
+    "camera": "RHAZ_LEFT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01125/opgs/edr/rcam/RLB_497357841EDR_F0500592RHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1125_2.jpg"
@@ -735,7 +1446,7 @@ window.RESPALDO["marte"] = {
     "id": "RRB_497357841EDR_F0500592RHAZ00323M_",
     "sol": 1125,
     "earth_date": "",
-    "camera": null,
+    "camera": "RHAZ_RIGHT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01125/opgs/edr/rcam/RRB_497357841EDR_F0500592RHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1125_3.jpg"
@@ -746,7 +1457,7 @@ window.RESPALDO["marte"] = {
     "id": "1130MH0003370010401861C00_DXXX",
     "sol": 1130,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01130/mhli/1130MH0003370010401861C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1130_0.jpg"
@@ -755,7 +1466,7 @@ window.RESPALDO["marte"] = {
     "id": "1130MH0001220010401859C00_DXXX",
     "sol": 1130,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01130/mhli/1130MH0001220010401859C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1130_1.jpg"
@@ -764,7 +1475,7 @@ window.RESPALDO["marte"] = {
     "id": "1130MH0001220010401857C00_DXXX",
     "sol": 1130,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01130/mhli/1130MH0001220010401857C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1130_2.jpg"
@@ -773,10 +1484,46 @@ window.RESPALDO["marte"] = {
     "id": "1130MH0001220010401855C00_DXXX",
     "sol": 1130,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01130/mhli/1130MH0001220010401855C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1130_3.jpg"
+   },
+   {
+    "id": "1130MR0050390000601501E01_DXXX",
+    "sol": 1130,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01130/mcam/1130MR0050390000601501E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1130_4.jpg"
+   },
+   {
+    "id": "1130MR0050380000601500E01_DXXX",
+    "sol": 1130,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01130/mcam/1130MR0050380000601500E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1130_5.jpg"
+   },
+   {
+    "id": "1130MR0050370010601499E01_DXXX",
+    "sol": 1130,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01130/mcam/1130MR0050370010601499E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1130_6.jpg"
+   },
+   {
+    "id": "1130MR0050430000601505E01_DXXX",
+    "sol": 1130,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01130/mcam/1130MR0050430000601505E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1130_7.jpg"
    }
   ],
   "1140": [
@@ -784,7 +1531,7 @@ window.RESPALDO["marte"] = {
     "id": "1140ML0051640050501432D01_DXXX",
     "sol": 1140,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01140/mcam/1140ML0051640050501432D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1140_0.jpg"
@@ -793,7 +1540,7 @@ window.RESPALDO["marte"] = {
     "id": "1140ML0051640070501434D01_DXXX",
     "sol": 1140,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01140/mcam/1140ML0051640070501434D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1140_1.jpg"
@@ -802,7 +1549,7 @@ window.RESPALDO["marte"] = {
     "id": "1140ML0051640060501433D01_DXXX",
     "sol": 1140,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01140/mcam/1140ML0051640060501433D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1140_2.jpg"
@@ -811,10 +1558,46 @@ window.RESPALDO["marte"] = {
     "id": "1140ML0051640020501429D01_DXXX",
     "sol": 1140,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01140/mcam/1140ML0051640020501429D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1140_3.jpg"
+   },
+   {
+    "id": "1140MR0051580000601666E01_DXXX",
+    "sol": 1140,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01140/mcam/1140MR0051580000601666E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1140_4.jpg"
+   },
+   {
+    "id": "1140MR0051570000601665E01_DXXX",
+    "sol": 1140,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01140/mcam/1140MR0051570000601665E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1140_5.jpg"
+   },
+   {
+    "id": "CR0_498703443EDR_F0500676CCAM03140M_",
+    "sol": 1140,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01140/opgs/edr/ccam/CR0_498703443EDR_F0500676CCAM03140M_-br2.jpg",
+    "imagen_local": "marte/img/sol1140_6.jpg"
+   },
+   {
+    "id": "CR0_498702800EDR_F0500676CCAM03140M_",
+    "sol": 1140,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01140/opgs/edr/ccam/CR0_498702800EDR_F0500676CCAM03140M_-br2.jpg",
+    "imagen_local": "marte/img/sol1140_7.jpg"
    }
   ],
   "1150": [
@@ -822,7 +1605,7 @@ window.RESPALDO["marte"] = {
     "id": "1150MH0005350010402258C00_DXXX",
     "sol": 1150,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01150/mhli/1150MH0005350010402258C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1150_0.jpg"
@@ -831,7 +1614,7 @@ window.RESPALDO["marte"] = {
     "id": "1150MH0005350010402338C00_DXXX",
     "sol": 1150,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01150/mhli/1150MH0005350010402338C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1150_1.jpg"
@@ -840,7 +1623,7 @@ window.RESPALDO["marte"] = {
     "id": "1150MH0005350010402336C00_DXXX",
     "sol": 1150,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01150/mhli/1150MH0005350010402336C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1150_2.jpg"
@@ -849,10 +1632,46 @@ window.RESPALDO["marte"] = {
     "id": "1150MH0005350010402334C00_DXXX",
     "sol": 1150,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01150/mhli/1150MH0005350010402334C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1150_3.jpg"
+   },
+   {
+    "id": "1150ML0052000310501776E01_DXXX",
+    "sol": 1150,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01150/mcam/1150ML0052000310501776E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1150_4.jpg"
+   },
+   {
+    "id": "1150ML0052000320501777E01_DXXX",
+    "sol": 1150,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01150/mcam/1150ML0052000320501777E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1150_5.jpg"
+   },
+   {
+    "id": "1150ML0052000300501775E01_DXXX",
+    "sol": 1150,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01150/mcam/1150ML0052000300501775E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1150_6.jpg"
+   },
+   {
+    "id": "1150ML0052000290501774E01_DXXX",
+    "sol": 1150,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01150/mcam/1150ML0052000290501774E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1150_7.jpg"
    }
   ],
   "1155": [
@@ -860,7 +1679,7 @@ window.RESPALDO["marte"] = {
     "id": "1155ML0052190390501934C00_DXXX",
     "sol": 1155,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01155/mcam/1155ML0052190390501934C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1155_0.jpg"
@@ -869,7 +1688,7 @@ window.RESPALDO["marte"] = {
     "id": "1155ML0052190380501933C00_DXXX",
     "sol": 1155,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01155/mcam/1155ML0052190380501933C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1155_1.jpg"
@@ -878,7 +1697,7 @@ window.RESPALDO["marte"] = {
     "id": "1155ML0052190350501930C00_DXXX",
     "sol": 1155,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01155/mcam/1155ML0052190350501930C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1155_2.jpg"
@@ -887,10 +1706,46 @@ window.RESPALDO["marte"] = {
     "id": "1155ML0052190370501932C00_DXXX",
     "sol": 1155,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01155/mcam/1155ML0052190370501932C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1155_3.jpg"
+   },
+   {
+    "id": "1155MR0052190380601943C00_DXXX",
+    "sol": 1155,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01155/mcam/1155MR0052190380601943C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1155_4.jpg"
+   },
+   {
+    "id": "1155MR0052190390601944C00_DXXX",
+    "sol": 1155,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01155/mcam/1155MR0052190390601944C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1155_5.jpg"
+   },
+   {
+    "id": "1155MR0052190370601942C00_DXXX",
+    "sol": 1155,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01155/mcam/1155MR0052190370601942C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1155_6.jpg"
+   },
+   {
+    "id": "1155MR0052190360601941C00_DXXX",
+    "sol": 1155,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01155/mcam/1155MR0052190360601941C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1155_7.jpg"
    }
   ],
   "1160": [
@@ -898,7 +1753,7 @@ window.RESPALDO["marte"] = {
     "id": "1160MD0004380000103751E01_DXXX",
     "sol": 1160,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01160/mrdi/1160MD0004380000103751E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1160_0.jpg"
@@ -907,7 +1762,7 @@ window.RESPALDO["marte"] = {
     "id": "1160ML0052520010502149E01_DXXX",
     "sol": 1160,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01160/mcam/1160ML0052520010502149E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1160_1.jpg"
@@ -916,7 +1771,7 @@ window.RESPALDO["marte"] = {
     "id": "1160ML0052490040502143C00_DXXX",
     "sol": 1160,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01160/mcam/1160ML0052490040502143C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1160_2.jpg"
@@ -925,10 +1780,46 @@ window.RESPALDO["marte"] = {
     "id": "1160ML0052490030502142C00_DXXX",
     "sol": 1160,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01160/mcam/1160ML0052490030502142C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1160_3.jpg"
+   },
+   {
+    "id": "1160ML0052490020502141C00_DXXX",
+    "sol": 1160,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01160/mcam/1160ML0052490020502141C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1160_4.jpg"
+   },
+   {
+    "id": "1160MR0052500120602100C00_DXXX",
+    "sol": 1160,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01160/mcam/1160MR0052500120602100C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1160_5.jpg"
+   },
+   {
+    "id": "1160MR0052500040602092C00_DXXX",
+    "sol": 1160,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01160/mcam/1160MR0052500040602092C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1160_6.jpg"
+   },
+   {
+    "id": "1160MR0052500140602102C00_DXXX",
+    "sol": 1160,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01160/mcam/1160MR0052500140602102C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1160_7.jpg"
    }
   ],
   "1170": [
@@ -936,7 +1827,7 @@ window.RESPALDO["marte"] = {
     "id": "1170MD0004420000103754E01_DXXX",
     "sol": 1170,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01170/mrdi/1170MD0004420000103754E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1170_0.jpg"
@@ -945,7 +1836,7 @@ window.RESPALDO["marte"] = {
     "id": "1170ML0053030030502423D01_DXXX",
     "sol": 1170,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01170/mcam/1170ML0053030030502423D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1170_1.jpg"
@@ -954,7 +1845,7 @@ window.RESPALDO["marte"] = {
     "id": "1170ML0053030040502424D01_DXXX",
     "sol": 1170,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01170/mcam/1170ML0053030040502424D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1170_2.jpg"
@@ -963,10 +1854,46 @@ window.RESPALDO["marte"] = {
     "id": "1170ML0053030020502422D01_DXXX",
     "sol": 1170,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01170/mcam/1170ML0053030020502422D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1170_3.jpg"
+   },
+   {
+    "id": "1170MR0053030020602248C00_DXXX",
+    "sol": 1170,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01170/mcam/1170MR0053030020602248C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1170_4.jpg"
+   },
+   {
+    "id": "FLB_501355706EDR_F0510268FHAZ00323M_",
+    "sol": 1170,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01170/opgs/edr/fcam/FLB_501355706EDR_F0510268FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1170_5.jpg"
+   },
+   {
+    "id": "FRB_501355706EDR_F0510268FHAZ00323M_",
+    "sol": 1170,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01170/opgs/edr/fcam/FRB_501355706EDR_F0510268FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1170_6.jpg"
+   },
+   {
+    "id": "RLB_501355733EDR_F0510268RHAZ00323M_",
+    "sol": 1170,
+    "earth_date": "",
+    "camera": "RHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01170/opgs/edr/rcam/RLB_501355733EDR_F0510268RHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1170_7.jpg"
    }
   ],
   "1175": [
@@ -974,7 +1901,7 @@ window.RESPALDO["marte"] = {
     "id": "1175ML0053260020502503D01_DXXX",
     "sol": 1175,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01175/mcam/1175ML0053260020502503D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1175_0.jpg"
@@ -983,7 +1910,7 @@ window.RESPALDO["marte"] = {
     "id": "1175ML0053260040502505D01_DXXX",
     "sol": 1175,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01175/mcam/1175ML0053260040502505D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1175_1.jpg"
@@ -992,7 +1919,7 @@ window.RESPALDO["marte"] = {
     "id": "1175ML0053260030502504D01_DXXX",
     "sol": 1175,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01175/mcam/1175ML0053260030502504D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1175_2.jpg"
@@ -1001,10 +1928,46 @@ window.RESPALDO["marte"] = {
     "id": "1175MR0053260020602310C00_DXXX",
     "sol": 1175,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01175/mcam/1175MR0053260020602310C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1175_3.jpg"
+   },
+   {
+    "id": "CR0_501803832EDR_F0511102CCAM04174M_",
+    "sol": 1175,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01175/opgs/edr/ccam/CR0_501803832EDR_F0511102CCAM04174M_-br2.jpg",
+    "imagen_local": "marte/img/sol1175_4.jpg"
+   },
+   {
+    "id": "CR0_501803300EDR_F0511102CCAM04174M_",
+    "sol": 1175,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01175/opgs/edr/ccam/CR0_501803300EDR_F0511102CCAM04174M_-br2.jpg",
+    "imagen_local": "marte/img/sol1175_5.jpg"
+   },
+   {
+    "id": "CR0_501802903EDR_F0511102CCAM04174M_",
+    "sol": 1175,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01175/opgs/edr/ccam/CR0_501802903EDR_F0511102CCAM04174M_-br2.jpg",
+    "imagen_local": "marte/img/sol1175_6.jpg"
+   },
+   {
+    "id": "CR0_501800615EDR_F0511102CCAM02174M_",
+    "sol": 1175,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01175/opgs/edr/ccam/CR0_501800615EDR_F0511102CCAM02174M_-br2.jpg",
+    "imagen_local": "marte/img/sol1175_7.jpg"
    }
   ],
   "1185": [
@@ -1012,7 +1975,7 @@ window.RESPALDO["marte"] = {
     "id": "1185MD0004540000200392E01_DXXX",
     "sol": 1185,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01185/mrdi/1185MD0004540000200392E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1185_0.jpg"
@@ -1021,7 +1984,7 @@ window.RESPALDO["marte"] = {
     "id": "1185ML0053770060502731E01_DXXX",
     "sol": 1185,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01185/mcam/1185ML0053770060502731E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1185_1.jpg"
@@ -1030,7 +1993,7 @@ window.RESPALDO["marte"] = {
     "id": "1185ML0053770070502732E01_DXXX",
     "sol": 1185,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01185/mcam/1185ML0053770070502732E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1185_2.jpg"
@@ -1039,10 +2002,46 @@ window.RESPALDO["marte"] = {
     "id": "1185ML0053770050502730E02_DXXX",
     "sol": 1185,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01185/mcam/1185ML0053770050502730E02_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1185_3.jpg"
+   },
+   {
+    "id": "1185ML0053770040502729E01_DXXX",
+    "sol": 1185,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01185/mcam/1185ML0053770040502729E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1185_4.jpg"
+   },
+   {
+    "id": "1185MR0053760000602491C00_DXXX",
+    "sol": 1185,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01185/mcam/1185MR0053760000602491C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1185_5.jpg"
+   },
+   {
+    "id": "1185MR0053760000602491E01_DXXX",
+    "sol": 1185,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01185/mcam/1185MR0053760000602491E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1185_6.jpg"
+   },
+   {
+    "id": "1185MR0053740000602490E01_DXXX",
+    "sol": 1185,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01185/mcam/1185MR0053740000602490E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1185_7.jpg"
    }
   ],
   "1190": [
@@ -1050,7 +2049,7 @@ window.RESPALDO["marte"] = {
     "id": "1190ML0053920230502841C00_DXXX",
     "sol": 1190,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01190/mcam/1190ML0053920230502841C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1190_0.jpg"
@@ -1059,7 +2058,7 @@ window.RESPALDO["marte"] = {
     "id": "1190ML0053920420502860C00_DXXX",
     "sol": 1190,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01190/mcam/1190ML0053920420502860C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1190_1.jpg"
@@ -1068,7 +2067,7 @@ window.RESPALDO["marte"] = {
     "id": "1190ML0053920390502857C00_DXXX",
     "sol": 1190,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01190/mcam/1190ML0053920390502857C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1190_2.jpg"
@@ -1077,10 +2076,46 @@ window.RESPALDO["marte"] = {
     "id": "1190ML0053920410502859C00_DXXX",
     "sol": 1190,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01190/mcam/1190ML0053920410502859C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1190_3.jpg"
+   },
+   {
+    "id": "1190MR0053920420602608C00_DXXX",
+    "sol": 1190,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01190/mcam/1190MR0053920420602608C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1190_4.jpg"
+   },
+   {
+    "id": "1190MR0053920410602607C00_DXXX",
+    "sol": 1190,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01190/mcam/1190MR0053920410602607C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1190_5.jpg"
+   },
+   {
+    "id": "1190MR0053920390602605C00_DXXX",
+    "sol": 1190,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01190/mcam/1190MR0053920390602605C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1190_6.jpg"
+   },
+   {
+    "id": "1190MR0053920400602606C00_DXXX",
+    "sol": 1190,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01190/mcam/1190MR0053920400602606C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1190_7.jpg"
    }
   ],
   "1195": [
@@ -1088,7 +2123,7 @@ window.RESPALDO["marte"] = {
     "id": "1195ML0054220040502918D01_DXXX",
     "sol": 1195,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01195/mcam/1195ML0054220040502918D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1195_0.jpg"
@@ -1097,7 +2132,7 @@ window.RESPALDO["marte"] = {
     "id": "1195ML0054220020502916D01_DXXX",
     "sol": 1195,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01195/mcam/1195ML0054220020502916D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1195_1.jpg"
@@ -1106,7 +2141,7 @@ window.RESPALDO["marte"] = {
     "id": "1195ML0054220030502917D01_DXXX",
     "sol": 1195,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01195/mcam/1195ML0054220030502917D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1195_2.jpg"
@@ -1115,10 +2150,46 @@ window.RESPALDO["marte"] = {
     "id": "1195MR0054220020602651C00_DXXX",
     "sol": 1195,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01195/mcam/1195MR0054220020602651C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1195_3.jpg"
+   },
+   {
+    "id": "CR0_503578642EDR_F0512704CCAM04194M_",
+    "sol": 1195,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01195/opgs/edr/ccam/CR0_503578642EDR_F0512704CCAM04194M_-br2.jpg",
+    "imagen_local": "marte/img/sol1195_4.jpg"
+   },
+   {
+    "id": "CR0_503578533EDR_F0512704CCAM04194M_",
+    "sol": 1195,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01195/opgs/edr/ccam/CR0_503578533EDR_F0512704CCAM04194M_-br2.jpg",
+    "imagen_local": "marte/img/sol1195_5.jpg"
+   },
+   {
+    "id": "CR0_503578899EDR_F0512704CCAM05194M_",
+    "sol": 1195,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01195/opgs/edr/ccam/CR0_503578899EDR_F0512704CCAM05194M_-br2.jpg",
+    "imagen_local": "marte/img/sol1195_6.jpg"
+   },
+   {
+    "id": "CR0_503578185EDR_F0512704CCAM03194M_",
+    "sol": 1195,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01195/opgs/edr/ccam/CR0_503578185EDR_F0512704CCAM03194M_-br2.jpg",
+    "imagen_local": "marte/img/sol1195_7.jpg"
    }
   ],
   "1200": [
@@ -1126,7 +2197,7 @@ window.RESPALDO["marte"] = {
     "id": "1200ML0055000180503230C00_DXXX",
     "sol": 1200,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01200/mcam/1200ML0055000180503230C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1200_0.jpg"
@@ -1135,7 +2206,7 @@ window.RESPALDO["marte"] = {
     "id": "1200ML0055000170503229C00_DXXX",
     "sol": 1200,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01200/mcam/1200ML0055000170503229C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1200_1.jpg"
@@ -1144,7 +2215,7 @@ window.RESPALDO["marte"] = {
     "id": "1200ML0055000160503228C00_DXXX",
     "sol": 1200,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01200/mcam/1200ML0055000160503228C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1200_2.jpg"
@@ -1153,10 +2224,46 @@ window.RESPALDO["marte"] = {
     "id": "1200ML0055000150503227C00_DXXX",
     "sol": 1200,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01200/mcam/1200ML0055000150503227C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1200_3.jpg"
+   },
+   {
+    "id": "1200MR0055000180602745C00_DXXX",
+    "sol": 1200,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01200/mcam/1200MR0055000180602745C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1200_4.jpg"
+   },
+   {
+    "id": "1200MR0055000170602744C00_DXXX",
+    "sol": 1200,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01200/mcam/1200MR0055000170602744C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1200_5.jpg"
+   },
+   {
+    "id": "1200MR0055000160602743C00_DXXX",
+    "sol": 1200,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01200/mcam/1200MR0055000160602743C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1200_6.jpg"
+   },
+   {
+    "id": "1200MR0055000150602742C00_DXXX",
+    "sol": 1200,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01200/mcam/1200MR0055000150602742C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1200_7.jpg"
    }
   ],
   "1205": [
@@ -1164,7 +2271,7 @@ window.RESPALDO["marte"] = {
     "id": "FLB_504470706EDR_F0520004FHAZ00323M_",
     "sol": 1205,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_LEFT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01205/opgs/edr/fcam/FLB_504470706EDR_F0520004FHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1205_0.jpg"
@@ -1173,7 +2280,7 @@ window.RESPALDO["marte"] = {
     "id": "FRB_504470706EDR_F0520004FHAZ00323M_",
     "sol": 1205,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_RIGHT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01205/opgs/edr/fcam/FRB_504470706EDR_F0520004FHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1205_1.jpg"
@@ -1182,7 +2289,7 @@ window.RESPALDO["marte"] = {
     "id": "RLB_504470740EDR_F0520004RHAZ00323M_",
     "sol": 1205,
     "earth_date": "",
-    "camera": null,
+    "camera": "RHAZ_LEFT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01205/opgs/edr/rcam/RLB_504470740EDR_F0520004RHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1205_2.jpg"
@@ -1191,7 +2298,7 @@ window.RESPALDO["marte"] = {
     "id": "RRB_504470740EDR_F0520004RHAZ00323M_",
     "sol": 1205,
     "earth_date": "",
-    "camera": null,
+    "camera": "RHAZ_RIGHT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01205/opgs/edr/rcam/RRB_504470740EDR_F0520004RHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1205_3.jpg"
@@ -1202,7 +2309,7 @@ window.RESPALDO["marte"] = {
     "id": "1210ML0054360000503463E01_DXXX",
     "sol": 1210,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01210/mcam/1210ML0054360000503463E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1210_0.jpg"
@@ -1211,7 +2318,7 @@ window.RESPALDO["marte"] = {
     "id": "1210ML0054350020503460D01_DXXX",
     "sol": 1210,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01210/mcam/1210ML0054350020503460D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1210_1.jpg"
@@ -1220,7 +2327,7 @@ window.RESPALDO["marte"] = {
     "id": "1210ML0054350030503461D01_DXXX",
     "sol": 1210,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01210/mcam/1210ML0054350030503461D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1210_2.jpg"
@@ -1229,10 +2336,46 @@ window.RESPALDO["marte"] = {
     "id": "1210ML0054350040503462D01_DXXX",
     "sol": 1210,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01210/mcam/1210ML0054350040503462D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1210_3.jpg"
+   },
+   {
+    "id": "1210MR0054330040603055C00_DXXX",
+    "sol": 1210,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01210/mcam/1210MR0054330040603055C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1210_4.jpg"
+   },
+   {
+    "id": "1210MR0054330030603054C00_DXXX",
+    "sol": 1210,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01210/mcam/1210MR0054330030603054C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1210_5.jpg"
+   },
+   {
+    "id": "1210MR0054300040603017C00_DXXX",
+    "sol": 1210,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01210/mcam/1210MR0054300040603017C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1210_6.jpg"
+   },
+   {
+    "id": "1210MR0054300030603016C00_DXXX",
+    "sol": 1210,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01210/mcam/1210MR0054300030603016C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1210_7.jpg"
    }
   ],
   "1215": [
@@ -1240,7 +2383,7 @@ window.RESPALDO["marte"] = {
     "id": "1215MD0004600000200398E01_DXXX",
     "sol": 1215,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01215/mrdi/1215MD0004600000200398E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1215_0.jpg"
@@ -1249,7 +2392,7 @@ window.RESPALDO["marte"] = {
     "id": "1215ML0055260010503530E01_DXXX",
     "sol": 1215,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01215/mcam/1215ML0055260010503530E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1215_1.jpg"
@@ -1258,7 +2401,7 @@ window.RESPALDO["marte"] = {
     "id": "1215MR0055260000603147E01_DXXX",
     "sol": 1215,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01215/mcam/1215MR0055260000603147E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1215_2.jpg"
@@ -1267,10 +2410,46 @@ window.RESPALDO["marte"] = {
     "id": "FLB_505352692EDR_F0520004FHAZ00323M_",
     "sol": 1215,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_LEFT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01215/opgs/edr/fcam/FLB_505352692EDR_F0520004FHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1215_3.jpg"
+   },
+   {
+    "id": "FLB_505359917EDR_F0520614FHAZ00318M_",
+    "sol": 1215,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01215/opgs/edr/fcam/FLB_505359917EDR_F0520614FHAZ00318M_-br2.jpg",
+    "imagen_local": "marte/img/sol1215_4.jpg"
+   },
+   {
+    "id": "FRB_505352692EDR_F0520004FHAZ00323M_",
+    "sol": 1215,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01215/opgs/edr/fcam/FRB_505352692EDR_F0520004FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1215_5.jpg"
+   },
+   {
+    "id": "FRB_505359917EDR_F0520614FHAZ00318M_",
+    "sol": 1215,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01215/opgs/edr/fcam/FRB_505359917EDR_F0520614FHAZ00318M_-br2.jpg",
+    "imagen_local": "marte/img/sol1215_6.jpg"
+   },
+   {
+    "id": "NLB_505360701EDR_F0520614NCAM07753M_",
+    "sol": 1215,
+    "earth_date": "",
+    "camera": "NAV_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01215/opgs/edr/ncam/NLB_505360701EDR_F0520614NCAM07753M_-br2.jpg",
+    "imagen_local": "marte/img/sol1215_7.jpg"
    }
   ],
   "1220": [
@@ -1278,7 +2457,7 @@ window.RESPALDO["marte"] = {
     "id": "1220MR0055950000603179C00_DXXX",
     "sol": 1220,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01220/mcam/1220MR0055950000603179C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1220_0.jpg"
@@ -1287,7 +2466,7 @@ window.RESPALDO["marte"] = {
     "id": "1220MR0055930000603177C00_DXXX",
     "sol": 1220,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01220/mcam/1220MR0055930000603177C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1220_1.jpg"
@@ -1296,7 +2475,7 @@ window.RESPALDO["marte"] = {
     "id": "FLB_505793885EDR_F0520936FHAZ00323M_",
     "sol": 1220,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_LEFT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01220/opgs/edr/fcam/FLB_505793885EDR_F0520936FHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1220_2.jpg"
@@ -1305,10 +2484,28 @@ window.RESPALDO["marte"] = {
     "id": "FRB_505793885EDR_F0520936FHAZ00323M_",
     "sol": 1220,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_RIGHT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01220/opgs/edr/fcam/FRB_505793885EDR_F0520936FHAZ00323M_-br2.jpg",
     "imagen_local": "marte/img/sol1220_3.jpg"
+   },
+   {
+    "id": "RLB_505793919EDR_F0520936RHAZ00323M_",
+    "sol": 1220,
+    "earth_date": "",
+    "camera": "RHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01220/opgs/edr/rcam/RLB_505793919EDR_F0520936RHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1220_4.jpg"
+   },
+   {
+    "id": "RRB_505793919EDR_F0520936RHAZ00323M_",
+    "sol": 1220,
+    "earth_date": "",
+    "camera": "RHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01220/opgs/edr/rcam/RRB_505793919EDR_F0520936RHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1220_5.jpg"
    }
   ],
   "1225": [
@@ -1316,7 +2513,7 @@ window.RESPALDO["marte"] = {
     "id": "1225ML0056360050503689C00_DXXX",
     "sol": 1225,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01225/mcam/1225ML0056360050503689C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1225_0.jpg"
@@ -1325,7 +2522,7 @@ window.RESPALDO["marte"] = {
     "id": "1225ML0056360040503688C00_DXXX",
     "sol": 1225,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01225/mcam/1225ML0056360040503688C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1225_1.jpg"
@@ -1334,7 +2531,7 @@ window.RESPALDO["marte"] = {
     "id": "1225ML0056360030503687C00_DXXX",
     "sol": 1225,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01225/mcam/1225ML0056360030503687C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1225_2.jpg"
@@ -1343,10 +2540,46 @@ window.RESPALDO["marte"] = {
     "id": "1225ML0056360020503686C00_DXXX",
     "sol": 1225,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01225/mcam/1225ML0056360020503686C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1225_3.jpg"
+   },
+   {
+    "id": "1225MR0056360050603275C00_DXXX",
+    "sol": 1225,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01225/mcam/1225MR0056360050603275C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1225_4.jpg"
+   },
+   {
+    "id": "1225MR0056360040603274C00_DXXX",
+    "sol": 1225,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01225/mcam/1225MR0056360040603274C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1225_5.jpg"
+   },
+   {
+    "id": "1225MR0056360030603273C00_DXXX",
+    "sol": 1225,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01225/mcam/1225MR0056360030603273C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1225_6.jpg"
+   },
+   {
+    "id": "1225MR0056360020603272C00_DXXX",
+    "sol": 1225,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01225/mcam/1225MR0056360020603272C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1225_7.jpg"
    }
   ],
   "1230": [
@@ -1354,7 +2587,7 @@ window.RESPALDO["marte"] = {
     "id": "1230MH0005680050403544C00_DXXX",
     "sol": 1230,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01230/mhli/1230MH0005680050403544C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1230_0.jpg"
@@ -1363,7 +2596,7 @@ window.RESPALDO["marte"] = {
     "id": "1230MH0005680040403543C00_DXXX",
     "sol": 1230,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01230/mhli/1230MH0005680040403543C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1230_1.jpg"
@@ -1372,7 +2605,7 @@ window.RESPALDO["marte"] = {
     "id": "1230MH0005680050403531C00_DXXX",
     "sol": 1230,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01230/mhli/1230MH0005680050403531C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1230_2.jpg"
@@ -1381,10 +2614,46 @@ window.RESPALDO["marte"] = {
     "id": "1230MH0005680040403530C00_DXXX",
     "sol": 1230,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01230/mhli/1230MH0005680040403530C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1230_3.jpg"
+   },
+   {
+    "id": "1230ML0057000010503789E01_DXXX",
+    "sol": 1230,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01230/mcam/1230ML0057000010503789E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1230_4.jpg"
+   },
+   {
+    "id": "1230ML0056460000503790E01_DXXX",
+    "sol": 1230,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01230/mcam/1230ML0056460000503790E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1230_5.jpg"
+   },
+   {
+    "id": "1230ML0056460010503791E01_DXXX",
+    "sol": 1230,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01230/mcam/1230ML0056460010503791E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1230_6.jpg"
+   },
+   {
+    "id": "1230MR0057000010603369E01_DXXX",
+    "sol": 1230,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01230/mcam/1230MR0057000010603369E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1230_7.jpg"
    }
   ],
   "1235": [
@@ -1392,7 +2661,7 @@ window.RESPALDO["marte"] = {
     "id": "1235ML0057210060503890D01_DXXX",
     "sol": 1235,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01235/mcam/1235ML0057210060503890D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1235_0.jpg"
@@ -1401,7 +2670,7 @@ window.RESPALDO["marte"] = {
     "id": "1235ML0057210070503891D01_DXXX",
     "sol": 1235,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01235/mcam/1235ML0057210070503891D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1235_1.jpg"
@@ -1410,7 +2679,7 @@ window.RESPALDO["marte"] = {
     "id": "1235ML0057210040503888D01_DXXX",
     "sol": 1235,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01235/mcam/1235ML0057210040503888D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1235_2.jpg"
@@ -1419,10 +2688,46 @@ window.RESPALDO["marte"] = {
     "id": "1235ML0057210050503889D01_DXXX",
     "sol": 1235,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01235/mcam/1235ML0057210050503889D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1235_3.jpg"
+   },
+   {
+    "id": "1235MR0057220020603478C00_DXXX",
+    "sol": 1235,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01235/mcam/1235MR0057220020603478C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1235_4.jpg"
+   },
+   {
+    "id": "1235MR0057180000603475E01_DXXX",
+    "sol": 1235,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01235/mcam/1235MR0057180000603475E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1235_5.jpg"
+   },
+   {
+    "id": "1235MR0057170020603474C00_DXXX",
+    "sol": 1235,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01235/mcam/1235MR0057170020603474C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1235_6.jpg"
+   },
+   {
+    "id": "1235MR0057230000603479E01_DXXX",
+    "sol": 1235,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01235/mcam/1235MR0057230000603479E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1235_7.jpg"
    }
   ],
   "1240": [
@@ -1430,7 +2735,7 @@ window.RESPALDO["marte"] = {
     "id": "1240MR0057560020603540C00_DXXX",
     "sol": 1240,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01240/mcam/1240MR0057560020603540C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1240_0.jpg"
@@ -1439,7 +2744,7 @@ window.RESPALDO["marte"] = {
     "id": "1240MR0057560010603539C00_DXXX",
     "sol": 1240,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01240/mcam/1240MR0057560010603539C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1240_1.jpg"
@@ -1448,7 +2753,7 @@ window.RESPALDO["marte"] = {
     "id": "1240MR0057550010603537C00_DXXX",
     "sol": 1240,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01240/mcam/1240MR0057550010603537C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1240_2.jpg"
@@ -1457,10 +2762,46 @@ window.RESPALDO["marte"] = {
     "id": "1240MR0057550000603536C00_DXXX",
     "sol": 1240,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01240/mcam/1240MR0057550000603536C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1240_3.jpg"
+   },
+   {
+    "id": "CR0_507573432EDR_F0521162CCAM07239M_",
+    "sol": 1240,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01240/opgs/edr/ccam/CR0_507573432EDR_F0521162CCAM07239M_-br2.jpg",
+    "imagen_local": "marte/img/sol1240_4.jpg"
+   },
+   {
+    "id": "CR0_507573652EDR_F0521162CCAM07239M_",
+    "sol": 1240,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01240/opgs/edr/ccam/CR0_507573652EDR_F0521162CCAM07239M_-br2.jpg",
+    "imagen_local": "marte/img/sol1240_5.jpg"
+   },
+   {
+    "id": "CR0_507573830EDR_F0521162CCAM07239M_",
+    "sol": 1240,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01240/opgs/edr/ccam/CR0_507573830EDR_F0521162CCAM07239M_-br2.jpg",
+    "imagen_local": "marte/img/sol1240_6.jpg"
+   },
+   {
+    "id": "CR0_507574375EDR_F0521162CCAM08239M_",
+    "sol": 1240,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01240/opgs/edr/ccam/CR0_507574375EDR_F0521162CCAM08239M_-br2.jpg",
+    "imagen_local": "marte/img/sol1240_7.jpg"
    }
   ],
   "1245": [
@@ -1468,7 +2809,7 @@ window.RESPALDO["marte"] = {
     "id": "1245MH0005350010403804C00_DXXX",
     "sol": 1245,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01245/mhli/1245MH0005350010403804C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1245_0.jpg"
@@ -1477,7 +2818,7 @@ window.RESPALDO["marte"] = {
     "id": "1245MH0005350010403802C00_DXXX",
     "sol": 1245,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01245/mhli/1245MH0005350010403802C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1245_1.jpg"
@@ -1486,7 +2827,7 @@ window.RESPALDO["marte"] = {
     "id": "1245MH0005350010403800C00_DXXX",
     "sol": 1245,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01245/mhli/1245MH0005350010403800C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1245_2.jpg"
@@ -1495,10 +2836,46 @@ window.RESPALDO["marte"] = {
     "id": "1245MH0005550020403727C00_DXXX",
     "sol": 1245,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01245/mhli/1245MH0005550020403727C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1245_3.jpg"
+   },
+   {
+    "id": "1245MR0058060000603608E01_DXXX",
+    "sol": 1245,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01245/mcam/1245MR0058060000603608E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1245_4.jpg"
+   },
+   {
+    "id": "1245MR0058050000603607E01_DXXX",
+    "sol": 1245,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01245/mcam/1245MR0058050000603607E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1245_5.jpg"
+   },
+   {
+    "id": "1245MR0058040010603606E02_DXXX",
+    "sol": 1245,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01245/mcam/1245MR0058040010603606E02_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1245_6.jpg"
+   },
+   {
+    "id": "1245MR0058080000603610E01_DXXX",
+    "sol": 1245,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01245/mcam/1245MR0058080000603610E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1245_7.jpg"
    }
   ],
   "1250": [
@@ -1506,7 +2883,7 @@ window.RESPALDO["marte"] = {
     "id": "1250ML0058350040504080E01_DXXX",
     "sol": 1250,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01250/mcam/1250ML0058350040504080E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1250_0.jpg"
@@ -1515,7 +2892,7 @@ window.RESPALDO["marte"] = {
     "id": "1250ML0058350050504081E01_DXXX",
     "sol": 1250,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01250/mcam/1250ML0058350050504081E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1250_1.jpg"
@@ -1524,7 +2901,7 @@ window.RESPALDO["marte"] = {
     "id": "1250ML0058350020504078E01_DXXX",
     "sol": 1250,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01250/mcam/1250ML0058350020504078E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1250_2.jpg"
@@ -1533,10 +2910,46 @@ window.RESPALDO["marte"] = {
     "id": "1250ML0058350030504079E01_DXXX",
     "sol": 1250,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01250/mcam/1250ML0058350030504079E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1250_3.jpg"
+   },
+   {
+    "id": "1250MR0058330000603656E01_DXXX",
+    "sol": 1250,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01250/mcam/1250MR0058330000603656E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1250_4.jpg"
+   },
+   {
+    "id": "1250MR0058340130603666E01_DXXX",
+    "sol": 1250,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01250/mcam/1250MR0058340130603666E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1250_5.jpg"
+   },
+   {
+    "id": "1250MR0058340110603664E01_DXXX",
+    "sol": 1250,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01250/mcam/1250MR0058340110603664E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1250_6.jpg"
+   },
+   {
+    "id": "1250MR0058340120603665E01_DXXX",
+    "sol": 1250,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01250/mcam/1250MR0058340120603665E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1250_7.jpg"
    }
   ],
   "1255": [
@@ -1544,7 +2957,7 @@ window.RESPALDO["marte"] = {
     "id": "1255MD0004690000200407E04_DXXX",
     "sol": 1255,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01255/mrdi/1255MD0004690000200407E04_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1255_0.jpg"
@@ -1553,7 +2966,7 @@ window.RESPALDO["marte"] = {
     "id": "1255ML0058610040504131C00_DXXX",
     "sol": 1255,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01255/mcam/1255ML0058610040504131C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1255_1.jpg"
@@ -1562,7 +2975,7 @@ window.RESPALDO["marte"] = {
     "id": "1255ML0058610020504129C00_DXXX",
     "sol": 1255,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01255/mcam/1255ML0058610020504129C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1255_2.jpg"
@@ -1571,10 +2984,46 @@ window.RESPALDO["marte"] = {
     "id": "1255ML0058610030504130C00_DXXX",
     "sol": 1255,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01255/mcam/1255ML0058610030504130C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1255_3.jpg"
+   },
+   {
+    "id": "1255ML0058610000504127C00_DXXX",
+    "sol": 1255,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01255/mcam/1255ML0058610000504127C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1255_4.jpg"
+   },
+   {
+    "id": "1255MR0058620000603742E01_DXXX",
+    "sol": 1255,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01255/mcam/1255MR0058620000603742E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1255_5.jpg"
+   },
+   {
+    "id": "FLB_508903460EDR_F0522388FHAZ00323M_",
+    "sol": 1255,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01255/opgs/edr/fcam/FLB_508903460EDR_F0522388FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1255_6.jpg"
+   },
+   {
+    "id": "FLB_508905387EDR_F0522500FHAZ00304M_",
+    "sol": 1255,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01255/opgs/edr/fcam/FLB_508905387EDR_F0522500FHAZ00304M_-br2.jpg",
+    "imagen_local": "marte/img/sol1255_7.jpg"
    }
   ],
   "1260": [
@@ -1582,7 +3031,7 @@ window.RESPALDO["marte"] = {
     "id": "1260MD0004760000200414E01_DXXX",
     "sol": 1260,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01260/mrdi/1260MD0004760000200414E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1260_0.jpg"
@@ -1591,7 +3040,7 @@ window.RESPALDO["marte"] = {
     "id": "1260MD0004750000200413E01_DXXX",
     "sol": 1260,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01260/mrdi/1260MD0004750000200413E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1260_1.jpg"
@@ -1600,7 +3049,7 @@ window.RESPALDO["marte"] = {
     "id": "1260MD0004740000200412E01_DXXX",
     "sol": 1260,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01260/mrdi/1260MD0004740000200412E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1260_2.jpg"
@@ -1609,10 +3058,46 @@ window.RESPALDO["marte"] = {
     "id": "1260MD0004730000200411E01_DXXX",
     "sol": 1260,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01260/mrdi/1260MD0004730000200411E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1260_3.jpg"
+   },
+   {
+    "id": "1260MH0002620000404101E01_DXXX",
+    "sol": 1260,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01260/mhli/1260MH0002620000404101E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1260_4.jpg"
+   },
+   {
+    "id": "1260MH0002640000404100E01_DXXX",
+    "sol": 1260,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01260/mhli/1260MH0002640000404100E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1260_5.jpg"
+   },
+   {
+    "id": "1260MH0002610010404098E01_DXXX",
+    "sol": 1260,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01260/mhli/1260MH0002610010404098E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1260_6.jpg"
+   },
+   {
+    "id": "1260MH0002590000404099E01_DXXX",
+    "sol": 1260,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01260/mhli/1260MH0002590000404099E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1260_7.jpg"
    }
   ],
   "1265": [
@@ -1620,7 +3105,7 @@ window.RESPALDO["marte"] = {
     "id": "1265ML0059200000504306E01_DXXX",
     "sol": 1265,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01265/mcam/1265ML0059200000504306E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1265_0.jpg"
@@ -1629,7 +3114,7 @@ window.RESPALDO["marte"] = {
     "id": "1265ML0059190040504305D01_DXXX",
     "sol": 1265,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01265/mcam/1265ML0059190040504305D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1265_1.jpg"
@@ -1638,7 +3123,7 @@ window.RESPALDO["marte"] = {
     "id": "1265ML0059190020504303D01_DXXX",
     "sol": 1265,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01265/mcam/1265ML0059190020504303D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1265_2.jpg"
@@ -1647,10 +3132,46 @@ window.RESPALDO["marte"] = {
     "id": "1265ML0059190030504304D01_DXXX",
     "sol": 1265,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01265/mcam/1265ML0059190030504304D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1265_3.jpg"
+   },
+   {
+    "id": "1265MR0059200000603847E01_DXXX",
+    "sol": 1265,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01265/mcam/1265MR0059200000603847E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1265_4.jpg"
+   },
+   {
+    "id": "1265MR0059180000603845E01_DXXX",
+    "sol": 1265,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01265/mcam/1265MR0059180000603845E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1265_5.jpg"
+   },
+   {
+    "id": "1265MR0059190020603846C00_DXXX",
+    "sol": 1265,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01265/mcam/1265MR0059190020603846C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1265_6.jpg"
+   },
+   {
+    "id": "1265MR0059170020603844C00_DXXX",
+    "sol": 1265,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01265/mcam/1265MR0059170020603844C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1265_7.jpg"
    }
   ],
   "1270": [
@@ -1658,7 +3179,7 @@ window.RESPALDO["marte"] = {
     "id": "1270MD0004800000200418E01_DXXX",
     "sol": 1270,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01270/mrdi/1270MD0004800000200418E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1270_0.jpg"
@@ -1667,7 +3188,7 @@ window.RESPALDO["marte"] = {
     "id": "1270ML0059460200504390C00_DXXX",
     "sol": 1270,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01270/mcam/1270ML0059460200504390C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1270_1.jpg"
@@ -1676,7 +3197,7 @@ window.RESPALDO["marte"] = {
     "id": "1270ML0059460140504384C00_DXXX",
     "sol": 1270,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01270/mcam/1270ML0059460140504384C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1270_2.jpg"
@@ -1685,10 +3206,46 @@ window.RESPALDO["marte"] = {
     "id": "1270ML0059460520504422C00_DXXX",
     "sol": 1270,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01270/mcam/1270ML0059460520504422C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1270_3.jpg"
+   },
+   {
+    "id": "1270ML0059460530504423C00_DXXX",
+    "sol": 1270,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01270/mcam/1270ML0059460530504423C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1270_4.jpg"
+   },
+   {
+    "id": "CR0_510236244EDR_F0530636CCAM02269M_",
+    "sol": 1270,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01270/opgs/edr/ccam/CR0_510236244EDR_F0530636CCAM02269M_-br2.jpg",
+    "imagen_local": "marte/img/sol1270_5.jpg"
+   },
+   {
+    "id": "CR0_510236745EDR_F0530636CCAM03269M_",
+    "sol": 1270,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01270/opgs/edr/ccam/CR0_510236745EDR_F0530636CCAM03269M_-br2.jpg",
+    "imagen_local": "marte/img/sol1270_6.jpg"
+   },
+   {
+    "id": "CR0_510236633EDR_F0530636CCAM03269M_",
+    "sol": 1270,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01270/opgs/edr/ccam/CR0_510236633EDR_F0530636CCAM03269M_-br2.jpg",
+    "imagen_local": "marte/img/sol1270_7.jpg"
    }
   ],
   "1275": [
@@ -1696,7 +3253,7 @@ window.RESPALDO["marte"] = {
     "id": "1275MH0005350010404366C00_DXXX",
     "sol": 1275,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01275/mhli/1275MH0005350010404366C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1275_0.jpg"
@@ -1705,7 +3262,7 @@ window.RESPALDO["marte"] = {
     "id": "1275MH0005350010404364C00_DXXX",
     "sol": 1275,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01275/mhli/1275MH0005350010404364C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1275_1.jpg"
@@ -1714,7 +3271,7 @@ window.RESPALDO["marte"] = {
     "id": "1275MH0005350010404362C00_DXXX",
     "sol": 1275,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01275/mhli/1275MH0005350010404362C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1275_2.jpg"
@@ -1723,10 +3280,46 @@ window.RESPALDO["marte"] = {
     "id": "1275MH0005820020404474C00_DXXX",
     "sol": 1275,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01275/mhli/1275MH0005820020404474C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1275_3.jpg"
+   },
+   {
+    "id": "1275ML0059760600504642C00_DXXX",
+    "sol": 1275,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01275/mcam/1275ML0059760600504642C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1275_4.jpg"
+   },
+   {
+    "id": "1275ML0059760650504647C00_DXXX",
+    "sol": 1275,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01275/mcam/1275ML0059760650504647C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1275_5.jpg"
+   },
+   {
+    "id": "1275ML0059760640504646C00_DXXX",
+    "sol": 1275,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01275/mcam/1275ML0059760640504646C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1275_6.jpg"
+   },
+   {
+    "id": "1275ML0059760620504644C00_DXXX",
+    "sol": 1275,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01275/mcam/1275ML0059760620504644C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1275_7.jpg"
    }
   ],
   "1280": [
@@ -1734,7 +3327,7 @@ window.RESPALDO["marte"] = {
     "id": "1280MH0001710000500091R00_DXXX",
     "sol": 1280,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01280/mhli/1280MH0001710000500091R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1280_0.jpg"
@@ -1743,7 +3336,7 @@ window.RESPALDO["marte"] = {
     "id": "1280MH0001710000500092S00_DXXX",
     "sol": 1280,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01280/mhli/1280MH0001710000500092S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1280_1.jpg"
@@ -1752,7 +3345,7 @@ window.RESPALDO["marte"] = {
     "id": "1280MH0001710000500103R00_DXXX",
     "sol": 1280,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01280/mhli/1280MH0001710000500103R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1280_2.jpg"
@@ -1761,10 +3354,46 @@ window.RESPALDO["marte"] = {
     "id": "1280MH0001710000500104S00_DXXX",
     "sol": 1280,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01280/mhli/1280MH0001710000500104S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1280_3.jpg"
+   },
+   {
+    "id": "1280ML0060200010504783C00_DXXX",
+    "sol": 1280,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01280/mcam/1280ML0060200010504783C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1280_4.jpg"
+   },
+   {
+    "id": "1280ML0060200020504784C00_DXXX",
+    "sol": 1280,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01280/mcam/1280ML0060200020504784C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1280_5.jpg"
+   },
+   {
+    "id": "1280ML0060200030504785C00_DXXX",
+    "sol": 1280,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01280/mcam/1280ML0060200030504785C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1280_6.jpg"
+   },
+   {
+    "id": "1280ML0060200030504785E01_DXXX",
+    "sol": 1280,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01280/mcam/1280ML0060200030504785E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1280_7.jpg"
    }
   ],
   "1285": [
@@ -1772,7 +3401,7 @@ window.RESPALDO["marte"] = {
     "id": "1285MD0004880000200540E01_DXXX",
     "sol": 1285,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01285/mrdi/1285MD0004880000200540E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1285_0.jpg"
@@ -1781,7 +3410,7 @@ window.RESPALDO["marte"] = {
     "id": "1285ML0060520040505033C00_DXXX",
     "sol": 1285,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01285/mcam/1285ML0060520040505033C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1285_1.jpg"
@@ -1790,7 +3419,7 @@ window.RESPALDO["marte"] = {
     "id": "1285ML0060520030505032C00_DXXX",
     "sol": 1285,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01285/mcam/1285ML0060520030505032C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1285_2.jpg"
@@ -1799,10 +3428,46 @@ window.RESPALDO["marte"] = {
     "id": "1285ML0060520010505030C00_DXXX",
     "sol": 1285,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01285/mcam/1285ML0060520010505030C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1285_3.jpg"
+   },
+   {
+    "id": "1285ML0060520020505031C00_DXXX",
+    "sol": 1285,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01285/mcam/1285ML0060520020505031C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1285_4.jpg"
+   },
+   {
+    "id": "1285MR0060470130304435C00_DXXX",
+    "sol": 1285,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01285/mcam/1285MR0060470130304435C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1285_5.jpg"
+   },
+   {
+    "id": "1285MR0060470140304436C00_DXXX",
+    "sol": 1285,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01285/mcam/1285MR0060470140304436C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1285_6.jpg"
+   },
+   {
+    "id": "1285MR0060470090304431C00_DXXX",
+    "sol": 1285,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01285/mcam/1285MR0060470090304431C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1285_7.jpg"
    }
   ],
   "1290": [
@@ -1810,7 +3475,7 @@ window.RESPALDO["marte"] = {
     "id": "1290MD0004910000200543E01_DXXX",
     "sol": 1290,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01290/mrdi/1290MD0004910000200543E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1290_0.jpg"
@@ -1819,7 +3484,7 @@ window.RESPALDO["marte"] = {
     "id": "1290ML0060830030505134C00_DXXX",
     "sol": 1290,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01290/mcam/1290ML0060830030505134C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1290_1.jpg"
@@ -1828,7 +3493,7 @@ window.RESPALDO["marte"] = {
     "id": "1290ML0060830040505135C00_DXXX",
     "sol": 1290,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01290/mcam/1290ML0060830040505135C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1290_2.jpg"
@@ -1837,10 +3502,46 @@ window.RESPALDO["marte"] = {
     "id": "1290ML0060830010505132C00_DXXX",
     "sol": 1290,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01290/mcam/1290ML0060830010505132C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1290_3.jpg"
+   },
+   {
+    "id": "1290ML0060830020505133C00_DXXX",
+    "sol": 1290,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01290/mcam/1290ML0060830020505133C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1290_4.jpg"
+   },
+   {
+    "id": "1290MR0060820040700037C00_DXXX",
+    "sol": 1290,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01290/mcam/1290MR0060820040700037C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1290_5.jpg"
+   },
+   {
+    "id": "1290MR0060810060700012C00_DXXX",
+    "sol": 1290,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01290/mcam/1290MR0060810060700012C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1290_6.jpg"
+   },
+   {
+    "id": "1290MR0060820060700039C00_DXXX",
+    "sol": 1290,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01290/mcam/1290MR0060820060700039C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1290_7.jpg"
    }
   ],
   "1295": [
@@ -1848,7 +3549,7 @@ window.RESPALDO["marte"] = {
     "id": "1295MD0004930000200545E01_DXXX",
     "sol": 1295,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01295/mrdi/1295MD0004930000200545E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1295_0.jpg"
@@ -1857,7 +3558,7 @@ window.RESPALDO["marte"] = {
     "id": "1295MH0002270000500275R00_DXXX",
     "sol": 1295,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01295/mhli/1295MH0002270000500275R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1295_1.jpg"
@@ -1866,7 +3567,7 @@ window.RESPALDO["marte"] = {
     "id": "1295MH0002270000500276S00_DXXX",
     "sol": 1295,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01295/mhli/1295MH0002270000500276S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1295_2.jpg"
@@ -1875,10 +3576,46 @@ window.RESPALDO["marte"] = {
     "id": "1295MH0002270000500273R00_DXXX",
     "sol": 1295,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01295/mhli/1295MH0002270000500273R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1295_3.jpg"
+   },
+   {
+    "id": "1295MH0002270000500274S00_DXXX",
+    "sol": 1295,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01295/mhli/1295MH0002270000500274S00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1295_4.jpg"
+   },
+   {
+    "id": "CR0_512455189EDR_F0532578CCAM03293M_",
+    "sol": 1295,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01295/opgs/edr/ccam/CR0_512455189EDR_F0532578CCAM03293M_-br2.jpg",
+    "imagen_local": "marte/img/sol1295_5.jpg"
+   },
+   {
+    "id": "CR0_512455011EDR_F0532578CCAM03293M_",
+    "sol": 1295,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01295/opgs/edr/ccam/CR0_512455011EDR_F0532578CCAM03293M_-br2.jpg",
+    "imagen_local": "marte/img/sol1295_6.jpg"
+   },
+   {
+    "id": "CR0_512454835EDR_F0532578CCAM03293M_",
+    "sol": 1295,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01295/opgs/edr/ccam/CR0_512454835EDR_F0532578CCAM03293M_-br2.jpg",
+    "imagen_local": "marte/img/sol1295_7.jpg"
    }
   ],
   "1300": [
@@ -1886,7 +3623,7 @@ window.RESPALDO["marte"] = {
     "id": "1300MH0005350010500306C00_DXXX",
     "sol": 1300,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01300/mhli/1300MH0005350010500306C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1300_0.jpg"
@@ -1895,7 +3632,7 @@ window.RESPALDO["marte"] = {
     "id": "1300MH0005350010500304C00_DXXX",
     "sol": 1300,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01300/mhli/1300MH0005350010500304C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1300_1.jpg"
@@ -1904,7 +3641,7 @@ window.RESPALDO["marte"] = {
     "id": "1300MH0005350010500308C00_DXXX",
     "sol": 1300,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01300/mhli/1300MH0005350010500308C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1300_2.jpg"
@@ -1913,10 +3650,46 @@ window.RESPALDO["marte"] = {
     "id": "1300MH0001630000500362S00_DXXX",
     "sol": 1300,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01300/mhli/1300MH0001630000500362S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1300_3.jpg"
+   },
+   {
+    "id": "1300MR0061740000700241E01_DXXX",
+    "sol": 1300,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01300/mcam/1300MR0061740000700241E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1300_4.jpg"
+   },
+   {
+    "id": "1300MR0061750000700242E01_DXXX",
+    "sol": 1300,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01300/mcam/1300MR0061750000700242E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1300_5.jpg"
+   },
+   {
+    "id": "1300MR0061730010700240E01_DXXX",
+    "sol": 1300,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01300/mcam/1300MR0061730010700240E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1300_6.jpg"
+   },
+   {
+    "id": "1300MR0061700000700237E01_DXXX",
+    "sol": 1300,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01300/mcam/1300MR0061700000700237E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1300_7.jpg"
    }
   ],
   "1305": [
@@ -1924,7 +3697,7 @@ window.RESPALDO["marte"] = {
     "id": "1305MD0004980000200550E01_DXXX",
     "sol": 1305,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01305/mrdi/1305MD0004980000200550E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1305_0.jpg"
@@ -1933,7 +3706,7 @@ window.RESPALDO["marte"] = {
     "id": "1305ML0062030060405749C00_DXXX",
     "sol": 1305,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01305/mcam/1305ML0062030060405749C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1305_1.jpg"
@@ -1942,7 +3715,7 @@ window.RESPALDO["marte"] = {
     "id": "1305ML0062030070405750C00_DXXX",
     "sol": 1305,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01305/mcam/1305ML0062030070405750C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1305_2.jpg"
@@ -1951,10 +3724,46 @@ window.RESPALDO["marte"] = {
     "id": "1305ML0062030080405751C00_DXXX",
     "sol": 1305,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01305/mcam/1305ML0062030080405751C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1305_3.jpg"
+   },
+   {
+    "id": "1305ML0062030040405747C00_DXXX",
+    "sol": 1305,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01305/mcam/1305ML0062030040405747C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1305_4.jpg"
+   },
+   {
+    "id": "1305MR0062030070700385C00_DXXX",
+    "sol": 1305,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01305/mcam/1305MR0062030070700385C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1305_5.jpg"
+   },
+   {
+    "id": "1305MR0062030080700386C00_DXXX",
+    "sol": 1305,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01305/mcam/1305MR0062030080700386C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1305_6.jpg"
+   },
+   {
+    "id": "1305MR0062030050700383C00_DXXX",
+    "sol": 1305,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01305/mcam/1305MR0062030050700383C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1305_7.jpg"
    }
   ],
   "1310": [
@@ -1962,7 +3771,7 @@ window.RESPALDO["marte"] = {
     "id": "1310MD0005010000200552E01_DXXX",
     "sol": 1310,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01310/mrdi/1310MD0005010000200552E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1310_0.jpg"
@@ -1971,7 +3780,7 @@ window.RESPALDO["marte"] = {
     "id": "1310ML0062400060405815C00_DXXX",
     "sol": 1310,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01310/mcam/1310ML0062400060405815C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1310_1.jpg"
@@ -1980,7 +3789,7 @@ window.RESPALDO["marte"] = {
     "id": "1310ML0062400040405813C00_DXXX",
     "sol": 1310,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01310/mcam/1310ML0062400040405813C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1310_2.jpg"
@@ -1989,10 +3798,46 @@ window.RESPALDO["marte"] = {
     "id": "1310ML0062400030405812C00_DXXX",
     "sol": 1310,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01310/mcam/1310ML0062400030405812C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1310_3.jpg"
+   },
+   {
+    "id": "1310ML0062400050405814C00_DXXX",
+    "sol": 1310,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01310/mcam/1310ML0062400050405814C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1310_4.jpg"
+   },
+   {
+    "id": "1310MR0062400050700464C00_DXXX",
+    "sol": 1310,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01310/mcam/1310MR0062400050700464C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1310_5.jpg"
+   },
+   {
+    "id": "1310MR0062400060700465C00_DXXX",
+    "sol": 1310,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01310/mcam/1310MR0062400060700465C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1310_6.jpg"
+   },
+   {
+    "id": "1310MR0062400030700462C00_DXXX",
+    "sol": 1310,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01310/mcam/1310MR0062400030700462C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1310_7.jpg"
    }
   ],
   "1315": [
@@ -2000,7 +3845,7 @@ window.RESPALDO["marte"] = {
     "id": "1315MD0005060000200557E01_DXXX",
     "sol": 1315,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01315/mrdi/1315MD0005060000200557E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1315_0.jpg"
@@ -2009,7 +3854,7 @@ window.RESPALDO["marte"] = {
     "id": "1315MD0005070000200558E01_DXXX",
     "sol": 1315,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01315/mrdi/1315MD0005070000200558E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1315_1.jpg"
@@ -2018,7 +3863,7 @@ window.RESPALDO["marte"] = {
     "id": "1315MD0005050000200556E01_DXXX",
     "sol": 1315,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01315/mrdi/1315MD0005050000200556E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1315_2.jpg"
@@ -2027,10 +3872,46 @@ window.RESPALDO["marte"] = {
     "id": "1315MD0005040000200555E01_DXXX",
     "sol": 1315,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01315/mrdi/1315MD0005040000200555E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1315_3.jpg"
+   },
+   {
+    "id": "1315MH0002620000500463E01_DXXX",
+    "sol": 1315,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01315/mhli/1315MH0002620000500463E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1315_4.jpg"
+   },
+   {
+    "id": "1315MH0002590000500461E01_DXXX",
+    "sol": 1315,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01315/mhli/1315MH0002590000500461E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1315_5.jpg"
+   },
+   {
+    "id": "1315MH0002640000500462E01_DXXX",
+    "sol": 1315,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01315/mhli/1315MH0002640000500462E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1315_6.jpg"
+   },
+   {
+    "id": "1315MH0002610010500460E01_DXXX",
+    "sol": 1315,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01315/mhli/1315MH0002610010500460E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1315_7.jpg"
    }
   ],
   "1320": [
@@ -2038,7 +3919,7 @@ window.RESPALDO["marte"] = {
     "id": "1320MH0001220010500605C00_DXXX",
     "sol": 1320,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01320/mhli/1320MH0001220010500605C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1320_0.jpg"
@@ -2047,7 +3928,7 @@ window.RESPALDO["marte"] = {
     "id": "1320MH0001480010500603C00_DXXX",
     "sol": 1320,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01320/mhli/1320MH0001480010500603C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1320_1.jpg"
@@ -2056,7 +3937,7 @@ window.RESPALDO["marte"] = {
     "id": "1320MH0001900010500601C00_DXXX",
     "sol": 1320,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01320/mhli/1320MH0001900010500601C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1320_2.jpg"
@@ -2065,10 +3946,46 @@ window.RESPALDO["marte"] = {
     "id": "FLB_514689728EDR_F0540746FHAZ00400M_",
     "sol": 1320,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_LEFT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01320/opgs/edr/fcam/FLB_514689728EDR_F0540746FHAZ00400M_-br2.jpg",
     "imagen_local": "marte/img/sol1320_3.jpg"
+   },
+   {
+    "id": "FLB_514686411EDR_F0540746FHAZ00202M_",
+    "sol": 1320,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01320/opgs/edr/fcam/FLB_514686411EDR_F0540746FHAZ00202M_-br2.jpg",
+    "imagen_local": "marte/img/sol1320_4.jpg"
+   },
+   {
+    "id": "FLB_514686061EDR_F0540746FHAZ00206M_",
+    "sol": 1320,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01320/opgs/edr/fcam/FLB_514686061EDR_F0540746FHAZ00206M_-br2.jpg",
+    "imagen_local": "marte/img/sol1320_5.jpg"
+   },
+   {
+    "id": "FLB_514684992EDR_F0540746FHAZ00323M_",
+    "sol": 1320,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01320/opgs/edr/fcam/FLB_514684992EDR_F0540746FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1320_6.jpg"
+   },
+   {
+    "id": "FRB_514688665EDR_S0540746FHAZ00209M_",
+    "sol": 1320,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01320/opgs/edr/fcam/FRB_514688665EDR_S0540746FHAZ00209M_-br2.jpg",
+    "imagen_local": "marte/img/sol1320_7.jpg"
    }
   ],
   "1325": [
@@ -2076,7 +3993,7 @@ window.RESPALDO["marte"] = {
     "id": "1325MH0006010020500879C00_DXXX",
     "sol": 1325,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01325/mhli/1325MH0006010020500879C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1325_0.jpg"
@@ -2085,7 +4002,7 @@ window.RESPALDO["marte"] = {
     "id": "1325MH0006010020500868C00_DXXX",
     "sol": 1325,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01325/mhli/1325MH0006010020500868C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1325_1.jpg"
@@ -2094,7 +4011,7 @@ window.RESPALDO["marte"] = {
     "id": "1325MH0006000020500854C00_DXXX",
     "sol": 1325,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01325/mhli/1325MH0006000020500854C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1325_2.jpg"
@@ -2103,10 +4020,46 @@ window.RESPALDO["marte"] = {
     "id": "1325MH0006030020500843C00_DXXX",
     "sol": 1325,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01325/mhli/1325MH0006030020500843C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1325_3.jpg"
+   },
+   {
+    "id": "1325MR0063270010700641E01_DXXX",
+    "sol": 1325,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01325/mcam/1325MR0063270010700641E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1325_4.jpg"
+   },
+   {
+    "id": "CR0_515129475EDR_F0540746CCAM01325M_",
+    "sol": 1325,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01325/opgs/edr/ccam/CR0_515129475EDR_F0540746CCAM01325M_-br2.jpg",
+    "imagen_local": "marte/img/sol1325_5.jpg"
+   },
+   {
+    "id": "CR0_515128381EDR_F0540746CCAM01325M_",
+    "sol": 1325,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01325/opgs/edr/ccam/CR0_515128381EDR_F0540746CCAM01325M_-br2.jpg",
+    "imagen_local": "marte/img/sol1325_6.jpg"
+   },
+   {
+    "id": "FLB_515132275EDR_F0540746FHAZ00206M_",
+    "sol": 1325,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01325/opgs/edr/fcam/FLB_515132275EDR_F0540746FHAZ00206M_-br2.jpg",
+    "imagen_local": "marte/img/sol1325_7.jpg"
    }
   ],
   "1330": [
@@ -2114,7 +4067,7 @@ window.RESPALDO["marte"] = {
     "id": "1330MH0006030020501187C00_DXXX",
     "sol": 1330,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01330/mhli/1330MH0006030020501187C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1330_0.jpg"
@@ -2123,7 +4076,7 @@ window.RESPALDO["marte"] = {
     "id": "1330MH0006030020501151C00_DXXX",
     "sol": 1330,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01330/mhli/1330MH0006030020501151C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1330_1.jpg"
@@ -2132,7 +4085,7 @@ window.RESPALDO["marte"] = {
     "id": "1330MH0006040020501165C00_DXXX",
     "sol": 1330,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01330/mhli/1330MH0006040020501165C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1330_2.jpg"
@@ -2141,10 +4094,46 @@ window.RESPALDO["marte"] = {
     "id": "1330MH0006040020501140C00_DXXX",
     "sol": 1330,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01330/mhli/1330MH0006040020501140C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1330_3.jpg"
+   },
+   {
+    "id": "1330ML0063780080600008E01_DXXX",
+    "sol": 1330,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01330/mcam/1330ML0063780080600008E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1330_4.jpg"
+   },
+   {
+    "id": "1330ML0063780070600007E01_DXXX",
+    "sol": 1330,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01330/mcam/1330ML0063780070600007E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1330_5.jpg"
+   },
+   {
+    "id": "1330ML0063780050600005E01_DXXX",
+    "sol": 1330,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01330/mcam/1330ML0063780050600005E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1330_6.jpg"
+   },
+   {
+    "id": "1330ML0063780060600006E01_DXXX",
+    "sol": 1330,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01330/mcam/1330ML0063780060600006E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1330_7.jpg"
    }
   ],
   "1335": [
@@ -2152,7 +4141,7 @@ window.RESPALDO["marte"] = {
     "id": "1335MR0064090030700803E01_DXXX",
     "sol": 1335,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01335/mcam/1335MR0064090030700803E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1335_0.jpg"
@@ -2161,7 +4150,7 @@ window.RESPALDO["marte"] = {
     "id": "1335MR0064090010700801E01_DXXX",
     "sol": 1335,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01335/mcam/1335MR0064090010700801E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1335_1.jpg"
@@ -2170,7 +4159,7 @@ window.RESPALDO["marte"] = {
     "id": "CR0_516010490EDR_F0540938CCAM03334M_",
     "sol": 1335,
     "earth_date": "",
-    "camera": null,
+    "camera": "CHEMCAM_RMI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01335/opgs/edr/ccam/CR0_516010490EDR_F0540938CCAM03334M_-br2.jpg",
     "imagen_local": "marte/img/sol1335_2.jpg"
@@ -2179,10 +4168,46 @@ window.RESPALDO["marte"] = {
     "id": "CR0_516011433EDR_F0540938CCAM03334M_",
     "sol": 1335,
     "earth_date": "",
-    "camera": null,
+    "camera": "CHEMCAM_RMI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01335/opgs/edr/ccam/CR0_516011433EDR_F0540938CCAM03334M_-br2.jpg",
     "imagen_local": "marte/img/sol1335_3.jpg"
+   },
+   {
+    "id": "CR0_516010868EDR_F0540938CCAM03334M_",
+    "sol": 1335,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01335/opgs/edr/ccam/CR0_516010868EDR_F0540938CCAM03334M_-br2.jpg",
+    "imagen_local": "marte/img/sol1335_4.jpg"
+   },
+   {
+    "id": "CR0_516010142EDR_F0540938CCAM03334M_",
+    "sol": 1335,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01335/opgs/edr/ccam/CR0_516010142EDR_F0540938CCAM03334M_-br2.jpg",
+    "imagen_local": "marte/img/sol1335_5.jpg"
+   },
+   {
+    "id": "FLB_516008981EDR_F0540938FHAZ00323M_",
+    "sol": 1335,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01335/opgs/edr/fcam/FLB_516008981EDR_F0540938FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1335_6.jpg"
+   },
+   {
+    "id": "FRB_516008981EDR_F0540938FHAZ00323M_",
+    "sol": 1335,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01335/opgs/edr/fcam/FRB_516008981EDR_F0540938FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1335_7.jpg"
    }
   ],
   "1340": [
@@ -2190,7 +4215,7 @@ window.RESPALDO["marte"] = {
     "id": "1340MH0003740020501562C00_DXXX",
     "sol": 1340,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01340/mhli/1340MH0003740020501562C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1340_0.jpg"
@@ -2199,7 +4224,7 @@ window.RESPALDO["marte"] = {
     "id": "1340MH0004530050501582C00_DXXX",
     "sol": 1340,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01340/mhli/1340MH0004530050501582C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1340_1.jpg"
@@ -2208,7 +4233,7 @@ window.RESPALDO["marte"] = {
     "id": "1340MH0004530040501581C00_DXXX",
     "sol": 1340,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01340/mhli/1340MH0004530040501581C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1340_2.jpg"
@@ -2217,10 +4242,46 @@ window.RESPALDO["marte"] = {
     "id": "1340MH0004530030501580C00_DXXX",
     "sol": 1340,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01340/mhli/1340MH0004530030501580C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1340_3.jpg"
+   },
+   {
+    "id": "1340ML0064280000600155E01_DXXX",
+    "sol": 1340,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01340/mcam/1340ML0064280000600155E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1340_4.jpg"
+   },
+   {
+    "id": "1340ML0064260020600150D01_DXXX",
+    "sol": 1340,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01340/mcam/1340ML0064260020600150D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1340_5.jpg"
+   },
+   {
+    "id": "1340ML0064260030600151D01_DXXX",
+    "sol": 1340,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01340/mcam/1340ML0064260030600151D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1340_6.jpg"
+   },
+   {
+    "id": "1340ML0064260040600152D01_DXXX",
+    "sol": 1340,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01340/mcam/1340ML0064260040600152D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1340_7.jpg"
    }
   ],
   "1345": [
@@ -2228,7 +4289,7 @@ window.RESPALDO["marte"] = {
     "id": "1345MH0006150000501783S00_DXXX",
     "sol": 1345,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01345/mhli/1345MH0006150000501783S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1345_0.jpg"
@@ -2237,7 +4298,7 @@ window.RESPALDO["marte"] = {
     "id": "1345MH0006150000501782R00_DXXX",
     "sol": 1345,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01345/mhli/1345MH0006150000501782R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1345_1.jpg"
@@ -2246,7 +4307,7 @@ window.RESPALDO["marte"] = {
     "id": "1345MH0006150000501781S00_DXXX",
     "sol": 1345,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01345/mhli/1345MH0006150000501781S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1345_2.jpg"
@@ -2255,10 +4316,46 @@ window.RESPALDO["marte"] = {
     "id": "1345MH0006150000501780R00_DXXX",
     "sol": 1345,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01345/mhli/1345MH0006150000501780R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1345_3.jpg"
+   },
+   {
+    "id": "1345ML0064510040600250D01_DXXX",
+    "sol": 1345,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01345/mcam/1345ML0064510040600250D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1345_4.jpg"
+   },
+   {
+    "id": "1345ML0064510050600251D01_DXXX",
+    "sol": 1345,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01345/mcam/1345ML0064510050600251D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1345_5.jpg"
+   },
+   {
+    "id": "1345ML0064510020600248D01_DXXX",
+    "sol": 1345,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01345/mcam/1345ML0064510020600248D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1345_6.jpg"
+   },
+   {
+    "id": "1345ML0064510030600249D01_DXXX",
+    "sol": 1345,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01345/mcam/1345ML0064510030600249D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1345_7.jpg"
    }
   ],
   "1350": [
@@ -2266,7 +4363,7 @@ window.RESPALDO["marte"] = {
     "id": "1350ML0064900000600376E01_DXXX",
     "sol": 1350,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01350/mcam/1350ML0064900000600376E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1350_0.jpg"
@@ -2275,7 +4372,7 @@ window.RESPALDO["marte"] = {
     "id": "1350ML0064930040600385D01_DXXX",
     "sol": 1350,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01350/mcam/1350ML0064930040600385D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1350_1.jpg"
@@ -2284,7 +4381,7 @@ window.RESPALDO["marte"] = {
     "id": "1350ML0064930030600384D01_DXXX",
     "sol": 1350,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01350/mcam/1350ML0064930030600384D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1350_2.jpg"
@@ -2293,10 +4390,46 @@ window.RESPALDO["marte"] = {
     "id": "1350ML0064930050600386D01_DXXX",
     "sol": 1350,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01350/mcam/1350ML0064930050600386D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1350_3.jpg"
+   },
+   {
+    "id": "1350MR0064880000701088C00_DXXX",
+    "sol": 1350,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01350/mcam/1350MR0064880000701088C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1350_4.jpg"
+   },
+   {
+    "id": "1350MR0064880000701088E03_DXXX",
+    "sol": 1350,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01350/mcam/1350MR0064880000701088E03_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1350_5.jpg"
+   },
+   {
+    "id": "1350MR0064900000701092E01_DXXX",
+    "sol": 1350,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01350/mcam/1350MR0064900000701092E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1350_6.jpg"
+   },
+   {
+    "id": "1350MR0064920020701098C00_DXXX",
+    "sol": 1350,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01350/mcam/1350MR0064920020701098C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1350_7.jpg"
    }
   ],
   "1355": [
@@ -2304,7 +4437,7 @@ window.RESPALDO["marte"] = {
     "id": "1355MH0003830010502015C00_DXXX",
     "sol": 1355,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01355/mhli/1355MH0003830010502015C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1355_0.jpg"
@@ -2313,7 +4446,7 @@ window.RESPALDO["marte"] = {
     "id": "1355MH0001530000502031S00_DXXX",
     "sol": 1355,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01355/mhli/1355MH0001530000502031S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1355_1.jpg"
@@ -2322,7 +4455,7 @@ window.RESPALDO["marte"] = {
     "id": "1355MH0001530000502028R00_DXXX",
     "sol": 1355,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01355/mhli/1355MH0001530000502028R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1355_2.jpg"
@@ -2331,10 +4464,46 @@ window.RESPALDO["marte"] = {
     "id": "1355MH0001530000502029S00_DXXX",
     "sol": 1355,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01355/mhli/1355MH0001530000502029S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1355_3.jpg"
+   },
+   {
+    "id": "1355ML0065810020600648E01_DXXX",
+    "sol": 1355,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01355/mcam/1355ML0065810020600648E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1355_4.jpg"
+   },
+   {
+    "id": "1355ML0065810030600649E01_DXXX",
+    "sol": 1355,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01355/mcam/1355ML0065810030600649E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1355_5.jpg"
+   },
+   {
+    "id": "1355ML0065810040600650E01_DXXX",
+    "sol": 1355,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01355/mcam/1355ML0065810040600650E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1355_6.jpg"
+   },
+   {
+    "id": "1355ML0065800380600645E01_DXXX",
+    "sol": 1355,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01355/mcam/1355ML0065800380600645E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1355_7.jpg"
    }
   ],
   "1360": [
@@ -2342,7 +4511,7 @@ window.RESPALDO["marte"] = {
     "id": "1360MH0001220010502185C00_DXXX",
     "sol": 1360,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01360/mhli/1360MH0001220010502185C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1360_0.jpg"
@@ -2351,7 +4520,7 @@ window.RESPALDO["marte"] = {
     "id": "1360MH0001220010502183C00_DXXX",
     "sol": 1360,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01360/mhli/1360MH0001220010502183C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1360_1.jpg"
@@ -2360,7 +4529,7 @@ window.RESPALDO["marte"] = {
     "id": "1360MH0001480010502181C00_DXXX",
     "sol": 1360,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01360/mhli/1360MH0001480010502181C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1360_2.jpg"
@@ -2369,10 +4538,46 @@ window.RESPALDO["marte"] = {
     "id": "1360MH0001900010502179C00_DXXX",
     "sol": 1360,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01360/mhli/1360MH0001900010502179C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1360_3.jpg"
+   },
+   {
+    "id": "1360MR0066530000701500E01_DXXX",
+    "sol": 1360,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01360/mcam/1360MR0066530000701500E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1360_4.jpg"
+   },
+   {
+    "id": "1360MR0066540000701501E01_DXXX",
+    "sol": 1360,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01360/mcam/1360MR0066540000701501E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1360_5.jpg"
+   },
+   {
+    "id": "CR0_518229005EDR_F0542280CCAM02360M_",
+    "sol": 1360,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01360/opgs/edr/ccam/CR0_518229005EDR_F0542280CCAM02360M_-br2.jpg",
+    "imagen_local": "marte/img/sol1360_6.jpg"
+   },
+   {
+    "id": "CR0_518228623EDR_F0542280CCAM02360M_",
+    "sol": 1360,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01360/opgs/edr/ccam/CR0_518228623EDR_F0542280CCAM02360M_-br2.jpg",
+    "imagen_local": "marte/img/sol1360_7.jpg"
    }
   ],
   "1365": [
@@ -2380,7 +4585,7 @@ window.RESPALDO["marte"] = {
     "id": "1365MH0006210000502384S00_DXXX",
     "sol": 1365,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01365/mhli/1365MH0006210000502384S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1365_0.jpg"
@@ -2389,7 +4594,7 @@ window.RESPALDO["marte"] = {
     "id": "1365MH0006210000502381R00_DXXX",
     "sol": 1365,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01365/mhli/1365MH0006210000502381R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1365_1.jpg"
@@ -2398,7 +4603,7 @@ window.RESPALDO["marte"] = {
     "id": "1365MH0006210000502383R00_DXXX",
     "sol": 1365,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01365/mhli/1365MH0006210000502383R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1365_2.jpg"
@@ -2407,10 +4612,46 @@ window.RESPALDO["marte"] = {
     "id": "1365MH0006210000502382S00_DXXX",
     "sol": 1365,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01365/mhli/1365MH0006210000502382S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1365_3.jpg"
+   },
+   {
+    "id": "1365MR0066770110701575E01_DXXX",
+    "sol": 1365,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01365/mcam/1365MR0066770110701575E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1365_4.jpg"
+   },
+   {
+    "id": "1365MR0066770150701579E01_DXXX",
+    "sol": 1365,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01365/mcam/1365MR0066770150701579E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1365_5.jpg"
+   },
+   {
+    "id": "1365MR0066770100701574E01_DXXX",
+    "sol": 1365,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01365/mcam/1365MR0066770100701574E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1365_6.jpg"
+   },
+   {
+    "id": "1365MR0066770210701585E01_DXXX",
+    "sol": 1365,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01365/mcam/1365MR0066770210701585E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1365_7.jpg"
    }
   ],
   "1370": [
@@ -2418,7 +4659,7 @@ window.RESPALDO["marte"] = {
     "id": "1370ML0067050050601167D01_DXXX",
     "sol": 1370,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01370/mcam/1370ML0067050050601167D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1370_0.jpg"
@@ -2427,7 +4668,7 @@ window.RESPALDO["marte"] = {
     "id": "1370ML0067050020601164D01_DXXX",
     "sol": 1370,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01370/mcam/1370ML0067050020601164D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1370_1.jpg"
@@ -2436,7 +4677,7 @@ window.RESPALDO["marte"] = {
     "id": "1370ML0067050040601166D01_DXXX",
     "sol": 1370,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01370/mcam/1370ML0067050040601166D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1370_2.jpg"
@@ -2445,10 +4686,46 @@ window.RESPALDO["marte"] = {
     "id": "1370ML0067060000601168E01_DXXX",
     "sol": 1370,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01370/mcam/1370ML0067060000601168E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1370_3.jpg"
+   },
+   {
+    "id": "1370MR0067060000701665E01_DXXX",
+    "sol": 1370,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01370/mcam/1370MR0067060000701665E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1370_4.jpg"
+   },
+   {
+    "id": "1370MR0067050020701662C00_DXXX",
+    "sol": 1370,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01370/mcam/1370MR0067050020701662C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1370_5.jpg"
+   },
+   {
+    "id": "FLB_519114016EDR_F0542508FHAZ00323M_",
+    "sol": 1370,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01370/opgs/edr/fcam/FLB_519114016EDR_F0542508FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1370_6.jpg"
+   },
+   {
+    "id": "FRB_519114016EDR_F0542508FHAZ00323M_",
+    "sol": 1370,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01370/opgs/edr/fcam/FRB_519114016EDR_F0542508FHAZ00323M_-br2.jpg",
+    "imagen_local": "marte/img/sol1370_7.jpg"
    }
   ],
   "1375": [
@@ -2456,7 +4733,7 @@ window.RESPALDO["marte"] = {
     "id": "1375MH0003260000502568C00_DXXX",
     "sol": 1375,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01375/mhli/1375MH0003260000502568C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1375_0.jpg"
@@ -2465,7 +4742,7 @@ window.RESPALDO["marte"] = {
     "id": "1375MH0002650000502564R00_DXXX",
     "sol": 1375,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01375/mhli/1375MH0002650000502564R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1375_1.jpg"
@@ -2474,7 +4751,7 @@ window.RESPALDO["marte"] = {
     "id": "1375MH0003120000502566C00_DXXX",
     "sol": 1375,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01375/mhli/1375MH0003120000502566C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1375_2.jpg"
@@ -2483,10 +4760,46 @@ window.RESPALDO["marte"] = {
     "id": "1375MH0003120010502567C00_DXXX",
     "sol": 1375,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01375/mhli/1375MH0003120010502567C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1375_3.jpg"
+   },
+   {
+    "id": "1375ML0067370060601303C00_DXXX",
+    "sol": 1375,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01375/mcam/1375ML0067370060601303C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1375_4.jpg"
+   },
+   {
+    "id": "1375ML0067370070601304C01_DXXX",
+    "sol": 1375,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01375/mcam/1375ML0067370070601304C01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1375_5.jpg"
+   },
+   {
+    "id": "1375ML0067370070601304C00_DXXX",
+    "sol": 1375,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01375/mcam/1375ML0067370070601304C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1375_6.jpg"
+   },
+   {
+    "id": "1375ML0067370040601301C00_DXXX",
+    "sol": 1375,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01375/mcam/1375ML0067370040601301C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1375_7.jpg"
    }
   ],
   "1380": [
@@ -2494,7 +4807,7 @@ window.RESPALDO["marte"] = {
     "id": "1380MH0001530000502628R00_DXXX",
     "sol": 1380,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01380/mhli/1380MH0001530000502628R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1380_0.jpg"
@@ -2503,7 +4816,7 @@ window.RESPALDO["marte"] = {
     "id": "1380MH0001530000502626R00_DXXX",
     "sol": 1380,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01380/mhli/1380MH0001530000502626R00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1380_1.jpg"
@@ -2512,7 +4825,7 @@ window.RESPALDO["marte"] = {
     "id": "1380MH0001530000502627S00_DXXX",
     "sol": 1380,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01380/mhli/1380MH0001530000502627S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1380_2.jpg"
@@ -2521,10 +4834,46 @@ window.RESPALDO["marte"] = {
     "id": "1380MH0001530000502629S00_DXXX",
     "sol": 1380,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01380/mhli/1380MH0001530000502629S00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1380_3.jpg"
+   },
+   {
+    "id": "1380ML0067600040601363E01_DXXX",
+    "sol": 1380,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01380/mcam/1380ML0067600040601363E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1380_4.jpg"
+   },
+   {
+    "id": "1380ML0067600000601359E01_DXXX",
+    "sol": 1380,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01380/mcam/1380ML0067600000601359E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1380_5.jpg"
+   },
+   {
+    "id": "1380ML0067600030601362E01_DXXX",
+    "sol": 1380,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01380/mcam/1380ML0067600030601362E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1380_6.jpg"
+   },
+   {
+    "id": "1380ML0067600010601360E01_DXXX",
+    "sol": 1380,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01380/mcam/1380ML0067600010601360E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1380_7.jpg"
    }
   ],
   "1385": [
@@ -2532,7 +4881,7 @@ window.RESPALDO["marte"] = {
     "id": "1385MD0005230000200574E01_DXXX",
     "sol": 1385,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01385/mrdi/1385MD0005230000200574E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1385_0.jpg"
@@ -2541,7 +4890,7 @@ window.RESPALDO["marte"] = {
     "id": "1385ML0068000010601602E01_DXXX",
     "sol": 1385,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01385/mcam/1385ML0068000010601602E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1385_1.jpg"
@@ -2550,7 +4899,7 @@ window.RESPALDO["marte"] = {
     "id": "1385ML0067980080601595C00_DXXX",
     "sol": 1385,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01385/mcam/1385ML0067980080601595C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1385_2.jpg"
@@ -2559,10 +4908,46 @@ window.RESPALDO["marte"] = {
     "id": "1385ML0067980070601594C00_DXXX",
     "sol": 1385,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01385/mcam/1385ML0067980070601594C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1385_3.jpg"
+   },
+   {
+    "id": "1385ML0067980050601592C00_DXXX",
+    "sol": 1385,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01385/mcam/1385ML0067980050601592C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1385_4.jpg"
+   },
+   {
+    "id": "1385MR0068000000701885E01_DXXX",
+    "sol": 1385,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01385/mcam/1385MR0068000000701885E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1385_5.jpg"
+   },
+   {
+    "id": "1385MR0067970000701884E01_DXXX",
+    "sol": 1385,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01385/mcam/1385MR0067970000701884E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1385_6.jpg"
+   },
+   {
+    "id": "CR0_520456238EDR_F0551312CCAM15900M_",
+    "sol": 1385,
+    "earth_date": "",
+    "camera": "CHEMCAM_RMI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01385/opgs/edr/ccam/CR0_520456238EDR_F0551312CCAM15900M_-br2.jpg",
+    "imagen_local": "marte/img/sol1385_7.jpg"
    }
   ],
   "1400": [
@@ -2570,7 +4955,7 @@ window.RESPALDO["marte"] = {
     "id": "1400MD0005320000200582E01_DXXX",
     "sol": 1400,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01400/mrdi/1400MD0005320000200582E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1400_0.jpg"
@@ -2579,7 +4964,7 @@ window.RESPALDO["marte"] = {
     "id": "1400ML0068570040601744C00_DXXX",
     "sol": 1400,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01400/mcam/1400ML0068570040601744C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1400_1.jpg"
@@ -2588,7 +4973,7 @@ window.RESPALDO["marte"] = {
     "id": "1400ML0068570030601743C00_DXXX",
     "sol": 1400,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01400/mcam/1400ML0068570030601743C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1400_2.jpg"
@@ -2597,10 +4982,46 @@ window.RESPALDO["marte"] = {
     "id": "1400ML0068570000601740C00_DXXX",
     "sol": 1400,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01400/mcam/1400ML0068570000601740C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1400_3.jpg"
+   },
+   {
+    "id": "1400ML0068570020601742C00_DXXX",
+    "sol": 1400,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01400/mcam/1400ML0068570020601742C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1400_4.jpg"
+   },
+   {
+    "id": "1400MR0068530290702016C00_DXXX",
+    "sol": 1400,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01400/mcam/1400MR0068530290702016C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1400_5.jpg"
+   },
+   {
+    "id": "1400MR0068530300702017C00_DXXX",
+    "sol": 1400,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01400/mcam/1400MR0068530300702017C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1400_6.jpg"
+   },
+   {
+    "id": "1400MR0068530280702015C00_DXXX",
+    "sol": 1400,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01400/mcam/1400MR0068530280702015C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1400_7.jpg"
    }
   ],
   "1405": [
@@ -2608,7 +5029,7 @@ window.RESPALDO["marte"] = {
     "id": "1405MH0002240010502758C00_DXXX",
     "sol": 1405,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01405/mhli/1405MH0002240010502758C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1405_0.jpg"
@@ -2617,7 +5038,7 @@ window.RESPALDO["marte"] = {
     "id": "1405MH0002240010502748C00_DXXX",
     "sol": 1405,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01405/mhli/1405MH0002240010502748C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1405_1.jpg"
@@ -2626,7 +5047,7 @@ window.RESPALDO["marte"] = {
     "id": "1405MH0001900010502746C00_DXXX",
     "sol": 1405,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01405/mhli/1405MH0001900010502746C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1405_2.jpg"
@@ -2635,10 +5056,46 @@ window.RESPALDO["marte"] = {
     "id": "1405ML0068870050601886C00_DXXX",
     "sol": 1405,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01405/mcam/1405ML0068870050601886C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1405_3.jpg"
+   },
+   {
+    "id": "1405ML0068870030601884C00_DXXX",
+    "sol": 1405,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01405/mcam/1405ML0068870030601884C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1405_4.jpg"
+   },
+   {
+    "id": "1405ML0068870040601885C00_DXXX",
+    "sol": 1405,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01405/mcam/1405ML0068870040601885C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1405_5.jpg"
+   },
+   {
+    "id": "1405ML0068870020601883C00_DXXX",
+    "sol": 1405,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01405/mcam/1405ML0068870020601883C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1405_6.jpg"
+   },
+   {
+    "id": "1405MR0068840020702090C00_DXXX",
+    "sol": 1405,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01405/mcam/1405MR0068840020702090C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1405_7.jpg"
    }
   ],
   "1410": [
@@ -2646,7 +5103,7 @@ window.RESPALDO["marte"] = {
     "id": "1410MD0005350000200585E01_DXXX",
     "sol": 1410,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01410/mrdi/1410MD0005350000200585E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1410_0.jpg"
@@ -2655,7 +5112,7 @@ window.RESPALDO["marte"] = {
     "id": "1410MH0003250050502991E01_DXXX",
     "sol": 1410,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01410/mhli/1410MH0003250050502991E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1410_1.jpg"
@@ -2664,7 +5121,7 @@ window.RESPALDO["marte"] = {
     "id": "1410ML0069070010602010E01_DXXX",
     "sol": 1410,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01410/mcam/1410ML0069070010602010E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1410_2.jpg"
@@ -2673,10 +5130,46 @@ window.RESPALDO["marte"] = {
     "id": "1410ML0069060010602006E01_DXXX",
     "sol": 1410,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01410/mcam/1410ML0069060010602006E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1410_3.jpg"
+   },
+   {
+    "id": "1410ML0069060040602009E01_DXXX",
+    "sol": 1410,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01410/mcam/1410ML0069060040602009E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1410_4.jpg"
+   },
+   {
+    "id": "1410ML0069060030602008E01_DXXX",
+    "sol": 1410,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01410/mcam/1410ML0069060030602008E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1410_5.jpg"
+   },
+   {
+    "id": "1410MR0069070000702211E01_DXXX",
+    "sol": 1410,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01410/mcam/1410MR0069070000702211E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1410_6.jpg"
+   },
+   {
+    "id": "1410MR0069050010702210E01_DXXX",
+    "sol": 1410,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01410/mcam/1410MR0069050010702210E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1410_7.jpg"
    }
   ],
   "1415": [
@@ -2684,7 +5177,7 @@ window.RESPALDO["marte"] = {
     "id": "1415ML0069300010602045E01_DXXX",
     "sol": 1415,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01415/mcam/1415ML0069300010602045E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1415_0.jpg"
@@ -2693,7 +5186,7 @@ window.RESPALDO["marte"] = {
     "id": "1415ML0069290020602044D01_DXXX",
     "sol": 1415,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01415/mcam/1415ML0069290020602044D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1415_1.jpg"
@@ -2702,7 +5195,7 @@ window.RESPALDO["marte"] = {
     "id": "1415MR0069300010702259E01_DXXX",
     "sol": 1415,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01415/mcam/1415MR0069300010702259E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1415_2.jpg"
@@ -2711,10 +5204,120 @@ window.RESPALDO["marte"] = {
     "id": "1415MR0069290020702257C00_DXXX",
     "sol": 1415,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01415/mcam/1415MR0069290020702257C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1415_3.jpg"
+   },
+   {
+    "id": "FLB_523117091EDR_F0561122FHAZ00341M_",
+    "sol": 1415,
+    "earth_date": "",
+    "camera": "FHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01415/opgs/edr/fcam/FLB_523117091EDR_F0561122FHAZ00341M_-br2.jpg",
+    "imagen_local": "marte/img/sol1415_4.jpg"
+   },
+   {
+    "id": "FRB_523117091EDR_F0561122FHAZ00341M_",
+    "sol": 1415,
+    "earth_date": "",
+    "camera": "FHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01415/opgs/edr/fcam/FRB_523117091EDR_F0561122FHAZ00341M_-br2.jpg",
+    "imagen_local": "marte/img/sol1415_5.jpg"
+   },
+   {
+    "id": "RLB_523117151EDR_F0561122RHAZ00341M_",
+    "sol": 1415,
+    "earth_date": "",
+    "camera": "RHAZ_LEFT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01415/opgs/edr/rcam/RLB_523117151EDR_F0561122RHAZ00341M_-br2.jpg",
+    "imagen_local": "marte/img/sol1415_6.jpg"
+   },
+   {
+    "id": "RRB_523117151EDR_F0561122RHAZ00341M_",
+    "sol": 1415,
+    "earth_date": "",
+    "camera": "RHAZ_RIGHT_B",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01415/opgs/edr/rcam/RRB_523117151EDR_F0561122RHAZ00341M_-br2.jpg",
+    "imagen_local": "marte/img/sol1415_7.jpg"
+   }
+  ],
+  "1420": [
+   {
+    "id": "1420ML0070080000602168E01_DXXX",
+    "sol": 1420,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01420/mcam/1420ML0070080000602168E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1420_4.jpg"
+   },
+   {
+    "id": "1420ML0070070010602167C00_DXXX",
+    "sol": 1420,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01420/mcam/1420ML0070070010602167C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1420_5.jpg"
+   },
+   {
+    "id": "1420ML0070050110602164E01_DXXX",
+    "sol": 1420,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01420/mcam/1420ML0070050110602164E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1420_6.jpg"
+   },
+   {
+    "id": "1420ML0070050100602163E01_DXXX",
+    "sol": 1420,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01420/mcam/1420ML0070050100602163E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1420_7.jpg"
+   },
+   {
+    "id": "1420MR0070080000702418E01_DXXX",
+    "sol": 1420,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01420/mcam/1420MR0070080000702418E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1420_8.jpg"
+   },
+   {
+    "id": "1420MR0070070010702417C00_DXXX",
+    "sol": 1420,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01420/mcam/1420MR0070070010702417C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1420_9.jpg"
+   },
+   {
+    "id": "1420MR0070060010702415C00_DXXX",
+    "sol": 1420,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01420/mcam/1420MR0070060010702415C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1420_10.jpg"
+   },
+   {
+    "id": "1420MR0070040010702400E01_DXXX",
+    "sol": 1420,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01420/mcam/1420MR0070040010702400E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1420_11.jpg"
    }
   ],
   "1425": [
@@ -2722,7 +5325,7 @@ window.RESPALDO["marte"] = {
     "id": "1425ML0070350020602380D01_DXXX",
     "sol": 1425,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01425/mcam/1425ML0070350020602380D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1425_0.jpg"
@@ -2731,7 +5334,7 @@ window.RESPALDO["marte"] = {
     "id": "1425ML0070350060602384E01_DXXX",
     "sol": 1425,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01425/mcam/1425ML0070350060602384E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1425_1.jpg"
@@ -2740,7 +5343,7 @@ window.RESPALDO["marte"] = {
     "id": "1425ML0070350030602381D01_DXXX",
     "sol": 1425,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01425/mcam/1425ML0070350030602381D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1425_2.jpg"
@@ -2749,10 +5352,46 @@ window.RESPALDO["marte"] = {
     "id": "1425ML0070350040602382D01_DXXX",
     "sol": 1425,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01425/mcam/1425ML0070350040602382D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1425_3.jpg"
+   },
+   {
+    "id": "1425MR0070350140702512E01_DXXX",
+    "sol": 1425,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01425/mcam/1425MR0070350140702512E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1425_4.jpg"
+   },
+   {
+    "id": "1425MR0070350120702510D01_DXXX",
+    "sol": 1425,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01425/mcam/1425MR0070350120702510D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1425_5.jpg"
+   },
+   {
+    "id": "1425MR0070350130702511D01_DXXX",
+    "sol": 1425,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01425/mcam/1425MR0070350130702511D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1425_6.jpg"
+   },
+   {
+    "id": "1425MR0070350100702508D01_DXXX",
+    "sol": 1425,
+    "earth_date": "",
+    "camera": "MAST_RIGHT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01425/mcam/1425MR0070350100702508D01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1425_7.jpg"
    }
   ],
   "1430": [
@@ -2760,7 +5399,7 @@ window.RESPALDO["marte"] = {
     "id": "FLB_524433352EDR_F0561632FHAZ00341M_",
     "sol": 1430,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_LEFT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01430/opgs/edr/fcam/FLB_524433352EDR_F0561632FHAZ00341M_-br2.jpg",
     "imagen_local": "marte/img/sol1430_0.jpg"
@@ -2769,7 +5408,7 @@ window.RESPALDO["marte"] = {
     "id": "FRB_524433352EDR_F0561632FHAZ00341M_",
     "sol": 1430,
     "earth_date": "",
-    "camera": null,
+    "camera": "FHAZ_RIGHT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01430/opgs/edr/fcam/FRB_524433352EDR_F0561632FHAZ00341M_-br2.jpg",
     "imagen_local": "marte/img/sol1430_1.jpg"
@@ -2778,7 +5417,7 @@ window.RESPALDO["marte"] = {
     "id": "RLB_524433386EDR_F0561632RHAZ00341M_",
     "sol": 1430,
     "earth_date": "",
-    "camera": null,
+    "camera": "RHAZ_LEFT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01430/opgs/edr/rcam/RLB_524433386EDR_F0561632RHAZ00341M_-br2.jpg",
     "imagen_local": "marte/img/sol1430_2.jpg"
@@ -2787,7 +5426,7 @@ window.RESPALDO["marte"] = {
     "id": "RRB_524433386EDR_F0561632RHAZ00341M_",
     "sol": 1430,
     "earth_date": "",
-    "camera": null,
+    "camera": "RHAZ_RIGHT_B",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01430/opgs/edr/rcam/RRB_524433386EDR_F0561632RHAZ00341M_-br2.jpg",
     "imagen_local": "marte/img/sol1430_3.jpg"
@@ -2798,7 +5437,7 @@ window.RESPALDO["marte"] = {
     "id": "1435MD0005430000200593E01_DXXX",
     "sol": 1435,
     "earth_date": "",
-    "camera": null,
+    "camera": "MARDI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01435/mrdi/1435MD0005430000200593E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1435_0.jpg"
@@ -2807,7 +5446,7 @@ window.RESPALDO["marte"] = {
     "id": "1435MH0002640000503463E01_DXXX",
     "sol": 1435,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01435/mhli/1435MH0002640000503463E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1435_1.jpg"
@@ -2816,7 +5455,7 @@ window.RESPALDO["marte"] = {
     "id": "1435MH0002620000503464E01_DXXX",
     "sol": 1435,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01435/mhli/1435MH0002620000503464E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1435_2.jpg"
@@ -2825,10 +5464,46 @@ window.RESPALDO["marte"] = {
     "id": "1435MH0002610010503461E01_DXXX",
     "sol": 1435,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAHLI",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01435/mhli/1435MH0002610010503461E01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1435_3.jpg"
+   },
+   {
+    "id": "1435MH0002590000503462E01_DXXX",
+    "sol": 1435,
+    "earth_date": "",
+    "camera": "MAHLI",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01435/mhli/1435MH0002590000503462E01_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1435_4.jpg"
+   },
+   {
+    "id": "1435ML0070950040602569C00_DXXX",
+    "sol": 1435,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01435/mcam/1435ML0070950040602569C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1435_5.jpg"
+   },
+   {
+    "id": "1435ML0070950000602565C00_DXXX",
+    "sol": 1435,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01435/mcam/1435ML0070950000602565C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1435_6.jpg"
+   },
+   {
+    "id": "1435ML0070950030602568C00_DXXX",
+    "sol": 1435,
+    "earth_date": "",
+    "camera": "MAST_LEFT",
+    "rover": "Curiosity",
+    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01435/mcam/1435ML0070950030602568C00_DXXX-br2.jpg",
+    "imagen_local": "marte/img/sol1435_7.jpg"
    }
   ],
   "1440": [
@@ -2836,7 +5511,7 @@ window.RESPALDO["marte"] = {
     "id": "1440ML0071230020602629D01_DXXX",
     "sol": 1440,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01440/mcam/1440ML0071230020602629D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1440_0.jpg"
@@ -2845,7 +5520,7 @@ window.RESPALDO["marte"] = {
     "id": "1440ML0071220020602628D01_DXXX",
     "sol": 1440,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_LEFT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01440/mcam/1440ML0071220020602628D01_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1440_1.jpg"
@@ -2854,7 +5529,7 @@ window.RESPALDO["marte"] = {
     "id": "1440MR0071220020702862C00_DXXX",
     "sol": 1440,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01440/mcam/1440MR0071220020702862C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1440_2.jpg"
@@ -2863,2857 +5538,28 @@ window.RESPALDO["marte"] = {
     "id": "1440MR0071230020702863C00_DXXX",
     "sol": 1440,
     "earth_date": "",
-    "camera": null,
+    "camera": "MAST_RIGHT",
     "rover": "Curiosity",
     "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01440/mcam/1440MR0071230020702863C00_DXXX-br2.jpg",
     "imagen_local": "marte/img/sol1440_3.jpg"
-   }
-  ],
-  "1445": [
-   {
-    "id": "1445MH0001630000503621S00_DXXX",
-    "sol": 1445,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01445/mhli/1445MH0001630000503621S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1445_0.jpg"
-   },
-   {
-    "id": "1445MH0001630000503620R00_DXXX",
-    "sol": 1445,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01445/mhli/1445MH0001630000503620R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1445_1.jpg"
-   },
-   {
-    "id": "1445MH0001630000503618R00_DXXX",
-    "sol": 1445,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01445/mhli/1445MH0001630000503618R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1445_2.jpg"
-   },
-   {
-    "id": "1445MH0001630000503619S00_DXXX",
-    "sol": 1445,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01445/mhli/1445MH0001630000503619S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1445_3.jpg"
-   }
-  ],
-  "1450": [
-   {
-    "id": "1450MR0071830340703258C00_DXXX",
-    "sol": 1450,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01450/mcam/1450MR0071830340703258C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1450_0.jpg"
-   },
-   {
-    "id": "1450MR0071820450703206C00_DXXX",
-    "sol": 1450,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01450/mcam/1450MR0071820450703206C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1450_1.jpg"
-   },
-   {
-    "id": "1450MR0071820330703194C00_DXXX",
-    "sol": 1450,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01450/mcam/1450MR0071820330703194C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1450_2.jpg"
-   },
-   {
-    "id": "1450MR0071820300703191C00_DXXX",
-    "sol": 1450,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01450/mcam/1450MR0071820300703191C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1450_3.jpg"
-   }
-  ],
-  "1455": [
-   {
-    "id": "1455MD0005510000200601E01_DXXX",
-    "sol": 1455,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01455/mrdi/1455MD0005510000200601E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1455_0.jpg"
-   },
-   {
-    "id": "1455ML0071970130602981C00_DXXX",
-    "sol": 1455,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01455/mcam/1455ML0071970130602981C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1455_1.jpg"
-   },
-   {
-    "id": "1455ML0071970120602980C00_DXXX",
-    "sol": 1455,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01455/mcam/1455ML0071970120602980C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1455_2.jpg"
-   },
-   {
-    "id": "1455ML0071970100602978C00_DXXX",
-    "sol": 1455,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01455/mcam/1455ML0071970100602978C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1455_3.jpg"
-   }
-  ],
-  "1460": [
-   {
-    "id": "1460MH0001220010503750C00_DXXX",
-    "sol": 1460,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01460/mhli/1460MH0001220010503750C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1460_0.jpg"
-   },
-   {
-    "id": "1460ML0072830070603071D02_DXXX",
-    "sol": 1460,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01460/mcam/1460ML0072830070603071D02_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1460_1.jpg"
-   },
-   {
-    "id": "1460ML0072830050603069D01_DXXX",
-    "sol": 1460,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01460/mcam/1460ML0072830050603069D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1460_2.jpg"
-   },
-   {
-    "id": "1460ML0072830060603070D01_DXXX",
-    "sol": 1460,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01460/mcam/1460ML0072830060603070D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1460_3.jpg"
-   }
-  ],
-  "1465": [
-   {
-    "id": "1465MH0004230000503934R00_DXXX",
-    "sol": 1465,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01465/mhli/1465MH0004230000503934R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1465_0.jpg"
-   },
-   {
-    "id": "1465MH0004230000503935S00_DXXX",
-    "sol": 1465,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01465/mhli/1465MH0004230000503935S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1465_1.jpg"
-   },
-   {
-    "id": "1465MH0004230000503933S00_DXXX",
-    "sol": 1465,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01465/mhli/1465MH0004230000503933S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1465_2.jpg"
-   },
-   {
-    "id": "1465MH0004230000503932R00_DXXX",
-    "sol": 1465,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01465/mhli/1465MH0004230000503932R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1465_3.jpg"
-   }
-  ],
-  "1470": [
-   {
-    "id": "1470MH0006370020504047C00_DXXX",
-    "sol": 1470,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01470/mhli/1470MH0006370020504047C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1470_0.jpg"
-   },
-   {
-    "id": "1470MH0006370030504048C00_DXXX",
-    "sol": 1470,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01470/mhli/1470MH0006370030504048C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1470_1.jpg"
-   },
-   {
-    "id": "1470MH0006370010504046C00_DXXX",
-    "sol": 1470,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01470/mhli/1470MH0006370010504046C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1470_2.jpg"
-   },
-   {
-    "id": "1470MH0003120010504042C00_DXXX",
-    "sol": 1470,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01470/mhli/1470MH0003120010504042C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1470_3.jpg"
-   }
-  ],
-  "1475": [
-   {
-    "id": "1475MD0005610000200611E01_DXXX",
-    "sol": 1475,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01475/mrdi/1475MD0005610000200611E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1475_0.jpg"
-   },
-   {
-    "id": "1475ML0073960020603436C00_DXXX",
-    "sol": 1475,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01475/mcam/1475ML0073960020603436C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1475_1.jpg"
-   },
-   {
-    "id": "1475ML0073950020603422C00_DXXX",
-    "sol": 1475,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01475/mcam/1475ML0073950020603422C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1475_2.jpg"
-   },
-   {
-    "id": "1475ML0074030010603467E01_DXXX",
-    "sol": 1475,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01475/mcam/1475ML0074030010603467E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1475_3.jpg"
-   }
-  ],
-  "1480": [
-   {
-    "id": "1480MD0005630000200613E01_DXXX",
-    "sol": 1480,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01480/mrdi/1480MD0005630000200613E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1480_0.jpg"
-   },
-   {
-    "id": "1480MH0002650000504360R00_DXXX",
-    "sol": 1480,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01480/mhli/1480MH0002650000504360R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1480_1.jpg"
-   },
-   {
-    "id": "1480MH0002650000504361S00_DXXX",
-    "sol": 1480,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01480/mhli/1480MH0002650000504361S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1480_2.jpg"
-   },
-   {
-    "id": "1480MH0002650000504358R00_DXXX",
-    "sol": 1480,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01480/mhli/1480MH0002650000504358R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1480_3.jpg"
-   }
-  ],
-  "1485": [
-   {
-    "id": "1485ML0074680010603632E01_DXXX",
-    "sol": 1485,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01485/mcam/1485ML0074680010603632E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1485_0.jpg"
-   },
-   {
-    "id": "1485ML0074640040603619D01_DXXX",
-    "sol": 1485,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01485/mcam/1485ML0074640040603619D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1485_1.jpg"
-   },
-   {
-    "id": "1485ML0074640060603621E01_DXXX",
-    "sol": 1485,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01485/mcam/1485ML0074640060603621E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1485_2.jpg"
-   },
-   {
-    "id": "1485ML0074640020603617D01_DXXX",
-    "sol": 1485,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01485/mcam/1485ML0074640020603617D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1485_3.jpg"
-   }
-  ],
-  "1490": [
-   {
-    "id": "1490MD0005670000200617E01_DXXX",
-    "sol": 1490,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01490/mrdi/1490MD0005670000200617E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1490_0.jpg"
-   },
-   {
-    "id": "FLB_529767800EDR_F0582046FHAZ00341M_",
-    "sol": 1490,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01490/opgs/edr/fcam/FLB_529767800EDR_F0582046FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1490_1.jpg"
-   },
-   {
-    "id": "FRB_529767800EDR_F0582046FHAZ00341M_",
-    "sol": 1490,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01490/opgs/edr/fcam/FRB_529767800EDR_F0582046FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1490_2.jpg"
-   },
-   {
-    "id": "RLB_529767833EDR_F0582046RHAZ00341M_",
-    "sol": 1490,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01490/opgs/edr/rcam/RLB_529767833EDR_F0582046RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1490_3.jpg"
-   }
-  ],
-  "1495": [
-   {
-    "id": "1495MH0002580000504605S00_DXXX",
-    "sol": 1495,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01495/mhli/1495MH0002580000504605S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1495_2.jpg"
-   },
-   {
-    "id": "1495MH0002580000504604R00_DXXX",
-    "sol": 1495,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01495/mhli/1495MH0002580000504604R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1495_3.jpg"
-   }
-  ],
-  "1500": [
-   {
-    "id": "1500MD0005690000200619E01_DXXX",
-    "sol": 1500,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01500/mrdi/1500MD0005690000200619E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1500_0.jpg"
-   },
-   {
-    "id": "1500ML0076040010603949E01_DXXX",
-    "sol": 1500,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01500/mcam/1500ML0076040010603949E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1500_1.jpg"
-   },
-   {
-    "id": "1500ML0076030020603941E03_DXXX",
-    "sol": 1500,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01500/mcam/1500ML0076030020603941E03_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1500_2.jpg"
-   },
-   {
-    "id": "1500ML0076030090603948E01_DXXX",
-    "sol": 1500,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01500/mcam/1500ML0076030090603948E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1500_3.jpg"
-   }
-  ],
-  "1505": [
-   {
-    "id": "1505ML0076330000604036E01_DXXX",
-    "sol": 1505,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01505/mcam/1505ML0076330000604036E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1505_0.jpg"
-   },
-   {
-    "id": "1505ML0076320000604035E01_DXXX",
-    "sol": 1505,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01505/mcam/1505ML0076320000604035E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1505_1.jpg"
-   },
-   {
-    "id": "1505ML0076310000604034E01_DXXX",
-    "sol": 1505,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01505/mcam/1505ML0076310000604034E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1505_2.jpg"
-   },
-   {
-    "id": "1505ML0076300030604033E01_DXXX",
-    "sol": 1505,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01505/mcam/1505ML0076300030604033E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1505_3.jpg"
-   }
-  ],
-  "1510": [
-   {
-    "id": "CR0_531542540EDR_F0591260CCAM05509M_",
-    "sol": 1510,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01510/opgs/edr/ccam/CR0_531542540EDR_F0591260CCAM05509M_-br2.jpg",
-    "imagen_local": "marte/img/sol1510_0.jpg"
-   },
-   {
-    "id": "CR0_531543265EDR_F0591260CCAM05509M_",
-    "sol": 1510,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01510/opgs/edr/ccam/CR0_531543265EDR_F0591260CCAM05509M_-br2.jpg",
-    "imagen_local": "marte/img/sol1510_1.jpg"
-   },
-   {
-    "id": "CR0_531543143EDR_F0591260CCAM05509M_",
-    "sol": 1510,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01510/opgs/edr/ccam/CR0_531543143EDR_F0591260CCAM05509M_-br2.jpg",
-    "imagen_local": "marte/img/sol1510_2.jpg"
-   },
-   {
-    "id": "CR0_531543021EDR_F0591260CCAM05509M_",
-    "sol": 1510,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01510/opgs/edr/ccam/CR0_531543021EDR_F0591260CCAM05509M_-br2.jpg",
-    "imagen_local": "marte/img/sol1510_3.jpg"
-   }
-  ],
-  "1515": [
-   {
-    "id": "1515MD0005820000200632E01_DXXX",
-    "sol": 1515,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01515/mrdi/1515MD0005820000200632E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1515_0.jpg"
-   },
-   {
-    "id": "1515ML0077140010604231E01_DXXX",
-    "sol": 1515,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01515/mcam/1515ML0077140010604231E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1515_1.jpg"
-   },
-   {
-    "id": "1515ML0077130020604230D01_DXXX",
-    "sol": 1515,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01515/mcam/1515ML0077130020604230D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1515_2.jpg"
-   },
-   {
-    "id": "1515MR0077140010204644E01_DXXX",
-    "sol": 1515,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01515/mcam/1515MR0077140010204644E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1515_3.jpg"
-   }
-  ],
-  "1520": [
-   {
-    "id": "1520MR0077410390204720C00_DXXX",
-    "sol": 1520,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01520/mcam/1520MR0077410390204720C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1520_0.jpg"
-   },
-   {
-    "id": "1520MR0077410380204719C00_DXXX",
-    "sol": 1520,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01520/mcam/1520MR0077410380204719C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1520_1.jpg"
-   },
-   {
-    "id": "1520MR0077410360204717C00_DXXX",
-    "sol": 1520,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01520/mcam/1520MR0077410360204717C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1520_2.jpg"
-   },
-   {
-    "id": "1520MR0077410370204718C00_DXXX",
-    "sol": 1520,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01520/mcam/1520MR0077410370204718C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1520_3.jpg"
-   }
-  ],
-  "1525": [
-   {
-    "id": "1525MH0005200010600349C00_DXXX",
-    "sol": 1525,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01525/mhli/1525MH0005200010600349C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1525_0.jpg"
-   },
-   {
-    "id": "1525MH0005200040600367C00_DXXX",
-    "sol": 1525,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01525/mhli/1525MH0005200040600367C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1525_1.jpg"
-   },
-   {
-    "id": "1525MH0004280010600399C00_DXXX",
-    "sol": 1525,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01525/mhli/1525MH0004280010600399C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1525_2.jpg"
-   },
-   {
-    "id": "1525MH0001660010600389C00_DXXX",
-    "sol": 1525,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01525/mhli/1525MH0001660010600389C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1525_3.jpg"
-   }
-  ],
-  "1530": [
-   {
-    "id": "FLB_533312644EDR_F0592830FHAZ00341M_",
-    "sol": 1530,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01530/opgs/edr/fcam/FLB_533312644EDR_F0592830FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1530_0.jpg"
-   },
-   {
-    "id": "FRB_533312644EDR_F0592830FHAZ00341M_",
-    "sol": 1530,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01530/opgs/edr/fcam/FRB_533312644EDR_F0592830FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1530_1.jpg"
-   },
-   {
-    "id": "RLB_533312677EDR_F0592830RHAZ00341M_",
-    "sol": 1530,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01530/opgs/edr/rcam/RLB_533312677EDR_F0592830RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1530_2.jpg"
-   },
-   {
-    "id": "RRB_533312677EDR_F0592830RHAZ00341M_",
-    "sol": 1530,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01530/opgs/edr/rcam/RRB_533312677EDR_F0592830RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1530_3.jpg"
-   }
-  ],
-  "1535": [
-   {
-    "id": "1535ML0078620000604509E03_DXXX",
-    "sol": 1535,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01535/mcam/1535ML0078620000604509E03_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1535_0.jpg"
-   },
-   {
-    "id": "1535ML0078620000604509E02_DXXX",
-    "sol": 1535,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01535/mcam/1535ML0078620000604509E02_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1535_1.jpg"
-   },
-   {
-    "id": "1535ML0078630000604510E01_DXXX",
-    "sol": 1535,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01535/mcam/1535ML0078630000604510E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1535_2.jpg"
-   },
-   {
-    "id": "1535ML0078650000604512E01_DXXX",
-    "sol": 1535,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01535/mcam/1535ML0078650000604512E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1535_3.jpg"
-   }
-  ],
-  "1540": [
-   {
-    "id": "FLB_534207666EDR_F0592830FHAZ00341M_",
-    "sol": 1540,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01540/opgs/edr/fcam/FLB_534207666EDR_F0592830FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1540_0.jpg"
-   },
-   {
-    "id": "FRB_534207666EDR_F0592830FHAZ00341M_",
-    "sol": 1540,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01540/opgs/edr/fcam/FRB_534207666EDR_F0592830FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1540_1.jpg"
-   },
-   {
-    "id": "RLB_534207706EDR_F0592830RHAZ00341M_",
-    "sol": 1540,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01540/opgs/edr/rcam/RLB_534207706EDR_F0592830RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1540_2.jpg"
-   },
-   {
-    "id": "RRB_534207706EDR_F0592830RHAZ00341M_",
-    "sol": 1540,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01540/opgs/edr/rcam/RRB_534207706EDR_F0592830RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1540_3.jpg"
-   }
-  ],
-  "1545": [
-   {
-    "id": "1545ML0079390010604688E01_DXXX",
-    "sol": 1545,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01545/mcam/1545ML0079390010604688E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1545_0.jpg"
-   },
-   {
-    "id": "1545ML0079410110604700E01_DXXX",
-    "sol": 1545,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01545/mcam/1545ML0079410110604700E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1545_1.jpg"
-   },
-   {
-    "id": "1545ML0079380020604687D01_DXXX",
-    "sol": 1545,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01545/mcam/1545ML0079380020604687D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1545_2.jpg"
-   },
-   {
-    "id": "1545ML0079410120604701E01_DXXX",
-    "sol": 1545,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01545/mcam/1545ML0079410120604701E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1545_3.jpg"
-   }
-  ],
-  "1550": [
-   {
-    "id": "1550MD0005880000200638E01_DXXX",
-    "sol": 1550,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01550/mrdi/1550MD0005880000200638E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1550_0.jpg"
-   },
-   {
-    "id": "1550MR0079500010800073E01_DXXX",
-    "sol": 1550,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01550/mcam/1550MR0079500010800073E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1550_1.jpg"
-   },
-   {
-    "id": "1550MR0079500000800072E01_DXXX",
-    "sol": 1550,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01550/mcam/1550MR0079500000800072E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1550_2.jpg"
-   },
-   {
-    "id": "1550MR0079490000800071E01_DXXX",
-    "sol": 1550,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01550/mcam/1550MR0079490000800071E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1550_3.jpg"
-   }
-  ],
-  "1555": [
-   {
-    "id": "1555MD0005920000200642E01_DXXX",
-    "sol": 1555,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01555/mrdi/1555MD0005920000200642E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1555_0.jpg"
-   },
-   {
-    "id": "1555MH0006540000600666R00_DXXX",
-    "sol": 1555,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01555/mhli/1555MH0006540000600666R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1555_1.jpg"
-   },
-   {
-    "id": "1555MH0006540000600667S00_DXXX",
-    "sol": 1555,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01555/mhli/1555MH0006540000600667S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1555_2.jpg"
-   },
-   {
-    "id": "1555MH0006540000600665S00_DXXX",
-    "sol": 1555,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01555/mhli/1555MH0006540000600665S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1555_3.jpg"
-   }
-  ],
-  "1560": [
-   {
-    "id": "FLB_535974523EDR_F0593016FHAZ00341M_",
-    "sol": 1560,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01560/opgs/edr/fcam/FLB_535974523EDR_F0593016FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1560_0.jpg"
-   },
-   {
-    "id": "FRB_535974523EDR_F0593016FHAZ00341M_",
-    "sol": 1560,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01560/opgs/edr/fcam/FRB_535974523EDR_F0593016FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1560_1.jpg"
-   },
-   {
-    "id": "RLB_536001109EDR_S0593016RHAZ00346M_",
-    "sol": 1560,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01560/opgs/edr/rcam/RLB_536001109EDR_S0593016RHAZ00346M_-br2.jpg",
-    "imagen_local": "marte/img/sol1560_2.jpg"
-   },
-   {
-    "id": "RLB_535974550EDR_F0593016RHAZ00341M_",
-    "sol": 1560,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01560/opgs/edr/rcam/RLB_535974550EDR_F0593016RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1560_3.jpg"
-   }
-  ],
-  "1565": [
-   {
-    "id": "1565ML0079680030604830D01_DXXX",
-    "sol": 1565,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01565/mcam/1565ML0079680030604830D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1565_0.jpg"
-   },
-   {
-    "id": "1565ML0079690010604833E01_DXXX",
-    "sol": 1565,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01565/mcam/1565ML0079690010604833E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1565_1.jpg"
-   },
-   {
-    "id": "1565ML0079680050604832D01_DXXX",
-    "sol": 1565,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01565/mcam/1565ML0079680050604832D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1565_2.jpg"
-   },
-   {
-    "id": "1565ML0079660040604826D01_DXXX",
-    "sol": 1565,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01565/mcam/1565ML0079660040604826D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1565_3.jpg"
-   }
-  ],
-  "1570": [
-   {
-    "id": "1570MH0006580020601008C00_DXXX",
-    "sol": 1570,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01570/mhli/1570MH0006580020601008C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1570_0.jpg"
-   },
-   {
-    "id": "1570MH0006010020600997C00_DXXX",
-    "sol": 1570,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01570/mhli/1570MH0006010020600997C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1570_1.jpg"
-   },
-   {
-    "id": "1570MH0006010020600986C00_DXXX",
-    "sol": 1570,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01570/mhli/1570MH0006010020600986C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1570_2.jpg"
-   },
-   {
-    "id": "1570MH0006010020600953C00_DXXX",
-    "sol": 1570,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01570/mhli/1570MH0006010020600953C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1570_3.jpg"
-   }
-  ],
-  "1575": [
-   {
-    "id": "1575MD0005950000200645E01_DXXX",
-    "sol": 1575,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01575/mrdi/1575MD0005950000200645E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1575_0.jpg"
-   },
-   {
-    "id": "1575MH0001900010601193C00_DXXX",
-    "sol": 1575,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01575/mhli/1575MH0001900010601193C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1575_1.jpg"
-   },
-   {
-    "id": "1575MH0006700000601224R00_DXXX",
-    "sol": 1575,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01575/mhli/1575MH0006700000601224R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1575_2.jpg"
-   },
-   {
-    "id": "1575MH0006700000601225S00_DXXX",
-    "sol": 1575,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01575/mhli/1575MH0006700000601225S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1575_3.jpg"
-   }
-  ],
-  "1580": [
-   {
-    "id": "1580ML0080500050604960D01_DXXX",
-    "sol": 1580,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01580/mcam/1580ML0080500050604960D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1580_0.jpg"
-   },
-   {
-    "id": "1580ML0080510010604961E01_DXXX",
-    "sol": 1580,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01580/mcam/1580ML0080510010604961E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1580_1.jpg"
-   },
-   {
-    "id": "1580ML0080500030604958D01_DXXX",
-    "sol": 1580,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01580/mcam/1580ML0080500030604958D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1580_2.jpg"
-   },
-   {
-    "id": "1580ML0080500040604959D01_DXXX",
-    "sol": 1580,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01580/mcam/1580ML0080500040604959D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1580_3.jpg"
-   }
-  ],
-  "1585": [
-   {
-    "id": "1585MD0006020000200652E01_DXXX",
-    "sol": 1585,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01585/mrdi/1585MD0006020000200652E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1585_0.jpg"
-   },
-   {
-    "id": "1585MH0001930000601499S00_DXXX",
-    "sol": 1585,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01585/mhli/1585MH0001930000601499S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1585_1.jpg"
-   },
-   {
-    "id": "1585MH0001930000601497S00_DXXX",
-    "sol": 1585,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01585/mhli/1585MH0001930000601497S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1585_2.jpg"
-   },
-   {
-    "id": "1585MH0001930000601498R00_DXXX",
-    "sol": 1585,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01585/mhli/1585MH0001930000601498R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1585_3.jpg"
-   }
-  ],
-  "1590": [
-   {
-    "id": "1590ML0081040000605057E01_DXXX",
-    "sol": 1590,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01590/mcam/1590ML0081040000605057E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1590_0.jpg"
-   },
-   {
-    "id": "1590ML0081030020605056D01_DXXX",
-    "sol": 1590,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01590/mcam/1590ML0081030020605056D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1590_1.jpg"
-   },
-   {
-    "id": "1590MR0081020080800443C00_DXXX",
-    "sol": 1590,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01590/mcam/1590MR0081020080800443C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1590_2.jpg"
-   },
-   {
-    "id": "1590MR0081020050800440C00_DXXX",
-    "sol": 1590,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01590/mcam/1590MR0081020050800440C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1590_3.jpg"
-   }
-  ],
-  "1595": [
-   {
-    "id": "1595MD0006110000200661E01_DXXX",
-    "sol": 1595,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01595/mrdi/1595MD0006110000200661E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1595_0.jpg"
-   },
-   {
-    "id": "1595ML0081260020605156D01_DXXX",
-    "sol": 1595,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01595/mcam/1595ML0081260020605156D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1595_1.jpg"
-   },
-   {
-    "id": "1595ML0081260040605158D01_DXXX",
-    "sol": 1595,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01595/mcam/1595ML0081260040605158D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1595_2.jpg"
-   },
-   {
-    "id": "1595ML0081260030605157D01_DXXX",
-    "sol": 1595,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01595/mcam/1595ML0081260030605157D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1595_3.jpg"
-   }
-  ],
-  "1600": [
-   {
-    "id": "1600MH0005350010601911C00_DXXX",
-    "sol": 1600,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01600/mhli/1600MH0005350010601911C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1600_0.jpg"
-   },
-   {
-    "id": "1600MH0005350010601909C00_DXXX",
-    "sol": 1600,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01600/mhli/1600MH0005350010601909C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1600_1.jpg"
-   },
-   {
-    "id": "1600MH0005350010601907C00_DXXX",
-    "sol": 1600,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01600/mhli/1600MH0005350010601907C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1600_2.jpg"
-   },
-   {
-    "id": "1600MH0004260010601913C00_DXXX",
-    "sol": 1600,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01600/mhli/1600MH0004260010601913C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1600_3.jpg"
-   }
-  ],
-  "1605": [
-   {
-    "id": "1605MD0006180000200668E01_DXXX",
-    "sol": 1605,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01605/mrdi/1605MD0006180000200668E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1605_0.jpg"
-   },
-   {
-    "id": "1605MH0006780020602140C00_DXXX",
-    "sol": 1605,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01605/mhli/1605MH0006780020602140C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1605_1.jpg"
-   },
-   {
-    "id": "1605MH0006790000602185R00_DXXX",
-    "sol": 1605,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01605/mhli/1605MH0006790000602185R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1605_2.jpg"
-   },
-   {
-    "id": "1605MH0006790000602186S00_DXXX",
-    "sol": 1605,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01605/mhli/1605MH0006790000602186S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1605_3.jpg"
-   }
-  ],
-  "1610": [
-   {
-    "id": "1610MD0006200000200670E01_DXXX",
-    "sol": 1610,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01610/mrdi/1610MD0006200000200670E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1610_0.jpg"
-   },
-   {
-    "id": "1610MH0001710000602367S00_DXXX",
-    "sol": 1610,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01610/mhli/1610MH0001710000602367S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1610_1.jpg"
-   },
-   {
-    "id": "1610MH0001710000602368R00_DXXX",
-    "sol": 1610,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01610/mhli/1610MH0001710000602368R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1610_2.jpg"
-   },
-   {
-    "id": "1610MH0001710000602365S00_DXXX",
-    "sol": 1610,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01610/mhli/1610MH0001710000602365S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1610_3.jpg"
-   }
-  ],
-  "1615": [
-   {
-    "id": "1615MH0006840000602513R00_DXXX",
-    "sol": 1615,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01615/mhli/1615MH0006840000602513R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1615_0.jpg"
-   },
-   {
-    "id": "1615MH0006840000602514S00_DXXX",
-    "sol": 1615,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01615/mhli/1615MH0006840000602514S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1615_1.jpg"
-   },
-   {
-    "id": "1615MH0006840000602512S00_DXXX",
-    "sol": 1615,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01615/mhli/1615MH0006840000602512S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1615_2.jpg"
-   },
-   {
-    "id": "1615MH0006840000602510S00_DXXX",
-    "sol": 1615,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01615/mhli/1615MH0006840000602510S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1615_3.jpg"
-   }
-  ],
-  "1620": [
-   {
-    "id": "1620MD0006270000200677E01_DXXX",
-    "sol": 1620,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01620/mrdi/1620MD0006270000200677E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1620_0.jpg"
-   },
-   {
-    "id": "1620ML0083020050505761D01_DXXX",
-    "sol": 1620,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01620/mcam/1620ML0083020050505761D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1620_1.jpg"
-   },
-   {
-    "id": "1620ML0083030000505762E01_DXXX",
-    "sol": 1620,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01620/mcam/1620ML0083030000505762E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1620_2.jpg"
-   },
-   {
-    "id": "1620ML0083020040505760D01_DXXX",
-    "sol": 1620,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01620/mcam/1620ML0083020040505760D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1620_3.jpg"
-   }
-  ],
-  "1625": [
-   {
-    "id": "1625MD0006320000200682E01_DXXX",
-    "sol": 1625,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01625/mrdi/1625MD0006320000200682E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1625_0.jpg"
-   }
-  ],
-  "1630": [
-   {
-    "id": "1630MH0002580000602673S00_DXXX",
-    "sol": 1630,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01630/mhli/1630MH0002580000602673S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1630_0.jpg"
-   },
-   {
-    "id": "1630MH0002580000602672R00_DXXX",
-    "sol": 1630,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01630/mhli/1630MH0002580000602672R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1630_1.jpg"
-   },
-   {
-    "id": "1630MH0006900010602663C00_DXXX",
-    "sol": 1630,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01630/mhli/1630MH0006900010602663C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1630_2.jpg"
-   },
-   {
-    "id": "1630ML0084280010700006E01_DXXX",
-    "sol": 1630,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01630/mcam/1630ML0084280010700006E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1630_3.jpg"
-   }
-  ],
-  "1635": [
-   {
-    "id": "1635MD0006380000200688E01_DXXX",
-    "sol": 1635,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01635/mrdi/1635MD0006380000200688E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1635_0.jpg"
-   },
-   {
-    "id": "1635MH0001530000602737R00_DXXX",
-    "sol": 1635,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01635/mhli/1635MH0001530000602737R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1635_1.jpg"
-   },
-   {
-    "id": "1635MH0001530000602738S00_DXXX",
-    "sol": 1635,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01635/mhli/1635MH0001530000602738S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1635_2.jpg"
-   },
-   {
-    "id": "1635MH0001530000602735R00_DXXX",
-    "sol": 1635,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01635/mhli/1635MH0001530000602735R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1635_3.jpg"
-   }
-  ],
-  "1640": [
-   {
-    "id": "1640MH0005350010602945C00_DXXX",
-    "sol": 1640,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01640/mhli/1640MH0005350010602945C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1640_0.jpg"
-   },
-   {
-    "id": "1640MH0005350010602943C00_DXXX",
-    "sol": 1640,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01640/mhli/1640MH0005350010602943C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1640_1.jpg"
-   },
-   {
-    "id": "1640MH0005350010602941C00_DXXX",
-    "sol": 1640,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01640/mhli/1640MH0005350010602941C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1640_2.jpg"
-   },
-   {
-    "id": "1640MH0001630000602965S00_DXXX",
-    "sol": 1640,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01640/mhli/1640MH0001630000602965S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1640_3.jpg"
-   }
-  ],
-  "1645": [
-   {
-    "id": "1645MD0006450000200695E01_DXXX",
-    "sol": 1645,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01645/mrdi/1645MD0006450000200695E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1645_0.jpg"
-   }
-  ],
-  "1650": [
-   {
-    "id": "1650MD0006470000200697E01_DXXX",
-    "sol": 1650,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01650/mrdi/1650MD0006470000200697E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1650_0.jpg"
-   },
-   {
-    "id": "1650MH0007010010603119C00_DXXX",
-    "sol": 1650,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01650/mhli/1650MH0007010010603119C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1650_1.jpg"
-   },
-   {
-    "id": "1650MH0007000010603117C00_DXXX",
-    "sol": 1650,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01650/mhli/1650MH0007000010603117C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1650_2.jpg"
-   },
-   {
-    "id": "1650MH0005490020603168C00_DXXX",
-    "sol": 1650,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01650/mhli/1650MH0005490020603168C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1650_3.jpg"
-   }
-  ],
-  "1660": [
-   {
-    "id": "1660ML0086230000700562E01_DXXX",
-    "sol": 1660,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01660/mcam/1660ML0086230000700562E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1660_0.jpg"
-   },
-   {
-    "id": "1660ML0086210010700560C00_DXXX",
-    "sol": 1660,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01660/mcam/1660ML0086210010700560C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1660_1.jpg"
-   },
-   {
-    "id": "1660ML0086220020700561D01_DXXX",
-    "sol": 1660,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01660/mcam/1660ML0086220020700561D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1660_2.jpg"
-   },
-   {
-    "id": "1660MR0086230000802423E01_DXXX",
-    "sol": 1660,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01660/mcam/1660MR0086230000802423E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1660_3.jpg"
-   }
-  ],
-  "1665": [
-   {
-    "id": "1665MD0006580000200705E01_DXXX",
-    "sol": 1665,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01665/mrdi/1665MD0006580000200705E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1665_0.jpg"
-   },
-   {
-    "id": "CR0_545301106EDR_F0620690CCAM15904M_",
-    "sol": 1665,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01665/opgs/edr/ccam/CR0_545301106EDR_F0620690CCAM15904M_-br2.jpg",
-    "imagen_local": "marte/img/sol1665_1.jpg"
-   },
-   {
-    "id": "CR0_545300053EDR_F0620690CCAM15904M_",
-    "sol": 1665,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01665/opgs/edr/ccam/CR0_545300053EDR_F0620690CCAM15904M_-br2.jpg",
-    "imagen_local": "marte/img/sol1665_2.jpg"
-   },
-   {
-    "id": "CR0_545299826EDR_F0620690CCAM15904M_",
-    "sol": 1665,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01665/opgs/edr/ccam/CR0_545299826EDR_F0620690CCAM15904M_-br2.jpg",
-    "imagen_local": "marte/img/sol1665_3.jpg"
-   }
-  ],
-  "1670": [
-   {
-    "id": "1670ML0086610000700648E01_DXXX",
-    "sol": 1670,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01670/mcam/1670ML0086610000700648E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1670_0.jpg"
-   },
-   {
-    "id": "1670ML0086600050700647D01_DXXX",
-    "sol": 1670,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01670/mcam/1670ML0086600050700647D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1670_1.jpg"
-   },
-   {
-    "id": "1670ML0086600030700645D01_DXXX",
-    "sol": 1670,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01670/mcam/1670ML0086600030700645D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1670_2.jpg"
-   },
-   {
-    "id": "1670ML0086600040700646D01_DXXX",
-    "sol": 1670,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01670/mcam/1670ML0086600040700646D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1670_3.jpg"
-   }
-  ],
-  "1675": [
-   {
-    "id": "1675MH0001630000603492R00_DXXX",
-    "sol": 1675,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01675/mhli/1675MH0001630000603492R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1675_0.jpg"
-   },
-   {
-    "id": "1675MH0001630000603493S00_DXXX",
-    "sol": 1675,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01675/mhli/1675MH0001630000603493S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1675_1.jpg"
-   },
-   {
-    "id": "1675MH0001630000603494R00_DXXX",
-    "sol": 1675,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01675/mhli/1675MH0001630000603494R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1675_2.jpg"
-   },
-   {
-    "id": "1675MH0001630000603495S00_DXXX",
-    "sol": 1675,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01675/mhli/1675MH0001630000603495S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1675_3.jpg"
-   }
-  ],
-  "1680": [
-   {
-    "id": "1680MD0006680000200715E01_DXXX",
-    "sol": 1680,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01680/mrdi/1680MD0006680000200715E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1680_0.jpg"
-   },
-   {
-    "id": "1680ML0087260050700787C00_DXXX",
-    "sol": 1680,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01680/mcam/1680ML0087260050700787C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1680_1.jpg"
-   },
-   {
-    "id": "1680ML0087260040700786C00_DXXX",
-    "sol": 1680,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01680/mcam/1680ML0087260040700786C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1680_2.jpg"
-   },
-   {
-    "id": "1680ML0087260030700785C00_DXXX",
-    "sol": 1680,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01680/mcam/1680ML0087260030700785C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1680_3.jpg"
-   }
-  ],
-  "1685": [
-   {
-    "id": "1685MD0006760000200723E01_DXXX",
-    "sol": 1685,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01685/mrdi/1685MD0006760000200723E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1685_0.jpg"
-   },
-   {
-    "id": "1685MH0002650000603707R00_DXXX",
-    "sol": 1685,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01685/mhli/1685MH0002650000603707R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1685_1.jpg"
-   },
-   {
-    "id": "1685MH0002650000603708S00_DXXX",
-    "sol": 1685,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01685/mhli/1685MH0002650000603708S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1685_2.jpg"
-   },
-   {
-    "id": "1685MH0002650000603705R00_DXXX",
-    "sol": 1685,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01685/mhli/1685MH0002650000603705R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1685_3.jpg"
-   }
-  ],
-  "1690": [
-   {
-    "id": "1690ML0087970000701085E01_DXXX",
-    "sol": 1690,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01690/mcam/1690ML0087970000701085E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1690_0.jpg"
-   },
-   {
-    "id": "1690ML0087960020701084D01_DXXX",
-    "sol": 1690,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01690/mcam/1690ML0087960020701084D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1690_1.jpg"
-   },
-   {
-    "id": "1690ML0087950010701083E01_DXXX",
-    "sol": 1690,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01690/mcam/1690ML0087950010701083E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1690_2.jpg"
-   },
-   {
-    "id": "1690ML0087940040701082E01_DXXX",
-    "sol": 1690,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01690/mcam/1690ML0087940040701082E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1690_3.jpg"
-   }
-  ],
-  "1695": [
-   {
-    "id": "1695MH0007120040604085C00_DXXX",
-    "sol": 1695,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01695/mhli/1695MH0007120040604085C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1695_0.jpg"
-   },
-   {
-    "id": "1695MH0007120030604084C00_DXXX",
-    "sol": 1695,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01695/mhli/1695MH0007120030604084C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1695_1.jpg"
-   },
-   {
-    "id": "1695MH0007120010604082C00_DXXX",
-    "sol": 1695,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01695/mhli/1695MH0007120010604082C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1695_2.jpg"
-   },
-   {
-    "id": "1695MH0007120020604083C00_DXXX",
-    "sol": 1695,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01695/mhli/1695MH0007120020604083C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1695_3.jpg"
-   }
-  ],
-  "1700": [
-   {
-    "id": "1700MD0006850000200732E01_DXXX",
-    "sol": 1700,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01700/mrdi/1700MD0006850000200732E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1700_0.jpg"
-   },
-   {
-    "id": "1700MH0002650000604231R00_DXXX",
-    "sol": 1700,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01700/mhli/1700MH0002650000604231R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1700_1.jpg"
-   },
-   {
-    "id": "1700MH0002650000604232S00_DXXX",
-    "sol": 1700,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01700/mhli/1700MH0002650000604232S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1700_2.jpg"
-   },
-   {
-    "id": "1700MH0002650000604229R00_DXXX",
-    "sol": 1700,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01700/mhli/1700MH0002650000604229R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1700_3.jpg"
-   }
-  ],
-  "1705": [
-   {
-    "id": "1705ML0088960030701306C00_DXXX",
-    "sol": 1705,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01705/mcam/1705ML0088960030701306C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1705_0.jpg"
-   },
-   {
-    "id": "1705ML0088960040701307C00_DXXX",
-    "sol": 1705,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01705/mcam/1705ML0088960040701307C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1705_1.jpg"
-   },
-   {
-    "id": "1705ML0088960010701304C00_DXXX",
-    "sol": 1705,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01705/mcam/1705ML0088960010701304C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1705_2.jpg"
-   },
-   {
-    "id": "1705ML0088960020701305C00_DXXX",
-    "sol": 1705,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01705/mcam/1705ML0088960020701305C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1705_3.jpg"
-   }
-  ],
-  "1710": [
-   {
-    "id": "1710MH0007050010604363C00_DXXX",
-    "sol": 1710,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01710/mhli/1710MH0007050010604363C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1710_0.jpg"
-   },
-   {
-    "id": "1710MH0007050010604361C00_DXXX",
-    "sol": 1710,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01710/mhli/1710MH0007050010604361C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1710_1.jpg"
-   },
-   {
-    "id": "1710MH0007050010604359C00_DXXX",
-    "sol": 1710,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01710/mhli/1710MH0007050010604359C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1710_2.jpg"
-   },
-   {
-    "id": "1710MH0004260010604397C00_DXXX",
-    "sol": 1710,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01710/mhli/1710MH0004260010604397C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1710_3.jpg"
-   }
-  ],
-  "1715": [
-   {
-    "id": "1715MH0007050010604541C00_DXXX",
-    "sol": 1715,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01715/mhli/1715MH0007050010604541C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1715_0.jpg"
-   },
-   {
-    "id": "1715MH0007050010604537C00_DXXX",
-    "sol": 1715,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01715/mhli/1715MH0007050010604537C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1715_1.jpg"
-   },
-   {
-    "id": "1715MH0007050010604539C00_DXXX",
-    "sol": 1715,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01715/mhli/1715MH0007050010604539C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1715_2.jpg"
-   },
-   {
-    "id": "1715MH0003070010604568C00_DXXX",
-    "sol": 1715,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01715/mhli/1715MH0003070010604568C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1715_3.jpg"
-   }
-  ],
-  "1720": [
-   {
-    "id": "1720MD0006940000200740E01_DXXX",
-    "sol": 1720,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01720/mrdi/1720MD0006940000200740E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1720_0.jpg"
-   },
-   {
-    "id": "1720ML0089880000701435C01_DXXX",
-    "sol": 1720,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01720/mcam/1720ML0089880000701435C01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1720_1.jpg"
-   },
-   {
-    "id": "1720ML0089880020701437C01_DXXX",
-    "sol": 1720,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01720/mcam/1720ML0089880020701437C01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1720_2.jpg"
-   },
-   {
-    "id": "1720ML0089880010701436C01_DXXX",
-    "sol": 1720,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01720/mcam/1720ML0089880010701436C01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1720_3.jpg"
-   }
-  ],
-  "1725": [
-   {
-    "id": "1725MH0001740010604708C00_DXXX",
-    "sol": 1725,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01725/mhli/1725MH0001740010604708C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1725_0.jpg"
-   },
-   {
-    "id": "1725MH0001700000504756R00_DXXX",
-    "sol": 1725,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01725/mhli/1725MH0001700000504756R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1725_1.jpg"
-   },
-   {
-    "id": "1725MH0001700000504754R00_DXXX",
-    "sol": 1725,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01725/mhli/1725MH0001700000504754R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1725_2.jpg"
-   },
-   {
-    "id": "1725MH0001700000504757S00_DXXX",
-    "sol": 1725,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01725/mhli/1725MH0001700000504757S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1725_3.jpg"
-   }
-  ],
-  "1730": [
-   {
-    "id": "1730MD0007040000200750E01_DXXX",
-    "sol": 1730,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01730/mrdi/1730MD0007040000200750E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1730_0.jpg"
-   },
-   {
-    "id": "1730MD0007030000200749E01_DXXX",
-    "sol": 1730,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01730/mrdi/1730MD0007030000200749E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1730_1.jpg"
-   },
-   {
-    "id": "1730MD0007020000200748E01_DXXX",
-    "sol": 1730,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01730/mrdi/1730MD0007020000200748E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1730_2.jpg"
-   },
-   {
-    "id": "1730MD0007000000200746E01_DXXX",
-    "sol": 1730,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01730/mrdi/1730MD0007000000200746E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1730_3.jpg"
-   }
-  ],
-  "1735": [
-   {
-    "id": "1735ML0090640020701746C00_DXXX",
-    "sol": 1735,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01735/mcam/1735ML0090640020701746C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1735_0.jpg"
-   },
-   {
-    "id": "CR0_551520230EDR_F0640996CCAM03734M_",
-    "sol": 1735,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01735/opgs/edr/ccam/CR0_551520230EDR_F0640996CCAM03734M_-br2.jpg",
-    "imagen_local": "marte/img/sol1735_1.jpg"
-   },
-   {
-    "id": "FLB_551517114EDR_F0640996FHAZ00341M_",
-    "sol": 1735,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01735/opgs/edr/fcam/FLB_551517114EDR_F0640996FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1735_2.jpg"
-   },
-   {
-    "id": "FRB_551517114EDR_F0640996FHAZ00341M_",
-    "sol": 1735,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01735/opgs/edr/fcam/FRB_551517114EDR_F0640996FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1735_3.jpg"
-   }
-  ],
-  "1740": [
-   {
-    "id": "1740MD0007080000200754E01_DXXX",
-    "sol": 1740,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01740/mrdi/1740MD0007080000200754E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1740_0.jpg"
-   },
-   {
-    "id": "FLB_551957294EDR_F0641470FHAZ00341M_",
-    "sol": 1740,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01740/opgs/edr/fcam/FLB_551957294EDR_F0641470FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1740_1.jpg"
-   },
-   {
-    "id": "FRB_551957294EDR_F0641470FHAZ00341M_",
-    "sol": 1740,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01740/opgs/edr/fcam/FRB_551957294EDR_F0641470FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1740_2.jpg"
-   },
-   {
-    "id": "NRB_551959130EDR_S0641470NCAM00571M_",
-    "sol": 1740,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01740/opgs/edr/ncam/NRB_551959130EDR_S0641470NCAM00571M_-br2.jpg",
-    "imagen_local": "marte/img/sol1740_3.jpg"
-   }
-  ],
-  "1745": [
-   {
-    "id": "1745MH0001630000700285R00_DXXX",
-    "sol": 1745,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01745/mhli/1745MH0001630000700285R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1745_0.jpg"
-   },
-   {
-    "id": "1745MH0001630000700286S00_DXXX",
-    "sol": 1745,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01745/mhli/1745MH0001630000700286S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1745_1.jpg"
-   },
-   {
-    "id": "1745MH0001630000700283R00_DXXX",
-    "sol": 1745,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01745/mhli/1745MH0001630000700283R00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1745_2.jpg"
-   },
-   {
-    "id": "1745MH0001630000700280S00_DXXX",
-    "sol": 1745,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01745/mhli/1745MH0001630000700280S00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1745_3.jpg"
-   }
-  ],
-  "1750": [
-   {
-    "id": "1750MR0091480000803930C00_DXXX",
-    "sol": 1750,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01750/mcam/1750MR0091480000803930C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1750_0.jpg"
-   },
-   {
-    "id": "CR0_552848533EDR_F0642088CCAM04749M_",
-    "sol": 1750,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01750/opgs/edr/ccam/CR0_552848533EDR_F0642088CCAM04749M_-br2.jpg",
-    "imagen_local": "marte/img/sol1750_1.jpg"
-   },
-   {
-    "id": "CR0_552848829EDR_F0642088CCAM04749M_",
-    "sol": 1750,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01750/opgs/edr/ccam/CR0_552848829EDR_F0642088CCAM04749M_-br2.jpg",
-    "imagen_local": "marte/img/sol1750_2.jpg"
-   },
-   {
-    "id": "CR0_552848236EDR_F0642088CCAM04749M_",
-    "sol": 1750,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01750/opgs/edr/ccam/CR0_552848236EDR_F0642088CCAM04749M_-br2.jpg",
-    "imagen_local": "marte/img/sol1750_3.jpg"
-   }
-  ],
-  "1755": [
-   {
-    "id": "1755ML0091770000701983E01_DXXX",
-    "sol": 1755,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01755/mcam/1755ML0091770000701983E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1755_0.jpg"
-   },
-   {
-    "id": "1755ML0091760020701982D01_DXXX",
-    "sol": 1755,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01755/mcam/1755ML0091760020701982D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1755_1.jpg"
-   },
-   {
-    "id": "1755MR0091760020803974C00_DXXX",
-    "sol": 1755,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01755/mcam/1755MR0091760020803974C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1755_2.jpg"
-   },
-   {
-    "id": "1755MR0091770000803975E01_DXXX",
-    "sol": 1755,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01755/mcam/1755MR0091770000803975E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1755_3.jpg"
-   }
-  ],
-  "1760": [
-   {
-    "id": "FLB_553746346EDR_F0642790FHAZ00341M_",
-    "sol": 1760,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01760/opgs/edr/fcam/FLB_553746346EDR_F0642790FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1760_0.jpg"
-   },
-   {
-    "id": "FRB_553746346EDR_F0642790FHAZ00341M_",
-    "sol": 1760,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01760/opgs/edr/fcam/FRB_553746346EDR_F0642790FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1760_1.jpg"
-   },
-   {
-    "id": "RLB_553746387EDR_F0642790RHAZ00341M_",
-    "sol": 1760,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01760/opgs/edr/rcam/RLB_553746387EDR_F0642790RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1760_2.jpg"
-   },
-   {
-    "id": "RRB_553746387EDR_F0642790RHAZ00341M_",
-    "sol": 1760,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01760/opgs/edr/rcam/RRB_553746387EDR_F0642790RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1760_3.jpg"
-   }
-  ],
-  "1765": [
-   {
-    "id": "FLB_554198056EDR_F0642790FHAZ00341M_",
-    "sol": 1765,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01765/opgs/edr/fcam/FLB_554198056EDR_F0642790FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1765_0.jpg"
-   },
-   {
-    "id": "FRB_554198056EDR_F0642790FHAZ00341M_",
-    "sol": 1765,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01765/opgs/edr/fcam/FRB_554198056EDR_F0642790FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1765_1.jpg"
-   },
-   {
-    "id": "RLB_554198100EDR_F0642790RHAZ00341M_",
-    "sol": 1765,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01765/opgs/edr/rcam/RLB_554198100EDR_F0642790RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1765_2.jpg"
-   },
-   {
-    "id": "RRB_554198100EDR_F0642790RHAZ00341M_",
-    "sol": 1765,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01765/opgs/edr/rcam/RRB_554198100EDR_F0642790RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1765_3.jpg"
-   }
-  ],
-  "1770": [
-   {
-    "id": "FLB_554638225EDR_F0642790FHAZ00341M_",
-    "sol": 1770,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01770/opgs/edr/fcam/FLB_554638225EDR_F0642790FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1770_0.jpg"
-   },
-   {
-    "id": "FRB_554638225EDR_F0642790FHAZ00341M_",
-    "sol": 1770,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01770/opgs/edr/fcam/FRB_554638225EDR_F0642790FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1770_1.jpg"
-   },
-   {
-    "id": "RLB_554638260EDR_F0642790RHAZ00341M_",
-    "sol": 1770,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01770/opgs/edr/rcam/RLB_554638260EDR_F0642790RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1770_2.jpg"
-   },
-   {
-    "id": "RRB_554638260EDR_F0642790RHAZ00341M_",
-    "sol": 1770,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01770/opgs/edr/rcam/RRB_554638260EDR_F0642790RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1770_3.jpg"
-   }
-  ],
-  "1775": [
-   {
-    "id": "FLB_555078469EDR_F0642790FHAZ00341M_",
-    "sol": 1775,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01775/opgs/edr/fcam/FLB_555078469EDR_F0642790FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1775_0.jpg"
-   },
-   {
-    "id": "FRB_555078469EDR_F0642790FHAZ00341M_",
-    "sol": 1775,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01775/opgs/edr/fcam/FRB_555078469EDR_F0642790FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1775_1.jpg"
-   }
-  ],
-  "1780": [
-   {
-    "id": "1780MD0007190000200765E01_DXXX",
-    "sol": 1780,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01780/mrdi/1780MD0007190000200765E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1780_0.jpg"
-   },
-   {
-    "id": "1780ML0091940020702008C00_DXXX",
-    "sol": 1780,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01780/mcam/1780ML0091940020702008C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1780_1.jpg"
-   },
-   {
-    "id": "1780ML0091930030702007C00_DXXX",
-    "sol": 1780,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01780/mcam/1780ML0091930030702007C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1780_2.jpg"
-   },
-   {
-    "id": "1780ML0091950000702009E01_DXXX",
-    "sol": 1780,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01780/mcam/1780ML0091950000702009E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1780_3.jpg"
-   }
-  ],
-  "1785": [
-   {
-    "id": "1785MD0007220000200768E01_DXXX",
-    "sol": 1785,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01785/mrdi/1785MD0007220000200768E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1785_0.jpg"
-   },
-   {
-    "id": "1785ML0092130030702176C00_DXXX",
-    "sol": 1785,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01785/mcam/1785ML0092130030702176C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1785_1.jpg"
-   },
-   {
-    "id": "1785ML0092130040702177C00_DXXX",
-    "sol": 1785,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01785/mcam/1785ML0092130040702177C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1785_2.jpg"
-   },
-   {
-    "id": "1785ML0092130020702175C00_DXXX",
-    "sol": 1785,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01785/mcam/1785ML0092130020702175C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1785_3.jpg"
-   }
-  ],
-  "1790": [
-   {
-    "id": "1790ML0092440060702253E01_DXXX",
-    "sol": 1790,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01790/mcam/1790ML0092440060702253E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1790_0.jpg"
-   },
-   {
-    "id": "1790ML0092440050702252D01_DXXX",
-    "sol": 1790,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01790/mcam/1790ML0092440050702252D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1790_1.jpg"
-   },
-   {
-    "id": "1790ML0092440020702249D01_DXXX",
-    "sol": 1790,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01790/mcam/1790ML0092440020702249D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1790_2.jpg"
-   },
-   {
-    "id": "1790ML0092440040702251D01_DXXX",
-    "sol": 1790,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01790/mcam/1790ML0092440040702251D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1790_3.jpg"
-   }
-  ],
-  "1795": [
-   {
-    "id": "1795MD0007300000200776E01_DXXX",
-    "sol": 1795,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01795/mrdi/1795MD0007300000200776E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1795_0.jpg"
-   },
-   {
-    "id": "1795MH0003370020700889C00_DXXX",
-    "sol": 1795,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01795/mhli/1795MH0003370020700889C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1795_1.jpg"
-   },
-   {
-    "id": "1795MH0003370020700890C00_DXXX",
-    "sol": 1795,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01795/mhli/1795MH0003370020700890C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1795_2.jpg"
-   },
-   {
-    "id": "1795MH0003370020700888C00_DXXX",
-    "sol": 1795,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01795/mhli/1795MH0003370020700888C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1795_3.jpg"
-   }
-  ],
-  "1800": [
-   {
-    "id": "1800MH0001520020701049C00_DXXX",
-    "sol": 1800,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01800/mhli/1800MH0001520020701049C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1800_0.jpg"
-   },
-   {
-    "id": "1800MH0001520020701050C00_DXXX",
-    "sol": 1800,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01800/mhli/1800MH0001520020701050C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1800_1.jpg"
-   },
-   {
-    "id": "1800MH0001520020701048C00_DXXX",
-    "sol": 1800,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01800/mhli/1800MH0001520020701048C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1800_2.jpg"
-   },
-   {
-    "id": "1800MH0001520020701047C00_DXXX",
-    "sol": 1800,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01800/mhli/1800MH0001520020701047C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1800_3.jpg"
-   }
-  ],
-  "1805": [
-   {
-    "id": "1805ML0093170090702443C00_DXXX",
-    "sol": 1805,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01805/mcam/1805ML0093170090702443C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1805_0.jpg"
-   },
-   {
-    "id": "1805ML0093170100702444C00_DXXX",
-    "sol": 1805,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01805/mcam/1805ML0093170100702444C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1805_1.jpg"
-   },
-   {
-    "id": "1805ML0093170080702442C00_DXXX",
-    "sol": 1805,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01805/mcam/1805ML0093170080702442C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1805_2.jpg"
-   },
-   {
-    "id": "1805ML0093170060702440C00_DXXX",
-    "sol": 1805,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01805/mcam/1805ML0093170060702440C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1805_3.jpg"
-   }
-  ],
-  "1810": [
-   {
-    "id": "1810ML0093430020702530C00_DXXX",
-    "sol": 1810,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01810/mcam/1810ML0093430020702530C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1810_0.jpg"
-   },
-   {
-    "id": "CR0_558176317EDR_F0653308CCAM15903M_",
-    "sol": 1810,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01810/opgs/edr/ccam/CR0_558176317EDR_F0653308CCAM15903M_-br2.jpg",
-    "imagen_local": "marte/img/sol1810_1.jpg"
-   },
-   {
-    "id": "CR0_558177368EDR_F0653308CCAM15903M_",
-    "sol": 1810,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01810/opgs/edr/ccam/CR0_558177368EDR_F0653308CCAM15903M_-br2.jpg",
-    "imagen_local": "marte/img/sol1810_2.jpg"
-   },
-   {
-    "id": "CR0_558177750EDR_F0653308CCAM04809M_",
-    "sol": 1810,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01810/opgs/edr/ccam/CR0_558177750EDR_F0653308CCAM04809M_-br2.jpg",
-    "imagen_local": "marte/img/sol1810_3.jpg"
-   }
-  ],
-  "1815": [
-   {
-    "id": "1815MD0007380000200784E02_DXXX",
-    "sol": 1815,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01815/mrdi/1815MD0007380000200784E02_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1815_0.jpg"
-   },
-   {
-    "id": "FLB_558612986EDR_F0660084FHAZ00341M_",
-    "sol": 1815,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01815/opgs/edr/fcam/FLB_558612986EDR_F0660084FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1815_1.jpg"
-   },
-   {
-    "id": "FRB_558612986EDR_F0660084FHAZ00341M_",
-    "sol": 1815,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01815/opgs/edr/fcam/FRB_558612986EDR_F0660084FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1815_2.jpg"
-   },
-   {
-    "id": "RLB_558613013EDR_F0660084RHAZ00341M_",
-    "sol": 1815,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01815/opgs/edr/rcam/RLB_558613013EDR_F0660084RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1815_3.jpg"
-   }
-  ],
-  "1825": [
-   {
-    "id": "1825ML0094350070702760C00_DXXX",
-    "sol": 1825,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01825/mcam/1825ML0094350070702760C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1825_0.jpg"
-   },
-   {
-    "id": "1825ML0094370000702763E01_DXXX",
-    "sol": 1825,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01825/mcam/1825ML0094370000702763E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1825_1.jpg"
    },
    {
-    "id": "1825ML0094350060702759C00_DXXX",
-    "sol": 1825,
+    "id": "CR0_525335775EDR_F0571020CCAM03439M_",
+    "sol": 1440,
     "earth_date": "",
-    "camera": null,
+    "camera": "CHEMCAM_RMI",
     "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01825/mcam/1825ML0094350060702759C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1825_2.jpg"
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01440/opgs/edr/ccam/CR0_525335775EDR_F0571020CCAM03439M_-br2.jpg",
+    "imagen_local": "marte/img/sol1440_4.jpg"
    },
-   {
-    "id": "1825ML0094360010702762D01_DXXX",
-    "sol": 1825,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01825/mcam/1825ML0094360010702762D01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1825_3.jpg"
-   }
-  ],
-  "1830": [
-   {
-    "id": "1830MD0007440000200790E01_DXXX",
-    "sol": 1830,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01830/mrdi/1830MD0007440000200790E01_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1830_0.jpg"
-   },
-   {
-    "id": "1830MH0007160020701770C00_DXXX",
-    "sol": 1830,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01830/mhli/1830MH0007160020701770C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1830_1.jpg"
-   },
-   {
-    "id": "1830MH0007160020701769C00_DXXX",
-    "sol": 1830,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01830/mhli/1830MH0007160020701769C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1830_2.jpg"
-   },
-   {
-    "id": "1830MH0007160020701768C00_DXXX",
-    "sol": 1830,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01830/mhli/1830MH0007160020701768C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1830_3.jpg"
-   }
-  ],
-  "1840": [
-   {
-    "id": "FLB_560846068EDR_F0661332FHAZ00341M_",
-    "sol": 1840,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01840/opgs/edr/fcam/FLB_560846068EDR_F0661332FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1840_0.jpg"
-   },
-   {
-    "id": "FRB_560846068EDR_F0661332FHAZ00341M_",
-    "sol": 1840,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01840/opgs/edr/fcam/FRB_560846068EDR_F0661332FHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1840_1.jpg"
-   },
-   {
-    "id": "RLB_560846102EDR_F0661332RHAZ00341M_",
-    "sol": 1840,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01840/opgs/edr/rcam/RLB_560846102EDR_F0661332RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1840_2.jpg"
-   },
-   {
-    "id": "RRB_560846102EDR_F0661332RHAZ00341M_",
-    "sol": 1840,
-    "earth_date": "",
-    "camera": null,
-    "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01840/opgs/edr/rcam/RRB_560846102EDR_F0661332RHAZ00341M_-br2.jpg",
-    "imagen_local": "marte/img/sol1840_3.jpg"
-   }
-  ],
-  "1845": [
    {
-    "id": "1845MH0003080020701998C00_DXXX",
-    "sol": 1845,
+    "id": "CR0_525335511EDR_F0571020CCAM03439M_",
+    "sol": 1440,
     "earth_date": "",
-    "camera": null,
+    "camera": "CHEMCAM_RMI",
     "rover": "Curiosity",
-    "img_src": "https://mars.nasa.gov/msl-raw-images/msss/01845/mhli/1845MH0003080020701998C00_DXXX-br2.jpg",
-    "imagen_local": "marte/img/sol1845_0.jpg"
+    "img_src": "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01440/opgs/edr/ccam/CR0_525335511EDR_F0571020CCAM03439M_-br2.jpg",
+    "imagen_local": "marte/img/sol1440_5.jpg"
    }
   ]
  },
