@@ -4,8 +4,7 @@ import { mostrarOverlay } from "./juegos-comun.js";
 
 // =========================================================
 // Trivia Espacial
-// Las preguntas salen de 3 fuentes y se recuerdan las ya vistas
-// (localStorage) para que cada partida tenga preguntas distintas:
+// Las preguntas salen de 3 fuentes (ver más abajo cómo se reparten entre partidas):
 //   1. Banco de datos curiosos (fijo)
 //   2. Generador de comparaciones entre planetas (cientos de combinaciones)
 //   3. Datos en vivo de la API de asteroides de la NASA (NeoWs)
@@ -13,7 +12,6 @@ import { mostrarOverlay } from "./juegos-comun.js";
 
 const PREGUNTAS_POR_PARTIDA = 10;
 const SEGUNDOS_POR_PREGUNTA = 15;
-const CLAVE_VISTAS = "trivia_preguntas_vistas";
 
 // ---------- 1. Banco de datos curiosos ----------
 // [pregunta, respuesta correcta, [3 incorrectas], dato extra]
@@ -163,79 +161,117 @@ async function preguntasNasa() {
         const lista = await new Servicios().verAsteroides(hoy, hoy);
         if (lista.length < 4) return [];
         const resultado = [];
-        const fecha = new Date().toLocaleDateString("es-CO", { day: "numeric", month: "long" });
+        // La fecha va escrita en la pregunta para que siga siendo correcta si la pregunta se repite otro día
+        const fecha = new Date().toLocaleDateString("es-CO", { day: "numeric", month: "long", year: "numeric" });
 
         let grupo = tomarAlAzar(lista, 4);
         let correcto = grupo.reduce((a, b) => (parseFloat(b.diametroMax) > parseFloat(a.diametroMax) ? b : a));
         resultado.push(armar(`n-grande-${hoy}-${grupo.map(a => a.nombre).sort().join()}`, "NASA en vivo",
-            `Según la NASA, de estos asteroides que pasan cerca de la Tierra hoy (${fecha}), ¿cuál es el más grande?`,
+            `Según la NASA, de estos asteroides que pasaron cerca de la Tierra el ${fecha}, ¿cuál es el más grande?`,
             correcto.nombre, grupo.filter(a => a !== correcto).map(a => a.nombre),
             `${correcto.nombre} mide hasta ${correcto.diametroMax} m de diámetro estimado.`));
 
         grupo = tomarAlAzar(lista, 4);
         correcto = grupo.reduce((a, b) => (Number(b.distanciaKm) < Number(a.distanciaKm) ? b : a));
         resultado.push(armar(`n-cerca-${hoy}-${grupo.map(a => a.nombre).sort().join()}`, "NASA en vivo",
-            `De estos asteroides reportados hoy por la NASA, ¿cuál pasa más cerca de la Tierra?`,
+            `De estos asteroides reportados por la NASA el ${fecha}, ¿cuál pasó más cerca de la Tierra?`,
             correcto.nombre, grupo.filter(a => a !== correcto).map(a => a.nombre),
-            `Pasa a unos ${Number(correcto.distanciaKm).toLocaleString("es-CO")} km de la Tierra.`));
+            `Pasó a unos ${Number(correcto.distanciaKm).toLocaleString("es-CO")} km de la Tierra.`));
 
         const elegido = lista[Math.floor(Math.random() * lista.length)];
-        const p = armar(`n-peligro-${hoy}-${elegido.nombre}`, "NASA en vivo",
-            `¿La NASA clasifica al asteroide ${elegido.nombre} (de paso hoy) como "potencialmente peligroso"?`,
+        resultado.push(armar(`n-peligro-${hoy}-${elegido.nombre}`, "NASA en vivo",
+            `¿La NASA clasifica al asteroide ${elegido.nombre} (que pasó cerca de la Tierra el ${fecha}) como "potencialmente peligroso"?`,
             elegido.peligroso ? "Sí" : "No", [elegido.peligroso ? "No" : "Sí"],
-            "‘Potencialmente peligroso’ depende de su tamaño y de qué tanto se puede acercar su órbita a la de la Tierra.");
-        resultado.push(p);
+            "‘Potencialmente peligroso’ depende de su tamaño y de qué tanto se puede acercar su órbita a la de la Tierra."));
         return resultado;
     } catch {
         return [];
     }
 }
 
-// ---------- Memoria de preguntas vistas ----------
-function leerVistas() {
-    try { return new Set(JSON.parse(localStorage.getItem(CLAVE_VISTAS)) || []); }
-    catch { return new Set(); }
+// =========================================================
+// Progreso entre partidas
+//  - Partidas 1 a 10: 10 preguntas NUEVAS cada una (100 preguntas distintas).
+//  - Desde la partida 11: cada partida toma 1 pregunta de cada una de las
+//    partidas 1 a 10, en orden mezclado. En cada bloque de 10 partidas
+//    (11-20, 21-30, ...) cada una de las 100 preguntas sale exactamente una vez
+//    y las combinaciones cambian en cada bloque.
+// =========================================================
+const CLAVE_PROGRESO = "trivia_progreso";
+const PARTIDAS_NUEVAS = 10;
+
+function progresoVacio() {
+    return { partidas: 0, rondas: [], combinaciones: [] };
 }
-function guardarVistas(vistas) {
-    try { localStorage.setItem(CLAVE_VISTAS, JSON.stringify([...vistas].slice(-600))); }
-    catch { /* sin almacenamiento: solo se evita repetir dentro de la partida */ }
+
+function leerProgreso() {
+    try {
+        const p = JSON.parse(localStorage.getItem(CLAVE_PROGRESO));
+        if (p && Array.isArray(p.rondas) && Array.isArray(p.combinaciones)) return p;
+    } catch { /* datos dañados o sin almacenamiento */ }
+    return progresoVacio();
+}
+
+function guardarProgreso(p) {
+    try { localStorage.setItem(CLAVE_PROGRESO, JSON.stringify(p)); }
+    catch { /* sin almacenamiento: cada partida será nueva, pero no se puede recordar el historial */ }
+}
+
+// Se guarda el texto de la respuesta correcta (no su posición) para volver a mezclar las opciones al repetirla
+function paraGuardar(p) {
+    return { id: p.id, categoria: p.categoria, pregunta: p.pregunta, opciones: p.opciones, respuesta: p.opciones[p.correcta], dato: p.dato };
+}
+function desdeGuardada(g) {
+    const opciones = mezclar(g.opciones);
+    return { id: g.id, categoria: g.categoria, pregunta: g.pregunta, opciones, correcta: opciones.indexOf(g.respuesta), dato: g.dato };
+}
+
+/** 10 preguntas nuevas que no estén en `excluir` (ids) ni se repitan entre sí. */
+async function preguntasNuevas(excluir) {
+    const elegidas = [];
+    const usadas = new Set(excluir);
+    const textos = new Set();
+    const agregar = p => {
+        if (elegidas.length >= PREGUNTAS_POR_PARTIDA || usadas.has(p.id) || textos.has(p.pregunta + p.opciones.slice().sort().join())) return;
+        usadas.add(p.id);
+        textos.add(p.pregunta + p.opciones.slice().sort().join());
+        elegidas.push(p);
+    };
+
+    // Hasta 2 preguntas con datos reales de la NASA de hoy
+    tomarAlAzar(await preguntasNasa(), 2).forEach(agregar);
+    // 5 del banco de datos curiosos (64 preguntas: alcanzan para las 10 primeras partidas)
+    tomarAlAzar(preguntasDelBanco().filter(p => !usadas.has(p.id)), 5).forEach(agregar);
+    // El resto con el generador de planetas (cientos de combinaciones)
+    for (let i = 0; i < 2000 && elegidas.length < PREGUNTAS_POR_PARTIDA; i++) agregar(generarPreguntaPlaneta());
+    return elegidas;
 }
 
 async function armarPartida() {
-    let vistas = leerVistas();
-    const elegidas = [];
-    const usadas = new Set();
-    const agregar = p => {
-        if (!usadas.has(p.id) && !vistas.has(p.id)) { usadas.add(p.id); elegidas.push(p); return true; }
-        return false;
-    };
+    const prog = leerProgreso();
+    const numero = prog.partidas + 1;
+    let preguntas, etiqueta;
 
-    // Hasta 2 preguntas con datos de hoy de la NASA
-    tomarAlAzar(await preguntasNasa(), 2).forEach(agregar);
-
-    // 5 del banco de datos curiosos; si ya se vieron todas, se reinicia solo el banco
-    let banco = preguntasDelBanco().filter(p => !vistas.has(p.id));
-    if (banco.length < 5) {
-        vistas = new Set([...vistas].filter(id => !id.startsWith("b")));
-        banco = preguntasDelBanco();
-    }
-    tomarAlAzar(banco, 5).forEach(agregar);
-
-    // El resto con el generador de planetas
-    let intentos = 0;
-    while (elegidas.length < PREGUNTAS_POR_PARTIDA && intentos < 500) {
-        agregar(generarPreguntaPlaneta());
-        intentos++;
-    }
-    // Respaldo extremo: si todo se agotó, se permiten repetidas de partidas anteriores
-    while (elegidas.length < PREGUNTAS_POR_PARTIDA) {
-        const p = generarPreguntaPlaneta();
-        if (!usadas.has(p.id)) { usadas.add(p.id); elegidas.push(p); }
+    if (prog.rondas.length < PARTIDAS_NUEVAS) {
+        const vistas = new Set(prog.rondas.flat().map(q => q.id));
+        preguntas = await preguntasNuevas(vistas);
+        prog.rondas.push(preguntas.map(paraGuardar));
+        etiqueta = `Partida ${numero} · preguntas nuevas (${prog.rondas.length} de ${PARTIDAS_NUEVAS})`;
+    } else {
+        if (prog.combinaciones.length === 0) {
+            // Nuevo bloque de 10 partidas: para cada partida original se baraja el orden de sus preguntas,
+            // así la combinación k toma la pregunta k-ésima (barajada) de cada una.
+            const ordenes = prog.rondas.map(r => mezclar(r.map((_, i) => i)));
+            prog.combinaciones = Array.from({ length: PREGUNTAS_POR_PARTIDA }, (_, k) => ordenes.map(o => o[k]));
+        }
+        const combinacion = prog.combinaciones.shift(); // combinacion[j] = pregunta tomada de la partida j+1
+        preguntas = combinacion.map((indice, j) => desdeGuardada(prog.rondas[j][indice]));
+        etiqueta = `Partida ${numero} · repaso: una pregunta de cada una de tus 10 primeras partidas`;
     }
 
-    usadas.forEach(id => vistas.add(id));
-    guardarVistas(vistas);
-    return mezclar(elegidas);
+    prog.partidas = numero;
+    guardarProgreso(prog);
+    return { preguntas: mezclar(preguntas), etiqueta };
 }
 
 // ---------- Juego ----------
@@ -262,21 +298,22 @@ async function iniciar() {
     if (estado) estado.cancelada = true;
     botonJugar.disabled = true;
     botonJugar.textContent = "Preparando preguntas...";
-    const preguntas = await armarPartida();
+    const { preguntas, etiqueta } = await armarPartida();
     botonJugar.disabled = false;
     botonJugar.textContent = "Jugar";
     preparando = false;
 
     pantallaInicio.style.display = "none";
     zonaJuego.classList.add("activa");
-    estado = { preguntas, indice: 0, aciertos: 0, puntos: 0, temporizador: null };
+    estado = { preguntas, etiqueta, indice: 0, aciertos: 0, puntos: 0, temporizador: null };
     mostrarPregunta();
 }
 
 function actualizarHud() {
     hud.innerHTML = `<span>Pregunta: <b>${Math.min(estado.indice + 1, PREGUNTAS_POR_PARTIDA)} / ${PREGUNTAS_POR_PARTIDA}</b></span>
         <span>Aciertos: <b>${estado.aciertos}</b></span>
-        <span>Puntos: <b>${estado.puntos}</b></span>`;
+        <span>Puntos: <b>${estado.puntos}</b></span>
+        <span style="flex-basis:100%;font-size:13px;color:#aaa">${estado.etiqueta}</span>`;
 }
 
 function mostrarPregunta() {
