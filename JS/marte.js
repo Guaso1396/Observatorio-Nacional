@@ -25,7 +25,7 @@ document.getElementById('btnMarte').addEventListener('click', async () => {
             return;
         }
 
-        marteContainer.innerHTML = '';
+        marteContainer.innerHTML = Servicios.avisoRespaldo(fotos);
         fotos.forEach(foto => {
             const card = document.createElement('div');
             card.classList.add('marte-card');

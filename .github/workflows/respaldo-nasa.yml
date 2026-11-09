@@ -1,0 +1,71 @@
+# Descarga el respaldo local de las APIs de la NASA (RESPALDO/) y lo sube a la misma rama.
+# Se ejecuta en los servidores de GitHub, que sí tienen acceso a internet.
+#  - Automáticamente cuando cambia el descargador en la rama desarrollo.
+#  - Manualmente desde la pestaña "Actions" > "Respaldo NASA" > "Run workflow".
+name: Respaldo NASA
+
+on:
+  push:
+    branches: [desarrollo]
+    paths:
+      - herramientas/descargar_respaldo.py
+      - .github/workflows/respaldo-nasa.yml
+  workflow_dispatch:
+    inputs:
+      cantidad:
+        description: "Imágenes por API (Tierra y Marte)"
+        default: "600"
+      por_tema:
+        description: "Resultados por tema (Biblioteca)"
+        default: "100"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: respaldo-nasa
+  cancel-in-progress: false
+
+jobs:
+  descargar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar Pillow (para reducir las imágenes)
+        run: pip install pillow
+
+      - name: Descargar datos e imágenes reales de la NASA
+        run: |
+          python herramientas/descargar_respaldo.py \
+            --cantidad "${{ github.event.inputs.cantidad || '600' }}" \
+            --por-tema "${{ github.event.inputs.por_tema || '100' }}"
+
+      - name: Resumen del respaldo
+        run: |
+          for api in tierra marte asteroides biblioteca; do
+            if [ -f "RESPALDO/$api/datos.json" ]; then
+              total=$(python -c "import json;print(json.load(open('RESPALDO/$api/datos.json'))['total'])")
+              imgs=$(find "RESPALDO/$api" -name '*.jpg' | wc -l)
+              echo "$api: $total registros, $imgs imágenes" | tee -a "$GITHUB_STEP_SUMMARY"
+            fi
+          done
+          du -sh RESPALDO | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Guardar el respaldo en la rama
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add RESPALDO
+          if git diff --cached --quiet; then
+            echo "No hay cambios en el respaldo."
+            exit 0
+          fi
+          git commit -m "Respaldo NASA: datos e imágenes descargados el $(date -u +%Y-%m-%d)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

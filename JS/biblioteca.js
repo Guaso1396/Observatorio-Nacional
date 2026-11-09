@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultados = document.getElementById("resultados");
 
   function mostrarResultados(datos) {
-    resultados.innerHTML = "";
+    resultados.innerHTML = Servicios.avisoRespaldo(datos);
 
     if (!datos || datos.length === 0) {
       resultados.innerHTML = "<p>No se encontraron resultados.</p>";

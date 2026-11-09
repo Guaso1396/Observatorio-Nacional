@@ -18,6 +18,13 @@ window.buscarAsteroides = async () => {
     try {
         const asteroides = await servicio.verAsteroides(fechaInicio, fechaFin);
         tablaBody.innerHTML = '';
+        let aviso = document.getElementById('avisoRespaldo');
+        if (!aviso) {
+            aviso = document.createElement('div');
+            aviso.id = 'avisoRespaldo';
+            document.getElementById('rangoFechas').after(aviso);
+        }
+        aviso.innerHTML = Servicios.avisoRespaldo(asteroides);
 
         if (!asteroides.length) {
             tablaBody.innerHTML = '<tr><td colspan="7">Sin resultados</td></tr>';

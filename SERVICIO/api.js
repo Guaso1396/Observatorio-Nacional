@@ -1,5 +1,5 @@
 // Script clásico (no módulo) para que funcione también al abrir la página con doble clic
-class Servicios {
+class ServiciosNasa {
 
     constructor() {
         this.datos;
@@ -164,4 +164,166 @@ class Servicios {
         }
     }
 }
-window.Servicios = Servicios;
+
+// =====================================================================
+// RESPALDO LOCAL
+// Si la API de la NASA no responde, se usan los datos guardados en RESPALDO/
+// (datos reales descargados con herramientas/descargar_respaldo.py).
+// Los resultados de respaldo llevan la propiedad .respaldo para mostrar un aviso.
+// =====================================================================
+const RUTA_RESPALDO = (() => {
+    const src = document.currentScript && document.currentScript.src;
+    return src ? new URL("../RESPALDO/", src).href : "../RESPALDO/";
+})();
+
+function cargarRespaldo(nombre) {
+    window.RESPALDO = window.RESPALDO || {};
+    if (window.RESPALDO[nombre]) return Promise.resolve(window.RESPALDO[nombre]);
+    // Se carga como <script> (datos.js) para que funcione también al abrir con doble clic
+    return new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = `${RUTA_RESPALDO}${nombre}/datos.js`;
+        script.onload = () => (window.RESPALDO[nombre] ? resolve(window.RESPALDO[nombre]) : reject(new Error("Respaldo vacío")));
+        script.onerror = () => reject(new Error(`No existe el respaldo de ${nombre}`));
+        document.head.appendChild(script);
+    });
+}
+
+const rutaLocal = ruta => RUTA_RESPALDO + ruta;
+const diasDesdeEpoca = fecha => Date.parse(`${fecha}T00:00:00Z`) / 86400000;
+
+/** Devuelve la clave más cercana al valor pedido (fechas AAAA-MM-DD o números de sol). */
+function claveMasCercana(claves, objetivo, aNumero) {
+    const meta = aNumero(objetivo);
+    return claves.reduce((mejor, c) => (Math.abs(aNumero(c) - meta) < Math.abs(aNumero(mejor) - meta) ? c : mejor));
+}
+
+function marcar(lista, info) {
+    lista.respaldo = info;
+    return lista;
+}
+
+class ServiciosConRespaldo extends ServiciosNasa {
+
+    async verTierra(fecha) {
+        let error = null;
+        try {
+            const r = await super.verTierra(fecha);
+            if (r && r.length) return r;
+        } catch (e) { error = e; }
+
+        let datos;
+        try { datos = await cargarRespaldo("tierra"); } catch { if (error) throw error; return []; }
+        const claves = Object.keys(datos.fechas || {});
+        if (!claves.length) { if (error) throw error; return []; }
+        const clave = datos.fechas[fecha] ? fecha : claveMasCercana(claves, fecha, diasDesdeEpoca);
+
+        return marcar(datos.fechas[clave].map(i => ({
+            nombre: i.image || i.titulo || i.nasa_id,
+            fecha: i.date || i.fecha,
+            caption: i.caption || i.descripcion || "",
+            url: rutaLocal(i.imagen_local)
+        })), { api: "Tierra", motivo: error ? "La API de la NASA no respondió" : "La NASA no devolvió imágenes para esa fecha",
+               generado: datos.generado, pedido: `fecha ${fecha}`, mostrado: `fecha ${clave}` });
+    }
+
+    async verMarte(sol = 1000) {
+        let error = null;
+        try {
+            const r = await super.verMarte(sol);
+            if (r && r.length) return r;
+        } catch (e) { error = e; }
+
+        // Alternativa en vivo: reemplazo comunitario de la API retirada (no oficial de la NASA)
+        try {
+            const respuesta = await fetch(`https://rovers.nebulum.one/api/v1/rovers/curiosity/photos?sol=${sol}`);
+            const json = respuesta.ok ? await respuesta.json() : null;
+            if (json && Array.isArray(json.photos) && json.photos.length) {
+                return marcar(json.photos.map(f => ({
+                    id: f.id, fecha: f.earth_date, camara: f.camera && (f.camera.full_name || f.camera.name), url: f.img_src
+                })), { api: "Marte", alternativa: true, pedido: `sol ${sol}`, mostrado: `sol ${sol}` });
+            }
+        } catch { /* se intenta con el respaldo local */ }
+
+        let datos;
+        try { datos = await cargarRespaldo("marte"); } catch { if (error) throw error; return []; }
+        const soles = Object.keys(datos.soles || {});
+        let lista, mostrado;
+        if (soles.length) {
+            const clave = datos.soles[sol] ? String(sol) : claveMasCercana(soles, Number(sol), Number);
+            lista = datos.soles[clave];
+            mostrado = `sol ${clave}`;
+        } else if (datos.sin_sol && datos.sin_sol.length) {
+            const inicio = (Number(sol) * 12) % datos.sin_sol.length;
+            lista = datos.sin_sol.slice(inicio, inicio + 24);
+            mostrado = "fotos de la biblioteca de la NASA (sin número de sol)";
+        } else {
+            if (error) throw error;
+            return [];
+        }
+
+        return marcar(lista.map(f => ({
+            id: f.id || f.nasa_id,
+            fecha: f.earth_date || f.fecha,
+            camara: f.camera || f.titulo,
+            url: rutaLocal(f.imagen_local)
+        })), { api: "Marte", motivo: error ? "La API de fotos de Marte no respondió" : "No hubo fotos para ese sol",
+               generado: datos.generado, pedido: `sol ${sol}`, mostrado });
+    }
+
+    async verAsteroides(fechaInicio, fechaFin) {
+        try {
+            return await super.verAsteroides(fechaInicio, fechaFin);
+        } catch (error) {
+            let datos;
+            try { datos = await cargarRespaldo("asteroides"); } catch { throw error; }
+            const claves = Object.keys(datos.fechas || {}).sort();
+            if (!claves.length) throw error;
+
+            let dentro = claves.filter(f => f >= fechaInicio && f <= fechaFin);
+            let mostrado = `del ${fechaInicio} al ${fechaFin}`;
+            if (!dentro.length) {
+                const inicio = claveMasCercana(claves, fechaInicio, diasDesdeEpoca);
+                dentro = claves.filter(f => diasDesdeEpoca(f) >= diasDesdeEpoca(inicio) && diasDesdeEpoca(f) <= diasDesdeEpoca(inicio) + 7);
+                mostrado = `del ${dentro[0]} al ${dentro[dentro.length - 1]} (fechas más cercanas guardadas)`;
+            }
+            return marcar(dentro.flatMap(f => datos.fechas[f]), {
+                api: "Asteroides", motivo: "La API de asteroides no respondió",
+                generado: datos.generado, pedido: `del ${fechaInicio} al ${fechaFin}`, mostrado
+            });
+        }
+    }
+
+    async verBiblioteca(query) {
+        try {
+            return await super.verBiblioteca(query);
+        } catch (error) {
+            let datos;
+            try { datos = await cargarRespaldo("biblioteca"); } catch { throw error; }
+            const items = (datos.temas || {})[query];
+            if (!items || !items.length) throw error;
+            return marcar(items.map(i => (i.tipo === "video"
+                ? { tipo: "video", titulo: i.titulo, descripcion: i.descripcion, url: i.url_video, preview: i.imagen_local ? rutaLocal(i.imagen_local) : i.url }
+                : { tipo: "imagen", titulo: i.titulo, descripcion: i.descripcion, url: i.imagen_local ? rutaLocal(i.imagen_local) : i.url })),
+            { api: "Biblioteca", motivo: "La API de la biblioteca no respondió", generado: datos.generado, pedido: `tema "${query}"`, mostrado: `tema "${query}"` });
+        }
+    }
+
+    /** HTML del aviso que se muestra cuando los datos vienen del respaldo o de una fuente alternativa. */
+    static avisoRespaldo(lista) {
+        const info = lista && lista.respaldo;
+        if (!info) return "";
+        const estilo = "grid-column:1/-1;width:100%;box-sizing:border-box;background:rgba(255,122,0,0.12);" +
+            "border:1px solid #ff7a00;color:#ffd2a8;border-radius:10px;padding:10px 14px;margin:0 0 14px;text-align:center;font-size:14px;line-height:1.5";
+        if (info.alternativa) {
+            return `<div style="${estilo}">🛰️ La API oficial de fotos de Marte de la NASA fue retirada. ` +
+                `Se muestran fotos reales de los rovers desde la API comunitaria <b>rovers.nebulum.one</b>.</div>`;
+        }
+        const fecha = info.generado ? new Date(info.generado).toLocaleDateString("es-CO", { day: "numeric", month: "long", year: "numeric" }) : "";
+        const cambio = info.pedido !== info.mostrado ? ` Pediste ${info.pedido}; se muestra ${info.mostrado}.` : "";
+        return `<div style="${estilo}">📦 <b>Modo respaldo:</b> ${info.motivo}. ` +
+            `Se muestran datos reales de la NASA guardados en el respaldo local${fecha ? ` (descargados el ${fecha})` : ""}.${cambio}</div>`;
+    }
+}
+
+window.Servicios = ServiciosConRespaldo;

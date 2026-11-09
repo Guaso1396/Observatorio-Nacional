@@ -18,6 +18,8 @@ window.cargarEpic = async () => {
             return;
         }
 
+        epicContainer.insertAdjacentHTML('beforeend', Servicios.avisoRespaldo(fotos));
+
         fotos.forEach(foto => {
             const card = document.createElement('div');
             card.classList.add('epic-card');
