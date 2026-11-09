@@ -179,7 +179,8 @@ def respaldo_tierra(cantidad):
     except RuntimeError as e:
         log("   ✖ EPIC no respondió:", e)
         log("   → Se usa la biblioteca de imágenes de la NASA (búsqueda 'earth from space')")
-        fechas, total = respaldo_desde_biblioteca("earth from space DSCOVR EPIC", "tierra", cantidad)
+        fechas, total = respaldo_desde_biblioteca(
+            ["EPIC earth DSCOVR", "earth from space", "blue marble earth", "earth observation"], "tierra", cantidad)
         fuente = "https://images-api.nasa.gov/search?q=earth from space"
     datos = cabecera(fuente, "Imágenes de la Tierra completa agrupadas por fecha (AAAA-MM-DD).")
     datos.update({"total": total, "fechas": fechas})
@@ -277,9 +278,11 @@ def respaldo_marte(cantidad, por_sol=8):
     sin_sol = []
     if total == 0:
         log("   ✖ Ninguna API de rovers respondió → se usa la biblioteca de imágenes de la NASA")
-        fechas, total = respaldo_desde_biblioteca("curiosity rover mars surface", "marte", cantidad)
+        fechas, total = respaldo_desde_biblioteca(
+            ["curiosity rover", "perseverance rover", "opportunity rover", "spirit rover",
+             "mars surface", "mars rover", "mars crater", "mars landscape"], "marte", cantidad)
         sin_sol = [r for lista in fechas.values() for r in lista]
-        fuente_usada = "https://images-api.nasa.gov/search?q=curiosity rover"
+        fuente_usada = "https://images-api.nasa.gov/search (curiosity, perseverance, opportunity, spirit, mars surface...)"
 
     datos = cabecera(fuente_usada, "Fotos de rovers de Marte agrupadas por sol (día marciano).")
     datos.update({"total": total, "soles": soles, "sin_sol": sin_sol})
@@ -363,10 +366,24 @@ def buscar_biblioteca(consulta, maximo):
     return resultados
 
 
-def respaldo_desde_biblioteca(consulta, carpeta, cantidad):
-    """Plan B para Tierra/Marte: imágenes reales de la biblioteca de la NASA, agrupadas por fecha."""
-    fechas, total = {}, 0
-    items = [i for i in buscar_biblioteca(consulta, cantidad * 2) if i["tipo"] == "imagen"][:int(cantidad * 1.2)]
+def respaldo_desde_biblioteca(consultas, carpeta, cantidad):
+    """Plan B para Tierra/Marte: imágenes reales de la biblioteca de la NASA, agrupadas por fecha.
+    Se usan varias búsquedas hasta reunir la cantidad pedida (sin repetir imágenes)."""
+    if isinstance(consultas, str):
+        consultas = [consultas]
+    fechas, total, items, vistos = {}, 0, [], set()
+    for consulta in consultas:
+        if len(items) >= cantidad * 1.2:
+            break
+        try:
+            nuevos = [i for i in buscar_biblioteca(consulta, 1000) if i["tipo"] == "imagen" and i["nasa_id"] not in vistos]
+        except RuntimeError as e:
+            log("   ⚠", consulta, e)
+            continue
+        vistos.update(i["nasa_id"] for i in nuevos)
+        items += nuevos
+        log(f"   búsqueda '{consulta}': {len(nuevos)} imágenes nuevas (acumuladas {len(items)})")
+    items = items[:int(cantidad * 1.2)]
     locales = [f"{carpeta}/img/{i['nasa_id']}.jpg".replace(" ", "_") for i in items]
     ok = guardar_varias([(i["url"], os.path.join(RAIZ, l)) for i, l in zip(items, locales)])
     for item, local, bien in zip(items, locales, ok):
@@ -399,6 +416,44 @@ def respaldo_biblioteca(por_tema):
     escribir("biblioteca", datos)
 
 
+# ----------------------------------------------------------------- DIAGNÓSTICO
+def diagnostico():
+    """Prueba cada API como lo haría un navegador (con encabezado Origin) y guarda el resultado."""
+    log("\n🩺 Diagnóstico de las APIs")
+    pruebas = {
+        "Tierra - epic.gsfc.nasa.gov (la que usa la página)": "https://epic.gsfc.nasa.gov/api/natural/date/2025-06-15",
+        "Tierra - api.nasa.gov/EPIC": f"https://api.nasa.gov/EPIC/api/natural?api_key={API_KEY}",
+        "Marte - api.nasa.gov mars-photos (la que usa la página)": f"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key={API_KEY}",
+        "Marte - rovers.nebulum.one (reemplazo comunitario)": "https://rovers.nebulum.one/api/v1/rovers/curiosity/photos?sol=1000",
+        "Marte - mars.nasa.gov raw_images": "https://mars.nasa.gov/rss/api/?feed=raw_images&category=msl&feedtype=json&sol=1000",
+        "Asteroides - api.nasa.gov NeoWs": f"https://api.nasa.gov/neo/rest/v1/feed?start_date=2025-06-15&end_date=2025-06-15&api_key={API_KEY}",
+        "Biblioteca - images-api.nasa.gov": "https://images-api.nasa.gov/search?q=moon",
+        "Inicio - api.nasa.gov APOD": f"https://api.nasa.gov/planetary/apod?api_key={API_KEY}",
+    }
+    resultados = {}
+    for nombre, url in pruebas.items():
+        inicio = time.time()
+        info = {"url": url.replace(API_KEY, "API_KEY")}
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": AGENTE, "Origin": "https://guaso1396.github.io"})
+            with urllib.request.urlopen(req, timeout=25) as r:
+                cuerpo = r.read(300)
+                info.update(estado=r.status, cors=r.headers.get("Access-Control-Allow-Origin"),
+                            tipo=r.headers.get("Content-Type"), muestra=cuerpo.decode("utf-8", "replace")[:120])
+        except urllib.error.HTTPError as e:
+            info.update(estado=e.code, cors=e.headers.get("Access-Control-Allow-Origin"), error=str(e))
+        except Exception as e:  # noqa: BLE001
+            info.update(estado=None, error=f"{type(e).__name__}: {e}")
+        info["milisegundos"] = round((time.time() - inicio) * 1000)
+        info["funciona_en_navegador"] = bool(info.get("estado") == 200 and info.get("cors") in ("*", "https://guaso1396.github.io"))
+        resultados[nombre] = info
+        log(f"   {nombre}: estado={info.get('estado')} cors={info.get('cors')} {info.get('error', '')}")
+    os.makedirs(RAIZ, exist_ok=True)
+    with open(os.path.join(RAIZ, "diagnostico.json"), "w", encoding="utf-8") as f:
+        json.dump({"fecha": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "pruebas": resultados},
+                  f, ensure_ascii=False, indent=1)
+
+
 # ----------------------------------------------------------------- principal
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -410,6 +465,10 @@ def main():
     if Image is None:
         log("ℹ Pillow no está instalado: las imágenes se guardarán sin reducir (pip install pillow)")
     tareas = a.solo or ["tierra", "marte", "asteroides", "biblioteca"]
+    try:
+        diagnostico()
+    except Exception as e:  # noqa: BLE001
+        log("⚠ El diagnóstico falló:", e)
     errores = []
     for t in tareas:
         try:
