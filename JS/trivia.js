@@ -1,6 +1,7 @@
-import { guardarPuntaje, mostrarRanking } from "./ranking.js";
-import { Servicios } from "../SERVICIO/api.js";
-import { mostrarOverlay } from "./juegos-comun.js";
+(function () {
+const { guardarPuntaje, mostrarRanking } = window.Ranking;
+
+const { mostrarOverlay } = window.Juegos;
 
 // =========================================================
 // Trivia Espacial
@@ -158,7 +159,7 @@ function generarPreguntaPlaneta() {
 async function preguntasNasa() {
     try {
         const hoy = new Date().toISOString().slice(0, 10);
-        const lista = await new Servicios().verAsteroides(hoy, hoy);
+        const lista = await window.Juegos.verAsteroides(hoy);
         if (lista.length < 4) return [];
         const resultado = [];
         // La fecha va escrita en la pregunta para que siga siendo correcta si la pregunta se repite otro día
@@ -380,3 +381,5 @@ function finalizar() {
 }
 
 mostrarRanking();
+
+})();

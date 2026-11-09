@@ -1,4 +1,5 @@
-import { guardarPuntaje, mostrarRanking } from "./ranking.js";
+(function () {
+const { guardarPuntaje, mostrarRanking } = window.Ranking;
 
 const rompecabezas = document.getElementById("rompecabezas");
 const selectorImagen = document.getElementById("selectorImagen");
@@ -166,3 +167,5 @@ window.addEventListener("resize", () => {
 
 // --- Ranking global (compartido con los demás juegos) ---
 mostrarRanking();
+
+})();

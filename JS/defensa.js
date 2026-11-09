@@ -1,9 +1,7 @@
-import { guardarPuntaje, mostrarRanking } from "./ranking.js";
-import { Servicios } from "../SERVICIO/api.js";
-import {
-    ANCHO, ALTO, iniciarBucle, crearEstrellas, dibujarEstrellas, crearFormaAsteroide,
-    dibujarAsteroide, crearExplosion, actualizarParticulas, mostrarOverlay
-} from "./juegos-comun.js";
+(function () {
+const { guardarPuntaje, mostrarRanking } = window.Ranking;
+
+const { ANCHO, ALTO, iniciarBucle, crearEstrellas, dibujarEstrellas, crearFormaAsteroide, dibujarAsteroide, crearExplosion, actualizarParticulas, mostrarOverlay } = window.Juegos;
 
 const lienzo = document.getElementById("lienzo");
 const ctx = lienzo.getContext("2d");
@@ -24,7 +22,7 @@ let detenerBucle = null;
 async function cargarNombresNasa() {
     try {
         const hoy = new Date().toISOString().slice(0, 10);
-        const lista = await new Servicios().verAsteroides(hoy, hoy);
+        const lista = await window.Juegos.verAsteroides(hoy);
         if (lista.length) {
             nombresReales = lista.map(a => a.nombre);
             estadoApi.textContent = `🛰️ Hoy la NASA reporta ${lista.length} asteroides cercanos: aparecerán con su nombre real.`;
@@ -237,3 +235,5 @@ function terminar() {
 }
 
 mostrarRanking();
+
+})();

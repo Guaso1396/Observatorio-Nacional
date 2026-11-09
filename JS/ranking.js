@@ -1,14 +1,9 @@
+(function () {
 // =========================================================
 // Ranking global compartido por TODOS los juegos.
 // Cada juego llama a guardarPuntaje(puntos) y los puntos se
 // suman al mismo documento del jugador en Firestore ("ranking").
 // =========================================================
-import { initializeApp, getApps, getApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
-import {
-    getFirestore, collection, doc, getDoc, setDoc, increment,
-    query, orderBy, limit, getDocs
-} from "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
-
 const firebaseConfig = {
     apiKey: "AIzaSyC9IskWnzGXdYuxyyiguJEWNYuKyuOZTNo",
     authDomain: "observatorio-nacional-76230.firebaseapp.com",
@@ -19,13 +14,27 @@ const firebaseConfig = {
     measurementId: "G-S5CYF61EWW"
 };
 
-const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
-const db = getFirestore(app);
+// Firebase se carga de forma independiente: si no carga (sin internet, bloqueado, etc.)
+// los juegos siguen funcionando y solo el ranking muestra un aviso.
+let promesaFirebase = null;
+function cargarFirebase() {
+    if (!promesaFirebase) {
+        promesaFirebase = Promise.all([
+            import("https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js"),
+            import("https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js")
+        ]).then(([appMod, fs]) => {
+            const app = appMod.getApps().length ? appMod.getApp() : appMod.initializeApp(firebaseConfig);
+            return { db: fs.getFirestore(app), fs };
+        });
+        promesaFirebase.catch(() => { promesaFirebase = null; }); // permite reintentar después
+    }
+    return promesaFirebase;
+}
 
 // Se conserva la misma clave que usaba el rompecabezas para no perder el nombre ya guardado
 const CLAVE_NOMBRE = "rompecabezas_nombre";
 
-export function obtenerNombreJugador() {
+function obtenerNombreJugador() {
     try {
         return localStorage.getItem(CLAVE_NOMBRE);
     } catch {
@@ -33,7 +42,7 @@ export function obtenerNombreJugador() {
     }
 }
 
-export function pedirNombreJugador() {
+function pedirNombreJugador() {
     let nombre = "";
     while (!nombre) {
         nombre = prompt("¡Primera vez! Ingresa tu nombre para el ranking:");
@@ -50,7 +59,7 @@ export function pedirNombreJugador() {
  * Suma puntos al jugador en el ranking global.
  * @returns {Promise<boolean>} true si se guardó
  */
-export async function guardarPuntaje(puntos) {
+async function guardarPuntaje(puntos) {
     puntos = Math.round(Number(puntos) || 0);
     if (puntos <= 0) return false;
 
@@ -61,6 +70,8 @@ export async function guardarPuntaje(puntos) {
     }
 
     try {
+        const { db, fs } = await cargarFirebase();
+        const { doc, getDoc, setDoc, increment } = fs;
         const ref = doc(db, "ranking", nombre);
         const snap = await getDoc(ref);
 
@@ -86,12 +97,14 @@ export async function guardarPuntaje(puntos) {
 }
 
 /** Muestra el top 10 global en la lista indicada. */
-export async function mostrarRanking(idLista = "listaRanking") {
+async function mostrarRanking(idLista = "listaRanking") {
     const lista = document.getElementById(idLista);
     if (!lista) return;
     lista.innerHTML = "<li>Cargando...</li>";
 
     try {
+        const { db, fs } = await cargarFirebase();
+        const { collection, query, orderBy, limit, getDocs } = fs;
         const q = query(collection(db, "ranking"), orderBy("puntaje", "desc"), limit(10));
         const snap = await getDocs(q);
 
@@ -128,3 +141,6 @@ export async function mostrarRanking(idLista = "listaRanking") {
         lista.innerHTML = "<li>No se pudo cargar el ranking.</li>";
     }
 }
+
+window.Ranking = { obtenerNombreJugador, pedirNombreJugador, guardarPuntaje, mostrarRanking };
+})();

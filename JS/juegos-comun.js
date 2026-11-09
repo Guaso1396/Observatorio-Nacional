@@ -1,12 +1,14 @@
+// Script clásico (no módulo): así los juegos funcionan aunque la página se abra con doble clic
+(function () {
 // =========================================================
 // Utilidades compartidas por los juegos de canvas
 // =========================================================
 
-export const ANCHO = 800;
-export const ALTO = 500;
+const ANCHO = 800;
+const ALTO = 500;
 
 /** Teclado + botones táctiles. Devuelve un Set con las teclas activas ("izq", "der", "arriba", "abajo", "disparo"). */
-export function crearControles(contenedorTactil) {
+function crearControles(contenedorTactil) {
     const activas = new Set();
     const mapa = {
         ArrowLeft: "izq", KeyA: "izq",
@@ -56,7 +58,7 @@ export function crearControles(contenedorTactil) {
 }
 
 /** Bucle de juego con delta de tiempo en segundos. Devuelve una función para detenerlo. */
-export function iniciarBucle(actualizar) {
+function iniciarBucle(actualizar) {
     let anterior = performance.now();
     let id = null;
     let activo = true;
@@ -74,7 +76,7 @@ export function iniciarBucle(actualizar) {
 }
 
 /** Fondo de estrellas reutilizable. */
-export function crearEstrellas(cantidad = 120) {
+function crearEstrellas(cantidad = 120) {
     return Array.from({ length: cantidad }, () => ({
         x: Math.random() * ANCHO,
         y: Math.random() * ALTO,
@@ -83,7 +85,7 @@ export function crearEstrellas(cantidad = 120) {
     }));
 }
 
-export function dibujarEstrellas(ctx, estrellas, dt = 0, velocidad = 1) {
+function dibujarEstrellas(ctx, estrellas, dt = 0, velocidad = 1) {
     ctx.fillStyle = "#05060f";
     ctx.fillRect(0, 0, ANCHO, ALTO);
     ctx.fillStyle = "#ffffff";
@@ -99,7 +101,7 @@ export function dibujarEstrellas(ctx, estrellas, dt = 0, velocidad = 1) {
 }
 
 /** Colores de los cohetes disponibles. */
-export const COHETES = {
+const COHETES = {
     halcon: { nombre: "Halcón Rojo", cuerpo: "#e8e8ee", detalle: "#f72a05", llama: "#ffb000" },
     cometa: { nombre: "Cometa Azul", cuerpo: "#dfe9ff", detalle: "#2f7bff", llama: "#7fe3ff" },
     nebula: { nombre: "Nébula Verde", cuerpo: "#e6f5e6", detalle: "#1fbf5a", llama: "#c6ff4d" },
@@ -109,7 +111,7 @@ export const COHETES = {
 /**
  * Dibuja un cohete centrado en (x, y). angulo en radianes (0 = apuntando hacia arriba).
  */
-export function dibujarCohete(ctx, x, y, angulo, colores, escala = 1, propulsando = false) {
+function dibujarCohete(ctx, x, y, angulo, colores, escala = 1, propulsando = false) {
     ctx.save();
     ctx.translate(x, y);
     ctx.rotate(angulo);
@@ -173,7 +175,7 @@ export function dibujarCohete(ctx, x, y, angulo, colores, escala = 1, propulsand
 }
 
 /** Asteroide con forma irregular (se genera una sola vez y se reutiliza). */
-export function crearFormaAsteroide(radio) {
+function crearFormaAsteroide(radio) {
     const puntos = [];
     const lados = 9 + Math.floor(Math.random() * 4);
     for (let i = 0; i < lados; i++) {
@@ -184,7 +186,7 @@ export function crearFormaAsteroide(radio) {
     return puntos;
 }
 
-export function dibujarAsteroide(ctx, x, y, forma, rotacion = 0, color = "#8a7a6a") {
+function dibujarAsteroide(ctx, x, y, forma, rotacion = 0, color = "#8a7a6a") {
     ctx.save();
     ctx.translate(x, y);
     ctx.rotate(rotacion);
@@ -200,7 +202,7 @@ export function dibujarAsteroide(ctx, x, y, forma, rotacion = 0, color = "#8a7a6
 }
 
 /** Partículas de explosión. */
-export function crearExplosion(particulas, x, y, color = "#ff7a00", cantidad = 18) {
+function crearExplosion(particulas, x, y, color = "#ff7a00", cantidad = 18) {
     for (let i = 0; i < cantidad; i++) {
         const a = Math.random() * Math.PI * 2;
         const v = 60 + Math.random() * 180;
@@ -208,7 +210,7 @@ export function crearExplosion(particulas, x, y, color = "#ff7a00", cantidad = 1
     }
 }
 
-export function actualizarParticulas(ctx, particulas, dt) {
+function actualizarParticulas(ctx, particulas, dt) {
     for (let i = particulas.length - 1; i >= 0; i--) {
         const p = particulas[i];
         p.x += p.vx * dt;
@@ -222,12 +224,12 @@ export function actualizarParticulas(ctx, particulas, dt) {
     ctx.globalAlpha = 1;
 }
 
-export function distancia(a, b) {
+function distancia(a, b) {
     return Math.hypot(a.x - b.x, a.y - b.y);
 }
 
 /** Overlay de fin de partida (reutiliza la tarjeta del rompecabezas). */
-export function mostrarOverlay(titulo, mensaje, puntosTexto, alCerrar) {
+function mostrarOverlay(titulo, mensaje, puntosTexto, alCerrar) {
     const overlay = document.getElementById("overlayGanador");
     if (!overlay) return;
     overlay.querySelector("h2").textContent = titulo;
@@ -242,3 +244,25 @@ export function mostrarOverlay(titulo, mensaje, puntosTexto, alCerrar) {
     // Pequeño retraso para que el mismo clic/toque que terminó la partida no cierre el overlay
     setTimeout(() => overlay.addEventListener("click", cerrar), 300);
 }
+
+/** Asteroides cercanos a la Tierra de una fecha (API NeoWs de la NASA). Misma lógica que SERVICIO/api.js. */
+async function verAsteroides(fecha) {
+    const url = `https://api.nasa.gov/neo/rest/v1/feed?start_date=${fecha}&end_date=${fecha}&api_key=ls42GTOyJCrx4nmx9cmxEJDsJWycYlW6UNh90kWa`;
+    const respuesta = await fetch(url);
+    if (!respuesta.ok) throw new Error(`Error ${respuesta.status}`);
+    const datos = await respuesta.json();
+    const lista = [];
+    Object.values(datos.near_earth_objects).forEach(dia => dia.forEach(obj => {
+        const ca = obj.close_approach_data[0];
+        lista.push({
+            nombre: obj.name,
+            diametroMax: obj.estimated_diameter.meters.estimated_diameter_max.toFixed(2),
+            peligroso: obj.is_potentially_hazardous_asteroid,
+            distanciaKm: parseFloat(ca.miss_distance.kilometers).toFixed(0)
+        });
+    }));
+    return lista;
+}
+
+window.Juegos = { ANCHO, ALTO, crearControles, iniciarBucle, crearEstrellas, dibujarEstrellas, COHETES, dibujarCohete, crearFormaAsteroide, dibujarAsteroide, crearExplosion, actualizarParticulas, distancia, mostrarOverlay, verAsteroides };
+})();

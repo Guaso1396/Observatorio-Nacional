@@ -1,8 +1,6 @@
-import { guardarPuntaje, mostrarRanking } from "./ranking.js";
-import {
-    ANCHO, ALTO, COHETES, crearControles, iniciarBucle, crearEstrellas, dibujarEstrellas,
-    dibujarCohete, crearExplosion, actualizarParticulas, mostrarOverlay
-} from "./juegos-comun.js";
+(function () {
+const { guardarPuntaje, mostrarRanking } = window.Ranking;
+const { ANCHO, ALTO, COHETES, crearControles, iniciarBucle, crearEstrellas, dibujarEstrellas, dibujarCohete, crearExplosion, actualizarParticulas, mostrarOverlay } = window.Juegos;
 
 const lienzo = document.getElementById("lienzo");
 const ctx = lienzo.getContext("2d");
@@ -231,3 +229,5 @@ function finalizar() {
 }
 
 mostrarRanking();
+
+})();
