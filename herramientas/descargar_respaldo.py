@@ -258,7 +258,7 @@ def fotos_marte_sol(sol):
             "id": i.get("imageid"),
             "sol": i.get("sol", sol),
             "earth_date": (i.get("date_taken") or "")[:10],
-            "camera": i.get("instrument"),
+            "camera": i.get("instrument") or (i.get("camera") or {}).get("instrument") or i.get("camera_model_type"),
             "rover": "Curiosity",
             "img_src": url_raw(i),
         } for i in imgs if url_raw(i) and i.get("sampleType", "full") != "thumbnail"]

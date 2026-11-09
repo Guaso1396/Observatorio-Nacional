@@ -244,7 +244,7 @@ class ServiciosConRespaldo extends ServiciosNasa {
                 .map(i => {
                     const archivos = i.image_files || {};
                     const url = i.https_url || i.url || archivos.large || archivos.medium || archivos.full_res;
-                    return url ? { id: i.imageid, fecha: (i.date_taken || "").slice(0, 10), camara: i.instrument, url: url.replace(/^http:/, "https:") } : null;
+                    return url ? { id: i.imageid, fecha: (i.date_taken || "").slice(0, 10), camara: i.instrument || (i.camera && i.camera.instrument) || "Curiosity", url: url.replace(/^http:/, "https:") } : null;
                 })
                 .filter(Boolean);
             if (imagenes.length) {
