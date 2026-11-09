@@ -2,7 +2,7 @@
  "proyecto": "Observatorio Nacional - respaldo local de APIs de la NASA",
  "descripcion": "Resultados de la biblioteca de imágenes y videos de la NASA por tema.",
  "fuente": "https://images-api.nasa.gov/search",
- "generado": "2026-11-09T18:48:10Z",
+ "generado": "2026-11-09T18:53:04Z",
  "nota": "Datos reales descargados de servicios públicos de la NASA. Las imágenes están reducidas.",
  "total": 800,
  "temas": {
@@ -7033,16 +7033,6 @@
     "imagen_local": "biblioteca/img/astronaut/nasa-astronaut-nicole-mann-in-spacex-training_52233657193_o.jpg"
    },
    {
-    "nasa_id": "AfricanAmericanAstronauts-24x36poster-print",
-    "tipo": "imagen",
-    "titulo": "AfricanAmericanAstronauts-24x36poster-print",
-    "descripcion": "NASA's African American astronauts",
-    "fecha": "2018-01-08",
-    "centro": "HQ",
-    "url": "https://images-assets.nasa.gov/image/AfricanAmericanAstronauts-24x36poster-print/AfricanAmericanAstronauts-24x36poster-print~thumb.jpg",
-    "imagen_local": "biblioteca/img/astronaut/AfricanAmericanAstronauts-24x36poster-print.jpg"
-   },
-   {
     "nasa_id": "s61-03510",
     "tipo": "imagen",
     "titulo": "SUIT - ASTRONAUT S. CARPENTER - PA",
@@ -7051,6 +7041,16 @@
     "centro": "JSC",
     "url": "https://images-assets.nasa.gov/image/s61-03510/s61-03510~thumb.jpg",
     "imagen_local": "biblioteca/img/astronaut/s61-03510.jpg"
+   },
+   {
+    "nasa_id": "AfricanAmericanAstronauts-24x36poster-print",
+    "tipo": "imagen",
+    "titulo": "AfricanAmericanAstronauts-24x36poster-print",
+    "descripcion": "NASA's African American astronauts",
+    "fecha": "2018-01-08",
+    "centro": "HQ",
+    "url": "https://images-assets.nasa.gov/image/AfricanAmericanAstronauts-24x36poster-print/AfricanAmericanAstronauts-24x36poster-print~thumb.jpg",
+    "imagen_local": "biblioteca/img/astronaut/AfricanAmericanAstronauts-24x36poster-print.jpg"
    },
    {
     "nasa_id": "Artemis II Astronauts Check Out Some Flight Hardware on This Week @NASA – November 24, 2023",
@@ -8070,16 +8070,6 @@
     "imagen_local": "biblioteca/img/telescope/Moving_Roman_-_Propulsion4k.jpg"
    },
    {
-    "nasa_id": "PIA25790",
-    "tipo": "imagen",
-    "titulo": "Three of NASA's Infrared Telescopes",
-    "descripcion": "This artist's concept shows three space telescopes that observe infrared light, wavelengths slightly longer than what human eyes can see. On the right is NASA's James Webb Space Telescope. Launched in 2021, it is the largest and most powerful space observatory in history. On the left is NASA's Infrared Astronomical Satellite (IRAS), the first infrared telescope in Earth orbit, launched in 1983. In the middle is NASA's Spitzer Space Telescope, launched in 2003. The background image is from Spitzer and shows the Eagle Nebula.  https://photojournal.jpl.nasa.gov/catalog/PIA25790",
-    "fecha": "2023-12-22",
-    "centro": "JPL",
-    "url": "https://images-assets.nasa.gov/image/PIA25790/PIA25790~thumb.jpg",
-    "imagen_local": "biblioteca/img/telescope/PIA25790.jpg"
-   },
-   {
     "nasa_id": "8330773",
     "tipo": "imagen",
     "titulo": "History of Hubble Space Telescope (HST)",
@@ -8088,6 +8078,16 @@
     "centro": "MSFC",
     "url": "https://images-assets.nasa.gov/image/8330773/8330773~thumb.jpg",
     "imagen_local": "biblioteca/img/telescope/8330773.jpg"
+   },
+   {
+    "nasa_id": "PIA25790",
+    "tipo": "imagen",
+    "titulo": "Three of NASA's Infrared Telescopes",
+    "descripcion": "This artist's concept shows three space telescopes that observe infrared light, wavelengths slightly longer than what human eyes can see. On the right is NASA's James Webb Space Telescope. Launched in 2021, it is the largest and most powerful space observatory in history. On the left is NASA's Infrared Astronomical Satellite (IRAS), the first infrared telescope in Earth orbit, launched in 1983. In the middle is NASA's Spitzer Space Telescope, launched in 2003. The background image is from Spitzer and shows the Eagle Nebula.  https://photojournal.jpl.nasa.gov/catalog/PIA25790",
+    "fecha": "2023-12-22",
+    "centro": "JPL",
+    "url": "https://images-assets.nasa.gov/image/PIA25790/PIA25790~thumb.jpg",
+    "imagen_local": "biblioteca/img/telescope/PIA25790.jpg"
    },
    {
     "nasa_id": "ED13-0220-108",
