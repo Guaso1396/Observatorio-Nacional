@@ -4,7 +4,7 @@ window.RESPALDO["biblioteca"] = {
  "proyecto": "Observatorio Nacional - respaldo local de APIs de la NASA",
  "descripcion": "Resultados de la biblioteca de imágenes y videos de la NASA por tema.",
  "fuente": "https://images-api.nasa.gov/search",
- "generado": "2026-11-09T19:00:11Z",
+ "generado": "2026-11-09T19:06:43Z",
  "nota": "Datos reales descargados de servicios públicos de la NASA. Las imágenes están reducidas.",
  "total": 800,
  "temas": {
@@ -741,6 +741,16 @@ window.RESPALDO["biblioteca"] = {
     "url_video": "https://images-assets.nasa.gov/video/JPL-20220623-TECHf-0001-Mars Helicopter Testing Media Reel/JPL-20220623-TECHf-0001-Mars Helicopter Testing Media Reel~orig.mp4"
    },
    {
+    "nasa_id": "The Australian Outback & NASA's Search for Life on Mars",
+    "tipo": "video",
+    "titulo": "The Australian Outback & NASA's Search for Life on Mars",
+    "descripcion": "How will we know if there is life on Mars? What geological clues can our Martian orbiters and rovers search for and collect samples of to return home to Earth? Stromatolites in the Pilbara region of Western Australia may hold the answer.   In June of 2023, members of NASA's Mars Exploration Program, the Australian Space Agency, ESA (European Space Agency), and the Australian Commonwealth Scientific and Industrial Research Organization (CSIRO), joined together on an expedition to visit three incredible field locations containing stromatolites, fossils of ancient microbial life, and the oldest, ",
+    "fecha": "2023-08-24",
+    "centro": "HQ",
+    "url": "https://images-assets.nasa.gov/video/The Australian Outback & NASA's Search for Life on Mars/The Australian Outback & NASA's Search for Life on Mars~thumb.jpg",
+    "url_video": "https://images-assets.nasa.gov/video/The Australian Outback & NASA's Search for Life on Mars/The Australian Outback & NASA's Search for Life on Mars~orig.mp4"
+   },
+   {
     "nasa_id": "Moon to Mars Multidisciplinary Science",
     "tipo": "imagen",
     "titulo": "Moon to Mars Multidisciplinary Science",
@@ -757,16 +767,6 @@ window.RESPALDO["biblioteca"] = {
     "fecha": "2025-03-12",
     "centro": "HQ",
     "url": "https://images-assets.nasa.gov/image/Moon to Mars Transportation and Habitation/Moon to Mars Transportation and Habitation~thumb.jpg"
-   },
-   {
-    "nasa_id": "The Australian Outback & NASA's Search for Life on Mars",
-    "tipo": "video",
-    "titulo": "The Australian Outback & NASA's Search for Life on Mars",
-    "descripcion": "How will we know if there is life on Mars? What geological clues can our Martian orbiters and rovers search for and collect samples of to return home to Earth? Stromatolites in the Pilbara region of Western Australia may hold the answer.   In June of 2023, members of NASA's Mars Exploration Program, the Australian Space Agency, ESA (European Space Agency), and the Australian Commonwealth Scientific and Industrial Research Organization (CSIRO), joined together on an expedition to visit three incredible field locations containing stromatolites, fossils of ancient microbial life, and the oldest, ",
-    "fecha": "2023-08-24",
-    "centro": "HQ",
-    "url": "https://images-assets.nasa.gov/video/The Australian Outback & NASA's Search for Life on Mars/The Australian Outback & NASA's Search for Life on Mars~thumb.jpg",
-    "url_video": "https://images-assets.nasa.gov/video/The Australian Outback & NASA's Search for Life on Mars/The Australian Outback & NASA's Search for Life on Mars~orig.mp4"
    },
    {
     "nasa_id": "Mars 2020 Perseverance Landing Coverage - Commentary",
