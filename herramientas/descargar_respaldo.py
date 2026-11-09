@@ -287,21 +287,21 @@ def respaldo_marte(cantidad, por_sol=8):
     log("\n🔴 Marte")
     soles, total, fuente_usada = {}, 0, None
     sol, fallos_seguidos = 1000, 0
-    while total < cantidad and sol < 4500 and fallos_seguidos < 8:
+    while total < cantidad and sol < 4800 and fallos_seguidos < 30:
         fuente, fotos = fotos_marte_sol(sol)
         if not fotos:
             fallos_seguidos += 1
             if FUENTE_MARTE is None and fallos_seguidos >= 3:
                 log("   ✖ Ninguna API de rovers responde; no se insiste más")
                 break
-            sol += 7
+            sol += 5
             continue
         fallos_seguidos = 0
         fuente_usada = fuente_usada or fuente
         # Variedad: como máximo 2 fotos por cámara en cada sol
         por_camara, elegidas = {}, []
         for f in fotos:
-            if por_camara.get(f["camera"], 0) < 2:
+            if por_camara.get(f["camera"], 0) < 4:
                 por_camara[f["camera"]] = por_camara.get(f["camera"], 0) + 1
                 elegidas.append(f)
         registros = []
@@ -316,7 +316,7 @@ def respaldo_marte(cantidad, por_sol=8):
         if registros:
             soles[str(sol)] = registros
             log(f"   sol {sol}: {len(registros)} fotos (total {total}) [{fuente}]")
-        sol += 7
+        sol += 5
 
     sin_sol = []
     if total == 0:
