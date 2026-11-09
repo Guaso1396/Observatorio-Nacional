@@ -28,6 +28,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 try:
     from PIL import Image
@@ -46,7 +47,7 @@ def log(*partes):
     print(*partes, flush=True)
 
 
-def obtener(url, intentos=3, timeout=40):
+def obtener(url, intentos=2, timeout=20):
     """Descarga bytes de una URL con reintentos."""
     ultimo = None
     for i in range(intentos):
@@ -58,15 +59,15 @@ def obtener(url, intentos=3, timeout=40):
             ultimo = e
             if e.code in (400, 404):
                 break
-            time.sleep(2 * (i + 1))
+            time.sleep(2)
         except Exception as e:  # noqa: BLE001 - red inestable, timeouts, etc.
             ultimo = e
-            time.sleep(2 * (i + 1))
+            time.sleep(2)
     raise RuntimeError(f"No se pudo descargar {url}: {ultimo}")
 
 
-def obtener_json(url):
-    return json.loads(obtener(url).decode("utf-8"))
+def obtener_json(url, intentos=2):
+    return json.loads(obtener(url, intentos=intentos).decode("utf-8"))
 
 
 def guardar_imagen(url, destino, ancho_max=640, ancho_min=0):
@@ -74,7 +75,7 @@ def guardar_imagen(url, destino, ancho_max=640, ancho_min=0):
     if os.path.exists(destino):
         return True
     try:
-        datos = obtener(url, intentos=2)
+        datos = obtener(url, intentos=2, timeout=30)
     except RuntimeError as e:
         log("   ⚠", e)
         return False
@@ -95,6 +96,12 @@ def guardar_imagen(url, destino, ancho_max=640, ancho_min=0):
     except Exception as e:  # noqa: BLE001 - archivo que no es imagen, etc.
         log("   ⚠ imagen inválida", url, e)
         return False
+
+
+def guardar_varias(tareas, ancho_max=600, ancho_min=0):
+    """Descarga varias imágenes en paralelo. tareas = [(url, destino), ...] -> [True/False, ...]"""
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        return list(ex.map(lambda t: guardar_imagen(t[0], t[1], ancho_max, ancho_min), tareas))
 
 
 def escribir(nombre, contenido):
@@ -149,13 +156,13 @@ def respaldo_tierra(cantidad):
                 continue
             anio, mes, dia = fecha.split("-")
             registros = []
-            for it in items:
-                if total >= cantidad:
-                    break
+            items = items[:max(0, cantidad - total)]
+            urls = [f"{base}/archive/natural/{anio}/{mes}/{dia}/jpg/{it['image']}.jpg" for it in items]
+            locales = [f"tierra/img/{it['image']}.jpg" for it in items]
+            ok = guardar_varias([(u, os.path.join(RAIZ, l)) for u, l in zip(urls, locales)])
+            for it, url, local, bien in zip(items, urls, locales, ok):
                 nombre = it["image"]
-                url = f"{base}/archive/natural/{anio}/{mes}/{dia}/jpg/{nombre}.jpg"
-                local = f"tierra/img/{nombre}.jpg"
-                if guardar_imagen(url, os.path.join(RAIZ, local), ancho_max=600):
+                if bien:
                     registros.append({
                         "image": nombre,
                         "date": it.get("date"),
@@ -180,8 +187,12 @@ def respaldo_tierra(cantidad):
 
 
 # ----------------------------------------------------------------- MARTE
+FUENTE_MARTE = None  # se fija con la primera fuente que responda
+
+
 def fotos_marte_sol(sol):
-    """Prueba varias fuentes reales de fotos de rovers. Devuelve (fuente, lista normalizada)."""
+    """Prueba fuentes reales de fotos de rovers. Devuelve (fuente, lista normalizada)."""
+    global FUENTE_MARTE
     fuentes = [
         ("api.nasa.gov mars-photos",
          f"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol={sol}&api_key={API_KEY}"),
@@ -189,10 +200,13 @@ def fotos_marte_sol(sol):
          f"https://rovers.nebulum.one/api/v1/rovers/curiosity/photos?sol={sol}"),
     ]
     for nombre, url in fuentes:
+        if FUENTE_MARTE and FUENTE_MARTE != nombre:
+            continue
         try:
-            datos = obtener_json(url)
+            datos = obtener_json(url, intentos=1)
             fotos = datos.get("photos") if isinstance(datos, dict) else None
             if fotos:
+                FUENTE_MARTE = nombre
                 return nombre, [{
                     "id": f.get("id"),
                     "sol": f.get("sol", sol),
@@ -204,8 +218,10 @@ def fotos_marte_sol(sol):
         except (RuntimeError, ValueError, AttributeError):
             pass
     # Feed de imágenes crudas del sitio de la misión
+    if FUENTE_MARTE and FUENTE_MARTE != "mars.nasa.gov raw_images":
+        return None, []
     try:
-        datos = obtener_json(f"https://mars.nasa.gov/rss/api/?feed=raw_images&category=msl&feedtype=json&sol={sol}")
+        datos = obtener_json(f"https://mars.nasa.gov/rss/api/?feed=raw_images&category=msl&feedtype=json&sol={sol}", intentos=1)
         imgs = datos.get("images", []) if isinstance(datos, dict) else []
         lista = [{
             "id": i.get("imageid"),
@@ -216,6 +232,7 @@ def fotos_marte_sol(sol):
             "img_src": i.get("https_url") or i.get("url"),
         } for i in imgs if (i.get("https_url") or i.get("url"))]
         if lista:
+            FUENTE_MARTE = "mars.nasa.gov raw_images"
             return "mars.nasa.gov raw_images", lista
     except (RuntimeError, ValueError, AttributeError):
         pass
@@ -230,6 +247,9 @@ def respaldo_marte(cantidad, por_sol=8):
         fuente, fotos = fotos_marte_sol(sol)
         if not fotos:
             fallos_seguidos += 1
+            if FUENTE_MARTE is None and fallos_seguidos >= 3:
+                log("   ✖ Ninguna API de rovers responde; no se insiste más")
+                break
             sol += 7
             continue
         fallos_seguidos = 0
@@ -241,11 +261,11 @@ def respaldo_marte(cantidad, por_sol=8):
                 por_camara[f["camera"]] = por_camara.get(f["camera"], 0) + 1
                 elegidas.append(f)
         registros = []
-        for i, f in enumerate(elegidas):
-            if len(registros) >= por_sol or total >= cantidad:
-                break
-            local = f"marte/img/sol{sol}_{i}.jpg"
-            if guardar_imagen(f["img_src"], os.path.join(RAIZ, local), ancho_max=600, ancho_min=200):
+        elegidas = elegidas[:min(por_sol + 4, len(elegidas))]  # algunas de reserva por si son miniaturas
+        locales = [f"marte/img/sol{sol}_{i}.jpg" for i in range(len(elegidas))]
+        ok = guardar_varias([(f["img_src"], os.path.join(RAIZ, l)) for f, l in zip(elegidas, locales)], ancho_min=200)
+        for f, local, bien in zip(elegidas, locales, ok):
+            if bien and len(registros) < por_sol and total < cantidad:
                 f["imagen_local"] = local
                 registros.append(f)
                 total += 1
@@ -346,11 +366,11 @@ def buscar_biblioteca(consulta, maximo):
 def respaldo_desde_biblioteca(consulta, carpeta, cantidad):
     """Plan B para Tierra/Marte: imágenes reales de la biblioteca de la NASA, agrupadas por fecha."""
     fechas, total = {}, 0
-    for item in buscar_biblioteca(consulta, cantidad * 2):
-        if total >= cantidad or item["tipo"] != "imagen":
-            continue
-        local = f"{carpeta}/img/{item['nasa_id']}.jpg".replace(" ", "_")
-        if guardar_imagen(item["url"], os.path.join(RAIZ, local), ancho_max=600):
+    items = [i for i in buscar_biblioteca(consulta, cantidad * 2) if i["tipo"] == "imagen"][:int(cantidad * 1.2)]
+    locales = [f"{carpeta}/img/{i['nasa_id']}.jpg".replace(" ", "_") for i in items]
+    ok = guardar_varias([(i["url"], os.path.join(RAIZ, l)) for i, l in zip(items, locales)])
+    for item, local, bien in zip(items, locales, ok):
+        if bien and total < cantidad:
             item["imagen_local"] = local
             fechas.setdefault(item["fecha"] or "sin-fecha", []).append(item)
             total += 1
@@ -366,10 +386,11 @@ def respaldo_biblioteca(por_tema):
         except RuntimeError as e:
             log("   ⚠", tema, e)
             continue
-        for item in items:
-            local = f"biblioteca/img/{tema}/{item['nasa_id']}.jpg".replace(" ", "_")
-            if guardar_imagen(item["url"], os.path.join(RAIZ, local), ancho_max=480):
-                item["imagen_local"] = local
+        locales = [f"biblioteca/img/{tema}/{item['nasa_id']}.jpg".replace(" ", "_").replace("/", os.sep) for item in items]
+        ok = guardar_varias([(item["url"], os.path.join(RAIZ, l)) for item, l in zip(items, locales)], ancho_max=480)
+        for item, local, bien in zip(items, locales, ok):
+            if bien:
+                item["imagen_local"] = local.replace(os.sep, "/")
         temas[tema] = items
         total += len(items)
         log(f"   {tema}: {len(items)} resultados")

@@ -24,7 +24,7 @@ permissions:
 
 concurrency:
   group: respaldo-nasa
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   descargar:
@@ -41,12 +41,14 @@ jobs:
         run: pip install pillow
 
       - name: Descargar datos e imágenes reales de la NASA
+        timeout-minutes: 60
         run: |
           python herramientas/descargar_respaldo.py \
             --cantidad "${{ github.event.inputs.cantidad || '600' }}" \
             --por-tema "${{ github.event.inputs.por_tema || '100' }}"
 
       - name: Resumen del respaldo
+        if: always()
         run: |
           for api in tierra marte asteroides biblioteca; do
             if [ -f "RESPALDO/$api/datos.json" ]; then
@@ -57,11 +59,12 @@ jobs:
           done
           du -sh RESPALDO | tee -a "$GITHUB_STEP_SUMMARY"
 
-      - name: Guardar el respaldo en la rama
+      - name: Guardar el respaldo en la rama (también lo que alcanzó a bajar si algo falló)
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
-          git add RESPALDO
+          git add RESPALDO || exit 0
           if git diff --cached --quiet; then
             echo "No hay cambios en el respaldo."
             exit 0
