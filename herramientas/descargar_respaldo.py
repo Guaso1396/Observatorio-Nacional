@@ -257,7 +257,7 @@ def fotos_marte_sol(sol):
         lista = [{
             "id": i.get("imageid"),
             "sol": i.get("sol", sol),
-            "earth_date": (i.get("date_taken") or "")[:10],
+            "earth_date": (i.get("date_taken") or i.get("date_taken_utc") or i.get("date_received") or "")[:10],
             "camera": i.get("instrument") or (i.get("camera") or {}).get("instrument") or i.get("camera_model_type"),
             "rover": "Curiosity",
             "img_src": url_raw(i),

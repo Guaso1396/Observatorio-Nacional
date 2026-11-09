@@ -244,7 +244,7 @@ class ServiciosConRespaldo extends ServiciosNasa {
                 .map(i => {
                     const archivos = i.image_files || {};
                     const url = i.https_url || i.url || archivos.large || archivos.medium || archivos.full_res;
-                    return url ? { id: i.imageid, fecha: (i.date_taken || "").slice(0, 10), camara: i.instrument || (i.camera && i.camera.instrument) || "Curiosity", url: url.replace(/^http:/, "https:") } : null;
+                    return url ? { id: i.imageid, fecha: (i.date_taken || i.date_taken_utc || i.date_received || "").slice(0, 10) || `Sol ${sol}`, camara: i.instrument || (i.camera && i.camera.instrument) || "Curiosity", url: url.replace(/^http:/, "https:") } : null;
                 })
                 .filter(Boolean);
             if (imagenes.length) {
@@ -272,7 +272,7 @@ class ServiciosConRespaldo extends ServiciosNasa {
 
         return marcar(lista.map(f => ({
             id: f.id || f.nasa_id,
-            fecha: f.earth_date || f.fecha,
+            fecha: f.earth_date || f.fecha || (f.sol !== undefined ? `Sol ${f.sol} (fecha no informada por la NASA)` : "No disponible"),
             camara: f.camera || f.titulo,
             url: rutaLocal(f.imagen_local)
         })), { api: "Marte", motivo: error ? "La API de fotos de Marte no respondió" : "No hubo fotos para ese sol",
