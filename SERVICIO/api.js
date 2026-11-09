@@ -234,14 +234,22 @@ class ServiciosConRespaldo extends ServiciosNasa {
             if (r && r.length) return r;
         } catch (e) { error = e; }
 
-        // Alternativa en vivo: reemplazo comunitario de la API retirada (no oficial de la NASA)
+        // Alternativa en vivo: feed oficial de imágenes crudas de Curiosity en mars.nasa.gov
+        // (la API mars-photos de api.nasa.gov fue retirada y responde 404)
         try {
-            const respuesta = await fetch(`https://rovers.nebulum.one/api/v1/rovers/curiosity/photos?sol=${sol}`);
+            const respuesta = await fetch(`https://mars.nasa.gov/rss/api/?feed=raw_images&category=msl&feedtype=json&sol=${sol}`);
             const json = respuesta.ok ? await respuesta.json() : null;
-            if (json && Array.isArray(json.photos) && json.photos.length) {
-                return marcar(json.photos.map(f => ({
-                    id: f.id, fecha: f.earth_date, camara: f.camera && (f.camera.full_name || f.camera.name), url: f.img_src
-                })), { api: "Marte", alternativa: true, pedido: `sol ${sol}`, mostrado: `sol ${sol}` });
+            const imagenes = (json && Array.isArray(json.images) ? json.images : [])
+                .filter(i => i.sampleType !== "thumbnail")
+                .map(i => {
+                    const archivos = i.image_files || {};
+                    const url = i.https_url || i.url || archivos.large || archivos.medium || archivos.full_res;
+                    return url ? { id: i.imageid, fecha: (i.date_taken || "").slice(0, 10), camara: i.instrument, url: url.replace(/^http:/, "https:") } : null;
+                })
+                .filter(Boolean);
+            if (imagenes.length) {
+                return marcar(imagenes.slice(0, 60), { api: "Marte", alternativa: true,
+                    fuente: "el feed oficial de imágenes de Curiosity en mars.nasa.gov", pedido: `sol ${sol}`, mostrado: `sol ${sol}` });
             }
         } catch { /* se intenta con el respaldo local */ }
 
@@ -316,8 +324,8 @@ class ServiciosConRespaldo extends ServiciosNasa {
         const estilo = "grid-column:1/-1;width:100%;box-sizing:border-box;background:rgba(255,122,0,0.12);" +
             "border:1px solid #ff7a00;color:#ffd2a8;border-radius:10px;padding:10px 14px;margin:0 0 14px;text-align:center;font-size:14px;line-height:1.5";
         if (info.alternativa) {
-            return `<div style="${estilo}">🛰️ La API oficial de fotos de Marte de la NASA fue retirada. ` +
-                `Se muestran fotos reales de los rovers desde la API comunitaria <b>rovers.nebulum.one</b>.</div>`;
+            return `<div style="${estilo}">🛰️ La API de fotos de Marte de api.nasa.gov fue retirada. ` +
+                `Se muestran fotos reales del rover Curiosity desde ${info.fuente}.</div>`;
         }
         const fecha = info.generado ? new Date(info.generado).toLocaleDateString("es-CO", { day: "numeric", month: "long", year: "numeric" }) : "";
         const cambio = info.pedido !== info.mostrado ? ` Pediste ${info.pedido}; se muestra ${info.mostrado}.` : "";

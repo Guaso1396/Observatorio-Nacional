@@ -104,8 +104,36 @@ def guardar_varias(tareas, ancho_max=600, ancho_min=0):
         return list(ex.map(lambda t: guardar_imagen(t[0], t[1], ancho_max, ancho_min), tareas))
 
 
+def referencias(obj):
+    """Todas las rutas 'imagen_local' que aparecen en el contenido."""
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k == "imagen_local" and isinstance(v, str):
+                yield v
+            else:
+                yield from referencias(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from referencias(v)
+
+
+def limpiar_sobrantes(nombre, contenido):
+    """Borra imágenes de la carpeta que ya no usa ningún registro (de descargas anteriores o de reserva)."""
+    usadas = {os.path.normpath(os.path.join(RAIZ, r)) for r in referencias(contenido)}
+    borradas = 0
+    for raiz, _, archivos in os.walk(os.path.join(RAIZ, nombre, "img")):
+        for a in archivos:
+            ruta = os.path.normpath(os.path.join(raiz, a))
+            if ruta not in usadas:
+                os.remove(ruta)
+                borradas += 1
+    if borradas:
+        log(f"   🧹 {nombre}: {borradas} imágenes sobrantes eliminadas")
+
+
 def escribir(nombre, contenido):
     """Escribe datos.json (la API) y datos.js (para abrir la página con doble clic)."""
+    limpiar_sobrantes(nombre, contenido)
     carpeta = os.path.join(RAIZ, nombre)
     os.makedirs(carpeta, exist_ok=True)
     texto = json.dumps(contenido, ensure_ascii=False, indent=1)
@@ -197,8 +225,6 @@ def fotos_marte_sol(sol):
     fuentes = [
         ("api.nasa.gov mars-photos",
          f"https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol={sol}&api_key={API_KEY}"),
-        ("rovers.nebulum.one (reemplazo comunitario)",
-         f"https://rovers.nebulum.one/api/v1/rovers/curiosity/photos?sol={sol}"),
     ]
     for nombre, url in fuentes:
         if FUENTE_MARTE and FUENTE_MARTE != nombre:
@@ -224,19 +250,36 @@ def fotos_marte_sol(sol):
     try:
         datos = obtener_json(f"https://mars.nasa.gov/rss/api/?feed=raw_images&category=msl&feedtype=json&sol={sol}", intentos=1)
         imgs = datos.get("images", []) if isinstance(datos, dict) else []
+        def url_raw(i):
+            archivos = i.get("image_files") or {}
+            u = i.get("https_url") or i.get("url") or archivos.get("large") or archivos.get("medium") or archivos.get("full_res")
+            return u.replace("http://", "https://", 1) if u else None
         lista = [{
             "id": i.get("imageid"),
             "sol": i.get("sol", sol),
             "earth_date": (i.get("date_taken") or "")[:10],
             "camera": i.get("instrument"),
             "rover": "Curiosity",
-            "img_src": i.get("https_url") or i.get("url"),
-        } for i in imgs if (i.get("https_url") or i.get("url"))]
+            "img_src": url_raw(i),
+        } for i in imgs if url_raw(i) and i.get("sampleType", "full") != "thumbnail"]
         if lista:
             FUENTE_MARTE = "mars.nasa.gov raw_images"
             return "mars.nasa.gov raw_images", lista
     except (RuntimeError, ValueError, AttributeError):
         pass
+    # Último intento: reemplazo comunitario (no oficial)
+    if not FUENTE_MARTE or FUENTE_MARTE == "rovers.nebulum.one (reemplazo comunitario)":
+        try:
+            datos = obtener_json(f"https://rovers.nebulum.one/api/v1/rovers/curiosity/photos?sol={sol}", intentos=1)
+            fotos = [f for f in (datos.get("photos") or []) if f.get("img_src")]
+            if fotos:
+                FUENTE_MARTE = "rovers.nebulum.one (reemplazo comunitario)"
+                return FUENTE_MARTE, [{
+                    "id": f.get("id"), "sol": f.get("sol", sol), "earth_date": f.get("earth_date"),
+                    "camera": (f.get("camera") or {}).get("full_name"), "rover": "Curiosity", "img_src": f["img_src"],
+                } for f in fotos]
+        except (RuntimeError, ValueError, AttributeError):
+            pass
     return None, []
 
 
