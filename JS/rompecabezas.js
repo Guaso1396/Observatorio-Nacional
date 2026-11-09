@@ -1,22 +1,4 @@
-// Firebase SDK
-import { initializeApp, getApps, getApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
-import {
-  getFirestore, collection, doc, getDoc, setDoc, increment,
-  query, orderBy, limit, getDocs
-} from "https://www.gstatic.com/firebasejs/12.15.0/firebase-firestore.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyC9IskWnzGXdYuxyyiguJEWNYuKyuOZTNo",
-  authDomain: "observatorio-nacional-76230.firebaseapp.com",
-  projectId: "observatorio-nacional-76230",
-  storageBucket: "observatorio-nacional-76230.firebasestorage.app",
-  messagingSenderId: "524734302519",
-  appId: "1:524734302519:web:4c881057bdd51e042932b2",
-  measurementId: "G-S5CYF61EWW"
-};
-
-const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
-const db = getFirestore(app);
+import { guardarPuntaje, mostrarRanking } from "./ranking.js";
 
 const rompecabezas = document.getElementById("rompecabezas");
 const selectorImagen = document.getElementById("selectorImagen");
@@ -161,51 +143,6 @@ function calcularPuntos(segundos) {
     return 30;
 }
 
-function obtenerNombreJugador() {
-    return localStorage.getItem("rompecabezas_nombre");
-}
-
-function pedirNombreJugador() {
-    let nombre = "";
-    while (!nombre) {
-        nombre = prompt("¡Primera vez! Ingresa tu nombre para el ranking:");
-        if (nombre === null) return null; // el usuario canceló
-        nombre = nombre.trim();
-    }
-    localStorage.setItem("rompecabezas_nombre", nombre);
-    return nombre;
-}
-
-async function guardarPuntaje(puntos) {
-    let nombre = obtenerNombreJugador();
-    if (!nombre) {
-        nombre = pedirNombreJugador();
-        if (!nombre) return; // no se guarda si canceló sin dar nombre
-    }
-
-    try {
-        const ref = doc(db, "ranking", nombre);
-        const snap = await getDoc(ref);
-
-        if (snap.exists()) {
-            await setDoc(ref, {
-                nombre,
-                puntaje: increment(puntos),
-                partidas: increment(1)
-            }, { merge: true });
-        } else {
-            await setDoc(ref, {
-                nombre,
-                puntaje: puntos,
-                partidas: 1
-            });
-        }
-        mostrarRanking();
-    } catch (err) {
-        console.error("Error guardando puntaje:", err);
-    }
-}
-
 function getPosicionCorrecta(pos, tam) {
     let [fila, col] = pos.split("-").map(Number);
     return `${-col * tam}px ${-fila * tam}px`;
@@ -227,34 +164,5 @@ window.addEventListener("resize", () => {
     anchoAnterior = window.innerWidth;
 });
 
-// --- Ranking ---
-async function mostrarRanking() {
-    const lista = document.getElementById("listaRanking");
-    if (!lista) return;
-    lista.innerHTML = "<li>Cargando...</li>";
-
-    try {
-        const q = query(collection(db, "ranking"), orderBy("puntaje", "desc"), limit(10));
-        const snap = await getDocs(q);
-
-        if (snap.empty) {
-            lista.innerHTML = "<li>Aún no hay puntajes registrados.</li>";
-            return;
-        }
-
-        lista.innerHTML = "";
-        let puesto = 1;
-        snap.forEach(docSnap => {
-            const d = docSnap.data();
-            const li = document.createElement("li");
-            li.innerHTML = `<span class="ranking-puesto">#${puesto}</span> <span class="ranking-nombre">${d.nombre}</span> <span class="ranking-puntos">${d.puntaje} pts</span>`;
-            lista.appendChild(li);
-            puesto++;
-        });
-    } catch (err) {
-        console.error("Error cargando ranking:", err);
-        lista.innerHTML = "<li>No se pudo cargar el ranking.</li>";
-    }
-}
-
+// --- Ranking global (compartido con los demás juegos) ---
 mostrarRanking();

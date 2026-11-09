@@ -6,6 +6,7 @@
     <title>Observatorio Nacional</title>
     <link rel="icon" type="image/png" href="IMG/Iconos/Observatorio.png">
     <link rel="stylesheet" href="CSS/Index.css">
+    <link rel="stylesheet" href="CSS/menu-juegos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -20,7 +21,16 @@
             <a href="HTML/BibliotecaIV.html">Biblioteca</a>
             <a href="HTML/FotosMarte.html">Marte</a>
             <a href="HTML/ImagenesTierra.html">Tierra</a>
-            <a href="HTML/Rompecabezas.html">Game</a>
+            <div class="menu-juegos">
+              <button class="menu-juegos-boton" type="button" aria-haspopup="true" aria-expanded="false">Games <i class="fa-solid fa-caret-down"></i></button>
+              <div class="menu-juegos-lista">
+                <a href="HTML/Rompecabezas.html">🧩 Rompecabezas</a>
+                <a href="HTML/Cohetes.html">🚀 Cohetes</a>
+                <a href="HTML/Defensa.html">🌍 Defensa Planetaria</a>
+                <a href="HTML/Aterrizaje.html">🌙 Aterrizaje Lunar</a>
+                <a href="HTML/Trivia.html">🧠 Trivia Espacial</a>
+              </div>
+            </div>
             <a href="HTML/Suscriptores.html">Suscriptores</a>
             <a href="HTML/Admin.html">Admin</a>
         </nav>
@@ -77,15 +87,15 @@
                     <div class="titulo">Galaxia en Juego</div>
                     <div class="tema">Descubre la belleza del cosmos mientras te diviertes</div>
                     <div class="des">
-                        Aprender también puede ser divertido 🚀:
+                        Aprender también puede ser divertido 🚀. En el menú Games encontrarás:
                         <br>
-                        🖱️ Arrastra y suelta las piezas para armar un rompecabezas de la Vía Láctea.
+                        🧩 Rompecabezas: arma imágenes del universo; entre más rápido, más puntos.
                         <br>
-                        🎮 Pon a prueba tu concentración y disfruta viendo cómo se forma la imagen de nuestra galaxia.
+                        🚀 Cohetes: Guerra de Cohetes contra oleadas enemigas o Carrera de Cohetes entre asteroides.
                         <br>
-                        🌌 Una vez completes el rompecabezas, recibirás un mensaje de felicitaciónes por tu logro.
+                        🌍 Defensa Planetaria: destruye los asteroides (con nombres reales de la NASA) antes de que lleguen a la Tierra.
                         <br>
-                        ✨ Este juego combina entretenimiento y ciencia, mostrándote la belleza del universo de una manera lúdica.
+                        🌙 Aterrizaje Lunar y 🧠 Trivia Espacial. ¡Todos suman al mismo ranking!
                     </div>
                 </div>
             </div>
@@ -154,7 +164,7 @@
         </div>
     </div>
     <script src="JS/Index.js"></script>
-    <script src="SERVICIO/nasa_api.js"></script>
+  <script src="JS/menu-juegos.js"></script>
 </body>
 <footer class="footer">
     <div class="footer-contenido">

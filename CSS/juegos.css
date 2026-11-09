@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../IMG/Iconos/rompe.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #eee;
+    margin: 0;
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a { text-decoration: none; color: #eee; }
+
+/* -------- HEADER -------- */
+header {
+    width: 1140px;
+    max-width: 90%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+    padding-top: 10px;
+}
+header .logo img { height: 150px; width: auto; }
+nav { display: flex; gap: 25px; align-items: center; }
+header a {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+header a:hover { color: #f72a05; transform: scale(1.1); }
+
+/* -------- CONTENEDOR -------- */
+.contenedor {
+    flex: 1;
+    width: 900px;
+    max-width: calc(100% - 30px);
+    margin: 70px auto 30px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.72);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    animation: fadeIn 0.8s ease-in-out;
+    text-align: center;
+}
+.contenedor h2 {
+    margin-top: 0;
+    font-size: 26px;
+    color: #f72a05;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.subtitulo { color: #bbb; margin: 0 0 20px; }
+
+/* -------- TARJETAS DE MODO -------- */
+.modos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 16px;
+    margin: 10px 0 20px;
+}
+.tarjeta-modo {
+    background: rgba(255,255,255,0.06);
+    border: 2px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 20px 16px;
+    cursor: pointer;
+    color: #eee;
+    font: inherit;
+    text-align: center;
+    transition: border-color 0.2s, transform 0.2s, background 0.2s;
+}
+.tarjeta-modo:hover { transform: translateY(-3px); border-color: rgba(247,42,5,0.6); }
+div.tarjeta-modo { cursor: default; }
+div.tarjeta-modo:hover { transform: none; border-color: rgba(255,255,255,0.12); }
+.tarjeta-modo.seleccionada { border-color: #f72a05; background: rgba(247,42,5,0.15); }
+.tarjeta-modo .icono { font-size: 40px; display: block; margin-bottom: 8px; }
+.tarjeta-modo strong { display: block; font-size: 17px; color: #ff7a00; margin-bottom: 6px; }
+.tarjeta-modo span.desc { font-size: 13px; color: #ccc; line-height: 1.4; }
+
+/* -------- OPCIONES -------- */
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+.opciones label { color: #ccc; font-weight: bold; }
+.opciones select,
+.boton-juego {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.opciones select {
+    background: rgba(255,255,255,0.1);
+    color: #eb642f;
+}
+.opciones select option { background: #1a1a1a; color: #eee; }
+.boton-juego {
+    background: linear-gradient(90deg, #f72a05, #ff7a00);
+    color: #fff;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.boton-juego:hover { background: linear-gradient(90deg, #ff4500, #ff9500); transform: scale(1.05); }
+.boton-juego.secundario { background: rgba(255,255,255,0.12); }
+.boton-juego.secundario:hover { background: rgba(255,255,255,0.2); }
+
+/* -------- CANVAS Y HUD -------- */
+.zona-juego { display: none; }
+.zona-juego.activa { display: block; }
+
+.hud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 22px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+.hud span b { color: #ff7a00; }
+
+.lienzo {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 8 / 5;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 1px solid rgba(247,42,5,0.4);
+    background: #05060f;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.ayuda-juego { font-size: 12px; color: #aaa; margin: 10px 0 0; }
+
+/* Controles táctiles: solo visibles en dispositivos táctiles */
+.controles-tactiles {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 14px auto 0;
+    max-width: 800px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.controles-tactiles .grupo { display: flex; gap: 10px; }
+.controles-tactiles button {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid rgba(247,42,5,0.6);
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    font-size: 22px;
+    touch-action: none;
+}
+.controles-tactiles button.presionado { background: rgba(247,42,5,0.45); }
+.controles-tactiles button.disparo { width: 80px; height: 80px; background: rgba(247,42,5,0.3); }
+
+@media (hover: none) and (pointer: coarse) {
+    .controles-tactiles { display: flex; }
+    .solo-teclado { display: none; }
+}
+
+.barra-acciones { display: flex; justify-content: center; gap: 10px; margin-top: 14px; flex-wrap: wrap; }
+
+/* -------- FOOTER -------- */
+.footer {
+    background-color: rgba(0,0,0,0.85);
+    color: #ccc;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: auto;
+}
+.copyright { font-size: 12px; color: #888; margin-top: 20px; }
+
+/* -------- OVERLAY -------- */
+.overlay-ganador {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(3px);
+    z-index: 3000;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.overlay-ganador.activo { display: flex; animation: fadeIn 0.4s ease-in-out; }
+.tarjeta-ganador {
+    background: rgba(20, 20, 20, 0.95);
+    border: 1px solid rgba(247,42,5,0.5);
+    border-radius: 16px;
+    padding: 40px 50px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+    max-width: 90%;
+}
+.tarjeta-ganador h2 { color: #f72a05; margin: 0 0 10px 0; font-size: 26px; text-transform: uppercase; }
+.tarjeta-ganador p { margin: 6px 0; color: #eee; }
+.tarjeta-ganador-puntos { color: #ff7a00; font-weight: bold; font-size: 18px; }
+.tarjeta-ganador-hint { font-size: 12px; color: #999; margin-top: 14px; }
+
+/* -------- RANKING -------- */
+.ranking-container {
+    width: 600px;
+    max-width: calc(100% - 30px);
+    margin: 0 auto 40px;
+    padding: 25px 30px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+}
+.ranking-container h3 { margin-top: 0; color: #f72a05; text-align: center; text-transform: uppercase; font-size: 18px; }
+.ranking-nota { text-align: center; color: #999; font-size: 12px; margin: -6px 0 0; }
+.ranking-lista { list-style: none; padding: 0; margin: 15px 0 0; }
+.ranking-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.ranking-lista li:last-child { border-bottom: none; }
+.ranking-puesto { color: #ff7a00; font-weight: bold; width: 30px; }
+.ranking-nombre { flex: 1; }
+.ranking-puntos { color: #aaa; font-size: 13px; }
+
+/* -------- TRIVIA -------- */
+.trivia-pregunta {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 18px auto;
+    max-width: 680px;
+    min-height: 56px;
+}
+.trivia-opciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+.trivia-opciones button {
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.07);
+    color: #eee;
+    font: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+.trivia-opciones button:hover:not(:disabled) { border-color: #ff7a00; }
+.trivia-opciones button.correcta { background: rgba(31,191,90,0.35); border-color: #1fbf5a; }
+.trivia-opciones button.incorrecta { background: rgba(247,42,5,0.35); border-color: #f72a05; }
+.trivia-opciones button:disabled { cursor: default; }
+.trivia-tiempo {
+    height: 8px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 4px;
+    max-width: 680px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.trivia-tiempo div { height: 100%; width: 100%; background: linear-gradient(90deg, #f72a05, #ff7a00); }
+.trivia-dato { color: #bbb; font-size: 13px; min-height: 20px; margin-top: 14px; }
+.trivia-categoria { color: #ff7a00; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+
+/* -------- EFECTOS -------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* -------- RESPONSIVO -------- */
+@media screen and (max-width: 768px) {
+    header { flex-direction: column; align-items: center; height: auto; padding: 15px 0; }
+    header .logo img { height: 90px; }
+    nav { flex-direction: column; align-items: center; gap: 15px; margin-top: 10px; }
+    header a { font-size: 16px; }
+    .contenedor { margin: 30px auto; padding: 18px 12px; }
+    .trivia-pregunta { font-size: 17px; }
+}
+@media screen and (max-width: 480px) {
+    .contenedor h2 { font-size: 20px; }
+    .controles-tactiles button { width: 56px; height: 56px; }
+    .controles-tactiles button.disparo { width: 70px; height: 70px; }
+    .tarjeta-ganador { padding: 30px 24px; }
+}

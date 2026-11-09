@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia Espacial</title>
+  <link rel="icon" type="image/png" href="../IMG/Iconos/game.png">
+  <link rel="stylesheet" href="../CSS/juegos.css">
+  <link rel="stylesheet" href="../CSS/menu-juegos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../IMG/Iconos/descarga.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="Asteroides.html">Asteroides</a>
+      <a href="BibliotecaIV.html">Biblioteca</a>
+      <a href="FotosMarte.html">Marte</a>
+      <a href="ImagenesTierra.html">Tierra</a>
+      <div class="menu-juegos">
+        <button class="menu-juegos-boton" type="button" aria-haspopup="true" aria-expanded="false">Games <i class="fa-solid fa-caret-down"></i></button>
+        <div class="menu-juegos-lista">
+          <a href="Rompecabezas.html">🧩 Rompecabezas</a>
+          <a href="Cohetes.html">🚀 Cohetes</a>
+          <a href="Defensa.html">🌍 Defensa Planetaria</a>
+          <a href="Aterrizaje.html">🌙 Aterrizaje Lunar</a>
+          <a href="Trivia.html">🧠 Trivia Espacial</a>
+        </div>
+      </div>
+      <a href="Suscriptores.html">Suscriptores</a>
+      <a href="Admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <h2>🧠 Trivia Espacial</h2>
+
+    <section id="pantallaSeleccion">
+      <p class="subtitulo">10 preguntas, 15 segundos por pregunta. Cada acierto da 10 puntos y hasta 5 de bono si respondes rápido.</p>
+      <div class="modos">
+        <div class="tarjeta-modo"><span class="icono">📚</span><strong>Datos curiosos</strong><span class="desc">Misiones, astronautas, lunas, estrellas y galaxias.</span></div>
+        <div class="tarjeta-modo"><span class="icono">🪐</span><strong>Planetas</strong><span class="desc">Comparaciones que se generan al azar entre los 8 planetas.</span></div>
+        <div class="tarjeta-modo"><span class="icono">🛰️</span><strong>NASA en vivo</strong><span class="desc">Preguntas con los asteroides que la NASA reporta hoy.</span></div>
+      </div>
+      <p class="ayuda-juego">Las preguntas cambian en cada partida: el juego recuerda cuáles ya viste.</p>
+      <div class="opciones" style="margin-top:16px">
+        <button id="botonJugar" class="boton-juego" type="button">Jugar</button>
+      </div>
+    </section>
+
+    <section id="zonaJuego" class="zona-juego">
+      <div id="hud" class="hud"></div>
+      <div class="trivia-tiempo"><div id="triviaTiempo"></div></div>
+      <p id="triviaCategoria" class="trivia-categoria" style="margin-top:16px"></p>
+      <p id="triviaPregunta" class="trivia-pregunta"></p>
+      <div id="triviaOpciones" class="trivia-opciones"></div>
+      <p id="triviaDato" class="trivia-dato"></p>
+      <div class="barra-acciones">
+        <button id="botonReiniciar" class="boton-juego" type="button">Reiniciar</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="overlayGanador" class="overlay-ganador">
+    <div class="tarjeta-ganador">
+      <h2>Fin de la partida</h2>
+      <p class="tarjeta-ganador-mensaje"></p>
+      <p id="overlayPuntos" class="tarjeta-ganador-puntos"></p>
+      <p class="tarjeta-ganador-hint">Toca en cualquier parte para continuar</p>
+    </div>
+  </div>
+
+  <section class="ranking-container">
+    <h3>🏆 Mejores puntajes</h3>
+    <p class="ranking-nota">Ranking global: suman los puntos de todos los juegos.</p>
+    <ol id="listaRanking" class="ranking-lista"></ol>
+  </section>
+
+  <script src="../JS/menu-juegos.js"></script>
+  <script type="module" src="../JS/trivia.js"></script>
+</body>
+<footer class="footer">
+    <div class="footer-contenido">
+        <p class="copyright">© 2025 Observatorio Nacional</p>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,126 @@
+/* =========================================================
+   Menú desplegable "Games" (compartido por todas las páginas)
+   ========================================================= */
+.menu-juegos {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-juegos-boton {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #eee;
+    font: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-juegos-boton:hover,
+.menu-juegos.abierto .menu-juegos-boton {
+    color: #f72a05;
+}
+
+.menu-juegos-boton i {
+    font-size: 12px;
+    transition: transform 0.25s ease;
+}
+
+.menu-juegos.abierto .menu-juegos-boton i {
+    transform: rotate(180deg);
+}
+
+.menu-juegos-lista {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 210px;
+    padding: 8px;
+    background: rgba(15, 15, 20, 0.96);
+    border: 1px solid rgba(247, 42, 5, 0.45);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+    z-index: 2000;
+}
+
+/* Puente invisible para que el menú no se cierre al bajar el mouse */
+.menu-juegos-lista::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 12px;
+}
+
+.menu-juegos.abierto .menu-juegos-lista {
+    display: flex;
+    flex-direction: column;
+    animation: menuJuegosEntrada 0.2s ease-out;
+}
+
+@media (hover: hover) {
+    .menu-juegos:hover .menu-juegos-lista {
+        display: flex;
+        flex-direction: column;
+        animation: menuJuegosEntrada 0.2s ease-out;
+    }
+    .menu-juegos:hover .menu-juegos-boton {
+        color: #f72a05;
+    }
+}
+
+header .menu-juegos-lista a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: left;
+    color: #eee;
+    transform: none;
+}
+
+header .menu-juegos-lista a:hover,
+header .menu-juegos-lista a.activo {
+    background: rgba(247, 42, 5, 0.18);
+    color: #ff7a00;
+    transform: none;
+}
+
+@keyframes menuJuegosEntrada {
+    from { opacity: 0; transform: translate(-50%, -6px); }
+    to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* En pantallas pequeñas el menú se despliega dentro del flujo del nav */
+@media screen and (max-width: 768px) {
+    .menu-juegos-lista {
+        position: static;
+        transform: none;
+        margin-top: 8px;
+        min-width: 190px;
+    }
+    .menu-juegos-lista::before {
+        display: none;
+    }
+    @keyframes menuJuegosEntrada {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    header .menu-juegos-lista a {
+        text-align: center;
+    }
+}

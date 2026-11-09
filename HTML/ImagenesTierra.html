@@ -6,6 +6,7 @@
     <title>Tierra</title>
     <link rel="icon" type="image/png" href="../IMG/Iconos/Tierra.png">
     <link rel="stylesheet" href="../CSS/tierra.css">
+    <link rel="stylesheet" href="../CSS/menu-juegos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -19,7 +20,16 @@
             <a href="BibliotecaIV.html">Biblioteca</a>
             <a href="FotosMarte.html">Marte</a>
             <a href="ImagenesTierra.html">Tierra</a>
-            <a href="Rompecabezas.html">Game</a>
+            <div class="menu-juegos">
+              <button class="menu-juegos-boton" type="button" aria-haspopup="true" aria-expanded="false">Games <i class="fa-solid fa-caret-down"></i></button>
+              <div class="menu-juegos-lista">
+                <a href="Rompecabezas.html">🧩 Rompecabezas</a>
+                <a href="Cohetes.html">🚀 Cohetes</a>
+                <a href="Defensa.html">🌍 Defensa Planetaria</a>
+                <a href="Aterrizaje.html">🌙 Aterrizaje Lunar</a>
+                <a href="Trivia.html">🧠 Trivia Espacial</a>
+              </div>
+            </div>
             <a href="Suscriptores.html">Suscriptores</a>
             <a href="Admin.html">Admin</a>
         </nav>
@@ -32,6 +42,7 @@
         <div id="epicContainer"></div>
     </main>
     <script type="module" src="../JS/tierra.js"></script>
+  <script src="../JS/menu-juegos.js"></script>
 </body>
 <footer class="footer">
     <div class="footer-contenido">

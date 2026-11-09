@@ -6,6 +6,7 @@
   <title>Admin</title>
   <link rel="icon" href="../IMG/Iconos/Admin.png" type="image/png" />
   <link rel="stylesheet" href="../CSS/admin.css" />
+  <link rel="stylesheet" href="../CSS/menu-juegos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
@@ -20,7 +21,16 @@
       <a href="BibliotecaIV.html">Biblioteca</a>
       <a href="FotosMarte.html">Marte</a>
       <a href="ImagenesTierra.html">Tierra</a>
-      <a href="Rompecabezas.html">Game</a>
+      <div class="menu-juegos">
+        <button class="menu-juegos-boton" type="button" aria-haspopup="true" aria-expanded="false">Games <i class="fa-solid fa-caret-down"></i></button>
+        <div class="menu-juegos-lista">
+          <a href="Rompecabezas.html">🧩 Rompecabezas</a>
+          <a href="Cohetes.html">🚀 Cohetes</a>
+          <a href="Defensa.html">🌍 Defensa Planetaria</a>
+          <a href="Aterrizaje.html">🌙 Aterrizaje Lunar</a>
+          <a href="Trivia.html">🧠 Trivia Espacial</a>
+        </div>
+      </div>
       <a href="Suscriptores.html">Suscriptores</a>
       <a href="Admin.html">Admin</a>
 
@@ -60,5 +70,6 @@
 
   <script type="module" src="../JS/admin.js"></script>
   <script>emailjs.init("30e18Vie5owMyW9hr");</script>
+  <script src="../JS/menu-juegos.js"></script>
 </body>
 </html>
