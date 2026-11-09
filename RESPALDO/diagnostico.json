@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-09T19:07:52Z",
+ "fecha": "2026-11-09T19:12:49Z",
  "pruebas": {
   "Tierra - epic.gsfc.nasa.gov (la que usa la página)": {
    "url": "https://epic.gsfc.nasa.gov/api/natural/date/2025-06-15",
@@ -7,7 +7,7 @@
    "cors": "*",
    "tipo": "application/json",
    "muestra": "[{\"identifier\":\"20250615010436\",\"caption\":\"This image was taken by NASA's EPIC camera onboard the NOAA DSCOVR spacecraft",
-   "milisegundos": 664,
+   "milisegundos": 454,
    "funciona_en_navegador": true
   },
   "Tierra - api.nasa.gov/EPIC": {
@@ -16,7 +16,7 @@
    "cors": "*",
    "tipo": "application/json",
    "muestra": "[{\"identifier\":\"20261107004554\",\"caption\":\"This image was taken by NASA's EPIC camera onboard the NOAA DSCOVR spacecraft",
-   "milisegundos": 767,
+   "milisegundos": 950,
    "funciona_en_navegador": true
   },
   "Marte - api.nasa.gov mars-photos (la que usa la página)": {
@@ -24,7 +24,7 @@
    "estado": 404,
    "cors": "*",
    "error": "HTTP Error 404: Not Found",
-   "milisegundos": 390,
+   "milisegundos": 595,
    "funciona_en_navegador": false
   },
   "Marte - rovers.nebulum.one (reemplazo comunitario)": {
@@ -33,7 +33,7 @@
    "cors": "*",
    "tipo": "application/json; charset=utf-8",
    "muestra": "{\"photos\":[]}",
-   "milisegundos": 356,
+   "milisegundos": 440,
    "funciona_en_navegador": true
   },
   "Marte - mars.nasa.gov raw_images": {
@@ -42,7 +42,7 @@
    "cors": "*",
    "tipo": "application/json;charset=UTF-8",
    "muestra": "{\"sol\":1000,\"images\":[{\"sol\":1000,\"attitude\":\"UNK\",\"image_files\":{\"medium\":\"http://mars.nasa.gov/msl-raw-images/msss/010",
-   "milisegundos": 12767,
+   "milisegundos": 326,
    "funciona_en_navegador": true
   },
   "Asteroides - api.nasa.gov NeoWs": {
@@ -51,7 +51,7 @@
    "cors": "*",
    "tipo": "application/json",
    "muestra": "{\"element_count\":4,\"links\":{\"next\":\"http://api.nasa.gov/neo/rest/v1/feed?start_date=2025-06-16&end_date=2025-06-16&detai",
-   "milisegundos": 219,
+   "milisegundos": 336,
    "funciona_en_navegador": true
   },
   "Biblioteca - images-api.nasa.gov": {
@@ -60,7 +60,7 @@
    "cors": "*",
    "tipo": "application/json",
    "muestra": "{\"collection\":{\"version\":\"1.1\",\"href\":\"http://images-api.nasa.gov/search?q=moon\",\"items\":[{\"href\":\"https://images-assets",
-   "milisegundos": 1000,
+   "milisegundos": 922,
    "funciona_en_navegador": true
   },
   "Inicio - api.nasa.gov APOD": {
@@ -68,7 +68,7 @@
    "estado": 500,
    "cors": "https://guaso1396.github.io",
    "error": "HTTP Error 500: Internal Server Error",
-   "milisegundos": 3149,
+   "milisegundos": 473,
    "funciona_en_navegador": false
   }
  }

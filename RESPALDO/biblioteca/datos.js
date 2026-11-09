@@ -4,7 +4,7 @@ window.RESPALDO["biblioteca"] = {
  "proyecto": "Observatorio Nacional - respaldo local de APIs de la NASA",
  "descripcion": "Resultados de la biblioteca de imágenes y videos de la NASA por tema.",
  "fuente": "https://images-api.nasa.gov/search",
- "generado": "2026-11-09T19:11:27Z",
+ "generado": "2026-11-09T19:17:37Z",
  "nota": "Datos reales descargados de servicios públicos de la NASA. Las imágenes están reducidas.",
  "total": 800,
  "temas": {
@@ -741,16 +741,6 @@ window.RESPALDO["biblioteca"] = {
     "url_video": "https://images-assets.nasa.gov/video/JPL-20220623-TECHf-0001-Mars Helicopter Testing Media Reel/JPL-20220623-TECHf-0001-Mars Helicopter Testing Media Reel~orig.mp4"
    },
    {
-    "nasa_id": "The Australian Outback & NASA's Search for Life on Mars",
-    "tipo": "video",
-    "titulo": "The Australian Outback & NASA's Search for Life on Mars",
-    "descripcion": "How will we know if there is life on Mars? What geological clues can our Martian orbiters and rovers search for and collect samples of to return home to Earth? Stromatolites in the Pilbara region of Western Australia may hold the answer.   In June of 2023, members of NASA's Mars Exploration Program, the Australian Space Agency, ESA (European Space Agency), and the Australian Commonwealth Scientific and Industrial Research Organization (CSIRO), joined together on an expedition to visit three incredible field locations containing stromatolites, fossils of ancient microbial life, and the oldest, ",
-    "fecha": "2023-08-24",
-    "centro": "HQ",
-    "url": "https://images-assets.nasa.gov/video/The Australian Outback & NASA's Search for Life on Mars/The Australian Outback & NASA's Search for Life on Mars~thumb.jpg",
-    "url_video": "https://images-assets.nasa.gov/video/The Australian Outback & NASA's Search for Life on Mars/The Australian Outback & NASA's Search for Life on Mars~orig.mp4"
-   },
-   {
     "nasa_id": "Moon to Mars Multidisciplinary Science",
     "tipo": "imagen",
     "titulo": "Moon to Mars Multidisciplinary Science",
@@ -767,6 +757,16 @@ window.RESPALDO["biblioteca"] = {
     "fecha": "2025-03-12",
     "centro": "HQ",
     "url": "https://images-assets.nasa.gov/image/Moon to Mars Transportation and Habitation/Moon to Mars Transportation and Habitation~thumb.jpg"
+   },
+   {
+    "nasa_id": "The Australian Outback & NASA's Search for Life on Mars",
+    "tipo": "video",
+    "titulo": "The Australian Outback & NASA's Search for Life on Mars",
+    "descripcion": "How will we know if there is life on Mars? What geological clues can our Martian orbiters and rovers search for and collect samples of to return home to Earth? Stromatolites in the Pilbara region of Western Australia may hold the answer.   In June of 2023, members of NASA's Mars Exploration Program, the Australian Space Agency, ESA (European Space Agency), and the Australian Commonwealth Scientific and Industrial Research Organization (CSIRO), joined together on an expedition to visit three incredible field locations containing stromatolites, fossils of ancient microbial life, and the oldest, ",
+    "fecha": "2023-08-24",
+    "centro": "HQ",
+    "url": "https://images-assets.nasa.gov/video/The Australian Outback & NASA's Search for Life on Mars/The Australian Outback & NASA's Search for Life on Mars~thumb.jpg",
+    "url_video": "https://images-assets.nasa.gov/video/The Australian Outback & NASA's Search for Life on Mars/The Australian Outback & NASA's Search for Life on Mars~orig.mp4"
    },
    {
     "nasa_id": "Mars 2020 Perseverance Landing Coverage - Commentary",
@@ -8072,16 +8072,6 @@ window.RESPALDO["biblioteca"] = {
     "imagen_local": "biblioteca/img/telescope/Moving_Roman_-_Propulsion4k.jpg"
    },
    {
-    "nasa_id": "PIA25790",
-    "tipo": "imagen",
-    "titulo": "Three of NASA's Infrared Telescopes",
-    "descripcion": "This artist's concept shows three space telescopes that observe infrared light, wavelengths slightly longer than what human eyes can see. On the right is NASA's James Webb Space Telescope. Launched in 2021, it is the largest and most powerful space observatory in history. On the left is NASA's Infrared Astronomical Satellite (IRAS), the first infrared telescope in Earth orbit, launched in 1983. In the middle is NASA's Spitzer Space Telescope, launched in 2003. The background image is from Spitzer and shows the Eagle Nebula.  https://photojournal.jpl.nasa.gov/catalog/PIA25790",
-    "fecha": "2023-12-22",
-    "centro": "JPL",
-    "url": "https://images-assets.nasa.gov/image/PIA25790/PIA25790~thumb.jpg",
-    "imagen_local": "biblioteca/img/telescope/PIA25790.jpg"
-   },
-   {
     "nasa_id": "8330773",
     "tipo": "imagen",
     "titulo": "History of Hubble Space Telescope (HST)",
@@ -8090,6 +8080,16 @@ window.RESPALDO["biblioteca"] = {
     "centro": "MSFC",
     "url": "https://images-assets.nasa.gov/image/8330773/8330773~thumb.jpg",
     "imagen_local": "biblioteca/img/telescope/8330773.jpg"
+   },
+   {
+    "nasa_id": "PIA25790",
+    "tipo": "imagen",
+    "titulo": "Three of NASA's Infrared Telescopes",
+    "descripcion": "This artist's concept shows three space telescopes that observe infrared light, wavelengths slightly longer than what human eyes can see. On the right is NASA's James Webb Space Telescope. Launched in 2021, it is the largest and most powerful space observatory in history. On the left is NASA's Infrared Astronomical Satellite (IRAS), the first infrared telescope in Earth orbit, launched in 1983. In the middle is NASA's Spitzer Space Telescope, launched in 2003. The background image is from Spitzer and shows the Eagle Nebula.  https://photojournal.jpl.nasa.gov/catalog/PIA25790",
+    "fecha": "2023-12-22",
+    "centro": "JPL",
+    "url": "https://images-assets.nasa.gov/image/PIA25790/PIA25790~thumb.jpg",
+    "imagen_local": "biblioteca/img/telescope/PIA25790.jpg"
    },
    {
     "nasa_id": "ED13-0220-108",

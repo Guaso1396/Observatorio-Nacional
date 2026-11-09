@@ -2,7 +2,7 @@
  "proyecto": "Observatorio Nacional - respaldo local de APIs de la NASA",
  "descripcion": "Asteroides cercanos a la Tierra agrupados por fecha de acercamiento.",
  "fuente": "https://api.nasa.gov/neo/rest/v1/feed",
- "generado": "2026-11-09T19:09:50Z",
+ "generado": "2026-11-09T19:16:03Z",
  "nota": "Datos reales descargados de servicios públicos de la NASA. Las imágenes están reducidas.",
  "total": 1935,
  "desde": "2026-05-11",
