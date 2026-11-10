@@ -283,18 +283,26 @@ def fotos_marte_sol(sol):
     return None, []
 
 
-def respaldo_marte(cantidad, por_sol=8):
+def respaldo_marte(cantidad, por_sol=6):
+    """Reparte las fotos a lo largo de toda la misión de Curiosity (un sol cada ~45),
+    para que cualquier sol que se busque tenga uno cercano en el respaldo."""
     log("\n🔴 Marte")
     soles, total, fuente_usada = {}, 0, None
-    sol, fallos_seguidos = 1000, 0
-    while total < cantidad and sol < 4800 and fallos_seguidos < 30:
-        fuente, fotos = fotos_marte_sol(sol)
+    fallos_seguidos = 0
+    for objetivo in range(1, 4800, 45):
+        if total >= cantidad:
+            break
+        fotos, sol, fuente = [], objetivo, None
+        # Si ese sol no tiene fotos, se prueban los 4 siguientes (solo cuando ya hay una fuente que responde)
+        for sol in range(objetivo, objetivo + (5 if FUENTE_MARTE else 1)):
+            fuente, fotos = fotos_marte_sol(sol)
+            if fotos:
+                break
         if not fotos:
             fallos_seguidos += 1
             if FUENTE_MARTE is None and fallos_seguidos >= 3:
                 log("   ✖ Ninguna API de rovers responde; no se insiste más")
                 break
-            sol += 5
             continue
         fallos_seguidos = 0
         fuente_usada = fuente_usada or fuente
@@ -316,7 +324,6 @@ def respaldo_marte(cantidad, por_sol=8):
         if registros:
             soles[str(sol)] = registros
             log(f"   sol {sol}: {len(registros)} fotos (total {total}) [{fuente}]")
-        sol += 5
 
     sin_sol = []
     if total == 0:
@@ -501,8 +508,8 @@ def diagnostico():
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--cantidad", type=int, default=600, help="imágenes por API para Tierra y Marte (por defecto 600)")
-    p.add_argument("--por-tema", type=int, default=100, help="resultados por tema en Biblioteca (por defecto 100)")
-    p.add_argument("--semanas", type=int, default=52, help="semanas de asteroides (por defecto 52)")
+    p.add_argument("--por-tema", type=int, default=250, help="resultados por tema en Biblioteca (por defecto 250)")
+    p.add_argument("--semanas", type=int, default=104, help="semanas de asteroides (por defecto 104, unos 2 años)")
     p.add_argument("--solo", nargs="*", choices=["tierra", "marte", "asteroides", "biblioteca"])
     a = p.parse_args()
     if Image is None:

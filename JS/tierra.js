@@ -7,7 +7,7 @@ window.cargarEpic = async () => {
     const fecha = document.getElementById('fechaEpic').value;
     if (!fecha) return;
 
-    epicContainer.innerHTML = "<p style='text-align:center;'>Cargando imágenes...</p>";
+    epicContainer.innerHTML = "<p style='text-align:center;'>🛰️ Buscando imágenes en la NASA... (si no responde en 8 segundos se usa el respaldo)</p>";
 
     try {
         const fotos = await servicio.verTierra(fecha);

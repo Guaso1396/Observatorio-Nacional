@@ -203,12 +203,68 @@ function marcar(lista, info) {
     return lista;
 }
 
+// ---------------------------------------------------------------------
+// Tiempo límite: si la NASA no responde en TIEMPO_LIMITE_MS se pasa al respaldo.
+// Si una API falló hace poco, durante MINUTOS_CAIDA se va directo al respaldo
+// (sin volver a esperar), y luego se vuelve a intentar con la NASA.
+// ---------------------------------------------------------------------
+const TIEMPO_LIMITE_MS = 8000;
+const MINUTOS_CAIDA = 3;
+
+function leerCaidas() {
+    try { return JSON.parse(sessionStorage.getItem("apis_caidas")) || {}; } catch { return {}; }
+}
+function marcarCaida(nombre) {
+    const caidas = leerCaidas();
+    caidas[nombre] = Date.now();
+    try { sessionStorage.setItem("apis_caidas", JSON.stringify(caidas)); } catch { /* sin almacenamiento */ }
+}
+function quitarCaida(nombre) {
+    const caidas = leerCaidas();
+    delete caidas[nombre];
+    try { sessionStorage.setItem("apis_caidas", JSON.stringify(caidas)); } catch { /* sin almacenamiento */ }
+}
+function estaCaida(nombre) {
+    const t = leerCaidas()[nombre];
+    return Boolean(t && Date.now() - t < MINUTOS_CAIDA * 60000);
+}
+
+/** Ejecuta la consulta en vivo con tiempo límite. Lanza un error con .motivo legible si falla. */
+async function enVivo(nombre, consulta) {
+    if (estaCaida(nombre)) {
+        const e = new Error("API caída recientemente");
+        e.motivo = "La API de la NASA no respondió hace un momento, así que se usa el respaldo directamente";
+        throw e;
+    }
+    let reloj;
+    try {
+        const resultado = await Promise.race([
+            consulta(),
+            new Promise((_, rechazar) => {
+                reloj = setTimeout(() => {
+                    const e = new Error("Tiempo de espera agotado");
+                    e.motivo = `La NASA no respondió en ${TIEMPO_LIMITE_MS / 1000} segundos`;
+                    rechazar(e);
+                }, TIEMPO_LIMITE_MS);
+            })
+        ]);
+        quitarCaida(nombre);
+        return resultado;
+    } catch (e) {
+        marcarCaida(nombre);
+        if (!e.motivo) e.motivo = "La API de la NASA no respondió";
+        throw e;
+    } finally {
+        clearTimeout(reloj);
+    }
+}
+
 class ServiciosConRespaldo extends ServiciosNasa {
 
     async verTierra(fecha) {
         let error = null;
         try {
-            const r = await super.verTierra(fecha);
+            const r = await enVivo("tierra", () => super.verTierra(fecha));
             if (r && r.length) return r;
         } catch (e) { error = e; }
 
@@ -223,23 +279,19 @@ class ServiciosConRespaldo extends ServiciosNasa {
             fecha: i.date || i.fecha,
             caption: i.caption || i.descripcion || "",
             url: rutaLocal(i.imagen_local)
-        })), { api: "Tierra", motivo: error ? "La API de la NASA no respondió" : "La NASA no devolvió imágenes para esa fecha",
+        })), { api: "Tierra", motivo: error ? error.motivo : "La NASA no encontró imágenes para esa fecha",
                generado: datos.generado, pedido: `fecha ${fecha}`, mostrado: `fecha ${clave}` });
     }
 
     async verMarte(sol = 1000) {
         let error = null;
-        try {
-            const r = await super.verMarte(sol);
-            if (r && r.length) return r;
-        } catch (e) { error = e; }
-
-        // Alternativa en vivo: feed oficial de imágenes crudas de Curiosity en mars.nasa.gov
-        // (la API mars-photos de api.nasa.gov fue retirada y responde 404)
-        try {
+        // Se consultan EN PARALELO la API original (retirada por la NASA, responde 404) y el feed
+        // oficial de imágenes de Curiosity en mars.nasa.gov; gana la primera que traiga fotos.
+        const feedOficial = async () => {
             const respuesta = await fetch(`https://mars.nasa.gov/rss/api/?feed=raw_images&category=msl&feedtype=json&sol=${sol}`);
-            const json = respuesta.ok ? await respuesta.json() : null;
-            const imagenes = (json && Array.isArray(json.images) ? json.images : [])
+            if (!respuesta.ok) throw new Error(`Error ${respuesta.status}`);
+            const json = await respuesta.json();
+            const imagenes = (Array.isArray(json.images) ? json.images : [])
                 .filter(i => i.sampleType !== "thumbnail")
                 .map(i => {
                     const archivos = i.image_files || {};
@@ -247,11 +299,19 @@ class ServiciosConRespaldo extends ServiciosNasa {
                     return url ? { id: i.imageid, fecha: (i.date_taken || i.date_taken_utc || i.date_received || "").slice(0, 10) || `Sol ${sol}`, camara: i.instrument || (i.camera && i.camera.instrument) || "Curiosity", url: url.replace(/^http:/, "https:") } : null;
                 })
                 .filter(Boolean);
-            if (imagenes.length) {
-                return marcar(imagenes.slice(0, 60), { api: "Marte", alternativa: true,
-                    fuente: "el feed oficial de imágenes de Curiosity en mars.nasa.gov", pedido: `sol ${sol}`, mostrado: `sol ${sol}` });
-            }
-        } catch { /* se intenta con el respaldo local */ }
+            return marcar(imagenes.slice(0, 60), { api: "Marte", alternativa: true,
+                fuente: "el feed oficial de imágenes de Curiosity en mars.nasa.gov", pedido: `sol ${sol}`, mostrado: `sol ${sol}` });
+        };
+        const primeraConFotos = intentos => new Promise((resolver, rechazar) => {
+            let pendientes = intentos.length;
+            intentos.forEach(p => p.then(
+                r => (r && r.length ? resolver(r) : (--pendientes === 0 && rechazar(new Error("Sin fotos")))),
+                () => { if (--pendientes === 0) rechazar(new Error("Ninguna fuente respondió")); }
+            ));
+        });
+        try {
+            return await enVivo("marte", () => primeraConFotos([super.verMarte(sol), feedOficial()]));
+        } catch (e) { error = e; }
 
         let datos;
         try { datos = await cargarRespaldo("marte"); } catch { if (error) throw error; return []; }
@@ -275,46 +335,51 @@ class ServiciosConRespaldo extends ServiciosNasa {
             fecha: f.earth_date || f.fecha || (f.sol !== undefined ? `Sol ${f.sol} (fecha no informada por la NASA)` : "No disponible"),
             camara: f.camera || f.titulo,
             url: rutaLocal(f.imagen_local)
-        })), { api: "Marte", motivo: error ? "La API de fotos de Marte no respondió" : "No hubo fotos para ese sol",
+        })), { api: "Marte", motivo: error ? error.motivo : "La NASA no tiene fotos para ese sol",
                generado: datos.generado, pedido: `sol ${sol}`, mostrado });
     }
 
     async verAsteroides(fechaInicio, fechaFin) {
+        let error = null;
         try {
-            return await super.verAsteroides(fechaInicio, fechaFin);
-        } catch (error) {
-            let datos;
-            try { datos = await cargarRespaldo("asteroides"); } catch { throw error; }
-            const claves = Object.keys(datos.fechas || {}).sort();
-            if (!claves.length) throw error;
+            const r = await enVivo("asteroides", () => super.verAsteroides(fechaInicio, fechaFin));
+            if (r && r.length) return r;
+        } catch (e) { error = e; }
 
-            let dentro = claves.filter(f => f >= fechaInicio && f <= fechaFin);
-            let mostrado = `del ${fechaInicio} al ${fechaFin}`;
-            if (!dentro.length) {
-                const inicio = claveMasCercana(claves, fechaInicio, diasDesdeEpoca);
-                dentro = claves.filter(f => diasDesdeEpoca(f) >= diasDesdeEpoca(inicio) && diasDesdeEpoca(f) <= diasDesdeEpoca(inicio) + 7);
-                mostrado = `del ${dentro[0]} al ${dentro[dentro.length - 1]} (fechas más cercanas guardadas)`;
-            }
-            return marcar(dentro.flatMap(f => datos.fechas[f]), {
-                api: "Asteroides", motivo: "La API de asteroides no respondió",
-                generado: datos.generado, pedido: `del ${fechaInicio} al ${fechaFin}`, mostrado
-            });
+        let datos;
+        try { datos = await cargarRespaldo("asteroides"); } catch { if (error) throw error; return []; }
+        const claves = Object.keys(datos.fechas || {}).sort();
+        if (!claves.length) { if (error) throw error; return []; }
+
+        let dentro = claves.filter(f => f >= fechaInicio && f <= fechaFin);
+        let mostrado = `del ${fechaInicio} al ${fechaFin}`;
+        if (!dentro.length) {
+            const inicio = claveMasCercana(claves, fechaInicio, diasDesdeEpoca);
+            dentro = claves.filter(f => diasDesdeEpoca(f) >= diasDesdeEpoca(inicio) && diasDesdeEpoca(f) <= diasDesdeEpoca(inicio) + 7);
+            mostrado = `del ${dentro[0]} al ${dentro[dentro.length - 1]} (fechas más cercanas guardadas)`;
         }
+        return marcar(dentro.flatMap(f => datos.fechas[f]), {
+            api: "Asteroides", motivo: error ? error.motivo : "La NASA no devolvió asteroides para esas fechas",
+            generado: datos.generado, pedido: `del ${fechaInicio} al ${fechaFin}`, mostrado
+        });
     }
 
     async verBiblioteca(query) {
+        let error = null;
         try {
-            return await super.verBiblioteca(query);
-        } catch (error) {
-            let datos;
-            try { datos = await cargarRespaldo("biblioteca"); } catch { throw error; }
-            const items = (datos.temas || {})[query];
-            if (!items || !items.length) throw error;
-            return marcar(items.map(i => (i.tipo === "video"
-                ? { tipo: "video", titulo: i.titulo, descripcion: i.descripcion, url: i.url_video, preview: i.imagen_local ? rutaLocal(i.imagen_local) : i.url }
-                : { tipo: "imagen", titulo: i.titulo, descripcion: i.descripcion, url: i.imagen_local ? rutaLocal(i.imagen_local) : i.url })),
-            { api: "Biblioteca", motivo: "La API de la biblioteca no respondió", generado: datos.generado, pedido: `tema "${query}"`, mostrado: `tema "${query}"` });
-        }
+            const r = await enVivo("biblioteca", () => super.verBiblioteca(query));
+            if (r && r.length) return r;
+        } catch (e) { error = e; }
+
+        let datos;
+        try { datos = await cargarRespaldo("biblioteca"); } catch { if (error) throw error; return []; }
+        const items = (datos.temas || {})[query];
+        if (!items || !items.length) { if (error) throw error; return []; }
+        return marcar(items.map(i => (i.tipo === "video"
+            ? { tipo: "video", titulo: i.titulo, descripcion: i.descripcion, url: i.url_video, preview: i.imagen_local ? rutaLocal(i.imagen_local) : i.url }
+            : { tipo: "imagen", titulo: i.titulo, descripcion: i.descripcion, url: i.imagen_local ? rutaLocal(i.imagen_local) : i.url })),
+        { api: "Biblioteca", motivo: error ? error.motivo : "La NASA no devolvió resultados", generado: datos.generado,
+          pedido: `tema "${query}"`, mostrado: `tema "${query}" (${items.length} resultados guardados)` });
     }
 
     /** HTML del aviso que se muestra cuando los datos vienen del respaldo o de una fuente alternativa. */
@@ -328,7 +393,7 @@ class ServiciosConRespaldo extends ServiciosNasa {
                 `Se muestran fotos reales del rover Curiosity desde ${info.fuente}.</div>`;
         }
         const fecha = info.generado ? new Date(info.generado).toLocaleDateString("es-CO", { day: "numeric", month: "long", year: "numeric" }) : "";
-        const cambio = info.pedido !== info.mostrado ? ` Pediste ${info.pedido}; se muestra ${info.mostrado}.` : "";
+        const cambio = info.api === "Biblioteca" ? ` Se muestra el ${info.mostrado}.` : (info.pedido !== info.mostrado ? ` Pediste ${info.pedido}; se muestra ${info.mostrado}.` : "");
         return `<div style="${estilo}">📦 <b>Modo respaldo:</b> ${info.motivo}. ` +
             `Se muestran datos reales de la NASA guardados en el respaldo local${fecha ? ` (descargados el ${fecha})` : ""}.${cambio}</div>`;
     }

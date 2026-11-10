@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function buscar(query) {
     try {
-      resultados.innerHTML = "<p>Buscando...</p>";
+      resultados.innerHTML = "<p>🛰️ Buscando en la NASA... (si no responde en 8 segundos se usa el respaldo)</p>";
       const datos = await servicio.verBiblioteca(query);
       mostrarResultados(datos);
     } catch (error) {

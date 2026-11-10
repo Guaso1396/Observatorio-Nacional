@@ -17,7 +17,7 @@ on:
         default: "600"
       por_tema:
         description: "Resultados por tema (Biblioteca)"
-        default: "100"
+        default: "250"
 
 permissions:
   contents: write
@@ -45,7 +45,7 @@ jobs:
         run: |
           python herramientas/descargar_respaldo.py \
             --cantidad "${{ github.event.inputs.cantidad || '600' }}" \
-            --por-tema "${{ github.event.inputs.por_tema || '100' }}"
+            --por-tema "${{ github.event.inputs.por_tema || '250' }}"
 
       - name: Resumen del respaldo
         if: always()

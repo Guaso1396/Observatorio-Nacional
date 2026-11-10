@@ -11,7 +11,7 @@ document.getElementById('btnMarte').addEventListener('click', async () => {
         return;
     }
 
-    marteContainer.innerHTML = "<p style='text-align:center;'>Cargando fotos...</p>";
+    marteContainer.innerHTML = "<p style='text-align:center;'>🛰️ Buscando fotos en la NASA... (si no responde en 8 segundos se usa el respaldo)</p>";
 
     try {
         const fotos = await servicio.verMarte(sol);

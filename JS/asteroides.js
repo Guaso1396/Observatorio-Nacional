@@ -13,7 +13,7 @@ window.buscarAsteroides = async () => {
     const fechaFin = fin.toISOString().split('T')[0];
 
     document.getElementById('rangoFechas').textContent = `Del ${fechaInicio} al ${fechaFin}`;
-    tablaBody.innerHTML = '<tr><td colspan="7">Cargando...</td></tr>';
+    tablaBody.innerHTML = '<tr><td colspan="7">🛰️ Buscando asteroides en la NASA... (si no responde en 8 segundos se usa el respaldo)</td></tr>';
 
     try {
         const asteroides = await servicio.verAsteroides(fechaInicio, fechaFin);
