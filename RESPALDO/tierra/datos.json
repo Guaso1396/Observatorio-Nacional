@@ -2,7 +2,7 @@
  "proyecto": "Observatorio Nacional - respaldo local de APIs de la NASA",
  "descripcion": "Imágenes de la Tierra completa agrupadas por fecha (AAAA-MM-DD).",
  "fuente": "https://epic.gsfc.nasa.gov/api/natural",
- "generado": "2026-11-09T19:13:07Z",
+ "generado": "2026-11-10T02:26:45Z",
  "nota": "Datos reales descargados de servicios públicos de la NASA. Las imágenes están reducidas.",
  "total": 600,
  "fechas": {
